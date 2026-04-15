@@ -1,0 +1,50 @@
+\section{Discussion}
+\label{sec:discussion}
+
+% TODO: expand during writeup. Skeleton positions follow the audit in
+% 1.Recoding/AUDIT_AND_MITIGATIONS.md.
+
+\subsection{Phenomenological findings}
+% TODO: interpret the psilocybin vs brugmansia comparison once the consensus-
+% filtered results table is finalised. Expected differentiators:
+% - serotonergic (psilocybin) profile: geometric patterns, ego-dissolution,
+%   metaphysical insight, extraordinary-entity encounters, positive-valence
+%   immersive visions
+% - anticholinergic (brugmansia) profile: incrusted-object hallucinations of
+%   humans and acquaintances, delusional belief states, amnesia, negative-
+%   valence consequences, somatic confusion
+% Situate findings in the existing literature on receptor-specific hallucinogen
+% phenomenology (5-HT2A vs muscarinic-antagonist profiles).
+
+\subsection{Methodological contribution: a scene-ID recoding framework}
+We present a post-hoc framework that converts rater-level spreadsheet codings into a scene-identifier dataset with explicit status suffixes (\texttt{\_AB}, \texttt{\_A}, \texttt{\_B}) and derived agreement tables. The framework makes three tiers of inter-rater agreement separately measurable — did both raters see a hallucinatory scene in the passage, did they individuate it with the same boundaries, did they attach the same attributes — and supports both strict consensus and liberal analyses by filtering on the canonical data rather than modifying it. The convention is documented iteratively in \texttt{RULES.md} and is extensible to the other ten hallucinogens in the larger project without schema changes.
+
+\subsection{Sources of inter-rater discrepancy and mitigation}
+
+A systematic audit of the 40-trip dataset identifies the dominant sources of disagreement. Of the 650 total disagreement events, 19\% are individuation-level (raters disagree on whether a passage is a hallucinatory scene) and 81\% are attribute-level (raters agree a scene is present but tag it differently). This indicates that the bulk of the inter-rater problem is not failure to identify hallucinatory content but variation in how that content is labelled against the taxonomy.
+
+Within individuation disagreement, the single largest driver is a \emph{rater-threshold mismatch}: some raters (Alessandra most notably) treat brief perceptual amplifications, embodied sensations, and insight-imagery as individuated scenes, while others require a discrete object-level hallucinatory event. This asymmetry is concentrated in one coder pair (Psilocybin 01--10, Alessandra × Brendan), where Alessandra individuated 41 scenes her partner did not. The project's own guidelines (\texttt{Guidelines.pdf \S5}) mandate a conservative Case-2 rule --- if a passage is not clearly instantiated, leave it uncoded --- and a critical reading of the deviations is that Alessandra's threshold is below the guideline's intended level. Classification-level disagreement is driven principally by ambiguity in the ``Type of visual alteration'' section (illusion, incrusted, detached, immersive), stylistic over-use or under-use of ``Modal status'' and ``Incrusted object'' tags, and a scope-layer mismatch in which the same passage is coded scene-level by one rater and trip-level by the other.
+
+We assessed eight candidate mitigation strategies (conservative consensus filter, rater reconciliation, LLM-assisted adjudication, weighted $\kappa$, third-rater tiebreaker, scope-layer normalisation, taxonomy collapse, per-rater calibration; detailed in supplementary materials). Our recommendation is a tiered application: mechanical pre-processing (scope-layer normalisation + within-rater object-row deduplication) at consolidation time; a conservative consensus filter (\texttt{rater\_status=both AND agreement=AGREE}) as the primary analysis base; a parallel liberal analysis reporting single-rater codings as exploratory observations with provenance; and, where feasible, a targeted reconciliation pass on the Alessandra × Brendan pair following the original project guidelines' prescribed method. Our view is that the framework reported here is scaffolding, not a substitute, for the reconciliation step the original guidelines foresaw.
+
+\subsection{Limitations}
+% TODO:
+% - the 40-trip sample; generalisation to other hallucinogens
+% - raters were not re-engaged for reconciliation; the LLM pipeline is a proxy
+% - the conservative consensus filter systematically under-represents the
+%   harder-to-code phenomenology (brief perceptual changes, embodied sensations,
+%   insight-imagery)
+% - no weighting by report length or by rater experience
+% - trip reports are self-selected voluntary disclosures from psychonaut archives;
+%   the corpus is not representative of the general population of hallucinogen users
+
+\subsection{Implications and future directions}
+% TODO:
+% - the coding instructions could be tightened at several specific points
+%   (Type-of-visual-alteration edge cases; scope-layer rules for delusional
+%   beliefs and ego-dissolution; somatic phenomena)
+% - a per-rater calibration exercise on a small shared-trip set before full
+%   coding begins would reduce D1 threshold-mismatch at its source
+% - the scene-ID framework supports natural-language-processing follow-on work
+%   (scene-level embeddings; cross-substance similarity searches)
+% - extend the framework to the remaining 10 hallucinogens in the corpus

@@ -1,0 +1,140 @@
+\section{Methods}
+\label{sec:methods}
+
+This section describes (i) the source corpus of trip reports, (ii) the original two-phase human coding procedure, and (iii) the post-hoc LLM-assisted consistency pipeline that converted the raw rater spreadsheets into a scene-identifier-based dataset suitable for quantitative analysis.
+
+\subsection{Corpus and coders}
+\label{sec:corpus}
+
+The corpus comprises 40 first-person trip reports of two hallucinogenic substances: 20 reports of psilocybin (\textit{Psilocybe} spp.) and 20 reports of brugmansia (\textit{Brugmansia} spp.). Each block of 20 reports was divided into two sub-blocks of 10 reports, and each sub-block was independently coded by two hypothesis-blind raters drawn from a pool of eight coders (Table~\ref{tab:pairs}). Raters were unaware of the study hypotheses, received identical written guidelines, and had no contact with one another during coding.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lll}
+\toprule
+Substance \& block & Coder A & Coder B \\
+\midrule
+Psilocybin 01--10 & Alessandra & Brendan \\
+Psilocybin 11--20 & Francesco & Susana \\
+Brugmansia 01--10 & Brendan & Noah \\
+Brugmansia 11--20 & Alessandra & Alessio \\
+\bottomrule
+\end{tabular}
+\caption{Coder-pair assignments across the four blocks.}
+\label{tab:pairs}
+\end{table}
+
+Trip reports were sourced from public psychonaut archives and de-identified. Each report carries a unique substance-specific identifier (e.g.\ \texttt{Psilocybe\_01}), an optional self-reported dose, and a narrative of variable length (349--5\,531 words; median $\approx$1\,500).
+
+\subsection{Coding system}
+\label{sec:taxonomy}
+
+Raters coded each report against a taxonomy of 147 items organised hierarchically into five high-level sections and 23 mid-level categories:
+
+\begin{itemize}[itemsep=2pt]
+\item \textbf{Perceptual changes}: type of visual alteration (illusion, incrusted object, detached object, full-blown immersive), visual/auditory/tactile/olfactory/gustatory/nonsensory hallucinations (each sub-classified by object class: human, artefact, animal, plant, inorganic entity, extraordinary entity), modal status (possible/probable, possible/improbable, impossible), dynamics (object constancy vs no object constancy).
+\item \textbf{Sensory changes}: sensory delight (visual, auditory, haptic, erotic), synaesthesia, enhanced mental imagery.
+\item \textbf{Cognitive and emotional changes}: sense of reality (lucid, delusional), amnesia, domain-specific violations (biological and psychological projection), emotion (positive, negative).
+\item \textbf{Bodily and autonomic changes}: arousal (abnormally high/low), out-of-body experience, own body distortion.
+\item \textbf{Existential changes}: insight (metaphysical, religious, practical, existential), ego dissolution (social, bodily, core self), sense of surprise and unexpectedness, sense of strangeness and enigma.
+\end{itemize}
+
+A subset of the taxonomy is \emph{scene-level} (hallucination modalities, alteration type, modal status, dynamics): each of these items is attached to a specific hallucinatory episode within the trip. The remainder is \emph{trip-level} (emotion, arousal, insight, ego dissolution, etc.): these items describe the trip as a whole. The ``Judgment of reality'' row, present in the original spreadsheet, was marked deprecated in the instructions and was not coded.
+
+\subsection{Original human coding procedure}
+\label{sec:human-coding}
+
+Raters followed the procedure specified in the project's written guidelines. In outline:
+
+\paragraph{Step 1: scene individuation.} The atomic unit of coding was the \emph{hallucinatory scene}, defined as a coherent episode in which the narrator perceives something that is not really present (a hallucination) or misperceives a real object's properties (an illusion). Per the guidelines, a scene is not defined by sentence or object boundaries: ``a scene can change a little and still remains the same scene''. Moving from a hallucinated room to a hallucinated palace with a king on a throne, by contrast, counts as a new scene. Raters parsed each report and enumerated its scenes.
+
+\paragraph{Step 2: attribute attachment.} For each scene, the rater attached every taxonomic item that was clearly instantiated. Object-class items were counted once per scene regardless of the number of instances (3\,000 hallucinated warriors in one scene are coded as ``Human $|$ Unknown person(s)'' with count 1). If a hallucination appeared in multiple modalities (e.g.\ a visual figure who also spoke), each modality was tagged independently.
+
+\paragraph{Step 3: trip-level items.} Items describing the trip as a whole (emotion, arousal, insight, ego dissolution, amnesia, domain-specific violations) were attached at trip level without scene attribution.
+
+\paragraph{Conservative rule.} The guidelines specified a conservative coding discipline: if it was not clear whether an item was instantiated in the text, raters were to treat it as not instantiated and leave the cell blank. This is described in the guidelines as ``Case 2'': if unclear, do not code; only code passages that are relatively explicit.
+
+Each rater recorded their codings in a spreadsheet with one row per taxonomy item and, for each item, an integer count of occurrences in column E and verbatim excerpts in subsequent columns.
+
+\subsection{Post-hoc LLM-assisted consistency pipeline}
+\label{sec:pipeline}
+
+The eight rater spreadsheets represent the same 40 trips coded twice each, but their row-by-row structure makes inter-rater disagreement difficult to decompose. A disagreement can arise from (i) the two raters individuating scenes differently, (ii) agreeing on a scene but attaching different taxonomy items to it, or (iii) simply quoting different lengths of the same passage as the exemplifying excerpt. The spreadsheet format conflates these sources of disagreement into a single per-item cell.
+
+To disentangle them we implemented a six-stage consistency pipeline in which a large language model (Claude Opus~4.6; \citealt{anthropic2024}) was used under human direction for the one step that intrinsically requires semantic judgement --- matching each rater's excerpts to a canonical set of scenes per trip --- while all other stages were deterministic and scripted. All pipeline outputs are stored in the \texttt{1.Recoding/} directory of the project repository; the canonical source spreadsheets and trip-report \texttt{.docx} files were never modified.
+
+\paragraph{Stage 1: taxonomy extraction.} The 147-item taxonomy was parsed from one representative rater spreadsheet (the most complete; \texttt{Psilocybe\_11-20\_Susana.xlsx}) and augmented with a hierarchical annotation (\texttt{item\_id}, \texttt{parent\_id}, \texttt{depth} $\in\{0,1,2\}$, \texttt{is\_leaf}, \texttt{has\_children}, and an \texttt{is\_scene\_level} flag). Identical taxonomies were verified across all eight rater sheets (zero structural differences). The result is \texttt{data/taxonomy.csv}.
+
+\paragraph{Stage 2: lossless raw extraction.} Each of the eight rater spreadsheets was parsed into a long-format CSV (\texttt{data/raw\_codings.csv}, $n=2\,395$ rows) with one row per (rater, trip, item, excerpt) tuple. Trip identifiers were normalised to the canonical form \texttt{Substance\_NN} (e.g.\ stripping stray hashes, whitespace, and the four blank trip-IDs in one spreadsheet were inferred by position). This CSV is a lossless mirror of the original rater data; no information is discarded.
+
+\paragraph{Stage 3: narrative extraction.} The four trip-report \texttt{.docx} files were parsed and split by the in-text \texttt{ID:} markers into 40 per-trip plain-text narratives, stored in \texttt{data/trips/}. Per-trip word counts and doses were extracted into a \texttt{trips\_index.csv} manifest.
+
+\paragraph{Stage 4: adjudication-worksheet generation.} For each trip, a markdown ``adjudication worksheet'' was auto-generated that displayed (a) the full trip narrative, (b) every scene-level excerpt recorded by rater A with its approximate character-span anchor in the narrative (computed via longest-common-substring and \texttt{rapidfuzz} partial-ratio fallback), and (c) the corresponding list for rater B. Excerpts attached by the same rater to multiple taxonomy items were deduplicated to a single row to make the raters' implied scene-list visible at a glance. The 40 worksheets live in \texttt{worksheets/}.
+
+\paragraph{Stage 5: per-trip scene adjudication.} This is the stage where semantic judgement is required and where automatic matching algorithms are unsuitable: two raters' excerpts must be compared against the underlying narrative to decide whether they refer to the same hallucinatory scene. We used Claude Opus~4.6 in a structured human-in-the-loop protocol, one trip at a time:
+
+\begin{enumerate}[itemsep=2pt]
+\item The worksheet, the source narrative, and the project's coding-instruction PDFs were provided as context.
+\item The model produced a YAML adjudication file per trip listing a canonical set of scenes, each with a stable scene identifier (see naming convention below), a short description, the character-span in the narrative, the worksheet-excerpt references contributed by each rater, and the taxonomic items each rater had attached.
+\item The human co-author (G.F.) read each YAML against the source narrative and the worksheet and reviewed the model's unification/splitting decisions, accepting or redirecting them. Redirections were fed back into the model to refine the convention and to retrofit already-adjudicated trips where a newly-recognised pattern applied.
+\end{enumerate}
+
+A formal naming convention encodes rater status directly in each scene's identifier, making inter-rater structure queryable from the data alone. Every canonical scene has an identifier of the form \texttt{\{trip\_id\}\_S\{NN\}[.k]\_\{STATUS\}[\_MOD]}:
+
+\begin{itemize}[itemsep=2pt]
+\item \textbf{Status suffix}: \texttt{\_AB} when both raters individuated the scene, \texttt{\_A} when only rater A individuated it, \texttt{\_B} when only rater B did.
+\item \textbf{Optional structural modifier}: \texttt{\_LUMPA} and \texttt{\_LUMPB} flag a parent scene where one rater lumped what the other split; corresponding child scenes carry a dotted index (\texttt{S08.1}, \texttt{S08.2}, \ldots) and the \texttt{\_SPLITB} / \texttt{\_SPLITA} modifier.
+\item A \texttt{parent\_scene\_id} column in the resulting \texttt{scenes.csv} links children back to their lump.
+\end{itemize}
+
+This convention makes three distinct inter-rater disagreement tiers separately filterable from the data:
+
+\begin{description}[itemsep=2pt]
+\item[Tier 1 (scene individuation):] Did both raters individuate this scene? Answered directly by the \texttt{\_AB}/\texttt{\_A}/\texttt{\_B} suffix.
+\item[Tier 2 (attribute classification):] Given that both raters individuated a scene (\texttt{\_AB}), did they attach the same taxonomy items to it?
+\item[Tier 0 (binned view, analytical only):] Did both raters see \emph{anything} in this narrative region, regardless of how they chunked it? Derived at analysis time by grouping scenes with overlapping character-spans into ``bins'' (see Stage~6). This view is computed on demand and does not modify the canonical dataset.
+\end{description}
+
+The naming convention was applied retroactively: when a new pattern was discovered during adjudication of a later trip, earlier adjudications were revisited to ensure consistent application across the full dataset. The conventions are documented in \texttt{RULES.md}, which functions as an iterative living specification.
+
+\paragraph{Stage 6: consolidation and derived tables.} A deterministic consolidation script ingests the 40 adjudication YAMLs and produces four canonical long-format CSVs plus two derived tables:
+
+\begin{itemize}[itemsep=2pt]
+\item \texttt{trips.csv} (40 rows): one row per trip with substance, block, coder pair, dose, word count.
+\item \texttt{scenes.csv} (305 rows): one row per canonical scene, with \texttt{scene\_id}, \texttt{rater\_status}, canonical span, per-rater excerpt references, and any lump/split metadata.
+\item \texttt{codes.csv} (1\,546 rows): one row per (scene or trip, rater, item) attachment, joined to taxonomy hierarchy.
+\item \texttt{agreement\_flags.csv} (754 rows, derived): for every shared scene, every taxonomy item that at least one rater attached is listed with \texttt{A\_coded}, \texttt{B\_coded} booleans and an \texttt{agreement} $\in \{\text{AGREE}, \text{A\_ONLY}, \text{B\_ONLY}\}$ flag.
+\item \texttt{rater\_style.csv} (80 rows, derived): per-trip, per-rater counts quantifying style asymmetries (scenes individuated, scene-codes attached, modal-status uses, incrusted/detached/illusion/immersive tag uses, codes-per-scene density).
+\item \texttt{analysis/scene\_bins.csv} and \texttt{analysis/bins\_summary.csv} (derived, non-canonical): the binning analytical view --- scenes with overlapping canonical spans grouped into bins, with a bin-level status (both / only\_A / only\_B) and flags for granularity-recovered agreement and chunking-split patterns. These files live in \texttt{analysis/} to signal that they are a view, not a mutation of \texttt{scenes.csv}.
+\end{itemize}
+
+\subsection{Conservative consensus filter}
+\label{sec:consensus-filter}
+
+Quantitative between-substance comparisons in this paper use a conservative consensus filter that operationalises the original guidelines' Case-2 rule at the dataset level. An observation is retained if and only if:
+
+\begin{enumerate}[itemsep=2pt]
+\item \texttt{scenes.rater\_status == \text{``both''}} (both raters individuated the scene), \textbf{and}
+\item \texttt{agreement\_flags.agreement == \text{``AGREE''}} (both raters attached the item to the scene).
+\end{enumerate}
+
+The justification is direct: an item coded by only one rater is, by construction, a Case-2 passage --- at least one of the two blind raters did not find the evidence clear enough to code. The guidelines instruct such passages to be treated as not instantiated. Applying this rule at the dataset level rather than per rater removes the need to arbitrate between any two raters' idiosyncratic thresholds and retains only what converged under independent application of the instructions.
+
+Crucially, the conservative filter is an analysis-time operation. The canonical \texttt{scenes.csv} and \texttt{codes.csv} retain every scene and every code with full provenance, and analyses at more liberal thresholds (e.g.\ treating single-rater codings as exploratory observations) can be re-run against the same dataset without any re-coding.
+
+\subsection{Diagnostic metrics}
+\label{sec:diagnostics}
+
+Inter-rater consistency is reported at two tiers:
+
+\begin{description}[itemsep=2pt]
+\item[Scene-individuation agreement] --- the proportion of canonical scenes whose \texttt{rater\_status} is ``both''.
+\item[Conditional classification agreement] --- given \texttt{rater\_status == \text{``both''}}, the proportion of \texttt{agreement\_flags} rows with \texttt{agreement == \text{AGREE}}, computed separately at taxonomy depth 0 (section), 1 (category), and 2 (leaf).
+\end{description}
+
+Rater-style asymmetries are summarised by per-coder tag-usage counts in \texttt{rater\_style.csv}, which flag cases where individual raters systematically over- or under-use particular taxonomic tags across all their trips.
+
+\subsection{Reproducibility and open data}
+\label{sec:reproducibility}
+
+The full consistency pipeline is available in the project repository under \texttt{1.Recoding/}. All stages are reproducible from the original rater spreadsheets and trip-report files: running \texttt{scripts/01\_extract\_taxonomy.py} through \texttt{scripts/07\_binning.py} in order regenerates every output file. The 40 per-trip adjudication YAMLs and their worksheets provide a full audit trail from each rater's original excerpt to its canonical scene assignment. A \texttt{RULES.md} document specifies the naming convention and the iterative rules under which new structural patterns are added. The original rater spreadsheets remain unchanged in their source directories (\texttt{Psilocybin\_source\_coding/} and \texttt{Brugmansia\_source\_coding/}).
