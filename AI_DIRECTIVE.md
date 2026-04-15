@@ -16,16 +16,51 @@ The atomic question: *for every narrative passage, did both raters individuate i
 
 The rater's **subjective judgement** about what counts as a hallucinatory scene is the **primary data**. Any analysis of agreement must be anchored in what the raters actually individuated, not in what we think they should have individuated. If the instructions to the raters left ambiguity, that ambiguity is part of the phenomenon under study — it is not a bug to be silently fixed.
 
+## What "individuating a scene" means
+
+Scene **individuation** is the atomic act of pointing to a passage in a trip report and asserting: *"a hallucinatory scene happened here."* It is the precursor to every other coding step. Before a rater can assign a modality, an object class, an illusion-vs-incrusted tag, a modal status, or a dynamics flag, they must first decide that there is a scene to tag at all.
+
+Individuation is therefore the **more objective** of the two coding steps:
+
+- **Individuation** (Stage 1, the current question) — *is this passage a hallucinatory scene, yes or no?* A dichotomous decision grounded in the PDF *Guidelines for individuating hallucinations in trip reports*.
+- **Classification** (Stage 2, deferred) — *given the scene exists, what kind of hallucination is it?* A multi-attribute taxonomic decision where rater subjective judgement dominates (illusion vs incrusted object vs detached vs immersive; animal vs artefact vs extraordinary entity; possible vs impossible; etc.).
+
+Individuation is not perfectly objective — two raters may draw the "scene vs not-scene" line differently — but the disagreement is of a **different kind** than classification disagreement. The subjective residue in individuation is exactly what Stage 1 measures; classification subjectivity is preserved in the data untouched and deferred to Stage 2.
+
 ## Core analytical question
 
 For every passage individuated by only ONE of the two raters (not both), determine whether the discrepancy is driven by:
 
-1. **A MISS** — the other rater overlooked a clearly hallucinatory passage that per the PDF Guidelines they *should* have coded. This is a rater-compliance gap.
-2. **AN AMBIGUITY** — the PDF rules do not cleanly cover this edge case, so both the individuation and the omission are defensible readings. This is an instruction-design gap.
+1. **A MISS** — the other rater overlooked a passage that, by their own demonstrated criterion (see next section), they should have individuated. This is a rater-compliance gap, resolvable by reconciliation.
+2. **AN AMBIGUITY** — the PDF rules do not cleanly cover this edge case, so both the individuation and the omission are defensible readings. This is an instruction-design gap, resolvable only by rewriting the Guidelines. AMBIGUITY splits into two flavours worth distinguishing in the write-up:
+   - **2a. Edge case under-specified** — the Guidelines need a clarifying rule that decides, one way or the other, whether passages of this type are hallucinatory scenes.
+   - **2b. Phenomenon outside the current category** — the passage may not belong under "hallucinatory scene" at all under any reasonable reading, but it is phenomenologically relevant (a sensation, a mood shift, an autobiographical memory without imagery, a somatic intensification, etc.) and the taxonomy would need an additional non-hallucinatory-scene category to handle it properly.
 
-Generalising from what both raters agreed on gives the consistent core of the dataset. Understanding *why* they disagreed — miss vs ambiguity — tells us whether the remaining disagreement is a rater-compliance problem (fixable by reconciliation) or an instruction-design problem (needs disambiguation for any future coding project).
+Generalising from what both raters agreed on gives the consistent core of the dataset. Classifying the drivers of disagreement as MISS vs AMBIGUITY tells us whether the remaining inconsistency is a rater-compliance problem (fixable by reconciliation) or an instruction-design problem (fixable only by clarifying or extending the Guidelines).
 
 This is the **ultimate and only** overarching question of the current pipeline stage. All infrastructure (scene-ID taxonomy, driver suffixes, annotated trip-report pages, visualizations) exists in service of it.
+
+## How to judge MISS vs AMBIGUITY — use the shared scenes as the reference
+
+The "truth" against which a solo scene is judged is **not** the PDF Guidelines read in isolation and applied from scratch. It is each rater's *demonstrated* application of the PDF Guidelines on the scenes both raters individuated. The shared (`_AB`) scenes are where the two raters converged; they reveal the **operational criterion** each rater was actually using when they coded this corpus.
+
+### Procedure
+
+1. **Establish each rater's observed criterion from the `_AB` scenes of the same trip (and the same coder pair).** These are the scenes both raters agreed were hallucinatory. They are the empirical expression of "scene" as these two raters, in this coding effort, actually used the term.
+2. **Read the solo scene in context.** Look at the narrative passage, the rater's canonical excerpt, and the rationale recorded in `stage1_rationale`.
+3. **Apply the observed criterion.**
+   - If the solo passage clearly matches the kinds of passages both raters individuated on the shared scenes — same kind of content, same level of specificity, same degree of perceptual concreteness — and one rater simply did not annotate it, the verdict is **MISS** (rater-compliance gap; the omitting rater overlooked it by their own standard).
+   - If the solo passage sits at a kind of content the shared scenes do *not* establish a clear rule for — ambient perceptual amplification with no object, thought/memory/metaphor content, somatic self-transformation, a fragment of a holistic scene — the two raters are not disagreeing because one missed something; they are disagreeing because the Guidelines do not settle the case. Verdict is **AMBIGUITY**.
+4. **If AMBIGUITY, decide which flavour.** Is this a passage that *should* be a hallucinatory scene once the Guidelines clarify the edge case (flavour 2a)? Or is it a phenomenon the coding taxonomy is missing a category for, and would be better handled by a new non-hallucinatory-scene classification (flavour 2b)?
+
+### Why the shared scenes, not the PDF in the abstract
+
+The PDF is not self-interpreting. Two competent raters reading the same PDF can land at different operational criteria; that is precisely how inter-rater disagreement arises. Using each rater's `_AB` scenes as the reference grounds the judgement in *what they actually did*, not in a theoretical ideal. A MISS verdict therefore means "by the criterion this rater used elsewhere in this trip, they should have individuated this too" — a much more defensible claim than "by my reading of the PDF, they should have."
+
+Practically, the driver suffix system is the first-pass expression of this procedure:
+
+- `_FRAG`, `_AMP`, `_AMB`, `_SOMA` correspond to content types where the Guidelines are systematically under-specified — these are strong AMBIGUITY candidates (usually flavour 2a or 2b).
+- `_RCL` corresponds to scenes with no automatic rule fit — these are the ones a human needs to read against the trip's `_AB` scenes and verdict individually (likely MISS, possibly AMBIGUITY).
 
 ## What is explicitly OUT OF SCOPE at this stage
 
