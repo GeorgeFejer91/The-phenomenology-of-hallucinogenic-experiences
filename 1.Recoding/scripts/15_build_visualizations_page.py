@@ -548,21 +548,23 @@ def main():
       });
     }
 
-    // Chart 6: Stage-1 MISS vs AMBIGUITY verdicts — the primary analytical output
+    // Chart 6: Stage-1 three-class verdicts — the primary analytical output
     function renderVerdicts() {
       const verdicts = DATA.verdicts || [];
       if (!verdicts.length) return;
       const groupBy = document.getElementById('d6-groupby').value; // substance | driver | pair
       const showMode = document.getElementById('d6-showmode').value; // absolute | proportion
 
-      const VERDICT_KEYS = ['MISS', 'AMBIGUITY-2a', 'AMBIGUITY-2b'];
+      const VERDICT_KEYS = ['MISS', 'GRANULARITY', 'AMBIGUITY-2a', 'AMBIGUITY-2b'];
       const VERDICT_COLOURS = {
-        'MISS':         '#b91c1c',  // red — rater-compliance gap
-        'AMBIGUITY-2a': '#d97706',  // amber — clarify existing rule
+        'MISS':         '#b91c1c',  // red    — rater-compliance gap
+        'GRANULARITY':  '#1565c0',  // blue   — lump-vs-split, data-layer fix
+        'AMBIGUITY-2a': '#d97706',  // amber  — clarify existing rule
         'AMBIGUITY-2b': '#6b21a8',  // purple — new category needed
       };
       const VERDICT_LABEL = {
         'MISS':         'MISS — rater overlooked by own criterion',
+        'GRANULARITY':  'GRANULARITY — lump-vs-split, pooled under parent',
         'AMBIGUITY-2a': 'AMBIGUITY 2a — clarify existing rule',
         'AMBIGUITY-2b': 'AMBIGUITY 2b — new non-scene category needed',
       };
@@ -772,14 +774,21 @@ def main():
 
         # --- Chart 6: Stage-1 verdicts (THE primary analytical output) ---
         '<section class="card" id="verdicts">',
-        '<h2>Stage-1 verdicts — MISS vs AMBIGUITY (the primary analytical output)</h2>',
-        '<p class="desc">For every solo (only-one-rater) scene, the Stage-1 question asks: '
-        'is the discrepancy a <strong>MISS</strong> (the other rater overlooked a passage that, '
+        '<h2>Stage-1 verdicts — three classes of solo-scene discrepancy (the primary analytical output)</h2>',
+        '<p class="desc">For every solo (only-one-rater) scene, the Stage-1 question asks which of '
+        '<strong>three</strong> classes the discrepancy belongs to. '
+        '<strong style="color:#b91c1c">MISS</strong> — the other rater overlooked a passage that, '
         'by their own observed criterion on shared _AB scenes in the same trip, they should have '
-        'individuated) or an <strong>AMBIGUITY</strong> (the Guidelines do not cleanly cover this '
-        'edge case)? AMBIGUITY splits into <strong>2a</strong> (edge-case under-specified — clarify '
-        'the rule) and <strong>2b</strong> (the passage is phenomenologically real but falls outside '
-        'the hallucinatory-scene category; a new taxonomy category is needed).</p>',
+        'individuated (fix: rater reconciliation). '
+        '<strong style="color:#1565c0">GRANULARITY</strong> — raters agree something happened in '
+        'this region but one lumped while the other split it; the larger-scope scene is taken as '
+        'the canonical parent and fragments point to it via <code>parent_scene_id</code>, ready '
+        'for downstream pooled-attribute analysis (fix: data-coding rule, done). '
+        '<strong style="color:#d97706">AMBIGUITY 2a</strong> — edge case the Guidelines under-specify, '
+        'needing a clarifying rule. '
+        '<strong style="color:#6b21a8">AMBIGUITY 2b</strong> — phenomenologically real but outside '
+        'the hallucinatory-scene category; the taxonomy needs a new non-scene category. '
+        'AMBIGUITY is flagged here and deferred to a future instrument-redesign step.</p>',
         '<div class="filters">',
         '<label>Group by <select id="d6-groupby">'
         '<option value="substance" selected>substance</option>'
@@ -792,9 +801,10 @@ def main():
         '</select></label>',
         '</div>',
         '<div class="chart-holder tall"><canvas id="chart-verdicts"></canvas></div>',
-        '<p class="note">Verdicts for structural driver categories (_FRAG, _AMP, _AMB, _SOMA) '
-        'are assigned automatically by the directive: FRAG/AMP → 2a (under-specified granularity / '
-        'amplification rules); AMB/SOMA → 2b (thought-memory-metaphor and somatic content are '
+        '<p class="note">Verdicts for structural driver categories are assigned automatically: '
+        '_FRAG → GRANULARITY (parent recorded in scenes.csv; fragment pools under its _AB parent); '
+        '_AMP → AMBIGUITY 2a (ambient amplification rule under-specified); '
+        '_AMB / _SOMA → AMBIGUITY 2b (thought-memory-metaphor and somatic self-transformation are '
         'phenomena the hallucinatory-scene category does not cover). _RCL verdicts are hand-adjudicated '
         'against each trip\'s own _AB reference scenes.</p>',
         '</section>',
