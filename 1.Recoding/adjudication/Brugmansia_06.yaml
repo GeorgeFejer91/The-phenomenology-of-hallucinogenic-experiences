@@ -1,0 +1,129 @@
+trip_id: Brugmansia_06
+substance: brugmansia
+block: "01-10"
+coder_A: Brendan
+coder_B: Noah
+dose_raw: "20 seeds"
+word_count: 759
+
+scenes:
+  - scene_id: Brugmansia_06_S01
+    status: only_A
+    canonical_desc: "Lights start to appear brighter"
+    canonical_span_start: 527
+    canonical_span_end: 570
+    rater_A:
+      worksheet_refs: [A01]
+      items:
+        - type_of_visual_alteration_illusion
+    rater_B: null
+    rationale: "A codes the brightening lights as illusion; B does not."
+
+  - scene_id: Brugmansia_06_S02
+    status: both
+    canonical_desc: "Depth perception gone; eyes cannot focus; retinas hurt despite sunglasses"
+    canonical_span_start: 1374
+    canonical_span_end: 1480
+    rater_A:
+      worksheet_refs: [A02]
+      items:
+        - type_of_visual_alteration_illusion
+    rater_B:
+      worksheet_refs: [B01]
+      items:
+        - type_of_visual_alteration_illusion
+    rationale: "Same passage. Full agreement on illusion."
+
+  - scene_id: Brugmansia_06_S03
+    status: only_B
+    canonical_desc: "Everything touched feels strangely new (tactile)"
+    canonical_span_start: 1542
+    canonical_span_end: 1600
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B02]
+      items:
+        - tactile_hallucination_other
+        - sense_of_surprise_and_unexpectedness
+    rationale: "B codes a tactile-novelty sensation; A did not. NB: worksheet fuzzy-match score was only 50 — the exact excerpt may have been a paraphrase."
+
+  - scene_id: Brugmansia_06_S04
+    status: only_A
+    canonical_desc: "Water bottle disappears as it gets to his mouth"
+    canonical_span_start: 1641
+    canonical_span_end: 1770
+    rater_A:
+      worksheet_refs: [A03]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_artefact_other
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rater_B: null
+    rationale: "A codes vanishing bottle as incrusted hallucination; B does not."
+
+  - scene_id: Brugmansia_06_S05
+    status: only_A
+    canonical_desc: "Friends S and T appear, have conversation; then vanish along with cigarette"
+    canonical_span_start: 1772
+    canonical_span_end: 2130
+    rater_A:
+      worksheet_refs: [A04, A05]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_relatives_acquaintances
+        - visual_hallucination_artefact_other
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rater_B: null
+    rationale: "A codes across two excerpts (friends appearing + friends vanishing with cigarette) as incrusted hallucinations of acquaintances and artefacts; B does not individuate this rich scene."
+
+  - scene_id: Brugmansia_06_S06
+    status: only_B
+    canonical_desc: "Play structure parts flipping him off / smiling / shadow is a cloud dragon"
+    canonical_span_start: 2178
+    canonical_span_end: 2440
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B03]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+    rationale: "B codes this play-structure-anthropomorphisation passage as incrusted. A codes the same passage at trip-level as 'biological projection' (see trip-level a02, a04) not as a scene."
+
+  - scene_id: Brugmansia_06_S07
+    status: only_B
+    canonical_desc: "Post-trip inability to read rest of the night"
+    canonical_span_start: 3816
+    canonical_span_end: 3920
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B04]
+      items:
+        - type_of_visual_alteration_illusion
+    rationale: "B codes the reading impairment as a visual illusion. As with Brugmansia_02 S06, this is borderline — a perceptual/executive deficit rather than added content."
+
+trip_level_codes:
+  rater_A:
+    - item: out_of_body_experience
+      excerpt_refs: [a01]
+      excerpt: "slight dissociation I remember from lower doses"
+    - item: domain_specific_violation_biological_projection
+      excerpt_refs: [a02, a04]
+      excerpt: "play structure flipping me off, smiling; inanimate objects giving me the finger"
+    - item: amnesia
+      excerpt_refs: [a03]
+      excerpt: "only had bits and pieces of memory"
+  rater_B:
+    - item: amnesia
+      excerpt_refs: [b01, b02]
+      excerpt: "only had bits and pieces of memory; forget what I was looking for"
+
+summary:
+  total_canonical_scenes: 7
+  both: 1
+  only_A: 3
+  only_B: 3
+  scene_individuation_jaccard: 0.143
+  classification_notes:
+    - "Very low scene-level agreement. The two raters individuated almost entirely different scenes despite a rich narrative."
+    - "A picked up the elaborate vanishing-friends-and-cigarette episode (clear incrusted hallucinations); B missed it."
+    - "B picked up the play-structure-anthropomorphisation as a scene; A instead logged it at trip-level as domain-specific violation. This is the same passage, but attached at different data layers — a semantic disagreement about whether anthropomorphised-object perceptions are scene-level or trip-level."
+    - "On the one shared scene (S02 depth perception), full classification agreement."

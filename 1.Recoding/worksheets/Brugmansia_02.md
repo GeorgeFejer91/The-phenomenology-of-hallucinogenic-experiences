@@ -1,0 +1,57 @@
+# Adjudication worksheet — Brugmansia_02
+
+- substance: **brugmansia**  block: **01-10**
+- coder_A: **Brendan**  coder_B: **Noah**
+- dose_raw: ``   word_count: **948**
+
+## Narrative
+
+```
+My friend and I and our two girlfriends decided to try Angel Trumpet after learning that my friend had an enormous angel trumpet tree in his backyard, and that it apparently could have hallucinogenic property’s. We boiled 5 pink flowers in about two gallons of water with tea leaves. We also took the green base leaves of the flowers and some of the stems and microwaved them to dry them out. We decided to go to the beach. We smoked about 2.0 grams of the microwaved plant before we left, I remember it making me see strange colors for a moment but nothing else. Afterwords, my friend immediately starting drinking tea. He probably ingested about 1000ml of tea before we arrived. Our girlfriends each probably drank about 350-500ml. I waited till we arrived before I ingested about 500ml of the tea. 
+
+Suddenly, I felt strange. Like everything was supposed to be normal, but I was somehow in the wrong place. I started to walk down the beach a little bit, and without warning, the entire right side of my body shut off. My arm, leg, even my eye suddenly went limp, sending me crashing to the sand. I stood up very confused, having know idea why I'd just fallen. As I continued walking this phenomena happened again and again, each time sending me to the sand. At this point I decided I should round everyone up and get the hell out of there before someone noticed our strange behavior.
+
+Meanwhile, my friends girlfriend whom we had lost about half an hour earlier, returns, and plops down next to my girlfriend, both of which our in deep conversations with absolutely no one at all.
+
+Now I've got the two ladies, but my friend is gone again. As I'm looking around, I see him up the beach hiding behind tall grass. When I approached him, he was crouching down, eating a long blade of grass with one hand, smoking a cigarette that wasn't there with the other, with fire-ants all over his feet. When I asked him what the fuck he was doing, he looked at me but didn't respond. I started to walk him back down to the water to wash the fire-ants off his feet. Unfortunately, neither one of us could walk properly, and we kept falling down. Once I finally got the three of them collected with our stuff, got my girlfriend up and we went to go pull the car around. When I got to the car, the police arrived.
+
+By now I was tripping hard. I was really confused as to why the cop wanted to talk to me. I was talking to another friend who was with me, but he wasn't really there. Me, my girlfriend, and my friends girlfriend were arrested. The girls were taken to the hospital to be observed for a while, and several hours later, were taken to jail. I was taken directly to jail. While in the back of the police car they picked up another inmate to take to the jail. We laughed and joked about how stupid the cop driving was and how horrible his driving skills were. Shortly before we arrived at the jail, I was distracted, when I looked over, the inmate that had now become my friend was gone. He was never there in the first place. The officer driving kept a constant crazy eyed look on me the rest of the trip. 
+
+One thing I had not read about when it came to this drug was the power. It was like really warm blood pumping through your veins, up to your brain, down to your feet, and back again. It wasn't like anything felt lighter, or I felt stronger. It just felt like, if I applied the force for long enough, whatever I was trying to force, got forced. The police could not figure out what I was on, and although I was acting extremely weird, I wasn't being violent or angry. But I wouldn't stand still, every chance I got I wandered away. This happened three times somehow. They finally hand-cuffed me to a chain-link fence that was protecting the glass of one of the police station rooms. I decided I didn't want to be there anymore, and started to leave again. Realizing I was handcuffed to something this time, I decided I would need to take the wall with me. I slowly began to walk forward, pulling harder and harder on the fence, as I stepped forward the fence began to bend. I felt the force of the fence pulling on me, but I just kept the same slow pace walking forward. It didn't feel like the forced holding was increasing... just that it was constant, and it just wasn't enough to keep me from continueing my slow walk. Then, snap. The brackets on the edge of the fence buckled and broke. I ripped the side of the fence off the glass. It didn't even feel like it took any effort This made a lot of noise and quickly attracted police attention. I was subdued, and taken to a cell. The rest of the night people kept coming to visit me at my cell that weren't there. Every once in a while an officer would check on me and try to get me to tell them what I was on. To which I kept replying, “Weed man. Just weed.” When I was finally bailed out I couldn't read anything. I could see the letters, but just couldn’t get them to form words. It took another day to sober up completely. The after effects were mostly related to being unable to read.
+```
+
+## Coder A (Brendan) — scene-level (3 distinct excerpts)
+
+- **A01** @2392 sc=100
+  - items: Modal status of the hallucination | Possible and probable event; Type of visual alteration | Hallucination of an incrusted object; Visual hallucination | Human | Relative(s), acquaintance(s)
+  - excerpt: "I was talking to another friend who was with me, but he wasn't really there."
+- **A02** @2669 sc=100
+  - items: Modal status of the hallucination | Possible and probable event; Type of visual alteration | Hallucination of an incrusted object; Visual hallucination | Human | Unknown person(s)
+  - excerpt: 'While in the back of the police car they picked up another inmate to take to the jail. We laughed and joked about how stupid the cop driving was and how horrible his driving skills were. Shortly before we arrived at the jail, I was distracted, when I looked over, the inmate that had now become my friend was gone. He was never there in the first place'
+- **A03** @4587 sc=100
+  - items: Modal status of the hallucination | Possible and probable event; Type of visual alteration | Hallucination of an incrusted object; Visual hallucination | Human | Other(s)
+  - excerpt: "The rest of the night people kept coming to visit me at my cell that weren't there"
+
+## Coder B (Noah) — scene-level (3 distinct excerpts)
+
+- **B01** @490 sc=100
+  - items: Type of visual alteration | Illusion
+  - excerpt: 'I remember it making me see strange colors for a moment but nothing else'
+- **B02** @829 sc=100
+  - items: Modal status of the hallucination | Impossible event
+  - excerpt: 'Like everything was supposed to be normal, but I was somehow in the wrong place'
+- **B03** @4817 sc=100
+  - items: Type of visual alteration | Illusion
+  - excerpt: "When I was finally bailed out I couldn't read anything. I could see the letters, but just couldn’t get them to form words. It took another day to sober up completely. The after effects were mostly related to being unable to read"
+
+## Coder A (Brendan) — trip-level (1 distinct excerpts)
+
+- **a01** @803 sc=100
+  - items: Sense of strangeness and enigma
+  - excerpt: 'Suddenly, I felt strange. Like everything was supposed to be normal, but I was somehow in the wrong place'
+
+## Coder B (Noah) — trip-level (1 distinct excerpts)
+
+- **b01** @1761 sc=100
+  - items: Sense of reality | Delusional
+  - excerpt: "eating a long blade of grass with one hand, smoking a cigarette that wasn't there with the other"

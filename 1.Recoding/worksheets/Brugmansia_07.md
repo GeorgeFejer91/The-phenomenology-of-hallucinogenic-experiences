@@ -1,0 +1,75 @@
+# Adjudication worksheet — Brugmansia_07
+
+- substance: **brugmansia**  block: **01-10**
+- coder_A: **Brendan**  coder_B: **Noah**
+- dose_raw: ``   word_count: **294**
+
+## Narrative
+
+```
+6:00 pm 
+Got 15 seeds out of the bag of seeds. Chewed up seeds and ate them. 
+
+7:10 pm 
+I started getting really dizzy, and had slight confusion. I was pretty shaky, and felt really numb. 
+
+8:00pm 
+Not much has happened. Feeling like this isn't going to work. 
+
+A few minutes later, I got the WORST cotton mouth I have ever had.I already had some bottles of water in my room, and downed 3 of them in just a couple of minutes. 
+
+8:30 pm 
+I'm starting to see flashes of light. I saw tons of sparkles in my vision. Not having any real hallucinations. 
+
+11:00 pm 
+So, it's been 5 hours and I haven't hallucinated at all. Going to bed. 
+
+12:30 am 
+Woke up feeling really dizzy, and I couldn't feel my hands. 
+Went and got the last 10 seeds, and ate them. 
+
+2:00 am 
+Can't focus on anything. Spacing out pretty bad. Everything's kind of turning to what looks like jello? The colors of everything fascinated me. Anything I touched, the feel of it seemed so new to me. 
+
+3:00 am 
+I've been seeing this giant spider run around in circles in my livingroom. Everytime I get near it, it hisses at me. It's started to freak me out. 
+
+4:00 am 
+Decided to go to bed, since in other reports that I have read say that it can last for days. 
+
+8:00 am 
+Woke up, hands are still pretty numb. Not feeling anything weird, though. Nothing abnormal with my vision. Walking was the easiest thing in the world. It was clear that it didn't last as long as I thought. 
+
+I'm pretty sure next time, i'm either going to buy a larger amount of seeds, or keep searching for them around my town.
+```
+
+## Coder A (Brendan) — scene-level (3 distinct excerpts)
+
+- **A01** @437 sc=100
+  - items: Type of visual alteration | Illusion
+  - excerpt: "I'm starting to see flashes of light. I saw tons of sparkles in my vision"
+- **A02** @810 sc=100
+  - items: Type of visual alteration | Illusion
+  - excerpt: "Everything's kind of turning to what looks like jello?"
+- **A03** @972 sc=100
+  - items: Modal status of the hallucination | Impossible event; Type of visual alteration | Hallucination of an incrusted object; Visual hallucination | Animal | Insect
+  - excerpt: "I've been seeing this giant spider run around in circles in my livingroom. Everytime I get near it, it hisses at me. It's started to freak me out"
+
+## Coder B (Noah) — scene-level (2 distinct excerpts)
+
+- **B01** @437 sc=100
+  - items: Type of visual alteration | Illusion
+  - excerpt: "I'm starting to see flashes of light. I saw tons of sparkles in my vision. Not having any real hallucinations."
+- **B02** @972 sc=100
+  - items: Auditory hallucination | Animal | Insect; Type of visual alteration | Hallucination of an incrusted object; Visual hallucination | Animal | Insect
+  - excerpt: "I've been seeing this giant spider run around in circles in my livingroom. Everytime I get near it, it hisses at me. It's started to freak me out."
+
+## Coder A (Brendan) — trip-level (1 distinct excerpts)
+
+- **a01** @865 sc=100
+  - items: Sense of surprise and unexpectedness
+  - excerpt: 'The colors of everything fascinated me. Anything I touched, the feel of it seemed so new to me.'
+
+## Coder B (Noah) — trip-level (0 distinct excerpts)
+
+_none_

@@ -1,0 +1,151 @@
+trip_id: Brugmansia_11
+substance: brugmansia
+block: "11-20"
+coder_A: Alessandra
+coder_B: Alessio
+dose_raw: "1.5 cups of concentrated decoction"
+word_count: 779
+
+# Note on scene individuation for this trip:
+# The narrative describes a single continuous near-death experience (NDE).
+# Both raters broke it into sub-passages focused on different attributes.
+# I treat the NDE as 4 canonical scenes corresponding to the 4 phase
+# transitions the narrator himself marks: (1) pre-corridor life-flash,
+# (2) the corridor and dragging force, (3) the T-junction with dark/light
+# contrast, (4) the wind-force arrival and return to consciousness.
+
+scenes:
+  - scene_id: Brugmansia_11_S01
+    status: both
+    canonical_desc: "Life flashes before eyes; sees friends and relatives waving goodbye, crying, grieving"
+    canonical_span_start: 520
+    canonical_span_end: 720
+    rater_A:
+      worksheet_refs: [A01, A02, A03]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_human_relatives_acquaintances
+        - auditory_hallucination_human_relatives_acquaintances
+        - modal_status_of_the_hallucination_impossible_event
+        - dynamics_of_the_hallucination_object_constancy
+    rater_B:
+      worksheet_refs: [B01, B02]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_human_relatives_acquaintances
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Same opening-scene. Both code full-blown immersive + acquaintance + impossible. A additionally captures the auditory component (crying) and object-constancy — both valid; B missed them."
+
+  - scene_id: Brugmansia_11_S02
+    status: both
+    canonical_desc: "Being dragged down a corridor by a force; then free-floating / moving fast"
+    canonical_span_start: 641
+    canonical_span_end: 1300
+    rater_A:
+      worksheet_refs: [A04, A05, A06]
+      items:
+        - visual_hallucination_artefact_city_building_furniture
+        - nonsensory_hallucination_extraordinary_entity
+        - visual_hallucination_inorganic_entity_other
+    rater_B:
+      worksheet_refs: [B03, B04]
+      items:
+        - tactile_hallucination_extraordinary_entity
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Same corridor + dragging-force + free-floating scene. MAJOR classification disagreement on the force: A codes it as NONSENSORY hallucination of extraordinary entity; B codes it as TACTILE hallucination of extraordinary entity. The narrative text 'dragging me down' supports tactile (B). A also codes the corridor itself as a visual-artefact and the movement-feeling as visual-inorganic; B instead captures the overall immersive quality."
+
+  - scene_id: Brugmansia_11_S03
+    status: both
+    canonical_desc: "T-Junction with dark evil left / light divine right; feelings contrast radically between sides"
+    canonical_span_start: 1559
+    canonical_span_end: 2800
+    rater_A:
+      worksheet_refs: [A07, A08, A09, A10, A11]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_geometrical_pattern
+        - visual_hallucination_inorganic_entity_other
+        - visual_hallucination_artefact_city_building_furniture
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B05]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - dynamics_of_the_hallucination_object_constancy
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rationale: "Same T-Junction scene. Both code full-blown immersive. Disagreement on modal status: A=impossible, B=possible-but-improbable (reasonable disagreement for an NDE). A additionally codes T-junction as 'geometrical pattern' (literal but arguably over-literal — T is a shape), and codes darkness/light/tunnel as inorganic-entity and artefact sub-objects. B treats it holistically."
+
+  - scene_id: Brugmansia_11_S04
+    status: both
+    canonical_desc: "Great wind-force approaches with sound, arrives, hits him, sent back to consciousness"
+    canonical_span_start: 3030
+    canonical_span_end: 3900
+    rater_A:
+      worksheet_refs: [A12, A13, A14]
+      items:
+        - auditory_hallucination_inorganic_entity_other
+        - visual_hallucination_inorganic_entity_other
+        - tactile_hallucination_inorganic_entity
+    rater_B:
+      worksheet_refs: [B06, B07]
+      items:
+        - auditory_hallucination_inorganic_entity_other
+        - visual_hallucination_inorganic_entity_other
+    rationale: "Same wind-force scene. Both code auditory + visual inorganic. A additionally captures the tactile modality (wind 'hitting' him) which B missed."
+
+trip_level_codes:
+  rater_A:
+    - item: sense_of_reality_delusional
+      excerpt_refs: [a01, a14]
+      excerpt: "came to the grim realization that I was dead; wind sent me flying back, returned to consciousness"
+    - item: domain_specific_violation_biological_projection
+      excerpt_refs: [a02, a08]
+      excerpt: "force of death; great wind force approach"
+    - item: domain_specific_violation_psychological_projection
+      excerpt_refs: [a02, a05, a07, a09, a13]
+      excerpt: "force of death; terrifying feeling eminating; suppressing; awe struck; love that God had for me"
+    - item: emotion_negative_emotion
+      excerpt_refs: [a03, a06]
+      excerpt: "feeling of terror; horrible, terrifying feeling"
+    - item: emotion_positive_emotion
+      excerpt_refs: [a03, a10, a11]
+      excerpt: "strange sense of peace; awe struck; complete peace, comfort and security"
+    - item: dynamics_of_the_hallucination_object_constancy
+      excerpt_refs: [a04]
+      excerpt: "approached T-Junction; contrasts persisted"
+    - item: arousal_abnormally_high
+      excerpt_refs: [a12]
+      excerpt: "state of euphoric joy"
+  rater_B:
+    - item: emotion_negative_emotion
+      excerpt_refs: [b01, b03, b05]
+      excerpt: "terrifying things; grim realization dead; horrible terrifying feeling"
+    - item: emotion_positive_emotion
+      excerpt_refs: [b04, b06, b08, b09]
+      excerpt: "strange sense of peace; complete peace and joy; complete peace comfort security; euphoric joy"
+    - item: sense_of_strangeness_and_enigma
+      excerpt_refs: [b04]
+      excerpt: "a strange sense of peace"
+    - item: sense_of_surprise_and_unexpectedness
+      excerpt_refs: [b07]
+      excerpt: "completely awe struck"
+    - item: insight_metaphysical
+      excerpt_refs: [b02]
+      excerpt: "which was obviously the force of death"
+    - item: insight_religious
+      excerpt_refs: [b10]
+      excerpt: "love that God had for me"
+
+summary:
+  total_canonical_scenes: 4
+  both: 4
+  only_A: 0
+  only_B: 0
+  scene_individuation_jaccard: 1.0
+  classification_notes:
+    - "Perfect scene-level individuation — both raters see the same 4 NDE phases."
+    - "Alessandra codes 14 scene-level excerpts, Alessio only 7: A fragments each scene into many object-level sub-entries (corridor as artefact, darkness as inorganic-entity, tunnel as artefact) while B codes the scene holistically. This is the dominant pattern for this coder pair."
+    - "S02 has a genuine and important semantic disagreement: is the 'force dragging me' a nonsensory (A) or tactile (B) hallucination? Narrative evidence leans tactile."
+    - "Disagreement on modal status for S03: A=impossible, B=possible-but-improbable. Both are defensible readings."
+    - "Trip-level: B codes Insight (metaphysical, religious) which A does not; A codes domain-specific projections which B does not. Complementary rather than conflicting captures of the same passages."

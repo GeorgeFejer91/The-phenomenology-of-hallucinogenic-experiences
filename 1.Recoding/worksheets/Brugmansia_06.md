@@ -1,0 +1,82 @@
+# Adjudication worksheet — Brugmansia_06
+
+- substance: **brugmansia**  block: **01-10**
+- coder_A: **Brendan**  coder_B: **Noah**
+- dose_raw: ``   word_count: **759**
+
+## Narrative
+
+```
+So it’s Saturday morning, and I have 20 seeds of Brugmansia sanguinea I picked myself in a satchel. I also have my I-pod, 2 bottles of Gatorade, a bottle of water, an herbal smoking blend and a lighter. At the moment, I’m trying to find a sitter, but am rather determined to take the seeds that day. I am unable to find a sitter, and pop the 20 seeds, and wash them down with water. 
+
+T+00:00 (approx. 12:10pm): The large, brown seeds go down easily, with little taste even when chewed. I sit and wait a few minutes. 
+T+00:10: Lights are starting to get brighter, and I feel that slight dissociation I remember from lower doses. I then get a call from a friend, saying she’s found a sitter for me, a girl named A. I begin riding my bike to A’s house, and notice my riding is slightly off-balance, but not too bad. 
+T+00:20: I get to A’s, and she asks me what I took and if I could handle myself around her mom. I realize there is no way in hell I could act normal, so I leave about 10 minutes after getting there. I ride my bike to a park nearby, and get a call from the friend who called earlier, and tell her I think I’ll be ok. I sit and wait for it to hit. 
+
+T+01:00: I realize it’s hitting me hard, and so I stumble to my bike and ride shakily towards a park with play structures shaped a like a pirate ship. I sit on a bench there, and this is where things get weird. My depth perception is gone, my eyes cannot focus, my retinas hurt, despite the sunglasses I’m wearing. I feel glued to the bench and literally cannot lift my hand to grab my water bottle. I feel I need to quench the murderous thirst that is slowly getting stronger. After about 20 minutes of looking at the bottle, I reach out and grab it, only for it to disappear as soon as it gets to my mouth. I look to my left and see my friend S sitting right next to me. I don’t remember him being here, but I think he has. He, me and my friend T begin a full on conversation, talking about how needless all the drama in our lives is, while sharing a pack of Marlboro reds. I take a long drag, close my eyes and hold it in, enjoying the moment. But when I open my eyes, S and T are gone, as well as my cigarette. I look around the park in front of me, and for a split second, it looks like part of the play structure is flipping me off, another part is smiling at me, and a shadow on the ground is a cloud dragon. From there on I only had bits and pieces of memory, fragments of what happened coming back to me slowly. 
+
+T+02:00-05:00: Memories: 
+-Knocking on 10 different doors, trying to find my friend A, and all the house owners telling me they don’t know who she is. I return to several houses, and ask for a few of their phone numbers, and when asked why I need to know, I giggle and lurch away. 
+-Going to a park table, seeing a water bottle in front of me, forgetting I had water in my backpack, and chugging it. Soon after, a lady comes up to me yelling “That’s not your water!” 
+-Sometime in the delirium, I leave my bike somewhere, as well as my backpack and satchel. (I found all the next day, but the backpack and satchel had been looted of all valuables, including my I-pod and $130 earphones.) 
+-Relatively soon before I decided to head home, I realized my backpack and satchel, and bike were missing, and went to look for them. Though, whenever I went to look for them, I’d forget what I was looking for, head home, get almost there, and then go look for them again. 
+-Several more times throughout the day, I see inanimate objects giving me the finger. Rather humorous, if you ask me. 
+T+05:00 onward: When I get home, my parents quickly notice my condition, send me to my room, and since there were house keys in my backpack and satchel, they change the locks on the entire house. I am lucky to be alive, but thoroughly embarrassed. I cannot read the rest of the night, but by the next day, I am completely back to normal.
+```
+
+## Coder A (Brendan) — scene-level (5 distinct excerpts)
+
+- **A01** @527 sc=100
+  - items: Type of visual alteration | Illusion
+  - excerpt: 'Lights are starting to get brighter'
+- **A02** @1374 sc=100
+  - items: Type of visual alteration | Illusion
+  - excerpt: 'My depth perception is gone, my eyes cannot focus, my retinas hurt, despite the sunglasses I’m wearing'
+- **A03** @1641 sc=100
+  - items: Modal status of the hallucination | Possible and probable event; Type of visual alteration | Hallucination of an incrusted object; Visual hallucination | Artefact | Other
+  - excerpt: 'After about 20 minutes of looking at the bottle, I reach out and grab it, only for it to disappear as soon as it gets to my mouth'
+- **A04** @1772 sc=100
+  - items: Modal status of the hallucination | Possible and probable event; Type of visual alteration | Hallucination of an incrusted object; Visual hallucination | Human | Relative(s), acquaintance(s)
+  - excerpt: 'I look to my left and see my friend S sitting right next to me. I don’t remember him being here, but I think he has. He, me and my friend T begin a full on conversation, talking about how needless all the drama in our lives is,'
+- **A05** @2000 sc=100
+  - items: Modal status of the hallucination | Possible and probable event; Type of visual alteration | Hallucination of an incrusted object; Visual hallucination | Artefact | Other
+  - excerpt: 'while sharing a pack of Marlboro reds. I take a long drag, close my eyes and hold it in, enjoying the moment. But when I open my eyes, S and T are gone, as well as my cigarette'
+
+## Coder B (Noah) — scene-level (4 distinct excerpts)
+
+- **B01** @1374 sc=100
+  - items: Type of visual alteration | Illusion
+  - excerpt: 'My depth perception is gone, my eyes cannot focus'
+- **B02** @1542 sc=50.90909090909091
+  - items: Sense of surprise and unexpectedness; Tactile hallucination | Other
+  - excerpt: 'Anything I touched, the feel of it seemed so new to me.'
+- **B03** @2178 sc=100
+  - items: Type of visual alteration | Hallucination of an incrusted object
+  - excerpt: 'I look around the park in front of me, and for a split second, it looks like part of the play structure is flipping me off, another part is smiling at me, and a shadow on the ground is a cloud dragon.'
+- **B04** @3816 sc=100
+  - items: Type of visual alteration | Illusion
+  - excerpt: 'I cannot read the rest of the night, but by the next day, I am completely back to normal.'
+
+## Coder A (Brendan) — trip-level (4 distinct excerpts)
+
+- **a01** @568 sc=100
+  - items: Out-of-body-experience
+  - excerpt: 'I feel that slight dissociation I remember from lower doses'
+- **a02** @2178 sc=100
+  - items: Domain-specific violation | Biological projection
+  - excerpt: 'I look around the park in front of me, and for a split second, it looks like part of the play structure is flipping me off, another part is smiling at me'
+- **a03** @2379 sc=100
+  - items: Amnesia
+  - excerpt: 'From there on I only had bits and pieces of memory, fragments of what happened coming back to me slowly'
+- **a04** @3450 sc=100
+  - items: Domain-specific violation | Biological projection
+  - excerpt: 'Several more times throughout the day, I see inanimate objects giving me the finger. Rather humorous, if you ask me'
+
+## Coder B (Noah) — trip-level (2 distinct excerpts)
+
+- **b01** @2379 sc=100
+  - items: Amnesia
+  - excerpt: 'From there on I only had bits and pieces of memory, fragments of what happened coming back to me slowly'
+- **b02** @3309 sc=100
+  - items: Amnesia
+  - excerpt: 'Though, whenever I went to look for them, I’d forget what I was looking for, head home, get almost there, and then go look for them again.'

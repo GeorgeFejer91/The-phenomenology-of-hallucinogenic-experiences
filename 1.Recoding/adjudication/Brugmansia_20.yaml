@@ -1,0 +1,221 @@
+trip_id: Brugmansia_20
+substance: brugmansia
+block: "11-20"
+coder_A: Alessandra
+coder_B: Alessio
+dose_raw: "3 pink flowers as tea"
+word_count: 967
+
+scenes:
+  - scene_id: Brugmansia_20_S01
+    status: only_B
+    canonical_desc: "Feels someone's legs across his chest as if a person came in and slept in his bed"
+    canonical_span_start: 774
+    canonical_span_end: 900
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B01]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - tactile_hallucination_human
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rationale: "B individuated this as a scene; A did not."
+
+  - scene_id: Brugmansia_20_S02
+    status: only_A
+    canonical_desc: "Pitch black room impaired vision (darkness coded as illusion)"
+    canonical_span_start: 912
+    canonical_span_end: 975
+    rater_A:
+      worksheet_refs: [A01]
+      items:
+        - type_of_visual_alteration_illusion
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Brugmansia_20_S03
+    status: both
+    canonical_desc: "Instead of seeing his friend on the floor, sees a kid from down the street + 3 other sleeping people"
+    canonical_span_start: 1036
+    canonical_span_end: 1200
+    rater_A:
+      worksheet_refs: [A02, A03, A04]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_unknown_persons
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rater_B:
+      worksheet_refs: [B02, B03]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_unknown_persons
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rationale: "Both individuated this scene."
+
+  - scene_id: Brugmansia_20_S04
+    status: only_B
+    canonical_desc: "Returning to room still sees the person in the bed; then gone"
+    canonical_span_start: 1564
+    canonical_span_end: 1650
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B04]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_unknown_persons
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rationale: "B individuated this as a separate scene; A did not."
+
+  - scene_id: Brugmansia_20_S05
+    status: both
+    canonical_desc: "Friend appearing in computer chair (repeatedly, while actually asleep on floor)"
+    canonical_span_start: 1658
+    canonical_span_end: 2270
+    rater_A:
+      worksheet_refs: [A05, A06]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_relatives_acquaintances
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B05, B06, B07]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_relatives_acquaintances
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rationale: "Both individuated this scene."
+
+  - scene_id: Brugmansia_20_S06
+    status: only_A
+    canonical_desc: "Roach on the window blinds"
+    canonical_span_start: 2273
+    canonical_span_end: 2330
+    rater_A:
+      worksheet_refs: [A07, A08]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_animal_insect
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Brugmansia_20_S07
+    status: both
+    canonical_desc: "Two unknown people come out of sister's room asking for smoking materials"
+    canonical_span_start: 3079
+    canonical_span_end: 3230
+    rater_A:
+      worksheet_refs: [A09, A10, A11]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_unknown_persons
+        - auditory_hallucination_human_unknown_persons
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rater_B:
+      worksheet_refs: [B08, B09, B10]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_unknown_persons
+        - auditory_hallucination_human_unknown_persons
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rationale: "Both individuated this scene with matching attributes."
+
+  - scene_id: Brugmansia_20_S08
+    status: both
+    canonical_desc: "A different friend appears beside him; asks for help finding joint; friend disappears/reappears"
+    canonical_span_start: 3513
+    canonical_span_end: 3700
+    rater_A:
+      worksheet_refs: [A12, A13]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_relatives_acquaintances
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B11]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_relatives_acquaintances
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rationale: "Both individuated this scene."
+
+  - scene_id: Brugmansia_20_S09
+    status: both
+    canonical_desc: "Wasps flying in room; a frog on the blind-string eats a wasp"
+    canonical_span_start: 3812
+    canonical_span_end: 4020
+    rater_A:
+      worksheet_refs: [A14, A15, A16]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_animal_insect
+        - visual_hallucination_animal_other
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rater_B:
+      worksheet_refs: [B12, B13, B14, B15]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_animal_insect
+        - visual_hallucination_animal_other
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rationale: "Both individuated this scene with matching attributes."
+
+  - scene_id: Brugmansia_20_S10
+    status: only_A
+    canonical_desc: "Morning arrives in discrete lighting-brightness waves rather than continuously"
+    canonical_span_start: 4028
+    canonical_span_end: 4220
+    rater_A:
+      worksheet_refs: [A17]
+      items:
+        - type_of_visual_alteration_illusion
+    rater_B: null
+    rationale: "A individuated as illusion; B did not."
+
+trip_level_codes:
+  rater_A:
+    - item: arousal_abnormally_low
+      excerpt_refs: [a01]
+      excerpt: "dizzy effect; went to bed and fell asleep"
+    - item: emotion_negative_emotion
+      excerpt_refs: [a02]
+      excerpt: "dizzy effect only, aren't happy"
+    - item: emotion_positive_emotion
+      excerpt_refs: [a07]
+      excerpt: "I kinda laughed to myself"
+    - item: sense_of_reality_delusional
+      excerpt_refs: [a03, a06, a12]
+      excerpt: "thought it was all real; believed friend in chair; told him there was a frog"
+    - item: sense_of_reality_lucid
+      excerpt_refs: [a08]
+      excerpt: "I realized it must be part of the trip"
+    - item: dynamics_of_the_hallucination_no_object_constancy
+      excerpt_refs: [a04, a05, a11, a13]
+      excerpt: "person in bed gone; friend reappearing in chair; friend disappearing; frog disappearing"
+    - item: amnesia
+      excerpt_refs: [a09, a10]
+      excerpt: "went out looking for spray 3 times; lost complete memory"
+  rater_B:
+    - item: sense_of_reality_delusional
+      excerpt_refs: [b01, b05]
+      excerpt: "did think it was all real; tripping bad and don't realize it"
+    - item: dynamics_of_the_hallucination_no_object_constancy
+      excerpt_refs: [b02, b03, b04, b07, b08]
+      excerpt: "looked again he was gone; wasn't in chair anymore; check floor; disappeared and appeared twice; frog disappeared"
+    - item: amnesia
+      excerpt_refs: [b06]
+      excerpt: "I lost complete memory"
+
+summary:
+  total_canonical_scenes: 10
+  both: 6
+  only_A: 3
+  only_B: 2
+  scene_individuation_jaccard: 0.6
+  individuation_notes:
+    - "A individuated 8 scenes; B individuated 8 scenes. 6 shared, 2 only_A, 3 only_B."
+    - "(Note: S10 only_A; S01, S04 only_B; S02, S06, S10 only_A; S05 and S08 both)"
+
+# ========================================================================
+# END OF BRUGMANSIA 11-20 BLOCK — 10 trips adjudicated
+# ========================================================================

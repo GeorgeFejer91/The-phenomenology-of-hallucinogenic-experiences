@@ -1,0 +1,264 @@
+trip_id: Brugmansia_04
+substance: brugmansia
+block: "01-10"
+coder_A: Brendan
+coder_B: Noah
+dose_raw: "approximately 0.75 cups tea"
+word_count: 1653
+
+scenes:
+  - scene_id: Brugmansia_04_S01
+    status: both
+    canonical_desc: "Multicolored face emerges from shadow in corner of room"
+    canonical_span_start: 1650
+    canonical_span_end: 1980
+    rater_A:
+      worksheet_refs: [A01]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_human_others
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rater_B:
+      worksheet_refs: [B01]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+    rationale: "Same face-in-corner passage. Classification disagreement: A=detached, B=incrusted."
+
+  - scene_id: Brugmansia_04_S02
+    status: both
+    canonical_desc: "Green/yellow waves of light on ceiling; doily patterns; pink/green/blue drops on walls"
+    canonical_span_start: 1986
+    canonical_span_end: 2200
+    rater_A:
+      worksheet_refs: [A02]
+      items:
+        - type_of_visual_alteration_illusion
+    rater_B:
+      worksheet_refs: [B02]
+      items:
+        - visual_hallucination_geometrical_pattern
+    rationale: "Same ceiling-patterns passage. A=illusion, B=geometrical pattern — classic illusion-vs-hallucination disagreement."
+
+  - scene_id: Brugmansia_04_S03
+    status: both
+    canonical_desc: "Washcloth in shower appears as torn piece of face with eye still in socket"
+    canonical_span_start: 3342
+    canonical_span_end: 3700
+    rater_A:
+      worksheet_refs: [A03]
+      items:
+        - type_of_visual_alteration_illusion
+    rater_B:
+      worksheet_refs: [B03]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+    rationale: "Same passage. A=illusion (object misperceived), B=incrusted (object added)."
+
+  - scene_id: Brugmansia_04_S04
+    status: both
+    canonical_desc: "Screw in shower ceiling grows legs and sniffs around; looks like a spider"
+    canonical_span_start: 3820
+    canonical_span_end: 4180
+    rater_A:
+      worksheet_refs: [A04]
+      items:
+        - type_of_visual_alteration_illusion
+    rater_B:
+      worksheet_refs: [B04, B05]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_animal_insect
+    rationale: "Same screw-spider passage; B split into two excerpts of the same scene. A=illusion; B=incrusted + insect leaf. Disagreement on alteration type + B codes the spider as an actual object class."
+
+  - scene_id: Brugmansia_04_S05
+    status: only_A
+    canonical_desc: "Hands look red in the shower (like niacin flush)"
+    canonical_span_start: 4185
+    canonical_span_end: 4275
+    rater_A:
+      worksheet_refs: [A05]
+      items:
+        - type_of_visual_alteration_illusion
+    rater_B: null
+    rationale: "A scene-codes the red-hands observation as illusion; B did not individuate (arguably a borderline somatic/perceptual thing)."
+
+  - scene_id: Brugmansia_04_S06
+    status: only_A
+    canonical_desc: "Writing on shower wall: 'you are not...', fades when approached"
+    canonical_span_start: 4346
+    canonical_span_end: 4580
+    rater_A:
+      worksheet_refs: [A06]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rater_B: null
+    rationale: "A picks up the shower-wall writing; B did not."
+
+  - scene_id: Brugmansia_04_S07
+    status: only_B
+    canonical_desc: "Lying on bed watching 'all sorts of things' fly by"
+    canonical_span_start: 5202
+    canonical_span_end: 5270
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B06]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+    rationale: "B treats the 'things flying by' line as a detached-object scene; A did not."
+
+  - scene_id: Brugmansia_04_S08
+    status: both
+    canonical_desc: "Sees smoke and an imagined burning cigarette on desk; reaches for it repeatedly"
+    canonical_span_start: 6253
+    canonical_span_end: 6600
+    rater_A:
+      worksheet_refs: [A07]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_artefact_tool_cloth
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rater_B:
+      worksheet_refs: [B07]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+    rationale: "Same cigarette-smoke scene. Both agree incrusted. A adds artefact leaf + modal status."
+
+  - scene_id: Brugmansia_04_S09
+    status: both
+    canonical_desc: "Hallucinated music playing from his stereo / radio"
+    canonical_span_start: 6677
+    canonical_span_end: 7200
+    rater_A:
+      worksheet_refs: [A08, A11]
+      items:
+        - auditory_hallucination_artefact_other
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rater_B:
+      worksheet_refs: [B09]
+      items:
+        - auditory_hallucination_artefact_other
+    rationale: "Phantom-music scene. A provides two excerpts; both raters agree on auditory/artefact. A adds modal status."
+
+  - scene_id: Brugmansia_04_S10
+    status: both
+    canonical_desc: "Sherlock Holmes standing at his bedroom door when he opens it"
+    canonical_span_start: 6853
+    canonical_span_end: 6970
+    rater_A:
+      worksheet_refs: [A09]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_celebrityies
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B08]
+      items:
+        - visual_hallucination_human_historical_figures
+    rationale: "Same Sherlock scene. Disagreement on human-subtype (celebrity vs historical figure — both debatable for a fictional detective). A adds incrusted + impossible-event."
+
+  - scene_id: Brugmansia_04_S11
+    status: only_A
+    canonical_desc: "Text on screen turns into shifting colours"
+    canonical_span_start: 7410
+    canonical_span_end: 7550
+    rater_A:
+      worksheet_refs: [A10]
+      items:
+        - type_of_visual_alteration_illusion
+    rater_B: null
+    rationale: "A codes the shifting-text colours; B did not."
+
+  - scene_id: Brugmansia_04_S12
+    status: both
+    canonical_desc: "A spider builds a web across the bottom of his monitor; disappears when looked at"
+    canonical_span_start: 7978
+    canonical_span_end: 8200
+    rater_A:
+      worksheet_refs: [A12]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_animal_insect
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rater_B:
+      worksheet_refs: [B10]
+      items:
+        - visual_hallucination_animal_insect
+    rationale: "Same spider-on-monitor scene. Both agree insect. A adds incrusted + modal."
+
+  - scene_id: Brugmansia_04_S13
+    status: both
+    canonical_desc: "Sinister growl from under his bed"
+    canonical_span_start: 8358
+    canonical_span_end: 8450
+    rater_A:
+      worksheet_refs: [A13]
+      items:
+        - auditory_hallucination_animal_other
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rater_B:
+      worksheet_refs: [B11]
+      items:
+        - auditory_hallucination_animal_mammal
+    rationale: "Same growl scene. Both agree auditory-animal but disagree on mammal vs other leaf."
+
+  - scene_id: Brugmansia_04_S14
+    status: both
+    canonical_desc: "A penny levitates from behind monitor and lands silently on top"
+    canonical_span_start: 8485
+    canonical_span_end: 8600
+    rater_A:
+      worksheet_refs: [A14]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_artefact_tool_cloth
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B12]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+    rationale: "Same flying-penny scene. Both agree incrusted. A also classifies object as tool/cloth (questionable fit — a penny is currency) and adds impossible-event."
+
+  - scene_id: Brugmansia_04_S15
+    status: both
+    canonical_desc: "Walls appear projected on a moving backdrop; assume pink-red colour"
+    canonical_span_start: 8595
+    canonical_span_end: 8760
+    rater_A:
+      worksheet_refs: [A15]
+      items:
+        - type_of_visual_alteration_illusion
+    rater_B:
+      worksheet_refs: [B13]
+      items:
+        - type_of_visual_alteration_illusion
+    rationale: "Same walls-moving passage. Full agreement."
+
+trip_level_codes:
+  rater_A:
+    - item: domain_specific_violation_biological_projection
+      excerpt_refs: [a01, a02, a04]
+      excerpt: "Everything is breathing; chest-of-drawers trying to walk away; door breathing heavily"
+    - item: domain_specific_violation_psychological_projection
+      excerpt_refs: [a05]
+      excerpt: "I think my door might be getting mad"
+    - item: sense_of_reality_lucid
+      excerpt_refs: [a03, a06, a07]
+      excerpt: "I know this isn't really happening; I know it's only a hallucination; I know it's only in my head"
+  rater_B:
+    - item: sense_of_reality_lucid
+      excerpt_refs: [b01, b02]
+      excerpt: "I know it's only a hallucination; I know it's only in my head"
+
+summary:
+  total_canonical_scenes: 15
+  both: 11
+  only_A: 4
+  only_B: 1
+  scene_individuation_jaccard: 0.733
+  classification_notes:
+    - "High scene-level agreement (11/15 shared). Very different classifications on those shared scenes."
+    - "Of 11 shared scenes, 7 show classification disagreement on type-of-visual-alteration (illusion vs incrusted vs detached) — A and B use these labels with different thresholds."
+    - "B never codes 'modal status'; A codes it consistently. This is a rule-usage asymmetry more than a semantic disagreement."
+    - "A picks up more peripheral sensory-perceptual oddities as scenes (S05 red hands, S06 shower writing, S11 text colours); B is more conservative about individuating these as scenes."
+    - "B codes biological/psychological projection phenomena (breathing walls, breathing door) very sparsely — A codes them under trip-level domain-violation."

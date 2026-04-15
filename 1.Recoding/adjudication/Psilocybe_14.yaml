@@ -1,0 +1,132 @@
+trip_id: Psilocybe_14
+substance: psilocybin
+block: "11-20"
+coder_A: Francesco
+coder_B: Susana
+dose_raw: "1 g (Psilocybe mexicana, tea)"
+word_count: 1476
+
+scenes:
+  - scene_id: Psilocybe_14_S01
+    status: only_A
+    canonical_desc: "First flashes of pastel colors dance behind eyelids"
+    canonical_span_start: 687
+    canonical_span_end: 790
+    rater_A:
+      worksheet_refs: [A01]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_geometrical_pattern
+        - dynamics_of_the_hallucination_no_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_14_S02
+    status: only_B
+    canonical_desc: "Strange irregularity in heartbeat / cardiac arrhythmia feeling"
+    canonical_span_start: 795
+    canonical_span_end: 900
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B01]
+      items: [modal_status_of_the_hallucination_possible_and_probable_event]
+    rationale: "B individuated as a scene; A did not."
+
+  - scene_id: Psilocybe_14_S03
+    status: only_B
+    canonical_desc: "Realizes 'it was my turn to die'"
+    canonical_span_start: 1285
+    canonical_span_end: 1400
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B02]
+      items:
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+        - sense_of_reality_delusional
+    rationale: "B individuated; A did not."
+
+  - scene_id: Psilocybe_14_S04
+    status: both
+    canonical_desc: "Horrific feeling of being violated and examined by invisible forces"
+    canonical_span_start: 2191
+    canonical_span_end: 2500
+    rater_A:
+      worksheet_refs: [A02]
+      items: [nonsensory_hallucination_other]
+    rater_B:
+      worksheet_refs: [B03, B04]
+      items:
+        - nonsensory_hallucination_other
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_14_S05
+    status: both
+    canonical_desc: "Stream of terrifying imagery spreads all around: occult symbols, sigils, hieroglyphs, cuneiform, flaming chariots, horned goats, snakes, angels"
+    canonical_span_start: 2730
+    canonical_span_end: 3000
+    rater_A:
+      worksheet_refs: [A03]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_animal_mammal
+        - visual_hallucination_animal_other
+        - visual_hallucination_artefact_vehicle
+        - visual_hallucination_extraordinary_entity_spirit
+        - visual_hallucination_geometrical_pattern
+        - dynamics_of_the_hallucination_no_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B05, B06, B07, B08, B09, B10, B11, B12, B13, B14]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_artefact_other
+        - visual_hallucination_artefact_vehicle
+        - visual_hallucination_animal_mammal
+        - visual_hallucination_animal_other
+        - visual_hallucination_extraordinary_entity_spirit
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated this composite apocalyptic-imagery scene with many sub-objects. Alteration-type disagreement (immersive vs detached). Object-classes overlap heavily."
+
+  - scene_id: Psilocybe_14_S06
+    status: both
+    canonical_desc: "Ink appears to touch paper before pen hits, letters spill in slow motion, page looks made of radiant liquid light"
+    canonical_span_start: 4351
+    canonical_span_end: 4600
+    rater_A:
+      worksheet_refs: [A04]
+      items: [type_of_visual_alteration_illusion]
+    rater_B:
+      worksheet_refs: [B15]
+      items: [type_of_visual_alteration_illusion]
+    rationale: "Both individuated."
+
+trip_level_codes:
+  rater_A:
+    - item: own_body_distortion
+      excerpt_refs: [a01, a03]
+      excerpt: "heart explode, body trembling; body felt like foreign object"
+    - item: emotion_negative_emotion
+      excerpt_refs: [a02]
+      excerpt: "fear; all I wanted was to be dead"
+    - item: emotion_positive_emotion
+      excerpt_refs: [a05]
+      excerpt: "ecstatic stupor, awe"
+    - item: sensory_delight_visual_other
+      excerpt_refs: [a04]
+      excerpt: "simultaneously beautiful and hideous beyond words"
+    - item: sense_of_surprise_and_unexpectedness
+      excerpt_refs: [a06]
+      excerpt: "seeing room for the first time"
+    - item: insight_metaphysical
+      excerpt_refs: [a07, a08, a09]
+      excerpt: "everyone on Earth suffers from disease of history; life is mystery; every object is a story"
+    - item: insight_existential
+      excerpt_refs: [a10]
+      excerpt: "running away from everything good"
+  rater_B:
+    - item: insight_existential
+      excerpt_refs: [b01, b02]
+      excerpt: "my turn to die; death has many layers, arduous process"

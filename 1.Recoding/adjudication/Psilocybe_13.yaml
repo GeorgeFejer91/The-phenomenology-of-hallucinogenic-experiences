@@ -1,0 +1,257 @@
+trip_id: Psilocybe_13
+substance: psilocybin
+block: "11-20"
+coder_A: Francesco
+coder_B: Susana
+dose_raw: "3 g (Golden Teacher)"
+word_count: 1597
+
+scenes:
+  - scene_id: Psilocybe_13_S01
+    status: both
+    canonical_desc: "Paintings of old German towns on the wall come alive with people walking in them"
+    canonical_span_start: 684
+    canonical_span_end: 830
+    rater_A:
+      worksheet_refs: [A01]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - dynamics_of_the_hallucination_no_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B01, B02]
+      items:
+        - type_of_visual_alteration_illusion
+        - visual_hallucination_human_unknown_persons
+        - dynamics_of_the_hallucination_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+        - domain_specific_violation_biological_projection
+    rationale: "Both individuated. Type-of-alteration disagreement (incrusted vs illusion); dynamics disagreement (no-constancy vs constancy)."
+
+  - scene_id: Psilocybe_13_S02
+    status: both
+    canonical_desc: "Long blue hairs/tentacles reach down towards his face; feels them; become black octopus consuming him"
+    canonical_span_start: 1309
+    canonical_span_end: 1620
+    rater_A:
+      worksheet_refs: [A02, A03]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - tactile_hallucination_other
+        - dynamics_of_the_hallucination_no_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B03, B04, B05, B06]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_animal_aquatic_animal
+        - tactile_hallucination_inorganic_entity
+        - dynamics_of_the_hallucination_no_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated the hair/tentacles/octopus scene."
+
+  - scene_id: Psilocybe_13_S03
+    status: both
+    canonical_desc: "In a place full of faces and rooms; wanted to see own face; sees wife's face instead"
+    canonical_span_start: 1876
+    canonical_span_end: 2100
+    rater_A:
+      worksheet_refs: [A04]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_artefact_city_building_furniture
+        - visual_hallucination_human_relatives_acquaintances
+        - visual_hallucination_human_unknown_persons
+        - dynamics_of_the_hallucination_no_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B07, B08, B09]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_artefact_city_building_furniture
+        - visual_hallucination_human_unknown_persons
+        - visual_hallucination_human_relatives_acquaintances
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_13_S04
+    status: both
+    canonical_desc: "At his own funeral staring at wife's crying face being hugged by mourners"
+    canonical_span_start: 2254
+    canonical_span_end: 2500
+    rater_A:
+      worksheet_refs: [A05]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_human_relatives_acquaintances
+        - dynamics_of_the_hallucination_no_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B10, B11, B12]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_human_unknown_persons
+        - dynamics_of_the_hallucination_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated. Dynamics disagreement (no-constancy vs constancy)."
+
+  - scene_id: Psilocybe_13_S05
+    status: both
+    canonical_desc: "Watches first two cells split; consciousness builds human mind from various things"
+    canonical_span_start: 2700
+    canonical_span_end: 2950
+    rater_A:
+      worksheet_refs: [A06]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - dynamics_of_the_hallucination_no_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B13]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_human_others
+        - dynamics_of_the_hallucination_no_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_13_S06
+    status: both
+    canonical_desc: "Transported to another world made of shallow water with metal fan-blade parts flowing in and out"
+    canonical_span_start: 3677
+    canonical_span_end: 3950
+    rater_A:
+      worksheet_refs: [A07]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_artefact_other
+        - visual_hallucination_inorganic_entity_earth_river_sky_cloud
+        - dynamics_of_the_hallucination_no_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B14, B15, B16]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_inorganic_entity_other
+        - visual_hallucination_artefact_other
+        - dynamics_of_the_hallucination_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_13_S07
+    status: only_B
+    canonical_desc: "House is very psychedelic and trippy"
+    canonical_span_start: 4418
+    canonical_span_end: 4520
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B17]
+      items: [type_of_visual_alteration_illusion]
+    rationale: "B individuated; A did not."
+
+  - scene_id: Psilocybe_13_S08
+    status: both
+    canonical_desc: "Blankets are clouds with little machines running through them; wood floors and dresser become rave of moving lines"
+    canonical_span_start: 4569
+    canonical_span_end: 4760
+    rater_A:
+      worksheet_refs: [A08, A09]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_artefact_vehicle
+        - visual_hallucination_inorganic_entity_earth_river_sky_cloud
+        - dynamics_of_the_hallucination_no_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B18, B19, B20]
+      items:
+        - visual_hallucination_artefact_vehicle
+        - visual_hallucination_inorganic_entity_earth_river_sky_cloud
+        - visual_hallucination_geometrical_pattern
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_13_S09
+    status: both
+    canonical_desc: "Has ape hands; sees memory of himself as an ape eating mushrooms"
+    canonical_span_start: 4773
+    canonical_span_end: 5140
+    rater_A:
+      worksheet_refs: [A10]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_animal_mammal
+        - visual_hallucination_plant_mushroom_fungus
+        - dynamics_of_the_hallucination_no_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B21]
+      items: [visual_hallucination_animal_mammal]
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_13_S10
+    status: both
+    canonical_desc: "Orange splits into two halves that become two brains (smaller old, larger new)"
+    canonical_span_start: 5144
+    canonical_span_end: 5400
+    rater_A:
+      worksheet_refs: [A11]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - dynamics_of_the_hallucination_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B22]
+      items: [visual_hallucination_human_others]
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_13_S11
+    status: only_B
+    canonical_desc: "Room bursts into million colors and crazy patterns"
+    canonical_span_start: 5522
+    canonical_span_end: 5600
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B23]
+      items: [visual_hallucination_geometrical_pattern]
+    rationale: "B individuated; A did not."
+
+  - scene_id: Psilocybe_13_S12
+    status: only_B
+    canonical_desc: "Peeled banana has streaks of red and purple (tie-dye colors)"
+    canonical_span_start: 6893
+    canonical_span_end: 7000
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B24]
+      items:
+        - type_of_visual_alteration_illusion
+        - dynamics_of_the_hallucination_object_constancy
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rationale: "B individuated; A did not."
+
+  - scene_id: Psilocybe_13_S13
+    status: only_A
+    canonical_desc: "Feels electricity in the back of his head during storm"
+    canonical_span_start: 7196
+    canonical_span_end: 7300
+    rater_A:
+      worksheet_refs: [A12]
+      items: [tactile_hallucination_other]
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+trip_level_codes:
+  rater_A:
+    - item: emotion_positive_emotion
+      excerpt_refs: [a01]
+      excerpt: "never had a moment of anxiety or sadness"
+    - item: emotion_negative_emotion
+      excerpt_refs: [a02]
+      excerpt: "guilt for being selfish"
+    - item: insight_existential
+      excerpt_refs: [a03]
+      excerpt: "wife and I shared part of our soul"
+  rater_B:
+    - item: emotion_positive_emotion
+      excerpt: "supreme love throughout"

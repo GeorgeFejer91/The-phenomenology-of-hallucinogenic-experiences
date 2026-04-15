@@ -1,0 +1,233 @@
+trip_id: Psilocybe_08
+substance: psilocybin
+block: "01-10"
+coder_A: Alessandra
+coder_B: Brendan
+dose_raw: "3.1 g (Psilocybe cubensis as drink)"
+word_count: 1580
+
+scenes:
+  - scene_id: Psilocybe_08_S01
+    status: both
+    canonical_desc: "Music turns things into dragons; own and sitter's hands look and feel like dragon's claws"
+    canonical_span_start: 1719
+    canonical_span_end: 1900
+    rater_A:
+      worksheet_refs: [A02]
+      items: [type_of_visual_alteration_illusion]
+    rater_B:
+      worksheet_refs: [B01]
+      items: [type_of_visual_alteration_illusion]
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_08_S02
+    status: only_A
+    canonical_desc: "Friend who told frog joke shows up in frog form a few times during session"
+    canonical_span_start: 1905
+    canonical_span_end: 2060
+    rater_A:
+      worksheet_refs: [A03, A04]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_animal_other
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_08_S03
+    status: both
+    canonical_desc: "Kaleidoscope-type visuals"
+    canonical_span_start: 2080
+    canonical_span_end: 2180
+    rater_A:
+      worksheet_refs: [A05, A06]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_geometrical_pattern
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B02]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_geometrical_pattern
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_08_S04
+    status: only_A
+    canonical_desc: "Beautiful visual of living, breathing Earth with water flowing around and through it"
+    canonical_span_start: 2766
+    canonical_span_end: 2870
+    rater_A:
+      worksheet_refs: [A07, A08]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_inorganic_entity_earth_river_sky_cloud
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_08_S05
+    status: only_B
+    canonical_desc: "Becoming part of a vast network of dancing pale green branches; limbs merging seamlessly"
+    canonical_span_start: 3149
+    canonical_span_end: 3400
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B03]
+      items:
+        - tactile_hallucination_plant
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "B individuated; A codes this at trip-level as ego-dissolution/bodily (a09)."
+
+  - scene_id: Psilocybe_08_S06
+    status: only_A
+    canonical_desc: "Abstract visual interpretations of music (sunlight-on-ripples analog)"
+    canonical_span_start: 3357
+    canonical_span_end: 3680
+    rater_A:
+      worksheet_refs: [A09, A10, A11, A12, A13]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_inorganic_entity_earth_river_sky_cloud
+        - visual_hallucination_inorganic_entity_other
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_08_S07
+    status: both
+    canonical_desc: "Sitter / bedroom wall / surroundings familiar but distorted in space as if brain refused to do geometry"
+    canonical_span_start: 3704
+    canonical_span_end: 3850
+    rater_A:
+      worksheet_refs: [A14]
+      items: [type_of_visual_alteration_illusion]
+    rater_B:
+      worksheet_refs: [B04]
+      items: [type_of_visual_alteration_illusion]
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_08_S08
+    status: both
+    canonical_desc: "Beautiful fractal rainbow spiral world with sense of order and freedom"
+    canonical_span_start: 5419
+    canonical_span_end: 5540
+    rater_A:
+      worksheet_refs: [A15, A16, A17]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_extraordinary_entity_other
+        - modal_status_of_the_hallucination_impossible_event
+        - sensory_delight_visual_other
+    rater_B:
+      worksheet_refs: [B05]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_geometrical_pattern
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_08_S09
+    status: both
+    canonical_desc: "The words 'cosmic consciousness' appear visually, exactly as he'd written them earlier"
+    canonical_span_start: 5549
+    canonical_span_end: 5690
+    rater_A:
+      worksheet_refs: [A18]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B06]
+      items: [visual_hallucination_artefact_other]
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_08_S10
+    status: both
+    canonical_desc: "Two friends appear in the fractal space: one as a frog, one dancing"
+    canonical_span_start: 5686
+    canonical_span_end: 5900
+    rater_A:
+      worksheet_refs: [A19, A20]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_human_relatives_acquaintances
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B07]
+      items:
+        - visual_hallucination_human_relatives_acquaintances
+        - visual_hallucination_animal_aquatic_animal
+    rationale: "Both individuated. Note: B codes 'frog' as aquatic-animal (debatable — frogs are amphibians)."
+
+  - scene_id: Psilocybe_08_S11
+    status: only_A
+    canonical_desc: "Own consciousness manifests as loosely defined part of the fractal; candle-like light fading"
+    canonical_span_start: 6191
+    canonical_span_end: 6400
+    rater_A:
+      worksheet_refs: [A21, A22]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_geometrical_pattern
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_08_S12
+    status: only_A
+    canonical_desc: "Sees normal human waking life as a small dark loop in the pattern"
+    canonical_span_start: 7363
+    canonical_span_end: 7460
+    rater_A:
+      worksheet_refs: [A23, A24]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_geometrical_pattern
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+trip_level_codes:
+  rater_A:
+    - item: arousal_abnormally_low
+      excerpt_refs: [a01, a05]
+      excerpt: "relaxation; no point trying to get to bathroom"
+    - item: emotion_positive_emotion
+      excerpt_refs: [a02, a03, a12]
+      excerpt: "everything funny; laughed at non-frogness; pleasant sensation"
+    - item: emotion_negative_emotion
+      excerpt_refs: [a08, a13]
+      excerpt: "might drown, helpless; universe felt chaotic"
+    - item: own_body_distortion
+      excerpt_refs: [a04, a15]
+      excerpt: "couldn't keep track of physical body; no body/pattern boundary"
+    - item: out_of_body_experience
+      excerpt_refs: [a07]
+      excerpt: "fully let go of physical body"
+    - item: ego_dissolution_bodily_self
+      excerpt_refs: [a09, a11, a16]
+      excerpt: "becoming part of network; fascia spread out several metres; vague centre no edges"
+    - item: amnesia
+      excerpt_refs: [a10]
+      excerpt: "sense of time was cyclical not linear"
+    - item: sensory_delight_visual_nature
+      excerpt_refs: [a06]
+      excerpt: "beautiful visual of breathing Earth"
+    - item: domain_specific_violation_psychological_projection
+      excerpt_refs: [a14]
+      excerpt: "fractal world had sense of order and freedom"
+    - item: insight_metaphysical
+      excerpt_refs: [a17]
+      excerpt: "substrate running universe was consciousness; simple program about healing and love"
+  rater_B:
+    - item: own_body_distortion
+      excerpt_refs: [b01]
+      excerpt: "shift in sense of space and own body"
+    - item: out_of_body_experience
+      excerpt_refs: [b02]
+      excerpt: "fully let go of physical body"
+    - item: sensory_delight_haptic
+      excerpt_refs: [b03]
+      excerpt: "feeling only my fascia, untangling, pleasant sensation"

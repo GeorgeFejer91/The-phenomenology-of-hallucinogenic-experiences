@@ -1,0 +1,125 @@
+trip_id: Psilocybe_09
+substance: psilocybin
+block: "01-10"
+coder_A: Alessandra
+coder_B: Brendan
+dose_raw: "2,5 g"
+word_count: 1203
+
+scenes:
+  - scene_id: Psilocybe_09_S01
+    status: only_A
+    canonical_desc: "Waves of rainbow pastel colors separate and replicate"
+    canonical_span_start: 734
+    canonical_span_end: 900
+    rater_A:
+      worksheet_refs: [A01, A02, A03]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_inorganic_entity_earth_river_sky_cloud
+        - visual_hallucination_inorganic_entity_other
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_09_S02
+    status: only_A
+    canonical_desc: "Rising focusing energy; gives birth to the universe with ecstatic dancing"
+    canonical_span_start: 1612
+    canonical_span_end: 1790
+    rater_A:
+      worksheet_refs: [A04, A05, A06]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - nonsensory_hallucination_inorganic_entity
+        - visual_hallucination_inorganic_entity_earth_river_sky_cloud
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_09_S03
+    status: both
+    canonical_desc: "Lights dancing; Jimi Hendrix poster on wall is a 3D mosaic undulating"
+    canonical_span_start: 2247
+    canonical_span_end: 2400
+    rater_A:
+      worksheet_refs: [A07]
+      items: [type_of_visual_alteration_illusion]
+    rater_B:
+      worksheet_refs: [B01]
+      items: [type_of_visual_alteration_illusion]
+    rationale: "Both individuated. Full agreement."
+
+  - scene_id: Psilocybe_09_S04
+    status: only_A
+    canonical_desc: "Cosmic winds blow through center of where he had been until nothing"
+    canonical_span_start: 3694
+    canonical_span_end: 3870
+    rater_A:
+      worksheet_refs: [A08, A09, A10]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_inorganic_entity_other
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rater_B: null
+    rationale: "A individuated; B codes this at trip-level as ego dissolution (b01)."
+
+  - scene_id: Psilocybe_09_S05
+    status: only_A
+    canonical_desc: "When he turned his gaze, darkness followed behind but what he looked at was illuminated"
+    canonical_span_start: 5697
+    canonical_span_end: 5800
+    rater_A:
+      worksheet_refs: [A11, A12, A13]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_extraordinary_entity_other
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+trip_level_codes:
+  rater_A:
+    - item: emotion_negative_emotion
+      excerpt_refs: [a01, a03]
+      excerpt: "shivering anxiety; self-doubt, not worthy"
+    - item: emotion_positive_emotion
+      excerpt_refs: [a06, a09, a11, a16, a19]
+      excerpt: "music quelled anxiety; visuals cool; nice stillness; so beautiful; cozy and wonderful"
+    - item: arousal_abnormally_low
+      excerpt_refs: [a02, a05]
+      excerpt: "lying quietly; got up with difficulty"
+    - item: ego_dissolution_bodily_self
+      excerpt_refs: [a04]
+      excerpt: "center of me thinner and transparent"
+    - item: ego_dissolution_social_self
+      excerpt_refs: [a10]
+      excerpt: "I am nothing, ether of nothingness"
+    - item: amnesia
+      excerpt_refs: [a07]
+      excerpt: "remember this part as if a dream, swirling away"
+    - item: sense_of_surprise_and_unexpectedness
+      excerpt_refs: [a08]
+      excerpt: "looking around in wonder, world was enchanted"
+    - item: sensory_delight_visual_other
+      excerpt_refs: [a12]
+      excerpt: "grooving on my own beauty in mirror"
+    - item: sensory_delight_haptic
+      excerpt_refs: [a15]
+      excerpt: "hair on shoulders felt sensual"
+    - item: sensory_delight_auditory_other
+      excerpt_refs: [a17]
+      excerpt: "cars in distance part of symphony"
+    - item: sensory_delight_auditory_nature
+      excerpt_refs: [a18]
+      excerpt: "insects humming, symphony"
+    - item: sensory_delight_auditory_music
+      excerpt_refs: [a20]
+      excerpt: "music was awesome"
+    - item: domain_specific_violation_psychological_projection
+      excerpt_refs: [a13, a14]
+      excerpt: "trees welcomed me; sister moon, we shined on each other"
+  rater_B:
+    - item: ego_dissolution_core_self
+      excerpt_refs: [b01]
+      excerpt: "thinning as cosmic winds blew through; until there was nothing; I am nothing"

@@ -1,0 +1,176 @@
+trip_id: Brugmansia_08
+substance: brugmansia
+block: "01-10"
+coder_A: Brendan
+coder_B: Noah
+dose_raw: "~475ml (2 cups) of brew"
+word_count: 681
+
+scenes:
+  - scene_id: Brugmansia_08_S01
+    status: only_A
+    canonical_desc: "Talking to J then realises J is 30 feet behind; had been conversing with a non-existent companion"
+    canonical_span_start: 843
+    canonical_span_end: 1180
+    rater_A:
+      worksheet_refs: [A01]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_relatives_acquaintances
+        - modal_status_of_the_hallucination_possible_and_probable_event
+        - sense_of_reality_delusional
+    rater_B: null
+    rationale: "A picks up the vanishing-conversation-partner episode as an incrusted hallucination of an acquaintance; B does not individuate it."
+
+  - scene_id: Brugmansia_08_S02
+    status: both
+    canonical_desc: "The moon dips, shoots up, and flies across the sky"
+    canonical_span_start: 1305
+    canonical_span_end: 1480
+    rater_A:
+      worksheet_refs: [A02]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_inorganic_entity_earth_river_sky_cloud
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B01]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+    rationale: "Same moon passage. Both agree incrusted. A adds inorganic-entity leaf + impossible-event modal status."
+
+  - scene_id: Brugmansia_08_S03
+    status: both
+    canonical_desc: "Squiggly lines in a square shape in peripheral vision"
+    canonical_span_start: 1724
+    canonical_span_end: 1830
+    rater_A:
+      worksheet_refs: [A03]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_geometrical_pattern
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B02]
+      items:
+        - visual_hallucination_geometrical_pattern
+    rationale: "Same squiggles-in-peripheral-vision scene. Both agree geometrical-pattern. A adds detached-object + impossible-event."
+
+  - scene_id: Brugmansia_08_S04
+    status: both
+    canonical_desc: "Talking to imaginary people in the tent; waiting for responses that don't come"
+    canonical_span_start: 1954
+    canonical_span_end: 2140
+    rater_A:
+      worksheet_refs: [A04]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_unknown_persons
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rater_B:
+      worksheet_refs: [B03]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_unknown_persons
+    rationale: "Same imaginary-people scene. Strong agreement on incrusted+unknown-person. A adds modal status."
+
+  - scene_id: Brugmansia_08_S05
+    status: both
+    canonical_desc: "Wakes to hearing J whisper his name repeatedly; J denies having spoken"
+    canonical_span_start: 2142
+    canonical_span_end: 2400
+    rater_A:
+      worksheet_refs: [A05]
+      items:
+        - auditory_hallucination_human_relatives_acquaintances
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rater_B:
+      worksheet_refs: [B04]
+      items:
+        - visual_hallucination_human_relatives_acquaintances
+    rationale: "Same whispering-name scene. A correctly codes as AUDITORY hallucination of an acquaintance. B miscodes as VISUAL — classification error (the scene is explicitly auditory in the narrative)."
+
+  - scene_id: Brugmansia_08_S06
+    status: both
+    canonical_desc: "Blows on logs to flare up a fire that isn't in the tent"
+    canonical_span_start: 2404
+    canonical_span_end: 2600
+    rater_A:
+      worksheet_refs: [A06]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_artefact_tool_cloth
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rater_B:
+      worksheet_refs: [B05]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+    rationale: "Same non-existent-fire scene. Both agree incrusted. A adds artefact/tool (odd fit — a fire isn't a tool or cloth) + modal status."
+
+  - scene_id: Brugmansia_08_S07
+    status: both
+    canonical_desc: "Kept seeing 6-7 people in the tent when there were only 3"
+    canonical_span_start: 2695
+    canonical_span_end: 2800
+    rater_A:
+      worksheet_refs: [A07]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_unknown_persons
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rater_B:
+      worksheet_refs: [B06]
+      items:
+        - visual_hallucination_human_unknown_persons
+    rationale: "Same phantom-people-count scene. Both agree unknown-person. A adds incrusted + modal status."
+
+  - scene_id: Brugmansia_08_S08
+    status: both
+    canonical_desc: "In the morning: two people come into tent and have sex in front of him; imaginary person sits next to him"
+    canonical_span_start: 2795
+    canonical_span_end: 3060
+    rater_A:
+      worksheet_refs: [A08]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_unknown_persons
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rater_B:
+      worksheet_refs: [B07]
+      items:
+        - visual_hallucination_human_unknown_persons
+    rationale: "Same tent-sex-people scene. Both agree unknown-person. A adds incrusted + improbable-event."
+
+trip_level_codes:
+  rater_A:
+    - item: sense_of_reality_delusional
+      excerpt_refs: [a01]
+      excerpt: "still not convinced I was tripping"
+    - item: amnesia
+      excerpt_refs: [a02]
+      excerpt: "I really don't remember most of the night"
+    - item: insight_metaphysical
+      excerpt_refs: [a03]
+      excerpt: "I was shown many things, I just can't remember what they were"
+  rater_B:
+    - item: amnesia
+      excerpt_refs: [b01, b03]
+      excerpt: "all chronology goes out the window; don't remember most of the night"
+    - item: sense_of_reality_lucid
+      excerpt_refs: [b02]
+      excerpt: "I was beginning to realize at this point that I was totally out of my head"
+    - item: insight_existential
+      excerpt_refs: [b04]
+      excerpt: "sense of extreme introspection from the experience"
+
+summary:
+  total_canonical_scenes: 8
+  both: 7
+  only_A: 1
+  only_B: 0
+  scene_individuation_jaccard: 0.875
+  classification_notes:
+    - "Strong scene-level agreement (7/8 shared)."
+    - "One outright classification ERROR on S05: B coded the whispering-name scene as visual, but it is explicitly auditory. A got it right."
+    - "Dominant pattern: A adds 'modal status' and 'incrusted object' codes on nearly every shared scene while B omits these consistently. This is the same rule-usage asymmetry seen in all prior Brendan-vs-Noah trips."
+    - "Trip-level Insight disagreement: A=metaphysical, B=existential on the same 'shown many things' passage."

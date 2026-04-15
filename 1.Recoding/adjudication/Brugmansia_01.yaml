@@ -1,0 +1,171 @@
+trip_id: Brugmansia_01
+substance: brugmansia
+block: "01-10"
+coder_A: Brendan
+coder_B: Noah
+dose_raw: null
+word_count: 2164
+
+scenes:
+  - scene_id: Brugmansia_01_S01
+    status: both
+    canonical_desc: "Sky full of moving white strands forming into a ball of light; clear vs cloudy sky"
+    canonical_span_start: 1775
+    canonical_span_end: 2210
+    rater_A:
+      worksheet_refs: [A01]
+      items:
+        - type_of_visual_alteration_illusion
+    rater_B:
+      worksheet_refs: [B01, B02]
+      items:
+        - type_of_visual_alteration_illusion
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+    rationale: "Same sky/light-ball passage; B split it into two excerpts but it is one scene. Classification disagreement on illusion vs full-blown immersive."
+
+  - scene_id: Brugmansia_01_S02
+    status: only_B
+    canonical_desc: "Living in a 3-second dream-delay; cannot live in the present"
+    canonical_span_start: 2364
+    canonical_span_end: 2550
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B03]
+      items:
+        - nonsensory_hallucination_other
+    rationale: "B treats the dream-delay experience as a nonsensory hallucination; A did not code it as a scene."
+
+  - scene_id: Brugmansia_01_S03
+    status: both
+    canonical_desc: "In bathroom mirror sees a bald ~6' man who talks about life and death"
+    canonical_span_start: 2981
+    canonical_span_end: 3300
+    rater_A:
+      worksheet_refs: [A02]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_unknown_persons
+        - modal_status_of_the_hallucination_possible_and_probable_event
+        - insight_religious
+    rater_B:
+      worksheet_refs: [B04]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+    rationale: "Same mirror-man passage. A codes many attributes (incrusted, unknown person, modal status, religious insight); B codes only as full-blown immersive. Major classification disagreement on type-of-visual-alteration."
+
+  - scene_id: Brugmansia_01_S04
+    status: both
+    canonical_desc: "Blurriness and colors changing, not mixing"
+    canonical_span_start: 4754
+    canonical_span_end: 4830
+    rater_A:
+      worksheet_refs: [A03]
+      items:
+        - type_of_visual_alteration_illusion
+    rater_B:
+      worksheet_refs: [B05]
+      items:
+        - visual_hallucination_geometrical_pattern
+    rationale: "Same excerpt. A reads it as an illusion of color; B reads it as a geometrical-pattern hallucination. Disagreement on modality + type-of-alteration."
+
+  - scene_id: Brugmansia_01_S05
+    status: only_A
+    canonical_desc: "Laws of physics changed, faces changed, unseen rooms mapped to his home"
+    canonical_span_start: 5406
+    canonical_span_end: 5620
+    rater_A:
+      worksheet_refs: [A04]
+      items:
+        - type_of_visual_alteration_illusion
+    rater_B: null
+    rationale: "A scene-codes this as an illusion. B codes the same passage as trip-level 'Delusional' (see trip-level b04), not as a perceptual scene."
+
+  - scene_id: Brugmansia_01_S06
+    status: both
+    canonical_desc: "Person in his room switches between a 12-year-old girl and his mother"
+    canonical_span_start: 6840
+    canonical_span_end: 7000
+    rater_A:
+      worksheet_refs: [A05]
+      items:
+        - type_of_visual_alteration_illusion
+    rater_B:
+      worksheet_refs: [B06]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+    rationale: "Same switching-person passage. Disagreement on whether it's an illusion (A) or an incrusted-object hallucination (B)."
+
+  - scene_id: Brugmansia_01_S07
+    status: both
+    canonical_desc: "Couch appears covered in spiders, centipedes, rollypolys and other insects"
+    canonical_span_start: 7832
+    canonical_span_end: 8100
+    rater_A:
+      worksheet_refs: [A06]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_animal_insect
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rater_B:
+      worksheet_refs: [B07, B08]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_animal_insect
+    rationale: "Same couch-insects passage; B split into two excerpts of the same scene. Both agree on incrusted+insect; A adds modal-status 'possible/probable event' which B omits."
+
+  - scene_id: Brugmansia_01_S08
+    status: both
+    canonical_desc: "Mini-trips of giant shiny spiders seen only in reflected light"
+    canonical_span_start: 9417
+    canonical_span_end: 9600
+    rater_A:
+      worksheet_refs: [A07]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_animal_insect
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rater_B:
+      worksheet_refs: [B09]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_animal_insect
+    rationale: "Same shiny-spiders-in-reflections passage. Both code insect; disagreement incrusted vs detached. A adds modal-status."
+
+trip_level_codes:
+  rater_A:
+    - item: emotion_positive_emotion
+      excerpt_refs: [a01]
+      excerpt: "I felt a calming rush throughout my body"
+    - item: sense_of_reality_delusional
+      excerpt_refs: [a02, a03, a05]
+      excerpt: "Everything made sense to me; nurses wouldn't believe me; let me go to my closet"
+    - item: sense_of_reality_lucid
+      excerpt_refs: [a04]
+      excerpt: "I still saw all the bugs but I could now tell that I was only tripping"
+    - item: insight_existential
+      excerpt_refs: [a06]
+      excerpt: "good sleeping habit; anxiety down; view every day as a blessing"
+    - item: insight_metaphysical
+      excerpt_refs: [a07]
+      excerpt: "infinite shells for this life; spoken to death and learned from him"
+  rater_B:
+    - item: enhanced_mental_imagery
+      excerpt_refs: [b01]
+      excerpt: "my mind wondered more"
+    - item: sense_of_reality_delusional
+      excerpt_refs: [b02, b03, b04]
+      excerpt: "paranoid; stole wallet unknowingly; own laws of physics / rooms in house"
+    - item: insight_practical
+      excerpt_refs: [b05]
+      excerpt: "I completely disagree with the doctor about psychedelics"
+
+summary:
+  total_canonical_scenes: 8
+  both: 6
+  only_A: 1
+  only_B: 1
+  scene_individuation_jaccard: 0.75   # 6 shared / 8 union
+  classification_notes:
+    - "Of the 6 shared scenes, only S07 shows high classification agreement at L2 leaves."
+    - "A and B systematically disagree on 'type of visual alteration' category (illusion vs incrusted vs detached vs immersive) across 4 of 6 shared scenes."
+    - "B rarely uses the 'modal status' category; A uses it consistently (3 scenes)."

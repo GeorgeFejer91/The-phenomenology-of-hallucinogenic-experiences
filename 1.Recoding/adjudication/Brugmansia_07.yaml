@@ -1,0 +1,71 @@
+trip_id: Brugmansia_07
+substance: brugmansia
+block: "01-10"
+coder_A: Brendan
+coder_B: Noah
+dose_raw: "25 seeds"
+word_count: 294
+
+scenes:
+  - scene_id: Brugmansia_07_S01
+    status: both
+    canonical_desc: "Flashes of light / sparkles in vision"
+    canonical_span_start: 437
+    canonical_span_end: 510
+    rater_A:
+      worksheet_refs: [A01]
+      items:
+        - type_of_visual_alteration_illusion
+    rater_B:
+      worksheet_refs: [B01]
+      items:
+        - type_of_visual_alteration_illusion
+    rationale: "Same flashes-of-light passage. Full agreement."
+
+  - scene_id: Brugmansia_07_S02
+    status: only_A
+    canonical_desc: "Everything turning to jello visually"
+    canonical_span_start: 810
+    canonical_span_end: 860
+    rater_A:
+      worksheet_refs: [A02]
+      items:
+        - type_of_visual_alteration_illusion
+    rater_B: null
+    rationale: "A codes the jello-visuals as illusion; B does not."
+
+  - scene_id: Brugmansia_07_S03
+    status: both
+    canonical_desc: "Giant spider running in circles in living room; hisses when approached"
+    canonical_span_start: 972
+    canonical_span_end: 1130
+    rater_A:
+      worksheet_refs: [A03]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_animal_insect
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B02]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_animal_insect
+        - auditory_hallucination_animal_insect
+    rationale: "Same giant-spider scene. Both agree incrusted+insect. A adds modal-status impossible-event; B adds auditory-insect (the hissing). These are complementary captures of the same scene's multimodal attributes."
+
+trip_level_codes:
+  rater_A:
+    - item: sense_of_surprise_and_unexpectedness
+      excerpt_refs: [a01]
+      excerpt: "The colors of everything fascinated me. Anything I touched, the feel of it seemed so new to me."
+  rater_B: []
+
+summary:
+  total_canonical_scenes: 3
+  both: 2
+  only_A: 1
+  only_B: 0
+  scene_individuation_jaccard: 0.667
+  classification_notes:
+    - "Good scene-level agreement on a small narrative."
+    - "On the shared spider scene (S03), complementary classifications: A captures the modal-status, B captures the auditory modality (hissing). Neither is wrong — both should be merged in consolidation."

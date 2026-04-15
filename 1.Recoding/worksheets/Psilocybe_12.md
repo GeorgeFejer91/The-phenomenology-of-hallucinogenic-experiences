@@ -1,0 +1,231 @@
+# Adjudication worksheet — Psilocybe_12
+
+- substance: **psilocybin**  block: **11-20**
+- coder_A: **Francesco**  coder_B: **Susana**
+- dose_raw: `3,5 g`   word_count: **2695**
+
+## Narrative
+
+```
+Setting: 
+
+Comfortable single family home. 
+
+The Trip: 
+
+I prepared the shrooms separately, Kate and Ann were afraid to do Adam's because they were afraid of the source. I ground up the shrooms in a coffee grinder, added the juice from a quarter lemon and then added boiled water to this and let it sit for 10 minutes. I followed this recipe for both batches. I filtered the tea through a coffee filter and measured out doses with a measuring cup, giving myself twice what Kate and Ann got separately. I mixed up the same concoction for Adam and Jen using their 8 grams. So basically Adam, Jen and I were going to be doing in the range of 3.5 grams and Ann and Kate about 1.75 grams. 
+
+We downed the tea in about 5 minutes. And very shortly I realized that not only was I not in Kansas anymore, but that I had no idea whatsoever as to how powerful a psilocybin trip could be. I thought my little trips prior to this were as far as you could go. After all my, 1.5 gram trips I remembered as no less powerful than my 2.75 gram trip with Adam. This was something entirely different, and unfortunately I had 2 newbies with me that I had vastly misrepresented the trip that they would be embarking on. 
+
+We drank the tea very quickly in maybe 5 minutes. I can remember them hitting hard. Within 10 minutes things were getting real colorful and I felt very woozy. I looked at Kate and Ann and the way they looked back at me I knew they were feeling it to. I immediately went outside to talk to Adam who was smoking a cig waiting for his to kick in, and told him this was going to be a crazy trip for Ann, Kate and me. At this point, Adam's shrooms were really not affecting him at all, and I was hoping he or Jen could babysit us. I suggested that we move to the living room from the kitchen to sit on the couch, but immediately things started to go bad for Kate, she sat down in the dining room (an empty room) and I couldn’t get her to move on to the couch. Ann did get to the couch but said she was feeling really bad from the initial kick in on the shrooms. I have to say that I never had these things come on so quickly, in the past it was a 45 to 60 minute wait for these things to kick in, but at 15 minutes I had a full kaleidoscope if spinning glowing pinwheels throughout my scope of vision. 
+
+T+30: 
+
+Kate started to repeat that she didn’t like this and wanted it to stop. She was going into a full blown bad trip trying to fight it off and this was my doing. I had always been able to control the trip on my prior doses and told her before we tripped that it was all mental. So she tried unsuccessfully to fight it off which made her more anxious. She began rubbing her hands on her thighs and even slapped herself to get out of it. She started begging Adam and Jen to call a friend of theirs who was a doctor for help. I knew what the answer would be even in my state; you just have to wait it out. I tried to get Kate to relax and stop fighting and go with the trip but there was no way to get this to happen. She became afraid she was going to die or that someone would find her high and take the kids away, or that something would happen to the kids and we wouldn’t be able to help them, basically every major fear a parent has was amplified by the shrooms, and no amount of talk could convince her otherwise. 
+
+She then asked Adam to call his friend who was a doctor to get something to stop the trip. Adam called his friend and Adam later provided the gist of the conversation: 
+Adam: Is there anything you can do to stop a mushroom trip? 
+Friend: Why? 
+Adam: My sister is having a bad trip. 
+Friend: What? Your Sister is tripping (Laughing)?!? 
+Adam: Yes, me too 
+Friend: You are kidding right? Your straight laced older sister with the kid’s right? Where would she get Mushrooms from? 
+Adam: Doug 
+Friend: (laughing) well there’s not much to do, tell her she’s not going to die and everything will be fine in an hour or two. If you had a valium you could give it to her but by the time it kicks in she probably will be OK. 
+
+Fortunately just talking to Adam’s friend helped calm everyone down because panic was starting to kick in and Emergency services could have been called, possibly resulting in all kinds of bad involvement with the law. 
+
+T+40 
+While this was going on, Ann had lay down on the couch and wanted it to stop too. I told her again that it couldn’t be stopped and that the dose was way more than I had expected it to be. She began seeing kaleidoscope colors and even more scarily ended up with a tic every 15 seconds or so. This seems like it went on for hours but in retrospect it probably only had gone on for about 30 minutes at this point. I had been fighting to maintain a grip on reality in order to talk Ann and Kate down but I disintegrated at about this point. I can remember thinking that perhaps I had cultivated poison mushrooms and I was dying and had killed my wife and Ann. I fought off the next wave and remembered that I did test a mushroom last week and that it hadn’t affected me at all so I knew I wasn’t dying. I still knew you couldn’t OD on shrooms. I realized that this was a trip to be experienced and enjoyed and there was nothing else that could be done for Kate and Ann other than waiting it out. 
+
+At that point I dispersed into black microscopic crystals across a dark void. I floated around in this void for a second or a year, time didn’t exist. I existed but only as my basic essence with no attachments to the real world or even the universe. I was everything that existed, there was nothing else. I was outside the universe. I hoped that Sue and Kate had not gotten to this point because I knew it could be terrifying to them. (I could see how some people could see this as the Death of the ego, but I never felt that way and I had no doubt that I would return.) 
+
+Then I remember beginning to coalesce back into two selves, my real world self and my trip world self. I had a conversation with my trip self. He said to me “it’s nice to be back isn’t it?” I was overcome with a joyful clarity, like the clarity of the air after a hurricane. None of my real world baggage had returned and I had this sensation of absolute clarity, as if I could see something as clearly at 10ft as I could at 10 miles. I replied that I do not remember being here before. Trip Doug replied that I had been there before, 20 years ago when I had tripped at a house on Fire Island. I then remembered that trip, recalled just getting over that edge that separated reality from this world for the first time that 23 years ago. I remembered much of that trip, details that had been long forgotten. He said “you never got far enough into this world to see me but I could see you. You knew there was more there didn’t you? I was the one who put the idea in your head to trip again. You didn’t even remember the details of your last trip, you just knew for some reason you wanted to come back here. I was the one that made you come back.” 
+
+Trip Doug said “you must remember this feeling. This world is as real as your reality.” 
+It was like there were 2 parallel universes sitting next to each other and I could see them both. I knew reality was right next to me and I remember feeling very reassured that it was indeed there, but I didn’t want to go back yet. “It exists side by side with the world you live in but it is just as real. You can never see things this clearly in your world but you can come back here anytime you need to. Remember this clarity and use it in your reality to remember what is important.” We both laughed and the kaleidoscope patterns started again as I merged together with trip Doug and felt his lightness of spirit and appreciation of life. 
+
+T+ 1:00 
+I ended up back with my wife again and she had become obsessed with the time and how slow it was going. She kept asking Jen what time it was and Jen always seemed to reply with the same time. It seemed like it took an hour for a minute to go by. I did realize that she was improving and I was then overcome by the sensation of swimming through these shaped blue geometric objects the approximate size of dominos but of unexplainable geometric complexity and a morphing of Z shaped white and light blue patterns moving across each of the shapes facades. They were perfectly smooth and I swam through and on them. They were beautiful and felt wonderful on my skin. They dripped off my fingers as if they were water. I swam from my wife over to Jen who was lying on the sofa. She looked at me and asked (laughing) “What the Fuck did you do?’ I asked her how she was doing and she said “OK, I’m keeping an eye on Annie.” I said wouldn’t it be nice to go swimming in the hot tub. I had enjoyed swimming so much on the geometric objects I thought water would be really nice. She fortunately said no that would be a bad idea. I was agreeable and stayed inside. 
+
+I could see my wife from where I was lying on the floor and she took on this sparkling halo around her whole body form. She shimmered like a mirage. She was still upset and looked more so to me under the influence of the shrooms. She was my sad sparkling angel and I would get extremely melancholy thinking that I was responsible for her mood. But if I looked away and talked to Jen who was splayed out on the couch and taking things as they came, my mood would immediately skyrocket to the ecstatic euphoria. Then I would feel guilty that once again Ann and Kate were not enjoying themselves. I was shocked at the effect that others' emotions were having on mine. 
+Normally I am a pretty empathetic person and it seemed to have gone to the extreme for me. Obviously this is great if you’re hanging with some up people, but not if you are with people having a bad trip. 
+
+As I continued to sit there I remember Adam going over and sitting down with Kate. He started joking around with her and she started to relax and I could see her whole mood change as she started to smile and laugh at Adams stories. Her whole aura reflected that she was happy again and her face and body came into sharper focus to me as she smiled. This sent my mood rocketing back up again. 
+
+T+1:20 
+Unfortunately I looked at Ann at this time across from me who was covered under a blanket and peering out with a terrified look on her face. Her tics had stopped and she said she thought she had to go to the bathroom but wasn’t sure as she didn’t know where her body was. Eventually she got up to go to the bathroom and walked out of the room. I was just hanging out when I heard the water running in the bathroom and for some reason a foreboding feeling came over me that Ann was very depressed and might do something to herself. It then struck me that Ann had gone to the bathroom to kill herself because she was having such a bad trip. I completely panicked. I was absolutely sure that she was trying to kill herself at that moment and I bolted to the bathroom and started knocking on the door telling her to come out. She was obviously confused and was asking what I wanted. I really thought she was trying to delay me while she killed herself and I tried to knock the door down! Fortunately Adam showed up and distracted me just as Ann opened the door and popped out. Adam was telling me to chill and brought me back to reality. I realized that she was obviously not actually trying to kill herself and everything sprung back to normal for a few seconds. I apologized and said I really felt responsible for her bad trip and was worried about her. As we stood talking Ann watched us and then walked over to Adam and poked him a few times and asked him if he was real. Adam laughed, told her to stop poking him and said he was pretty sure he was real. She was actually smiling now and I was really relieved as he started joking with her. 
+
+T+2:00 
+Everyone ended up going back to the living room and found places to sit. We were all exiting the Insanity of the initial part of the trip. I looked at the clock and it read 9:15. Only 2 hours had gone by but it seemed like it had been days. The really crazy hallucinations had stopped and everything had taken on shimmering saturated jungle lushness. We have a large watercolor of red apples floating on an emerald green random geometric background that boiled and moved in beautiful hypnotic chaotic madness. Kate watched it with me and seemed to actually be enjoying it. I apologized again to everyone. Adam laughing said “Apologize? We should be thanking you! This was genius bro. You are a fucking mad scientist. That’s what’s great about you, you are this really smart guy, but you do crazy shit. I try to get as fucked up as you did, but I have to buy my shit and I still don’t get as mad as you did. You decided to trip and brewed up this incredible shit all on your own and sent everyone into orbit. I think it is fantastic. ” Adam continued singing my praises and I just laughed. Yeah, I was the real mad scientist. I acted like I knew shit about mushrooms and I knew absolutely nothing about them at all. I had never even come close to tripping like I had or even like Kate and Ann had. 
+
+Fortunately everyone had finally lightened up and were actually enjoying things. As Adam performed his monologue about me being the mad scientist, Adam had removed his fleece to reveal a well fitted black T shirt which he -- I’m sure in his mind not too obviously – was carefully tucking in as he watched himself in a wall of mirrors that were in back of Kate and I. He turned around to check the back and puffed up his chest. As he turned we saw the back of his jeans and we all burst out laughing as we noticed he was wearing the gayest jeans we had ever seen. They had these ridiculous faux leather lightning bolts stitched to the rear pockets and we laughed our asses off as Adam continued to strut around sticking his ass out and cackling madly. We laughed and all had a great time the rest of the night until we all started coming down around 2:30.
+```
+
+## Coder A (Francesco) — scene-level (10 distinct excerpts)
+
+- **A01** @2209 sc=100
+  - items: Dynamics of the hallucination | No object constancy; Modal status of the hallucination | Impossible event; Type of visual alteration | Hallucination of a detached object; Visual hallucination | Geometrical pattern
+  - excerpt: 'I had a full kaleidoscope if spinning glowing pinwheels throughout my scope of vision.'
+- **A02** @5259 sc=100
+  - items: Dynamics of the hallucination | Object constancy; Modal status of the hallucination | Impossible event; Type of visual alteration | Full-blown immersive hallucination; Visual hallucination | Inorganic entity | Other
+  - excerpt: 'At that point I dispersed into black microscopic crystals across a dark void. I floated around in this void'
+- **A03** @5935 sc=100
+  - items: Modal status of the hallucination | Impossible event
+  - excerpt: 'I had a conversation with my trip self.'
+- **A04** @6610 sc=75.23809523809524
+  - items: Auditory hallucination | Human | Other(s)
+  - excerpt: 'I had a conversation with my trip self. He said to me “it’s nice to be back isn’t it?” [...] I replied that I do not remember being here before. Trip Doug replied that I had been there before, 20 years ago when I had tripped at a house on Fire Island. [...] He said “you never got far enough into this world to see me but I could see you. You knew there was more there didn’t you? I was the one who p…'
+- **A05** @7576 sc=100
+  - items: Dynamics of the hallucination | No object constancy; Modal status of the hallucination | Impossible event; Type of visual alteration | Hallucination of a detached object; Visual hallucination | Geometrical pattern
+  - excerpt: 'the kaleidoscope patterns started again'
+- **A06** @8009 sc=100
+  - items: Dynamics of the hallucination | No object constancy; Modal status of the hallucination | Impossible event; Type of visual alteration | Hallucination of a detached object; Visual hallucination | Geometrical pattern
+  - excerpt: 'I was then overcome by the sensation of swimming through these shaped blue geometric objects the approximate size of dominos but of unexplainable geometric complexity and a morphing of Z shaped white and light blue patterns moving across each of the shapes facades.'
+- **A07** @8275 sc=100
+  - items: Modal status of the hallucination | Impossible event; Sensory delight | Haptic; Sensory delight | Visual | Other; Tactile hallucination | Other
+  - excerpt: 'They were perfectly smooth and I swam through and on them. They were beautiful and felt wonderful on my skin.'
+- **A08** @8878 sc=100
+  - items: Type of visual alteration | Illusion
+  - excerpt: 'I could see my wife from where I was lying on the floor and she took on this sparkling halo around her whole body form. She shimmered like a mirage.'
+- **A09** @12092 sc=100
+  - items: Type of visual alteration | Illusion
+  - excerpt: 'everything had taken on shimmering saturated jungle lushness'
+- **A10** @12154 sc=100
+  - items: Sensory delight | Visual | Artefact; Type of visual alteration | Illusion
+  - excerpt: 'We have a large watercolor of red apples floating on an emerald green random geometric background that boiled and moved in beautiful hypnotic chaotic madness.'
+
+## Coder B (Susana) — scene-level (10 distinct excerpts)
+
+- **B01** @1283 sc=100
+  - items: Type of visual alteration | Illusion
+  - excerpt: 'Within 10 minutes things were getting real colorful'
+- **B02** @2195 sc=100
+  - items: Dynamics of the hallucination | Object constancy; Modal status of the hallucination | Impossible event; Type of visual alteration | Hallucination of a detached object; Visual hallucination | Geometrical pattern
+  - excerpt: 'at 15 minutes I had a full kaleidoscope if spinning glowing pinwheels throughout my scope of vision.'
+- **B03** @5259 sc=100
+  - items: Modal status of the hallucination | Impossible event; Nonsensory hallucination | Other; Sense of reality | Delusional; Type of visual alteration | Full-blown immersive hallucination
+  - excerpt: 'At that point I dispersed into black microscopic crystals across a dark void. I floated around in this void for a second or a year, time didn’t exist.'
+- **B04** @5832 sc=100
+  - items: Visual hallucination | Human | Other(s)
+  - excerpt: 'Then I remember beginning to coalesce back into two selves, my real world self and my trip world self. I had a conversation with my trip self.'
+- **B05** @5935 sc=100
+  - items: Auditory hallucination | Human | Other(s)
+  - excerpt: 'I had a conversation with my trip self. He said to me “it’s nice to be back isn’t it?”'
+- **B06** @7068 sc=100
+  - items: Visual hallucination | Inorganic entity | Other
+  - excerpt: 'It was like there were 2 parallel universes sitting next to each other and I could see them both.'
+- **B07** @7576 sc=100
+  - items: Visual hallucination | Geometrical pattern
+  - excerpt: 'the kaleidoscope patterns started again'
+- **B08** @8009 sc=100
+  - items: Modal status of the hallucination | Impossible event; Type of visual alteration | Hallucination of an incrusted object; Visual hallucination | Geometrical pattern
+  - excerpt: 'I was then overcome by the sensation of swimming through these shaped blue geometric objects the approximate size of dominos but of unexplainable geometric complexity'
+- **B09** @8275 sc=100
+  - items: Tactile hallucination | Inorganic entity
+  - excerpt: 'They were perfectly smooth and I swam through and on them. They were beautiful and felt wonderful on my skin. They dripped off my fingers as if they were water.'
+- **B10** @8878 sc=100
+  - items: Sensory delight | Visual | Other; Type of visual alteration | Illusion
+  - excerpt: 'I could see my wife from where I was lying on the floor and she took on this sparkling halo around her whole body form. She shimmered like a mirage.'
+
+## Coder A (Francesco) — trip-level (11 distinct excerpts)
+
+- **a01** @5410 sc=100
+  - items: Ego dissolution | Core self; Out-of-body-experience
+  - excerpt: 'I existed but only as my basic essence with no attachments to the real world or even the universe. I was everything that existed, there was nothing else. I was outside the universe.'
+- **a02** @6022 sc=100
+  - items: Emotion | Positive emotion; Sense of reality | Lucid
+  - excerpt: 'I was overcome with a joyful clarity, like the clarity of the air after a hurricane. None of my real world baggage had returned and I had this sensation of absolute clarity, as if I could see something as clearly at 10ft as I could at 10 miles.'
+- **a03** @7254 sc=75.83333333333333
+  - items: Insight | Metaphysical
+  - excerpt: 'This world is as real as your reality.” [...] “It exists side by side with the world you live in but it is just as real.'
+- **a04** @7475 sc=100
+  - items: Insight | Existential
+  - excerpt: 'Remember this clarity and use it in your reality to remember what is important.'
+- **a05** @7656 sc=100
+  - items: Emotion | Positive emotion
+  - excerpt: 'felt his lightness of spirit and appreciation of life.'
+- **a06** @9143 sc=100
+  - items: Emotion | Negative emotion
+  - excerpt: 'I would get extremely melancholy thinking that I was responsible for her mood.'
+- **a07** @9326 sc=100
+  - items: Emotion | Positive emotion
+  - excerpt: 'my mood would immediately skyrocket to the ecstatic euphoria.'
+- **a08** @9388 sc=100
+  - items: Emotion | Negative emotion
+  - excerpt: 'Then I would feel guilty that once again Ann and Kate were not enjoying themselves.'
+- **a09** @10099 sc=100
+  - items: Emotion | Positive emotion
+  - excerpt: 'This sent my mood rocketing back up again.'
+- **a10** @10791 sc=100
+  - items: Emotion | Negative emotion
+  - excerpt: 'I completely panicked.'
+- **a11** @13853 sc=100
+  - items: Emotion | Positive emotion
+  - excerpt: 'We laughed and all had a great time the rest of the night'
+
+## Coder B (Susana) — trip-level (21 distinct excerpts)
+
+- **b01** @5273 sc=100
+  - items: Own body distortion
+  - excerpt: 'I dispersed into black microscopic crystals across a dark void.'
+- **b02** @5273 sc=100
+  - items: Ego dissolution | Bodily self
+  - excerpt: 'I dispersed into black microscopic crystals across a dark void. I floated around in this void for a second or a year, time didn’t exist. I existed but only as my basic essence with no attachments to the real world or even the universe.'
+- **b03** @5832 sc=100
+  - items: Dynamics of the hallucination | No object constancy; Own body distortion
+  - excerpt: 'Then I remember beginning to coalesce back into two selves, my real world self and my trip world self.'
+- **b04** @6022 sc=100
+  - items: Emotion | Positive emotion
+  - excerpt: 'I was overcome with a joyful clarity, like the clarity of the air after a hurricane.'
+- **b05** @6979 sc=99.46236559139786
+  - items: Insight | Metaphysical
+  - excerpt: 'Trip Doug said “you must remember this feeling. This world is as real as your reality.”  It was like there were 2 parallel universes sitting next to each other and I could see them both.'
+- **b06** @7475 sc=100
+  - items: Insight | Existential
+  - excerpt: 'Remember this clarity and use it in your reality to remember what is important.'
+- **b07** @7556 sc=100
+  - items: Emotion | Positive emotion
+  - excerpt: 'We both laughed and the kaleidoscope patterns started again as I merged together with trip Doug and felt his lightness of spirit and appreciation of life.'
+- **b08** @7619 sc=100
+  - items: Insight | Existential; Own body distortion
+  - excerpt: 'I merged together with trip Doug and felt his lightness of spirit and appreciation of life.'
+- **b09** @8009 sc=100
+  - items: Dynamics of the hallucination | Object constancy
+  - excerpt: 'I was then overcome by the sensation of swimming through these shaped blue geometric objects the approximate size of dominos but of unexplainable geometric complexity and a morphing of Z shaped white and light blue patterns moving across each of the shapes facades'
+- **b10** @8009 sc=100
+  - items: Sense of reality | Delusional
+  - excerpt: 'I was then overcome by the sensation of swimming through these shaped blue geometric objects'
+- **b11** @8275 sc=100
+  - items: Sensory delight | Haptic
+  - excerpt: 'They were perfectly smooth and I swam through and on them. They were beautiful and felt wonderful on my skin.'
+- **b12** @8334 sc=100
+  - items: Sensory delight | Visual | Other
+  - excerpt: 'They were beautiful and felt wonderful on my skin.'
+- **b13** @9143 sc=100
+  - items: Emotion | Negative emotion
+  - excerpt: 'I would get extremely melancholy thinking that I was responsible for her mood.'
+- **b14** @9222 sc=100
+  - items: Emotion | Positive emotion
+  - excerpt: 'But if I looked away and talked to Jen who was splayed out on the couch and taking things as they came, my mood would immediately skyrocket to the ecstatic euphoria.'
+- **b15** @9388 sc=100
+  - items: Emotion | Negative emotion
+  - excerpt: 'Then I would feel guilty that once again Ann and Kate were not enjoying themselves.'
+- **b16** @9472 sc=100
+  - items: Sense of surprise and unexpectedness
+  - excerpt: "I was shocked at the effect that others' emotions were having on mine."
+- **b17** @9982 sc=100
+  - items: Emotion | Positive emotion
+  - excerpt: 'Her whole aura reflected that she was happy again and her face and body came into sharper focus to me as she smiled. This sent my mood rocketing back up again.'
+- **b18** @10683 sc=100
+  - items: Emotion | Negative emotion
+  - excerpt: 'It then struck me that Ann had gone to the bathroom to kill herself because she was having such a bad trip. I completely panicked.'
+- **b19** @11942 sc=100
+  - items: Sense of surprise and unexpectedness
+  - excerpt: 'I looked at the clock and it read 9:15. Only 2 hours had gone by but it seemed like it had been days.'
+- **b20** @13529 sc=100
+  - items: Emotion | Positive emotion
+  - excerpt: 'As he turned we saw the back of his jeans and we all burst out laughing as we noticed he was wearing the gayest jeans we had ever seen.'
+- **b21** @13853 sc=100
+  - items: Emotion | Positive emotion
+  - excerpt: 'We laughed and all had a great time the rest of the night until we all started coming down around 2:30.'

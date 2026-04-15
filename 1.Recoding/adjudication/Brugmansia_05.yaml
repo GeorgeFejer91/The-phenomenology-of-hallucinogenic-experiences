@@ -1,0 +1,44 @@
+trip_id: Brugmansia_05
+substance: brugmansia
+block: "01-10"
+coder_A: Brendan
+coder_B: Noah
+dose_raw: "1 mug brugmansia tea (~175ml)"
+word_count: 1540
+
+scenes:
+  - scene_id: Brugmansia_05_S01
+    status: only_A
+    canonical_desc: "Hears a loud crash near his bed (no apparent source)"
+    canonical_span_start: 1651
+    canonical_span_end: 1720
+    rater_A:
+      worksheet_refs: [A01]
+      items:
+        - auditory_hallucination_inorganic_entity_other
+    rater_B: null
+    rationale: "A codes the crash as an auditory hallucination; B does not."
+
+trip_level_codes:
+  rater_A:
+    - item: own_body_distortion
+      excerpt_refs: [a01, a04, a05]
+      excerpt: "body felt heavy; tried to figure out if took shower"
+    - item: amnesia
+      excerpt_refs: [a02, a03, a06, a07, a08]
+      excerpt: "barely remember dvd; last thing I remember; 0 recollection; extremely faint memory; no recollection"
+  rater_B:
+    - item: amnesia
+      excerpt_refs: [b01, b02, b03, b04]
+      excerpt: "barely remember dvd; last thing I remember; 0 recollection; no recollection"
+
+summary:
+  total_canonical_scenes: 1
+  both: 0
+  only_A: 1
+  only_B: 0
+  scene_individuation_jaccard: 0.0
+  classification_notes:
+    - "This trip is almost entirely a story told post-hoc about amnesia and the room-trashing afterward, with very little first-person sensory hallucination content. B appropriately coded zero scene-level hallucinations. A's single scene-level code (the crash) is borderline."
+    - "Both raters agree strongly on the trip-level Amnesia item (the dominant feature)."
+    - "A adds 'Own body distortion' that B does not — minor disagreement."

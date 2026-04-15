@@ -1,0 +1,144 @@
+trip_id: Brugmansia_18
+substance: brugmansia
+block: "11-20"
+coder_A: Alessandra
+coder_B: Alessio
+dose_raw: null
+word_count: 1081
+
+scenes:
+  - scene_id: Brugmansia_18_S01
+    status: both
+    canonical_desc: "Jake arrives with a group of unknown silent people; later realises it wasn't Jake"
+    canonical_span_start: 1432
+    canonical_span_end: 1960
+    rater_A:
+      worksheet_refs: [A01, A02]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_unknown_persons
+    rater_B:
+      worksheet_refs: [B01, B02, B03]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_relatives_acquaintances
+        - visual_hallucination_human_unknown_persons
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rationale: "Both individuated this scene. A quoted later part (realisation); B quoted earlier part (arrival)."
+
+  - scene_id: Brugmansia_18_S02
+    status: both
+    canonical_desc: "Smoking imaginary cigarettes all night; ~6 unknown people in apartment"
+    canonical_span_start: 2079
+    canonical_span_end: 2280
+    rater_A:
+      worksheet_refs: [A03, A04, A05]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_artefact_other
+        - visual_hallucination_human_unknown_persons
+    rater_B:
+      worksheet_refs: [B04]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - tactile_hallucination_artefact
+    rationale: "Both individuated. Attribute details differ."
+
+  - scene_id: Brugmansia_18_S03
+    status: both
+    canonical_desc: "Silent people take the form of mental patients; lip-reading their non-sounds"
+    canonical_span_start: 2415
+    canonical_span_end: 2670
+    rater_A:
+      worksheet_refs: [A06, A07]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_unknown_persons
+    rater_B:
+      worksheet_refs: [B05]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_unknown_persons
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated this scene."
+
+  - scene_id: Brugmansia_18_S04
+    status: only_A
+    canonical_desc: "Strange silent people take on horror-based figures"
+    canonical_span_start: 2674
+    canonical_span_end: 2870
+    rater_A:
+      worksheet_refs: [A08]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+    rater_B: null
+    rationale: "A individuated as a distinct scene; B did not (possibly treated as continuation of S03)."
+
+  - scene_id: Brugmansia_18_S05
+    status: only_B
+    canonical_desc: "Mental patients lying on floor beside bed after returning home"
+    canonical_span_start: 3424
+    canonical_span_end: 3610
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B06]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_unknown_persons
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rationale: "B individuated this as a separate scene at home; A did not."
+
+  - scene_id: Brugmansia_18_S06
+    status: only_B
+    canonical_desc: "Two female mental patients at home (a pillow-headed one and a clock-headed one)"
+    canonical_span_start: 4017
+    canonical_span_end: 4500
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B07]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_unknown_persons
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rationale: "B individuated this as a separate detailed scene; A did not."
+
+trip_level_codes:
+  rater_A:
+    - item: arousal_abnormally_low
+      excerpt_refs: [a01]
+      excerpt: "kept falling over; dropping plates and cups"
+    - item: arousal_abnormally_high
+      excerpt_refs: [a02]
+      excerpt: "kept running into walls; unable to stop myself"
+    - item: emotion_negative_emotion
+      excerpt_refs: [a03]
+      excerpt: "he just stared at me and freaked me out a bit"
+    - item: dynamics_of_the_hallucination_no_object_constancy
+      excerpt_refs: [a04, a05]
+      excerpt: "every time I looked away people would disappear; wore on took on horror figures"
+    - item: amnesia
+      excerpt_refs: [a06]
+      excerpt: "have no memory of this second call to boss"
+  rater_B:
+    - item: sense_of_reality_delusional
+      excerpt_refs: [b01, b03]
+      excerpt: "wasn't Jake at all; was constantly making conversation with them"
+    - item: dynamics_of_the_hallucination_no_object_constancy
+      excerpt_refs: [b02]
+      excerpt: "every time I looked away the strange people would disappear"
+    - item: sense_of_reality_lucid
+      excerpt_refs: [b04]
+      excerpt: "head together enough to know that I was hallucinating"
+    - item: amnesia
+      excerpt_refs: [b05]
+      excerpt: "I have no memory of this"
+
+summary:
+  total_canonical_scenes: 6
+  both: 3
+  only_A: 1
+  only_B: 2
+  scene_individuation_jaccard: 0.5
+  individuation_notes:
+    - "A individuated 4 scenes, B individuated 5 scenes. 3 shared, 1 only_A, 2 only_B."
+    - "Both raters fragmented the continuous 'silent people' hallucination differently — A captured the horror-figures transition; B captured the at-home continuation."

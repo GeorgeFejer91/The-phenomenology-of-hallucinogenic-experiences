@@ -1,0 +1,456 @@
+trip_id: Psilocybe_02
+substance: psilocybin
+block: "01-10"
+coder_A: Alessandra
+coder_B: Brendan
+dose_raw: null
+word_count: 2344
+
+# Alessandra recorded 66 scene-level excerpts, the vast majority of which are
+# per-object sub-excerpts attached to the scenes she individuated (every tree,
+# needle, worm, vein, particle, line, blanket-flower, etc. gets its own row
+# under the relevant object-class leaf). Brendan recorded 12 scene-level
+# excerpts which all correspond to distinct scenes. Below I group A's
+# per-object excerpts under the scene they describe.
+
+scenes:
+  - scene_id: Psilocybe_02_S01
+    status: only_A
+    canonical_desc: "Sky is unusually colourful"
+    canonical_span_start: 308
+    canonical_span_end: 380
+    rater_A:
+      worksheet_refs: [A01]
+      items: [type_of_visual_alteration_illusion]
+    rater_B: null
+    rationale: "A individuated."
+
+  - scene_id: Psilocybe_02_S02
+    status: both
+    canonical_desc: "Tree with animated cortex + pine needles as sliding filaments"
+    canonical_span_start: 480
+    canonical_span_end: 800
+    rater_A:
+      worksheet_refs: [A02, A03, A04]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_plant_tree_shrub
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B01]
+      items: [type_of_visual_alteration_illusion]
+    rationale: "Both individuated; B's excerpt also encompasses the sky + tree together."
+
+  - scene_id: Psilocybe_02_S03
+    status: only_A
+    canonical_desc: "Own hands transparent, milky, blue veins, tiny moving particles"
+    canonical_span_start: 872
+    canonical_span_end: 1000
+    rater_A:
+      worksheet_refs: [A05, A06, A07, A08]
+      items:
+        - type_of_visual_alteration_illusion
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_human_others
+        - visual_hallucination_inorganic_entity_other
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_02_S04
+    status: both
+    canonical_desc: "Ground appears as mass of moving black shining worms"
+    canonical_span_start: 1015
+    canonical_span_end: 1100
+    rater_A:
+      worksheet_refs: [A09, A10]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_animal_insect
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rater_B:
+      worksheet_refs: [B02]
+      items: [type_of_visual_alteration_illusion]
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_02_S05
+    status: only_A
+    canonical_desc: "Fantasy world like Lord of the Rings (eyes closed)"
+    canonical_span_start: 1144
+    canonical_span_end: 1210
+    rater_A:
+      worksheet_refs: [A11, A12]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_extraordinary_entity_other
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_02_S06
+    status: only_A
+    canonical_desc: "Violent scream heard (auditory)"
+    canonical_span_start: 1209
+    canonical_span_end: 1270
+    rater_A:
+      worksheet_refs: [A13]
+      items: [auditory_hallucination_human_unknown_persons]
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_02_S07
+    status: both
+    canonical_desc: "Trees become a vortex; fluorescent lines leaving traces on black screen following secret geometry"
+    canonical_span_start: 1574
+    canonical_span_end: 1800
+    rater_A:
+      worksheet_refs: [A14, A15, A16, A17, A18, A19]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_geometrical_pattern
+        - visual_hallucination_extraordinary_entity_other
+        - visual_hallucination_inorganic_entity_other
+        - visual_hallucination_artefact_other
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B03]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_geometrical_pattern
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_02_S08
+    status: only_A
+    canonical_desc: "Walking in wood: brilliant green heart-shaped leaves, rain like ice needles, wind in dolby surround"
+    canonical_span_start: 2000
+    canonical_span_end: 2170
+    rater_A:
+      worksheet_refs: [A20, A21]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_plant_flower_grass
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_02_S09
+    status: both
+    canonical_desc: "Feeling of someone following behind him (but no one there)"
+    canonical_span_start: 2511
+    canonical_span_end: 2600
+    rater_A:
+      worksheet_refs: [A22]
+      items: [nonsensory_hallucination_human]
+    rater_B:
+      worksheet_refs: [B04]
+      items: [nonsensory_hallucination_other]
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_02_S10
+    status: both
+    canonical_desc: "Mexican environment perceived as extraordinarily colourful"
+    canonical_span_start: 3114
+    canonical_span_end: 3210
+    rater_A:
+      worksheet_refs: [A23]
+      items: [type_of_visual_alteration_illusion]
+    rater_B:
+      worksheet_refs: [B05]
+      items: [type_of_visual_alteration_illusion]
+    rationale: "Both individuated with same attribute."
+
+  - scene_id: Psilocybe_02_S11
+    status: both
+    canonical_desc: "Blanket with flowers fluctuating on it; merges with them"
+    canonical_span_start: 4469
+    canonical_span_end: 4580
+    rater_A:
+      worksheet_refs: [A24, A25]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_plant_flower_grass
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B06]
+      items: [type_of_visual_alteration_illusion]
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_02_S12
+    status: only_A
+    canonical_desc: "Feeling of being at a California party with many people and music; amplified echo-sounds"
+    canonical_span_start: 4700
+    canonical_span_end: 5000
+    rater_A:
+      worksheet_refs: [A26]
+      items: [auditory_hallucination_human_unknown_persons]
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_02_S13
+    status: only_A
+    canonical_desc: "Visions of past parties and clubs"
+    canonical_span_start: 5555
+    canonical_span_end: 5620
+    rater_A:
+      worksheet_refs: [A27, A28, A29]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_human_others
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_02_S14
+    status: only_A
+    canonical_desc: "Own scent (and girlfriend's) strong like animals (olfactory)"
+    canonical_span_start: 6390
+    canonical_span_end: 6470
+    rater_A:
+      worksheet_refs: [A30]
+      items: [olfactory_hallucination_human]
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_02_S15
+    status: both
+    canonical_desc: "Colourful visions of lights and luminous wires interweaving"
+    canonical_span_start: 7126
+    canonical_span_end: 7200
+    rater_A:
+      worksheet_refs: [A32, A33, A34]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_artefact_other
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B07]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_geometrical_pattern
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_02_S16
+    status: both
+    canonical_desc: "Wall becomes liquid and transparent, water flowing into it"
+    canonical_span_start: 7211
+    canonical_span_end: 7300
+    rater_A:
+      worksheet_refs: [A35]
+      items: [type_of_visual_alteration_illusion]
+    rater_B:
+      worksheet_refs: [B08]
+      items: [type_of_visual_alteration_illusion]
+    rationale: "Both individuated; full agreement."
+
+  - scene_id: Psilocybe_02_S17
+    status: only_A
+    canonical_desc: "Hears voices outside as Chinese speakers under bamboo shelter, wind in bamboo"
+    canonical_span_start: 7300
+    canonical_span_end: 7500
+    rater_A:
+      worksheet_refs: [A36, A37]
+      items:
+        - auditory_hallucination_human_unknown_persons
+        - auditory_hallucination_plant_tree_shrub
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_02_S18
+    status: both
+    canonical_desc: "Colourful snakes moving in a pattern"
+    canonical_span_start: 7791
+    canonical_span_end: 7850
+    rater_A:
+      worksheet_refs: [A38, A39]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_animal_other
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B09]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_animal_other
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_02_S19
+    status: only_A
+    canonical_desc: "Enters '2001: A Space Odyssey' immersively"
+    canonical_span_start: 8242
+    canonical_span_end: 8310
+    rater_A:
+      worksheet_refs: [A40]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_02_S20
+    status: only_A
+    canonical_desc: "Wood-board ceiling: veins and nodes floating"
+    canonical_span_start: 8485
+    canonical_span_end: 8560
+    rater_A:
+      worksheet_refs: [A41, A42]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_artefact_other
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_02_S21
+    status: both
+    canonical_desc: "Wonderful dragons/demons flying, gold rings with gemstones whirling like snake skin forming esoteric symbol"
+    canonical_span_start: 8674
+    canonical_span_end: 8900
+    rater_A:
+      worksheet_refs: [A43, A44, A45]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_extraordinary_entity_other
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B10]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_extraordinary_entity_chimera
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_02_S22
+    status: only_A
+    canonical_desc: "Everything turns silver; opera-set leans toward audience"
+    canonical_span_start: 8955
+    canonical_span_end: 9080
+    rater_A:
+      worksheet_refs: [A46, A47, A48, A49, A50]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_artefact_city_building_furniture
+        - visual_hallucination_human_unknown_persons
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_02_S23
+    status: both
+    canonical_desc: "Virtual hexagonal room with dimensional-porthole round window leading to other worlds"
+    canonical_span_start: 9273
+    canonical_span_end: 9520
+    rater_A:
+      worksheet_refs: [A51, A52, A53, A54, A55, A56]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_artefact_city_building_furniture
+        - visual_hallucination_extraordinary_entity_other
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B11]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_artefact_city_building_furniture
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_02_S24
+    status: both
+    canonical_desc: "Black heart-shaped obsidian in dark cave emanating evil; takes anthropomorphic black-fog form"
+    canonical_span_start: 10283
+    canonical_span_end: 10530
+    rater_A:
+      worksheet_refs: [A57, A58, A59, A60, A61]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_inorganic_entity_stone_rock
+        - visual_hallucination_inorganic_entity_earth_river_sky_cloud
+        - dynamics_of_the_hallucination_no_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B12]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_inorganic_entity_stone_rock
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_02_S25
+    status: only_A
+    canonical_desc: "Visual of dissolution of the body / end of everything (imagining death)"
+    canonical_span_start: 10686
+    canonical_span_end: 10800
+    rater_A:
+      worksheet_refs: [A62]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_02_S26
+    status: only_A
+    canonical_desc: "Palm lines change colour, rectangle of iridescent soft pulsing lines, hand as planet surface, dead hand"
+    canonical_span_start: 11390
+    canonical_span_end: 11580
+    rater_A:
+      worksheet_refs: [A63, A64, A65, A66]
+      items:
+        - type_of_visual_alteration_illusion
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_geometrical_pattern
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+trip_level_codes:
+  rater_A:
+    - item: emotion_positive_emotion
+      excerpt_refs: [a02, a13, a15, a16, a17, a20]
+      excerpt: "totally amazing; laughing; exciting; laugh; laughing violently; having fun"
+    - item: emotion_negative_emotion
+      excerpt_refs: [a01, a03, a21, a26]
+      excerpt: "anxiety; upset; can't stand sounds; fear losing something"
+    - item: arousal_abnormally_low
+      excerpt_refs: [a05, a18]
+      excerpt: "puppet moving with wires; shoes hard to take off"
+    - item: arousal_abnormally_high
+      excerpt_refs: [a07, a12]
+      excerpt: "start running; euphoria"
+    - item: amnesia
+      excerpt_refs: [a14]
+      excerpt: "don't know where on Earth I am"
+    - item: sense_of_reality_lucid
+      excerpt_refs: [a09, a10, a22]
+      excerpt: "understood what tripping means; know I could be wrong; understand laws of psychedelic culture"
+    - item: dynamics_of_the_hallucination_no_object_constancy
+      excerpt_refs: [a04, a06]
+      excerpt: "mass of worms, change again, fantasy world; trees vortex, fluorescent lines"
+    - item: sensory_delight_visual_nature
+      excerpt_refs: [a08, a11]
+      excerpt: "rain dolby surround; raindrops circles gorgeous"
+    - item: sensory_delight_visual_artefact
+      excerpt_refs: [a19]
+      excerpt: "blanket so beautiful"
+    - item: insight_metaphysical
+      excerpt_refs: [a24]
+      excerpt: "art as way to express altered reality"
+    - item: sense_of_surprise_and_unexpectedness
+      excerpt_refs: [a25]
+      excerpt: "want to record every thing"
+  rater_B:
+    - item: emotion_positive_emotion
+      excerpt: "(B trip-level excerpts not captured in worksheet extract)"
+
+summary:
+  total_canonical_scenes: 26
+  both: 10
+  only_A: 16
+  only_B: 0
+  scene_individuation_jaccard: 0.385
+  individuation_notes:
+    - "A individuated 26 scenes (consolidated from 66 per-object excerpts); B individuated 10 scenes. 10 shared, 16 only_A."
+    - "Large asymmetry: A individuated many brief vision-fragments as distinct scenes (hands, leaves, voices, past parties, scent, opera set, death vision, hand-as-planet) that B did not scene-code."

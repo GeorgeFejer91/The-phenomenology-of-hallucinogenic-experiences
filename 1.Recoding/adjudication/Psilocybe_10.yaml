@@ -1,0 +1,133 @@
+trip_id: Psilocybe_10
+substance: psilocybin
+block: "01-10"
+coder_A: Alessandra
+coder_B: Brendan
+dose_raw: null
+word_count: 3027
+
+scenes:
+  - scene_id: Psilocybe_10_S01
+    status: both
+    canonical_desc: "Sees another set of fingers floating above current set; friend's thumb appears inches from face though he is 6 feet away"
+    canonical_span_start: 1365
+    canonical_span_end: 1900
+    rater_A:
+      worksheet_refs: [A01, A02, A03, A04]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - type_of_visual_alteration_illusion
+        - visual_hallucination_human_relatives_acquaintances
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B01]
+      items: [type_of_visual_alteration_illusion]
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_10_S02
+    status: both
+    canonical_desc: "Outlines in visual field become wavy/melting; notices intricate patterns in room, furniture, wood grain"
+    canonical_span_start: 3159
+    canonical_span_end: 3450
+    rater_A:
+      worksheet_refs: [A05, A06]
+      items: [type_of_visual_alteration_illusion]
+    rater_B:
+      worksheet_refs: [B02]
+      items: [type_of_visual_alteration_illusion]
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_10_S03
+    status: both
+    canonical_desc: "Mirror reflection looks animalistic/mousy; shadowing, expression, outlines of face change and distort"
+    canonical_span_start: 3573
+    canonical_span_end: 3900
+    rater_A:
+      worksheet_refs: [A07]
+      items: [type_of_visual_alteration_illusion]
+    rater_B:
+      worksheet_refs: [B03]
+      items: [type_of_visual_alteration_illusion]
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_10_S04
+    status: both
+    canonical_desc: "Couch appears as size of skyscraper; or he was extremely tiny"
+    canonical_span_start: 3959
+    canonical_span_end: 4100
+    rater_A:
+      worksheet_refs: [A08]
+      items: [type_of_visual_alteration_illusion]
+    rater_B:
+      worksheet_refs: [B04]
+      items: [type_of_visual_alteration_illusion]
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_10_S05
+    status: both
+    canonical_desc: "Everything in visual field was breathing; objects animated; colors pop and change faintly"
+    canonical_span_start: 5730
+    canonical_span_end: 5870
+    rater_A:
+      worksheet_refs: [A09]
+      items: [type_of_visual_alteration_illusion]
+    rater_B:
+      worksheet_refs: [B05]
+      items: [type_of_visual_alteration_illusion]
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_10_S06
+    status: both
+    canonical_desc: "Hedges in yard spell out 'Ron Regan' (Lil' Wayne song lyric); auditory connection"
+    canonical_span_start: 9766
+    canonical_span_end: 9860
+    rater_A:
+      worksheet_refs: [A10]
+      items: [auditory_hallucination_plant_other]
+    rater_B:
+      worksheet_refs: [B06]
+      items: [type_of_visual_alteration_illusion]
+    rationale: "Both individuated. Major modality disagreement: A tags auditory-plant, B tags visual-illusion (the hedges spelling letters is visual, but A interpreted it through the song lyric context)."
+
+  - scene_id: Psilocybe_10_S07
+    status: only_A
+    canonical_desc: "Still-distorting houses and telephone poles seen from ambulance"
+    canonical_span_start: 11631
+    canonical_span_end: 11720
+    rater_A:
+      worksheet_refs: [A11]
+      items: [type_of_visual_alteration_illusion]
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+trip_level_codes:
+  rater_A:
+    - item: emotion_positive_emotion
+      excerpt_refs: [a02, a04]
+      excerpt: "laughed hysterically in excitement and awe; in for something amazing"
+    - item: enhanced_mental_imagery
+      excerpt_refs: [a03]
+      excerpt: "thoughts flooded at impossible speeds; access information at lightning speeds"
+    - item: arousal_abnormally_high
+      excerpt_refs: [a05]
+      excerpt: "(abnormally high arousal during conversation)"
+    - item: insight_metaphysical
+      excerpt: "all one consciousness; meaning of life"
+    - item: sensory_delight_visual_artefact
+      excerpt_refs: [a01]
+      excerpt: "molding looked especially beautiful"
+    - item: sense_of_reality_delusional
+      excerpt: "thought I was dreaming; told doctor vicodin"
+    - item: amnesia
+      excerpt: "memory from here on is incomplete, slide show of short scenes; blackout haze"
+  rater_B:
+    - item: ego_dissolution_core_self
+      excerpt: "we are all one consciousness"
+    - item: sense_of_reality_delusional
+      excerpt: "I must be dreaming; lost touch with reality"
+    - item: amnesia
+      excerpt: "memory incomplete; slide show of scenes"
+
+# ========================================================================
+# END OF PSILOCYBE 01-10 BLOCK (Alessandra vs Brendan) — 10 trips adjudicated
+# ========================================================================

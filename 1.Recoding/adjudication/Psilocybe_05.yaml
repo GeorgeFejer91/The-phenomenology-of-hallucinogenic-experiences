@@ -1,0 +1,219 @@
+trip_id: Psilocybe_05
+substance: psilocybin
+block: "01-10"
+coder_A: Alessandra
+coder_B: Brendan
+dose_raw: "3 g"
+word_count: 2066
+
+# A individuated 29 scene-level excerpts (many are per-object within scenes); B individuated 10.
+
+scenes:
+  - scene_id: Psilocybe_05_S01
+    status: both
+    canonical_desc: "Words on the computer screen shimmer, flicker, then mutate wildly in rhythmic patterns"
+    canonical_span_start: 1438
+    canonical_span_end: 2100
+    rater_A:
+      worksheet_refs: [A01]
+      items: [type_of_visual_alteration_illusion]
+    rater_B:
+      worksheet_refs: [B01]
+      items: [type_of_visual_alteration_illusion]
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_05_S02
+    status: only_A
+    canonical_desc: "Friend's trippy-art images mutating, shimmering, melting, growing out and back"
+    canonical_span_start: 2331
+    canonical_span_end: 2540
+    rater_A:
+      worksheet_refs: [A02]
+      items: [type_of_visual_alteration_illusion]
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_05_S03
+    status: only_A
+    canonical_desc: "Pictures himself as a small child lost in space, flying into nether regions"
+    canonical_span_start: 2887
+    canonical_span_end: 3000
+    rater_A:
+      worksheet_refs: [A03, A04, A05, A06]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_human_relatives_acquaintances
+        - visual_hallucination_inorganic_entity_earth_river_sky_cloud
+        - visual_hallucination_inorganic_entity_other
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_05_S04
+    status: only_A
+    canonical_desc: "Sun rising and setting repeatedly in background of picture; each component a breathing mass of cosmic sludge"
+    canonical_span_start: 2994
+    canonical_span_end: 3320
+    rater_A:
+      worksheet_refs: [A07, A08, A09, A10]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_inorganic_entity_earth_river_sky_cloud
+        - visual_hallucination_inorganic_entity_other
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_05_S05
+    status: both
+    canonical_desc: "A beautiful golden sun of geometric figures appears etched into the background of screen"
+    canonical_span_start: 3327
+    canonical_span_end: 3540
+    rater_A:
+      worksheet_refs: [A11, A12, A13]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_inorganic_entity_earth_river_sky_cloud
+        - visual_hallucination_geometrical_pattern
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B02]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_inorganic_entity_earth_river_sky_cloud
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_05_S06
+    status: only_A
+    canonical_desc: "Sinister cosmic black hole pulling away parts of ego"
+    canonical_span_start: 3725
+    canonical_span_end: 3900
+    rater_A:
+      worksheet_refs: [A14]
+      items: [nonsensory_hallucination_extraordinary_entity]
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_05_S07
+    status: both
+    canonical_desc: "Indian jungle; black snakes slithering around; desk transforms into stone panther statue; hordes of faces cascading with sinister smiles"
+    canonical_span_start: 4513
+    canonical_span_end: 4990
+    rater_A:
+      worksheet_refs: [A15, A16, A17, A18, A19, A20, A21, A22, A23]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - nonsensory_hallucination_inorganic_entity
+        - visual_hallucination_animal_other
+        - visual_hallucination_artefact_other
+        - visual_hallucination_human_unknown_persons
+        - visual_hallucination_human_others
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B03, B04, B05, B06, B07]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_plant_tree_shrub
+        - visual_hallucination_animal_other
+        - visual_hallucination_animal_mammal
+        - visual_hallucination_extraordinary_entity_other
+        - domain_specific_violation_biological_projection
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rationale: "Both individuated this composite jungle scene; both captured multiple sub-objects. Alteration-type disagreement (detached vs full-blown immersive)."
+
+  - scene_id: Psilocybe_05_S08
+    status: both
+    canonical_desc: "Darkness around computer screen cycles between dark and dim light"
+    canonical_span_start: 5942
+    canonical_span_end: 6150
+    rater_A:
+      worksheet_refs: [A24]
+      items: [type_of_visual_alteration_illusion]
+    rater_B:
+      worksheet_refs: [B08]
+      items: [type_of_visual_alteration_illusion]
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_05_S09
+    status: only_A
+    canonical_desc: "Auditory hallucinations infiltrating thoughts (ghost voices of acquaintances)"
+    canonical_span_start: 6243
+    canonical_span_end: 6350
+    rater_A:
+      worksheet_refs: [A25]
+      items: [auditory_hallucination_human_relatives_acquaintances]
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_05_S10
+    status: both
+    canonical_desc: "Full 3D dream world with alien-like monstrosities (Lovecraftian), mutating quivering things staring back"
+    canonical_span_start: 7937
+    canonical_span_end: 8400
+    rater_A:
+      worksheet_refs: [A26, A27, A28]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_extraordinary_entity_other
+        - visual_hallucination_extraordinary_entity_alien
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B09, B10]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_extraordinary_entity_alien
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_05_S11
+    status: only_A
+    canonical_desc: "Feels he stumbled upon a cosmic isle free of earthly properties"
+    canonical_span_start: 9389
+    canonical_span_end: 9500
+    rater_A:
+      worksheet_refs: [A29]
+      items: [nonsensory_hallucination_inorganic_entity]
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+trip_level_codes:
+  rater_A:
+    - item: arousal_abnormally_high
+      excerpt_refs: [a01, a34]
+      excerpt: "energetic in the extreme; extreme all-consuming euphoria"
+    - item: arousal_abnormally_low
+      excerpt_refs: [a32]
+      excerpt: "drifted off into forgiving hands of sleep"
+    - item: dynamics_of_the_hallucination_no_object_constancy
+      excerpt_refs: [a02, a07]
+      excerpt: "words mutating wildly; sun rising and setting repeatedly"
+    - item: dynamics_of_the_hallucination_object_constancy
+      excerpt_refs: [a04, a22]
+      excerpt: "pattern went on and on more intense; constant in all manner"
+    - item: emotion_positive_emotion
+      excerpt_refs: [a03, a11, a35]
+      excerpt: "sheer excitement; managed to remain calm; euphoria"
+    - item: emotion_negative_emotion
+      excerpt_refs: [a05, a09, a12, a13, a17, a20, a24, a26, a28, a30]
+      excerpt: "anxiety; too much; freaking me out; convulsing overcome; sinister smiles tormenting; more helpless; psychotic; insane; fear/horror; mind failing"
+    - item: enhanced_mental_imagery
+      excerpt_refs: [a06, a14, a16, a21]
+      excerpt: "heightened imagination; overcome with hallucinations; scene contents; got more intense"
+    - item: sense_of_reality_lucid
+      excerpt_refs: [a10, a19, a25, a33]
+      excerpt: "ego still connected; tried to kill panic with rational thoughts; crystal clear in control; regaining contact with ego"
+    - item: domain_specific_violation_biological_projection
+      excerpt_refs: [a08]
+      excerpt: "every component breathing"
+    - item: domain_specific_violation_psychological_projection
+      excerpt_refs: [a15, a18, a27, a29]
+      excerpt: "Indian-nature hallucinations; sinister smiles; unnamed third party controlling; things stared back"
+    - item: sense_of_reality_delusional
+      excerpt_refs: [a30]
+      excerpt: "completely gone from this world"
+    - item: amnesia
+      excerpt_refs: [a23, a31]
+      excerpt: "sense of time devastated; next few hours hazy"
+  rater_B:
+    - item: emotion_negative_emotion
+      excerpt: "(B trip-level codes include anxiety/fear — inferred)"

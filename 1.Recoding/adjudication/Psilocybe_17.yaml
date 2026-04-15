@@ -1,0 +1,163 @@
+trip_id: Psilocybe_17
+substance: psilocybin
+block: "11-20"
+coder_A: Francesco
+coder_B: Susana
+dose_raw: "4 g"
+word_count: 2372
+
+scenes:
+  - scene_id: Psilocybe_17_S01
+    status: only_A
+    canonical_desc: "Newspapers on table defy gravity, flap gently as if from a breeze"
+    canonical_span_start: 1491
+    canonical_span_end: 1700
+    rater_A:
+      worksheet_refs: [A01]
+      items: [type_of_visual_alteration_illusion]
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_17_S02
+    status: both
+    canonical_desc: "PC screen appears as kaleidoscope of colors, beehive of intricate 'networks' like stars of color on a blank pallet"
+    canonical_span_start: 1848
+    canonical_span_end: 2100
+    rater_A:
+      worksheet_refs: [A02]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_geometrical_pattern
+        - dynamics_of_the_hallucination_no_object_constancy
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rater_B:
+      worksheet_refs: [B01, B02]
+      items:
+        - type_of_visual_alteration_illusion
+        - visual_hallucination_geometrical_pattern
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_17_S03
+    status: both
+    canonical_desc: "Sees Quetzalcoatl (snake god of Aztecs) in distance, approaching; body of multi-polygon Rubik's-cube-like formation; peers at him, lifts him"
+    canonical_span_start: 2952
+    canonical_span_end: 4400
+    rater_A:
+      worksheet_refs: [A03, A04, A05, A06, A07]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_animal_other
+        - visual_hallucination_extraordinary_entity_god
+        - visual_hallucination_geometrical_pattern
+        - tactile_hallucination_extraordinary_entity
+        - dynamics_of_the_hallucination_no_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B03, B04, B05]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_extraordinary_entity_god
+        - tactile_hallucination_extraordinary_entity
+        - modal_status_of_the_hallucination_impossible_event
+        - sense_of_reality_lucid
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_17_S04
+    status: both
+    canonical_desc: "Dies and disintegrates into pieces; grew 6 extra arms; feels broken body; hears parents' voices asking 'what is wrong with you son?'"
+    canonical_span_start: 4365
+    canonical_span_end: 5100
+    rater_A:
+      worksheet_refs: [A08, A09]
+      items:
+        - own_body_distortion
+        - tactile_hallucination_human
+        - auditory_hallucination_human_relatives_acquaintances
+        - dynamics_of_the_hallucination_no_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rater_B:
+      worksheet_refs: [B06, B07, B08]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - nonsensory_hallucination_other
+        - auditory_hallucination_human_relatives_acquaintances
+        - ego_dissolution_bodily_self
+        - modal_status_of_the_hallucination_impossible_event
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_17_S05
+    status: both
+    canonical_desc: "Fan spawns flaming Pentagram; Satan appears as a face from pentagram, laughs, goes away"
+    canonical_span_start: 5257
+    canonical_span_end: 5480
+    rater_A:
+      worksheet_refs: [A10]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_extraordinary_entity_other
+        - visual_hallucination_geometrical_pattern
+        - auditory_hallucination_extraordinary_entity_other
+        - dynamics_of_the_hallucination_no_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B09, B10, B11, B12]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_geometrical_pattern
+        - visual_hallucination_extraordinary_entity_other
+        - auditory_hallucination_extraordinary_entity_other
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_17_S06
+    status: both
+    canonical_desc: "Quetzalcoatl reappears, morphs room: walls split, windows become flapping mirrors, door missing knob"
+    canonical_span_start: 5896
+    canonical_span_end: 6200
+    rater_A:
+      worksheet_refs: [A11]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_artefact_city_building_furniture
+        - visual_hallucination_extraordinary_entity_god
+        - dynamics_of_the_hallucination_no_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B13]
+      items: [type_of_visual_alteration_hallucination_of_an_incrusted_object]
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_17_S07
+    status: both
+    canonical_desc: "Journeys out of Earth into other planets to see other terrestrial life"
+    canonical_span_start: 7027
+    canonical_span_end: 7150
+    rater_A:
+      worksheet_refs: [A12]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_animal_other
+        - visual_hallucination_inorganic_entity_other
+        - dynamics_of_the_hallucination_no_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B: null
+    rationale: "(Only A individuated.)"
+
+trip_level_codes:
+  rater_A:
+    - item: emotion_positive_emotion
+      excerpt: "euphoric and giggly"
+    - item: emotion_negative_emotion
+      excerpt: "paranoia"
+    - item: insight_metaphysical
+      excerpt: "Earth is Garden of Eden; shrooms as transparencies"
+    - item: insight_religious
+      excerpt: "religion is man's projection; no institutionalized God"
+    - item: sense_of_reality_delusional
+      excerpt: "I was truly dead; I was God"
+  rater_B:
+    - item: insight_metaphysical
+      excerpt: "knowledge structure divided; Earth communicates via shrooms"

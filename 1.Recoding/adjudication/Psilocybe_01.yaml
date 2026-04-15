@@ -1,0 +1,237 @@
+trip_id: Psilocybe_01
+substance: psilocybin
+block: "01-10"
+coder_A: Alessandra
+coder_B: Brendan
+dose_raw: "6 g"
+word_count: 1847
+
+scenes:
+  - scene_id: Psilocybe_01_S01
+    status: both
+    canonical_desc: "Cosmic hum / organic buzzing / radio-static sound"
+    canonical_span_start: 451
+    canonical_span_end: 700
+    rater_A:
+      worksheet_refs: [A01]
+      items:
+        - auditory_hallucination_inorganic_entity_other
+    rater_B:
+      worksheet_refs: [B01]
+      items:
+        - auditory_hallucination_extraordinary_entity_other
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+        - sense_of_reality_lucid
+    rationale: "Both individuated this scene."
+
+  - scene_id: Psilocybe_01_S02
+    status: both
+    canonical_desc: "Kaleidoscopic fractals/color/shapes swirling; edges of own body and blanket dissolving into shapes"
+    canonical_span_start: 895
+    canonical_span_end: 1200
+    rater_A:
+      worksheet_refs: [A02, A03, A04, A05, A06, A07, A08]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_geometrical_pattern
+        - visual_hallucination_artefact_tool_cloth
+        - visual_hallucination_human_others
+        - dynamics_of_the_hallucination_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+        - ego_dissolution_bodily_self
+    rater_B:
+      worksheet_refs: [B02]
+      items:
+        - type_of_visual_alteration_illusion
+    rationale: "Both individuated this scene. A fragments into many sub-object excerpts (blanket edges, body edges, shapes); B codes holistically as illusion. Plus B codes the same passage at trip-level as own-body-distortion + haptic delight."
+
+  - scene_id: Psilocybe_01_S03
+    status: only_A
+    canonical_desc: "Main narrator voice + other voices + voices of people/entities + electronic music booming"
+    canonical_span_start: 1300
+    canonical_span_end: 1520
+    rater_A:
+      worksheet_refs: [A09]
+      items:
+        - auditory_hallucination_human_others
+        - auditory_hallucination_human_unknown_persons
+    rater_B: null
+    rationale: "A individuated the multiple-voices-and-music scene; B did not scene-code it."
+
+  - scene_id: Psilocybe_01_S04
+    status: both
+    canonical_desc: "Presence of entities in the room with him; some visible as swirls, others formless"
+    canonical_span_start: 1980
+    canonical_span_end: 2900
+    rater_A:
+      worksheet_refs: [A10, A11, A17, A18, A19]
+      items:
+        - visual_hallucination_extraordinary_entity_other
+        - visual_hallucination_geometrical_pattern
+        - nonsensory_hallucination_inorganic_entity
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - dynamics_of_the_hallucination_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B04, B05]
+      items:
+        - nonsensory_hallucination_other
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated the entities-present scene."
+
+  - scene_id: Psilocybe_01_S05
+    status: both
+    canonical_desc: "Thinking of people in his life — sees them and talks with them; also sees people he's never met and admires (including Erykah Badu voicing wisdoms)"
+    canonical_span_start: 2202
+    canonical_span_end: 2600
+    rater_A:
+      worksheet_refs: [A12, A13, A14, A15, A16]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_human_relatives_acquaintances
+        - auditory_hallucination_human_relatives_acquaintances
+        - auditory_hallucination_human_celebrityies
+        - nonsensory_hallucination_human
+        - dynamics_of_the_hallucination_object_constancy
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rater_B:
+      worksheet_refs: [B03]
+      items:
+        - auditory_hallucination_human_celebrityies
+        - auditory_hallucination_human_relatives_acquaintances
+        - auditory_hallucination_human_unknown_persons
+        - modal_status_of_the_hallucination_possible_and_probable_event
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rationale: "Both individuated this combined 'people and voices' scene with similar auditory codes."
+
+  - scene_id: Psilocybe_01_S06
+    status: only_A
+    canonical_desc: "Erotic dance with the entities; 'spotted' by outsiders; giggling and mutually admiring"
+    canonical_span_start: 3240
+    canonical_span_end: 3560
+    rater_A:
+      worksheet_refs: [A20, A21]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_human_others
+        - dynamics_of_the_hallucination_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B: null
+    rationale: "A individuated this erotic-dance scene. B codes the same passage at trip-level as Sensory-delight/erotic, not scene-level."
+
+  - scene_id: Psilocybe_01_S07
+    status: only_A
+    canonical_desc: "Breaking edges visible again when focusing later in the trip"
+    canonical_span_start: 4550
+    canonical_span_end: 4620
+    rater_A:
+      worksheet_refs: [A22]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - dynamics_of_the_hallucination_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B: null
+    rationale: "A individuated as a distinct later scene; B did not."
+
+  - scene_id: Psilocybe_01_S08
+    status: both
+    canonical_desc: "In bathroom: tile floor's tiny hair strands moving, ondulating, separating into edges"
+    canonical_span_start: 6771
+    canonical_span_end: 6960
+    rater_A:
+      worksheet_refs: [A23, A24, A25]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_inorganic_entity_other
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B06]
+      items:
+        - type_of_visual_alteration_illusion
+    rationale: "Both individuated this scene."
+
+  - scene_id: Psilocybe_01_S09
+    status: only_A
+    canonical_desc: "Visualises mycelium branching in disturbed earth connecting all beings"
+    canonical_span_start: 9742
+    canonical_span_end: 10000
+    rater_A:
+      worksheet_refs: [A26, A27, A28, A29]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_plant_mushroom_fungus
+        - visual_hallucination_inorganic_entity_earth_river_sky_cloud
+        - visual_hallucination_human_others
+    rater_B: null
+    rationale: "A individuated the mycelium visualisation as a scene. B codes the same passage at trip-level as Insight/Existential."
+
+trip_level_codes:
+  rater_A:
+    - item: arousal_abnormally_low
+      excerpt_refs: [a02, a17, a23]
+      excerpt: "had to lie down; lying in bed; dizzy when upright"
+    - item: enhanced_mental_imagery
+      excerpt_refs: [a01, a08, a20]
+      excerpt: "hallucinations intense; thinking many things; incredible amount going on in head"
+    - item: emotion_positive_emotion
+      excerpt_refs: [a03, a05, a06, a09, a12, a19, a26, a28]
+      excerpt: "love and well-being; wrapped enveloped; dancing; Erykah priceless; grateful; crying for joy; compassion and love; miracle of life"
+    - item: emotion_negative_emotion
+      excerpt_refs: [a16, a18, a21]
+      excerpt: "eerie; cold sweat; too much"
+    - item: sense_of_reality_lucid
+      excerpt_refs: [a07, a15, a22, a25]
+      excerpt: "felt super sober; come out deliberately; self-conscious how others perceive; keeping eye on reality"
+    - item: dynamics_of_the_hallucination_object_constancy
+      excerpt_refs: [a04]
+      excerpt: "edges of blanket/body persist flowing"
+    - item: dynamics_of_the_hallucination_no_object_constancy
+      excerpt_refs: [a24]
+      excerpt: "hair strands moving, ondulating, separating"
+    - item: domain_specific_violation_biological_projection
+      excerpt_refs: [a10, a13]
+      excerpt: "entities laughing understanding; giggling beautiful beings"
+    - item: domain_specific_violation_psychological_projection
+      excerpt_refs: [a10, a14]
+      excerpt: "entities good mood, understanding consent"
+    - item: sensory_delight_erotic
+      excerpt_refs: [a11]
+      excerpt: "very erotic dance with all these entities"
+    - item: sense_of_surprise_and_unexpectedness
+      excerpt_refs: [a29]
+      excerpt: "overwhelmed at the miracle of life"
+    - item: insight_existential
+      excerpt_refs: [a27, a30]
+      excerpt: "understanding of people in weaker moments; heteronormative socialization"
+    - item: insight_metaphysical
+      excerpt_refs: [a31]
+      excerpt: "we are all connected, every being with every little imperfection"
+  rater_B:
+    - item: emotion_positive_emotion
+      excerpt_refs: [b01, b05]
+      excerpt: "flooded with love and well-being; crying for joy"
+    - item: own_body_distortion
+      excerpt_refs: [b02]
+      excerpt: "barely felt where body ended"
+    - item: sensory_delight_haptic
+      excerpt_refs: [b02]
+      excerpt: "wrapped, enveloped in it; very pleasant feeling"
+    - item: sensory_delight_erotic
+      excerpt_refs: [b03]
+      excerpt: "erotic dance with all these entities"
+    - item: sense_of_strangeness_and_enigma
+      excerpt_refs: [b04]
+      excerpt: "feeling of returning to my room was eerie"
+    - item: insight_existential
+      excerpt_refs: [b06, b07]
+      excerpt: "general feeling of understanding, compassion, love; all connected mycelium"
+
+summary:
+  total_canonical_scenes: 9
+  both: 5
+  only_A: 4
+  only_B: 0
+  scene_individuation_jaccard: 0.556
+  individuation_notes:
+    - "A individuated 9 scenes; B individuated 5 scenes. 5 shared, 4 only_A."
+    - "A scene-codes passages that B treats as trip-level (mycelium as insight; erotic dance as sensory delight; voices as separate auditory scene)."

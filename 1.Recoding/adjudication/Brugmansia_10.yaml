@@ -1,0 +1,103 @@
+trip_id: Brugmansia_10
+substance: brugmansia
+block: "01-10"
+coder_A: Brendan
+coder_B: Noah
+dose_raw: null
+word_count: 762
+
+scenes:
+  - scene_id: Brugmansia_10_S01
+    status: only_A
+    canonical_desc: "Believed his parents had come home (they had not); had imaginary greeting / interaction with them"
+    canonical_span_start: 1605
+    canonical_span_end: 1900
+    rater_A:
+      worksheet_refs: [A01]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_relatives_acquaintances
+        - modal_status_of_the_hallucination_possible_and_probable_event
+        - sense_of_reality_delusional
+    rater_B: null
+    rationale: "A codes the phantom-parents-arriving scene; B does not individuate it, although it is one of the more striking hallucinations in the narrative."
+
+  - scene_id: Brugmansia_10_S02
+    status: both
+    canonical_desc: "Vague memory of talking to people all afternoon"
+    canonical_span_start: 2110
+    canonical_span_end: 2170
+    rater_A:
+      worksheet_refs: [A02]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_unknown_persons
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rater_B:
+      worksheet_refs: [B01]
+      items:
+        - visual_hallucination_human_unknown_persons
+        - auditory_hallucination_human_unknown_persons
+        - amnesia
+    rationale: "Same 'talking to people all afternoon' passage. Both agree it involved unknown persons. B additionally codes auditory (talking = speech = auditory) which is a reasonable capture A missed. A codes incrusted + modal. B codes amnesia at scene-level (should arguably be trip-level)."
+
+  - scene_id: Brugmansia_10_S03
+    status: both
+    canonical_desc: "During phone call to Lauren, repeatedly paused to talk to imaginary people in the room"
+    canonical_span_start: 2440
+    canonical_span_end: 2620
+    rater_A:
+      worksheet_refs: [A03]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_unknown_persons
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rater_B:
+      worksheet_refs: [B02]
+      items:
+        - visual_hallucination_human_unknown_persons
+        - auditory_hallucination_human_unknown_persons
+    rationale: "Same phone-call-with-phantom-people scene. Both agree unknown-person visual; B correctly adds auditory. A adds incrusted + modal."
+
+  - scene_id: Brugmansia_10_S04
+    status: both
+    canonical_desc: "5-6 friends walk in and hang out like at a small party for ~20 minutes"
+    canonical_span_start: 3144
+    canonical_span_end: 3340
+    rater_A:
+      worksheet_refs: [A04]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_relatives_acquaintances
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rater_B:
+      worksheet_refs: [B03]
+      items:
+        - visual_hallucination_human_relatives_acquaintances
+        - auditory_hallucination_human_relatives_acquaintances
+    rationale: "Same phantom-friends-visit scene. Both agree acquaintance visual; B correctly adds auditory. A adds incrusted + modal."
+
+trip_level_codes:
+  rater_A:
+    - item: arousal_abnormally_low
+      excerpt_refs: [a01]
+      excerpt: "I started to feel slightly drowsy"
+  rater_B:
+    - item: amnesia
+      excerpt_refs: [b01]
+      excerpt: "Keep in mind that these are the only things I remember vividly"
+
+summary:
+  total_canonical_scenes: 4
+  both: 3
+  only_A: 1
+  only_B: 0
+  scene_individuation_jaccard: 0.75
+  classification_notes:
+    - "Good scene-level agreement (3/4)."
+    - "B shows an important classification strength on this trip: correctly identifying the auditory modality of the phantom-conversation scenes, which A missed entirely. This is the mirror-image of B's error on Brugmansia_08 S05."
+    - "A continues to add 'incrusted' + 'modal status' tags that B omits — consistent pattern across this coder pair."
+
+# ========================================================================
+# END OF BRUGMANSIA 01-10 BLOCK (Brendan vs Noah) — 10 trips adjudicated
+# ========================================================================

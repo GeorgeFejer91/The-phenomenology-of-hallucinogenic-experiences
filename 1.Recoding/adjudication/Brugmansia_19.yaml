@@ -1,0 +1,76 @@
+trip_id: Brugmansia_19
+substance: brugmansia
+block: "11-20"
+coder_A: Alessandra
+coder_B: Alessio
+dose_raw: null
+word_count: 488
+
+scenes:
+  - scene_id: Brugmansia_19_S01
+    status: both
+    canonical_desc: "White cobwebs layer on ceiling; possibly a spider"
+    canonical_span_start: 737
+    canonical_span_end: 900
+    rater_A:
+      worksheet_refs: [A01, A02]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_inorganic_entity_other
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rater_B:
+      worksheet_refs: [B01]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_animal_other
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rationale: "Both individuated this scene."
+
+  - scene_id: Brugmansia_19_S02
+    status: both
+    canonical_desc: "Naked blonde woman standing in the shower; repeated conversations"
+    canonical_span_start: 946
+    canonical_span_end: 1040
+    rater_A:
+      worksheet_refs: [A03, A04]
+      items:
+        - visual_hallucination_human_unknown_persons
+        - auditory_hallucination_human_unknown_persons
+    rater_B:
+      worksheet_refs: [B02]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_unknown_persons
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rationale: "Both individuated this scene."
+
+trip_level_codes:
+  rater_A:
+    - item: arousal_abnormally_low
+      excerpt_refs: [a01, a06, a07]
+      excerpt: "drunk-like intoxication; lighting stem instead of cone; mumbling no sound"
+    - item: amnesia
+      excerpt_refs: [a02]
+      excerpt: "can only remember small fragments"
+    - item: sense_of_reality_lucid
+      excerpt_refs: [a03]
+      excerpt: "totally life-like hallucinations, don't know if the spider was there"
+    - item: dynamics_of_the_hallucination_object_constancy
+      excerpt_refs: [a04]
+      excerpt: "cobwebs persisted"
+    - item: emotion_negative_emotion
+      excerpt_refs: [a05]
+      excerpt: "projectile vomited over all walls"
+  rater_B:
+    - item: amnesia
+      excerpt_refs: [b01]
+      excerpt: "can only remember small fragments"
+
+summary:
+  total_canonical_scenes: 2
+  both: 2
+  only_A: 0
+  only_B: 0
+  scene_individuation_jaccard: 1.0
+  individuation_notes:
+    - "Both raters individuated the same 2 scenes."

@@ -1,0 +1,196 @@
+trip_id: Psilocybe_12
+substance: psilocybin
+block: "11-20"
+coder_A: Francesco
+coder_B: Susana
+dose_raw: "3,5 g (as tea)"
+word_count: 2695
+
+scenes:
+  - scene_id: Psilocybe_12_S01
+    status: only_B
+    canonical_desc: "Within 10 minutes things getting colorful"
+    canonical_span_start: 1283
+    canonical_span_end: 1350
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B01]
+      items: [type_of_visual_alteration_illusion]
+    rationale: "B individuated; A did not."
+
+  - scene_id: Psilocybe_12_S02
+    status: both
+    canonical_desc: "Full kaleidoscope of spinning glowing pinwheels throughout scope of vision"
+    canonical_span_start: 2195
+    canonical_span_end: 2340
+    rater_A:
+      worksheet_refs: [A01]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_geometrical_pattern
+        - dynamics_of_the_hallucination_no_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B02]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_geometrical_pattern
+        - dynamics_of_the_hallucination_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated. Disagreement on object-constancy (A says no, B says yes)."
+
+  - scene_id: Psilocybe_12_S03
+    status: both
+    canonical_desc: "Disperses into black microscopic crystals across a dark void; floats in void; exists only as essence, everything that exists"
+    canonical_span_start: 5259
+    canonical_span_end: 5800
+    rater_A:
+      worksheet_refs: [A02]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_inorganic_entity_other
+        - dynamics_of_the_hallucination_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B03]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - nonsensory_hallucination_other
+        - modal_status_of_the_hallucination_impossible_event
+        - sense_of_reality_delusional
+    rationale: "Both individuated the void scene."
+
+  - scene_id: Psilocybe_12_S04
+    status: both
+    canonical_desc: "Coalesces back into two selves; has conversation with 'trip Doug' who reveals they met 20 years ago at Fire Island"
+    canonical_span_start: 5832
+    canonical_span_end: 7650
+    rater_A:
+      worksheet_refs: [A03, A04]
+      items:
+        - auditory_hallucination_human_others
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B04, B05]
+      items:
+        - visual_hallucination_human_others
+        - auditory_hallucination_human_others
+    rationale: "Both individuated the trip-Doug conversation."
+
+  - scene_id: Psilocybe_12_S05
+    status: only_B
+    canonical_desc: "Two parallel universes sitting next to each other, can see them both"
+    canonical_span_start: 7068
+    canonical_span_end: 7200
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B06]
+      items: [visual_hallucination_inorganic_entity_other]
+    rationale: "B individuated; A codes related insight at trip-level."
+
+  - scene_id: Psilocybe_12_S06
+    status: both
+    canonical_desc: "Kaleidoscope patterns resume as he merges with trip-Doug"
+    canonical_span_start: 7576
+    canonical_span_end: 7720
+    rater_A:
+      worksheet_refs: [A05]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_geometrical_pattern
+        - dynamics_of_the_hallucination_no_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B07]
+      items: [visual_hallucination_geometrical_pattern]
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_12_S07
+    status: both
+    canonical_desc: "Swimming through blue geometric domino-like objects with Z-shaped white/blue morphing patterns; smooth, felt on skin, dripped off fingers"
+    canonical_span_start: 8009
+    canonical_span_end: 8550
+    rater_A:
+      worksheet_refs: [A06, A07]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_geometrical_pattern
+        - tactile_hallucination_other
+        - dynamics_of_the_hallucination_no_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+        - sensory_delight_haptic
+        - sensory_delight_visual_other
+    rater_B:
+      worksheet_refs: [B08, B09]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_geometrical_pattern
+        - tactile_hallucination_inorganic_entity
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated the swimming-through-geometry scene with tactile component."
+
+  - scene_id: Psilocybe_12_S08
+    status: both
+    canonical_desc: "Wife has sparkling halo around her body form, shimmers like a mirage"
+    canonical_span_start: 8878
+    canonical_span_end: 9020
+    rater_A:
+      worksheet_refs: [A08]
+      items: [type_of_visual_alteration_illusion]
+    rater_B:
+      worksheet_refs: [B10]
+      items:
+        - type_of_visual_alteration_illusion
+        - sensory_delight_visual_other
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_12_S09
+    status: only_A
+    canonical_desc: "Everything takes on shimmering saturated jungle lushness"
+    canonical_span_start: 12092
+    canonical_span_end: 12160
+    rater_A:
+      worksheet_refs: [A09]
+      items: [type_of_visual_alteration_illusion]
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_12_S10
+    status: only_A
+    canonical_desc: "Watercolor of red apples on emerald green geometric background boils and moves in hypnotic chaotic madness"
+    canonical_span_start: 12154
+    canonical_span_end: 12400
+    rater_A:
+      worksheet_refs: [A10]
+      items:
+        - type_of_visual_alteration_illusion
+        - sensory_delight_visual_artefact
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+trip_level_codes:
+  rater_A:
+    - item: ego_dissolution_core_self
+      excerpt_refs: [a01]
+      excerpt: "existed only as essence, no attachments; outside the universe"
+    - item: out_of_body_experience
+      excerpt_refs: [a01]
+      excerpt: "dispersed into crystals across void"
+    - item: emotion_positive_emotion
+      excerpt_refs: [a02, a05, a07, a09]
+      excerpt: "joyful clarity; lightness of spirit; skyrocket to euphoria; mood rocketing up"
+    - item: emotion_negative_emotion
+      excerpt_refs: [a06, a08]
+      excerpt: "melancholy about wife's mood; guilty"
+    - item: sense_of_reality_lucid
+      excerpt_refs: [a02]
+      excerpt: "joyful clarity, see as clearly at 10ft as at 10 miles"
+    - item: insight_metaphysical
+      excerpt_refs: [a03]
+      excerpt: "this world as real as reality; side by side"
+    - item: insight_existential
+      excerpt_refs: [a04]
+      excerpt: "remember clarity, use it in reality"
+  rater_B:
+    - item: ego_dissolution_core_self
+      excerpt: "existed only as essence; everything that existed"

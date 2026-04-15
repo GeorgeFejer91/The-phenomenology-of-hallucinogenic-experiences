@@ -1,0 +1,498 @@
+# Adjudication worksheet — Psilocybe_02
+
+- substance: **psilocybin**  block: **01-10**
+- coder_A: **Alessandra**  coder_B: **Brendan**
+- dose_raw: ``   word_count: **2344**
+
+## Narrative
+
+```
+We started eating… one after another with the jam. No taste at all… only some anxiety, but very controlled. I ate 4 of them, more or less 3/4 cm in diameter. My girlfriend took 3. For the first 15 minutes we tried to focus on little changes in perception, so we were nervous. Then I laid down on my back and the first thing I said was: do you see how colourful is the sky? Then it was so fast and full of meaning that it's so difficult to report, as anyone tried. In front of me there was a tree and its cortex was full of cracks. And it was alive. It moved with tiny localised movements, like if every part of it was animated. Totally amazing. The pine needles became a surface full of filaments sliding one on another, with wave movements. I felt like I needed to feed myself with as many images as I could, so I started looking around and the first things I found were my hands. They were transparent, milky, with blue veins inside, full of tiny particles that were moving. I'm so upset that I decide to change. The ground is like a mass of moving worms, black and shining. I don't like them, so I change again. I think I closed my eyes and fell into a fantasy world, something like The Lord of The Rings. But I was taken back by a violent scream. 
+
+My girlfriend found a worm on her hand (a real one, I can tell because I saw them before). I don't care about it, I want to get back to my vision, I say I don't want her to interfere. I stand up and start moving. It's hard to manage but not impossible. It's like I am a puppet moving with wires. I start spinning around, all the trees become a vortex, too strong for me. I sit on my own again, brace position. I disappear in a world of colourful visions. Fluorescent lines move leaving traces on a black screen, following a secret geometry. Then she call me again, she tells me it's raining. I didn't realise it. We decide to go back to the hotel, I think it should not be difficult. I start running, following a path, but then I realise it is wrong. We change the way and suddenly I have a powerful sensation. I am among brilliant green heart shaped leaves, the rain is like ice needles against my face, the wind is blowing as in dolby surround… wow, it is the first time I really understood what 'tripping' means: I entered an altered reality. 
+
+Then we come out of the wood, there is a boy on the edge, staring at us curiously. It's like I can perceive his questions about us. We start running under the rain, with no care at all. I say: it's just water. When I stop I feel like there is someone behind me, following me, but indeed, no one is there. I tried to cross the street, but I know I could be wrong evaluating the distances of the cars, and their speed. So I wait watching the raindrops making circles on a puddle. Gorgeous. We cross. While we walk I feel a increasing euphoria inside me, I start laughing. The world is just a moving tunnel while I run, then I stop. I am lost. I don't know where on the Earth I am. No idea. Which country or place I'm in. I don't know how I got there, the only thing important is that my girlfriend needed a toilet. Everything around was so colourful (Mexican reality), so you can imagine how deep the perception of colours is. I don't know yet so we stop again. There are other tourists, staring weirdly at us. Maybe because we start laughing like crazy. We try to calm down, but it’s so hard. There's also a policeman, but we don't care much about it (how fool!). I felt a total junkie… and I liked it! Everything was so exciting! 
+
+Like a sudden revelation I see an @ of an internet café then I understand where I am. We go straight ahead looking for the 'zocalo', the main square. But we step into another square like in a De Chirico painting… blue arches like a surreal world (it was no vision, it existed). I'm disorientated, then I start following her since she seems to be more aware of things. While in the centre of the 'zocalo' she cries: I'm not here! I laugh… Sure! It's always been like this, but you didn't know it!!! It's my reply. 
+
+We manage to reach the hotel, and we decide to stay calm at the desk. But while I get the key I start laughing violently. We run in our room and lock in. Inside it’s dark, with only a little yellow lamp. She throws away her cloths, deeply wet. I think it's a good idea and I do the same. I try to take off my shoes but it seems so hard to do it, I can't understand how strings go. Then I lay on bed. I didn't realise the blanket is so beautiful! There were flowers fluctuating on it. I like that so much that I decided to merge with them. Then I stand up on the bed. There are 3D tiles on the floor that give a sense of space beneath. Suddenly I feel like I'm at a party in California, lots of people having fun with drinks in their hands and music in the air. I'm having fun. All sounds are amplified like they have an echo. Maybe it’s for this reason that I felt like there's a lot of people. Probably it's just someone outside the door. I want to listen to music, to feel how it sounds like. I put on Radiohead, that seems appropriate for the experience, but I can't stand sounds that much. Too complicated. I prefer visions. 
+
+Sometimes when I'm having visions I have sudden broadening of conscience. It's like I understand the laws of psychedelic culture. I understand the need to enter such altered reality, because everything is so astonishing and it is always that way, but we cannot perceive that way. It's like if my consciousness is always in that part of the world but I didn't realise it. Then I had visions of my past, parties, clubs. I remember all the tales I knew about psychedelic substances, and everything was matching my actual experience. I understand art as a way to express the altered reality and project it into the normal world. I feel the creative potential of such substances. I want to record every single thing I'm experiencing, but I do fear I loose something, thoughts are so fast and powerful. I start taking pictures of everything. It doesn't matter what I'm aiming at… everything is wonderful. I start spinning around, happy as ever. I look at the mirror. Some say never do that. But I think I'm beautiful and in a perfect shape, radiant. I sit on the sink, then I get lost I don't know where. Like if consciousness has stopped. 
+
+When I come back, I go to my girlfriend. She gets lost in smelling things. Our scent is so strong… too strong, like animals. She has a cranberry lipstick. Wonderful! Then we kiss each other, trying to speak but we start repeating things with no sense. It's so hard to communicate, because our timing doesn't match. I feel her female body, but sometimes I really don't know who she is. Probably some other female images overlap with each other. We would like to make love, but visions seem to be more interesting. We are too distracted. I go back to bed and get naked. My nudity gives me a weird feeling, every detail surprises me. I lay down with my eyes closed, I focus on body sensation. I feel the weight of flesh, it's consistency and materiality. Like an anchor keeping me down, preventing me from flying. Then again colourful visions: lights, luminous wires interweaving. 
+
+I open my eyes. The wall is liquid and transparent, like water flowing into it. I don't know where I am, I hear voices outside, like if I was in China, with bamboo moving in the wind and a couple of Chinese people speaking under a bamboo shelter. Then a terrible noise cracks my head. It's like something with an increasing volume that makes my head explode. It's just a motorbike outside. I feel like I'm sinking into myself. 
+Conscience moves on different layers, melts memories with visions, reality and imagination. It's like when you are drunk but ten thousand stronger. Then visions again. Colourful snakes moving in a beautiful pattern. When I open my eyes visions fade away. I understand I'm on holiday in a foreign country, but it reminds me of the travel with my parents when I was a child. I'm having memories of forgotten places, somewhere in the south of Italy, a beach town. Other images concerning circus, fairies, carousels. I think about Fellini and his love for the circus. I understand gypsy life as a possible way of living. 
+
+Suddenly I entered “2001: A space Odyssey”. I understand where those visions do come from. Sometimes I open my eyes and I go back to the altered reality. The wood board ceiling is my solid reality with which I can keep in contact, even if the veins and nodes are floating. I assume a foetus-like position under the blanket. In the black cocoon I can create whatever realm I like, with no interferences. I have all kinds of visions: wonderful dragons/demons flying in the space, gold rings with turquoise, jade and lapislazuli inlay whirling, like snake skin that create an esoteric symbol with an infinite power. The union of these rings can give me complete comprehension of everything, the absolute conscience. Then everything turn to silver, and it becomes like an opera set that exits the proscenium leaning toward the audience. 
+
+After this more visual part, the trip becomes more conceptual even if some images occur. A first concept is related to the multiple layer reality we can access through the psychedelic substances. It is visually represented like a virtual room with every wall in a hexagon shape. In the middle of it there is a round window that leads to a different world (I've also drawn a picture of this). Will power is in the centre of this geometric room and can move from one world to another through this kind of dimensional porthole. I only have to choose one of the infinite worlds I wish to experience. I understand that also in ordinary life I can shape my reality with a strong will. Then I want to explore the concept of death, that is one of my favourite topics. I feel more or less like if I am in a death state in order to explore other realities, but this is not like being in ego death, since I'm aware that I'm under a drug effect. I'm full of joy for the discovery of this chance, and I would like to communicate it to others. I develop a sensation of pure love towards my dearest. I see love as the only chance for human development. 
+
+On the other side I want to explore the concept of evil also, and I have a visual of a black heart-shaped obsidian, inside a dark cave. No light at all but I perceive it emanates pure evil. Every beat is a wave of pure evil. Then it takes an anthropomorphic shape, made of black fog that is the essence of evil. I don't fear it, I'm detached because I feel it's going to balance the good forces in the universe. Then I think of death again. This time things are worse, I imagine the end of everything with the dissolution of the body, and it is so sad. Still. My mind is lost, wandering in confusion. I'm afraid, and I think that this is due to the psychedelic drug. I feel its danger for society, we must keep control of them because they're too powerful and can destabilise the system. I think I'll never use them again, because I like reality the way it is. 
+
+After this rejection phase, I come back to some ordinary concept I can control. This gives me back a sense of self confidence. But on one hand I'm sorry for the end of the trip. Thoughts start calming down, even if sometimes I have glimpses of alteration. I try to exploit them at best, going back to visions. I stare at my hand again, I get lost in the lines on the palm, that change colour and define spaces. There's a rectangle filled with iridescent lines that seems soft and pulsing. Then the hand fills the visual field as a planet surface. The back of the hand has all the tendons tight, it seems a dead hand. After this last vision I get back to ordinary reality. Me and my soulmate start talking in a logical way, trying to remember the first details of our own trip. It comes the hunger. We eat some crisps with apple juice, and it was the tastiest thing in the world. 
+We land. 
+The room is messed up, everything upside down. I want to take a shower but I'm too confused yet to remember how to do it. I decide to stop and clear my mind on the bed. After a few minutes I'm under the shower singing like Marilyn… full of euphoria. Then I go back to the mirror. I feel good and I feel like I learned a new way of moving my body. I do funny things in front of my reflecting image. I feel like I'm more powerful and I can obtain everything from life. We go out for dinner, in our old world, with our new eyes.
+```
+
+## Coder A (Alessandra) — scene-level (66 distinct excerpts)
+
+- **A01** @308 sc=100
+  - items: Type of visual alteration | Illusion
+  - excerpt: 'the first thing I said was: do you see how colourful is the sky?'
+- **A02** @480 sc=93.46153846153847
+  - items: Modal status of the hallucination | Impossible event; Type of visual alteration | Hallucination of a detached object
+  - excerpt: 'In front of me there was a tree and its cortex was full of cracks. And it was alive. It moved with tiny localised movements, like if every part of it was animated. The pine needles became a surface full of filaments sliding one on another, with wave movements.'
+- **A03** @491 sc=100
+  - items: Visual hallucination | Plant | Tree, shrub
+  - excerpt: 'Tree'
+- **A04** @649 sc=100
+  - items: Visual hallucination | Plant | Tree, shrub
+  - excerpt: 'pine needles'
+- **A05** @872 sc=98.36065573770492
+  - items: Type of visual alteration | Illusion
+  - excerpt: 'my hands. They were transparent, milky,with blue veins inside'
+- **A06** @917 sc=100
+  - items: Visual hallucination | Human | Other(s)
+  - excerpt: 'blue veins'
+- **A07** @926 sc=86.0
+  - items: Modal status of the hallucination | Impossible event; Type of visual alteration | Hallucination of a detached object
+  - excerpt: 'my hands….full of tiny particles that were moving.'
+- **A08** @944 sc=100
+  - items: Visual hallucination | Inorganic entity | Other
+  - excerpt: 'tiny particles'
+- **A09** @1015 sc=100
+  - items: Modal status of the hallucination | Possible but improbable event; Type of visual alteration | Hallucination of a detached object
+  - excerpt: 'The ground is like a mass of moving worms, black and shining.'
+- **A10** @1036 sc=100
+  - items: Visual hallucination | Animal | Insect
+  - excerpt: 'mass of moving worms'
+- **A11** @1144 sc=100
+  - items: Modal status of the hallucination | Impossible event; Type of visual alteration | Full-blown immersive hallucination
+  - excerpt: 'fell into a fantasy world, something like The Lord of The Rings.'
+- **A12** @1186 sc=100
+  - items: Visual hallucination | Extraordinary entity | Other
+  - excerpt: 'The Lord of The Rings.'
+- **A13** @1209 sc=100
+  - items: Auditory hallucination | Human | Unknown person(s)
+  - excerpt: 'But I was taken back by a violent scream.'
+- **A14** @1597 sc=100
+  - items: Visual hallucination | Geometrical pattern
+  - excerpt: 'vortex'
+- **A15** @1612 sc=82.32044198895028
+  - items: Modal status of the hallucination | Impossible event; Type of visual alteration | Hallucination of a detached object
+  - excerpt: 'all the trees become a vortex, too strong for me... I disappear in a world of colourful visions. Fluorescent lines move leaving traces on a black screen,following a secret geometry.'
+- **A16** @1680 sc=100
+  - items: Visual hallucination | Extraordinary entity | Other
+  - excerpt: 'world of colourful visions.'
+- **A17** @1708 sc=100
+  - items: Visual hallucination | Geometrical pattern
+  - excerpt: 'fluorescent lines'
+- **A18** @1739 sc=100
+  - items: Visual hallucination | Inorganic entity | Other
+  - excerpt: 'traces'
+- **A19** @1751 sc=100
+  - items: Visual hallucination | Artefact | Other
+  - excerpt: 'black screen'
+- **A20** @2064 sc=100
+  - items: Modal status of the hallucination | Possible but improbable event; Type of visual alteration | Hallucination of a detached object
+  - excerpt: 'I am among brilliant green heart shaped leaves, the rain is like ice needles against my face, the wind is blowing as in dolby surround… wow'
+- **A21** @2075 sc=100
+  - items: Visual hallucination | Plant | Flower, grass
+  - excerpt: 'brilliant green heart shaped leaves'
+- **A22** @2523 sc=100
+  - items: Nonsensory hallucination | Human
+  - excerpt: 'I feel like there is someone behind me, following me, but indeed, no one is there'
+- **A23** @3114 sc=100
+  - items: Type of visual alteration | Illusion
+  - excerpt: 'Everything around was so colourful (Mexican reality), so you can imagine how deep the perception of colours is.'
+- **A24** @4469 sc=100
+  - items: Modal status of the hallucination | Impossible event; Type of visual alteration | Hallucination of a detached object
+  - excerpt: 'blanket is so beautiful! There were flowers fluctuating on it. I like that so much that I decided to merge with them.'
+- **A25** @4505 sc=100
+  - items: Visual hallucination | Plant | Flower, grass
+  - excerpt: 'flowers'
+- **A26** @4704 sc=92.64069264069263
+  - items: Auditory hallucination | Human | Unknown person(s)
+  - excerpt: "feel like I'm at a party in California, lots of people having fun with drinks in their hands and music in the air. All sounds are amplified like they have an echo.Maybe it’s for this reason that I felt like there's a lot of people."
+- **A27** @5555 sc=100
+  - items: Modal status of the hallucination | Impossible event; Type of visual alteration | Hallucination of a detached object
+  - excerpt: 'I had visions of my past, parties, clubs'
+- **A28** @5581 sc=100
+  - items: Visual hallucination | Human | Other(s)
+  - excerpt: 'parties'
+- **A29** @5590 sc=100
+  - items: Visual hallucination | Human | Other(s)
+  - excerpt: 'clubs'
+- **A30** @6390 sc=100
+  - items: Olfactory hallucination | Human
+  - excerpt: 'Our scent is so strong… too strong, like animals'
+- **A31** @6648 sc=100
+  - items: Visual hallucination | Human | Other(s)
+  - excerpt: 'body'
+- **A32** @7126 sc=100
+  - items: Modal status of the hallucination | Impossible event; Type of visual alteration | Hallucination of a detached object
+  - excerpt: 'Then again colourful visions: lights, luminous wires interweaving.'
+- **A33** @7156 sc=100
+  - items: Visual hallucination | Artefact | Other
+  - excerpt: 'lights'
+- **A34** @7164 sc=100
+  - items: Visual hallucination | Artefact | Other
+  - excerpt: 'luminous wires interweaving.'
+- **A35** @7211 sc=100
+  - items: Type of visual alteration | Illusion
+  - excerpt: 'The wall is liquid and transparent, like water flowing into it.'
+- **A36** @7300 sc=100
+  - items: Auditory hallucination | Human | Unknown person(s)
+  - excerpt: 'I hear voices outside, like if I was in China, with bamboo moving in the wind and a couple of Chinese people speaking under a bamboo shelter.'
+- **A37** @7352 sc=100
+  - items: Auditory hallucination | Plant | Tree, shrub
+  - excerpt: 'bamboo moving in the wind'
+- **A38** @7791 sc=100
+  - items: Modal status of the hallucination | Impossible event; Type of visual alteration | Hallucination of a detached object
+  - excerpt: 'Colourful snakes moving in a beautiful pattern.'
+- **A39** @7791 sc=100
+  - items: Visual hallucination | Animal | Other
+  - excerpt: 'Colourful snakes'
+- **A40** @8242 sc=100
+  - items: Modal status of the hallucination | Impossible event; Type of visual alteration | Full-blown immersive hallucination
+  - excerpt: 'Suddenly I entered “2001: A space Odyssey”.'
+- **A41** @8485 sc=100
+  - items: Modal status of the hallucination | Impossible event; Type of visual alteration | Hallucination of a detached object
+  - excerpt: 'veins and nodes are floating'
+- **A42** @8485 sc=100
+  - items: Visual hallucination | Artefact | Other
+  - excerpt: 'veins and nodes'
+- **A43** @8674 sc=100
+  - items: Modal status of the hallucination | Impossible event; Type of visual alteration | Hallucination of a detached object
+  - excerpt: 'wonderful dragons/demons flying in the space, gold rings with turquoise, jade and lapislazuli inlay whirling, like snake skin that create an esoteric symbol with an infinite power.'
+- **A44** @8684 sc=100
+  - items: Visual hallucination | Extraordinary entity | Other
+  - excerpt: 'dragons'
+- **A45** @8692 sc=100
+  - items: Visual hallucination | Extraordinary entity | Other
+  - excerpt: 'demons'
+- **A46** @8955 sc=100
+  - items: Type of visual alteration | Hallucination of a detached object
+  - excerpt: 'Then everything turn to silver, and it becomes like an opera set that exits the proscenium leaning toward the audience.'
+- **A47** @8955 sc=100
+  - items: Modal status of the hallucination | Impossible event
+  - excerpt: 'Then everything turn to silver, and it becomes like an opera set that exits the proscenium leaning toward the audience'
+- **A48** @9010 sc=100
+  - items: Visual hallucination | Artefact | City, building, furniture
+  - excerpt: 'opera set'
+- **A49** @9034 sc=88.88888888888889
+  - items: Visual hallucination | Artefact | City, building, furniture
+  - excerpt: 'proscenio'
+- **A50** @9065 sc=100
+  - items: Visual hallucination | Human | Unknown person(s)
+  - excerpt: 'audience'
+- **A51** @9273 sc=100
+  - items: Modal status of the hallucination | Impossible event; Type of visual alteration | Full-blown immersive hallucination
+  - excerpt: "It is visually represented like a virtual room with every wall in a hexagon shape. In the middle of it there is a round window that leads to a different world (I've also drawn a picture of this). Will power is in the centre of this geometric room and can move from one world to another through this kind of dimensional porthole."
+- **A52** @9307 sc=100
+  - items: Visual hallucination | Artefact | City, building, furniture
+  - excerpt: 'virtual room'
+- **A53** @9335 sc=60.0
+  - items: Visual hallucination | Artefact | City, building, furniture
+  - excerpt: 'hexagonal walls'
+- **A54** @9416 sc=100
+  - items: Visual hallucination | Extraordinary entity | Other
+  - excerpt: 'different world'
+- **A55** @9469 sc=100
+  - items: Visual hallucination | Extraordinary entity | Other
+  - excerpt: 'will power'
+- **A56** @9576 sc=68.57142857142857
+  - items: Visual hallucination | Extraordinary entity | Other
+  - excerpt: 'dimensional porthole (round window)'
+- **A57** @10304 sc=100
+  - items: Visual hallucination | Inorganic entity | Stone, rock
+  - excerpt: 'black heart-shaped obsidian'
+- **A58** @10347 sc=100
+  - items: Visual hallucination | Inorganic entity | Earth, river, sky, cloud
+  - excerpt: 'cave'
+- **A59** @10372 sc=73.07692307692308
+  - items: Modal status of the hallucination | Impossible event
+  - excerpt: 'I have a visual of a black heart-shaped obsidian, inside a dark cave. Then it takes an anthropomorphic shape, made of black fog that is the essence of evil.'
+- **A60** @10373 sc=72.90322580645162
+  - items: Dynamics of the hallucination | No object constancy; Type of visual alteration | Full-blown immersive hallucination
+  - excerpt: 'I have a visual of a black heart-shaped obsidian, inside a dark cave.Then it takes an anthropomorphic shape, made of black fog that is the essence of evil.'
+- **A61** @10490 sc=100
+  - items: Visual hallucination | Inorganic entity | Earth, river, sky, cloud
+  - excerpt: 'black fog'
+- **A62** @10686 sc=100
+  - items: Modal status of the hallucination | Impossible event; Type of visual alteration | Hallucination of a detached object
+  - excerpt: 'I imagine the end of everything with the dissolution of the body, and it is so sad'
+- **A63** @11390 sc=71.69811320754718
+  - items: Type of visual alteration | Illusion
+  - excerpt: 'I stare at my hand again...the lines on the palm, that change colour and define spaces... The back of the hand has all the tendons tight, it seems a dead hand.'
+- **A64** @11491 sc=100
+  - items: Modal status of the hallucination | Impossible event; Type of visual alteration | Hallucination of a detached object
+  - excerpt: "There's a rectangle filled with iridescent lines that seems soft and pulsing. Then the hand fills the visual field as a planet surface"
+- **A65** @11501 sc=100
+  - items: Visual hallucination | Geometrical pattern
+  - excerpt: 'rectangle'
+- **A66** @11523 sc=100
+  - items: Visual hallucination | Geometrical pattern
+  - excerpt: 'iridescent lines'
+
+## Coder B (Brendan) — scene-level (12 distinct excerpts)
+
+- **B01** @336 sc=100
+  - items: Type of visual alteration | Illusion
+  - excerpt: "do you see how colourful is the sky? Then it was so fast and full of meaning that it's so difficult to report, as anyone tried. In front of me there was a tree and its cortex was full of cracks. And it was alive. It moved with tiny localised movements, like if every part of it was animated. Totally amazing. The pine needles became a surface full of filaments sliding one on another, with wave movem…"
+- **B02** @1015 sc=100
+  - items: Type of visual alteration | Illusion
+  - excerpt: 'The ground is like a mass of moving worms, black and shining.'
+- **B03** @1708 sc=100
+  - items: Modal status of the hallucination | Impossible event; Type of visual alteration | Hallucination of an incrusted object; Visual hallucination | Geometrical pattern
+  - excerpt: 'Fluorescent lines move leaving traces on a black screen, following a secret geometry'
+- **B04** @2511 sc=100
+  - items: Nonsensory hallucination | Other
+  - excerpt: 'When I stop I feel like there is someone behind me, following me, but indeed, no one is there'
+- **B05** @3114 sc=100
+  - items: Type of visual alteration | Illusion
+  - excerpt: 'Everything around was so colourful (Mexican reality), so you can imagine how deep the perception of colours is.'
+- **B06** @4494 sc=100
+  - items: Type of visual alteration | Illusion
+  - excerpt: 'There were flowers fluctuating on it.'
+- **B07** @7126 sc=100
+  - items: Modal status of the hallucination | Impossible event; Type of visual alteration | Hallucination of an incrusted object; Visual hallucination | Geometrical pattern
+  - excerpt: 'Then again colourful visions: lights, luminous wires interweaving'
+- **B08** @7211 sc=100
+  - items: Type of visual alteration | Illusion
+  - excerpt: 'The wall is liquid and transparent, like water flowing into it.'
+- **B09** @7791 sc=100
+  - items: Modal status of the hallucination | Possible but improbable event; Type of visual alteration | Hallucination of an incrusted object; Visual hallucination | Animal | Other
+  - excerpt: 'Colourful snakes moving in a beautiful pattern.'
+- **B10** @8674 sc=100
+  - items: Modal status of the hallucination | Impossible event; Type of visual alteration | Hallucination of an incrusted object; Visual hallucination | Extraordinary entity | Chimera
+  - excerpt: 'wonderful dragons/demons flying in the space, gold rings with turquoise, jade and lapislazuli inlay whirling, like snake skin that create an esoteric symbol with an infinite power'
+- **B11** @9273 sc=100
+  - items: Modal status of the hallucination | Impossible event; Type of visual alteration | Full-blown immersive hallucination; Visual hallucination | Artefact | City, building, furniture
+  - excerpt: "It is visually represented like a virtual room with every wall in a hexagon shape. In the middle of it there is a round window that leads to a different world (I've also drawn a picture of this). Will power is in the centre of this geometric room and can move from one world to another through this kind of dimensional porthole. I only have to choose one of the infinite worlds I wish to experience"
+- **B12** @10283 sc=100
+  - items: Modal status of the hallucination | Impossible event; Type of visual alteration | Full-blown immersive hallucination; Visual hallucination | Inorganic entity | Stone, rock
+  - excerpt: 'I have a visual of a black heart-shaped obsidian, inside a dark cave. No light at all but I perceive it emanates pure evil. Every beat is a wave of pure evil. Then it takes an anthropomorphic shape, made of black fog that is the essence of evil.'
+
+## Coder A (Alessandra) — trip-level (66 distinct excerpts)
+
+- **a01** @49 sc=84.7457627118644
+  - items: Emotion | Negative emotion
+  - excerpt: 'all… only some all… only some anxiety, but very controlled.'
+- **a02** @628 sc=100
+  - items: Emotion | Positive emotion
+  - excerpt: 'Totally amazing.'
+- **a03** @977 sc=97.22222222222221
+  - items: Emotion | Negative emotion
+  - excerpt: 'Im so upset that I decide to change.'
+- **a04** @979 sc=99.63099630996311
+  - items: Dynamics of the hallucination | No object constancy
+  - excerpt: 'Im so upset that I decide to change. The ground is like a mass of moving worms, black and shining. I dont like them, so I change again. I think I closed my eyes and fell into a fantasy world, something like The Lord of The Rings. But I was taken back by a violent scream.'
+- **a05** @1437 sc=98.1651376146789
+  - items: Arousal | Abnormally low
+  - excerpt: 'I stand up and start moving. Its hard to manage but not impossible. Its like I am a puppet moving with wires.'
+- **a06** @1574 sc=99.54128440366972
+  - items: Dynamics of the hallucination | No object constancy
+  - excerpt: 'all the trees become a vortex, too strong for me. I sit on my own again, brace position. I disappear in a world of colourful visions. Fluorescent lines move leaving traces on a black screen,following a secret geometry.'
+- **a07** @1939 sc=100
+  - items: Arousal | Abnormally high
+  - excerpt: 'start running, following a path, but then I realise it is wrong.'
+- **a08** @2112 sc=100
+  - items: Sensory delight | Visual | Nature
+  - excerpt: 'the rain is like ice needles against my face, the wind is blowing as in dolby surround… wow'
+- **a09** @2158 sc=100
+  - items: Sense of reality | Lucid
+  - excerpt: "the wind is blowing as in dolby surround… wow, it is the first time I really understood what 'tripping' means: I entered an altered reality."
+- **a10** @2606 sc=100
+  - items: Sense of reality | Lucid
+  - excerpt: 'I tried to cross the street, but I know I could be wrong evaluating the distances of the cars, and their speed.'
+- **a11** @2718 sc=100
+  - items: Sensory delight | Visual | Nature
+  - excerpt: 'So I wait watching the raindrops making circles on a puddle. Gorgeous.'
+- **a12** @2813 sc=100
+  - items: Arousal | Abnormally high
+  - excerpt: 'I feel a increasing euphoria inside me'
+- **a13** @2853 sc=100
+  - items: Emotion | Positive emotion
+  - excerpt: 'I start laughing'
+- **a14** @2931 sc=100
+  - items: Amnesia
+  - excerpt: "I am lost. I don't know where on the Earth I am. No idea. Which country or place I'm in. I don't know how I got there, the only thing important is that my girlfriend needed a toilet."
+- **a15** @3310 sc=100
+  - items: Emotion | Positive emotion
+  - excerpt: "Maybe because we start laughing like crazy. We try to calm down, but it’s so hard. There's also a policeman, but we don't care much about it (how fool!). I felt a total junkie… and I liked it! Everything was so exciting!"
+- **a16** @3962 sc=100
+  - items: Emotion | Positive emotion
+  - excerpt: "I laugh… Sure! It's always been like this, but you didn't know it!!! It's my reply."
+- **a17** @4118 sc=100
+  - items: Emotion | Positive emotion
+  - excerpt: 'But while I get the key I start laughing violently.'
+- **a18** @4336 sc=99.0909090909091
+  - items: Arousal | Abnormally low
+  - excerpt: "I try to take off my shoes but it seems so hard to do it, I can't understand how strings go.Then I lay on bed."
+- **a19** @4448 sc=100
+  - items: Sensory delight | Visual | Artefact
+  - excerpt: "I didn't realise the blanket is so beautiful!"
+- **a20** @4809 sc=100
+  - items: Emotion | Positive emotion
+  - excerpt: "I'm having fun."
+- **a21** @5043 sc=100
+  - items: Emotion | Negative emotion
+  - excerpt: "I put on Radiohead, that seems appropriate for the experience, but I can't stand sounds that much. Too complicated. I prefer visions."
+- **a22** @5178 sc=83.08823529411764
+  - items: Sense of reality | Lucid
+  - excerpt: "Sometimes when I'm having visions I have sudden broadening of conscience. It's like I understand the laws of psychedelic culture. I understand the need to enter such altered reality. It's like if my consciousness is always in that part of the world but I didn't realise it"
+- **a23** @5362 sc=100
+  - items: Sensory delight | Visual | Other
+  - excerpt: 'because everything is so astonishing and it is always that way'
+- **a24** @5709 sc=100
+  - items: Insight | Metaphysical
+  - excerpt: 'I understand art as a way to express the altered reality and project it into the normal world. I feel the creative potential of such substances.'
+- **a25** @5852 sc=73.91304347826086
+  - items: Sense of surprise and unexpectedness
+  - excerpt: "I want to record every single thing I'm experiencing...I start taking pictures of everything"
+- **a26** @5912 sc=100
+  - items: Emotion | Negative emotion
+  - excerpt: 'I do fear I loose something, thoughts are so fast and powerful'
+- **a27** @6015 sc=100
+  - items: Emotion | Positive emotion
+  - excerpt: "It doesn't matter what I'm aiming at… everything is wonderful. I start spinning around, happy as ever."
+- **a28** @6118 sc=100
+  - items: Sense of reality | Lucid
+  - excerpt: 'I look at the mirror. Some say never do that.'
+- **a29** @6164 sc=100
+  - items: Sensory delight | Visual | Other
+  - excerpt: "But I think I'm beautiful and in a perfect shape, radiant."
+- **a30** @6242 sc=100
+  - items: Amnesia
+  - excerpt: "then I get lost I don't know where. Like if consciousness has stopped."
+- **a31** @6470 sc=100
+  - items: Emotion | Positive emotion
+  - excerpt: 'Wonderful! Then we kiss each othe'
+- **a32** @6506 sc=100
+  - items: Arousal | Abnormally low
+  - excerpt: "trying to speak but we start repeating things with no sense. It's so hard to communicate, because our timing doesn't match."
+- **a33** @6630 sc=100
+  - items: Amnesia
+  - excerpt: "I feel her female body, but sometimes I really don't know who she is."
+- **a34** @6759 sc=100
+  - items: Enhanced mental imagery
+  - excerpt: 'We would like to make love, but visions seem to be more interesting. We are too distracted.'
+- **a35** @6883 sc=100
+  - items: Sense of surprise and unexpectedness
+  - excerpt: 'My nudity gives me a weird feeling, every detail surprises me.'
+- **a36** @6946 sc=100
+  - items: Arousal | Abnormally low
+  - excerpt: "I lay down with my eyes closed, I focus on body sensation. I feel the weight of flesh, it's consistency and materiality. Like an anchor keeping me down, preventing me from flying."
+- **a37** @7275 sc=100
+  - items: Amnesia
+  - excerpt: "I don't know where I am"
+- **a38** @7442 sc=100
+  - items: Emotion | Negative emotion
+  - excerpt: "Then a terrible noise cracks my head. It's like something with an increasing volume that makes my head explode."
+- **a39** @7632 sc=71.85929648241206
+  - items: Dynamics of the hallucination | No object constancy
+  - excerpt: 'Conscience moves on different layers, melts memories with visions, reality and imagination...Then visions again. Colourful snakes moving in a beautiful pattern. When I open my eyes visions fade away.'
+- **a40** @7878 sc=100
+  - items: Sense of reality | Lucid
+  - excerpt: "I understand I'm on holiday in a foreign country, but it reminds me of the travel with my parents when I was a child"
+- **a41** @7996 sc=99.47089947089947
+  - items: Enhanced mental imagery
+  - excerpt: "I'm having memories of forgotten places, somewhere in the south of Italy, a beach town. Other images concerning circus, fairies, carousels.I think about Fellini and his love for the circus."
+- **a42** @8187 sc=100
+  - items: Insight | Existential
+  - excerpt: 'I understand gypsy life as a possible way of living.'
+- **a43** @8286 sc=100
+  - items: Sense of reality | Lucid
+  - excerpt: 'I understand where those visions do come from. Sometimes I open my eyes and I go back to the altered reality. The wood board ceiling is my solid reality with which I can keep in contact, even if the veins and nodes are floating.'
+- **a44** @8515 sc=100
+  - items: Arousal | Abnormally low
+  - excerpt: 'I assume a foetus-like position under the blanket.'
+- **a45** @8586 sc=100
+  - items: Enhanced mental imagery
+  - excerpt: 'I can create whatever realm I like, with no interferences. I have all kinds of visions'
+- **a46** @8800 sc=100
+  - items: Domain-specific violation | Psychological projection
+  - excerpt: 'that create an esoteric symbol with an infinite power.'
+- **a47** @9166 sc=100
+  - items: Insight | Practical
+  - excerpt: 'A first concept is related to the multiple layer reality we can access through the psychedelic substances.'
+- **a48** @9469 sc=100
+  - items: Domain-specific violation | Biological projection
+  - excerpt: 'Will power is in the centre of this geometric room and can move from one world to another through this kind of dimensional porthole.'
+- **a49** @9512 sc=90.9090909090909
+  - items: Domain-specific violation | Psychological projection
+  - excerpt: 'will power can move from one world to another through this kind of dimensional porthole.'
+- **a50** @9673 sc=100
+  - items: Insight | Existential
+  - excerpt: 'I understand that also in ordinary life I can shape my reality with a strong will.'
+- **a51** @9837 sc=100
+  - items: Arousal | Abnormally low
+  - excerpt: 'I feel more or less like if I am in a death state'
+- **a52** @9924 sc=100
+  - items: Sense of reality | Lucid
+  - excerpt: "but this is not like being in ego death, since I'm aware that I'm under a drug effect."
+- **a53** @10062 sc=70.47619047619047
+  - items: Emotion | Positive emotion
+  - excerpt: "I'm full of joy for the discovery of this chanceI... develop a sensation of pure love towards my dearest."
+- **a54** @10162 sc=100
+  - items: Insight | Metaphysical
+  - excerpt: 'I see love as the only chance for human development.'
+- **a55** @10304 sc=100
+  - items: Domain-specific violation | Biological projection; Domain-specific violation | Psychological projection
+  - excerpt: 'black heart-shaped obsidian, inside a dark cave. No light at all but I perceive it emanates pure evil. Every beat is a wave of pure evil.'
+- **a56** @10482 sc=100
+  - items: Domain-specific violation | Psychological projection
+  - excerpt: 'made of black fog that is the essence of evil.'
+- **a57** @10658 sc=100
+  - items: Emotion | Negative emotion
+  - excerpt: "This time things are worse, I imagine the end of everything with the dissolution of the body, and it is so sad. Still. My mind is lost, wandering in confusion. I'm afraid,"
+- **a58** @10818 sc=100
+  - items: Sense of reality | Lucid
+  - excerpt: "I'm afraid, and I think that this is due to the psychedelic drug."
+- **a59** @10884 sc=100
+  - items: Insight | Practical
+  - excerpt: "I feel its danger for society, we must keep control of them because they're too powerful and can destabilise the system."
+- **a60** @11005 sc=100
+  - items: Insight | Existential
+  - excerpt: "I think I'll never use them again, because I like reality the way it is."
+- **a61** @11160 sc=100
+  - items: Emotion | Positive emotion
+  - excerpt: 'This gives me back a sense of self confidence.'
+- **a62** @12017 sc=100
+  - items: Amnesia
+  - excerpt: "I want to take a shower but I'm too confused yet to remember how to do it."
+- **a63** @12092 sc=100
+  - items: Arousal | Abnormally low
+  - excerpt: 'I decide to stop and clear my mind on the bed.'
+- **a64** @12147 sc=100
+  - items: Arousal | Abnormally high
+  - excerpt: "few minutes I'm under the shower singing like Marilyn… full of euphoria."
+- **a65** @12250 sc=100
+  - items: Emotion | Positive emotion
+  - excerpt: 'I feel good and I feel like I learned a new way of moving my body. I do funny things in front of my reflecting image.'
+- **a66** @12368 sc=100
+  - items: Insight | Existential
+  - excerpt: "I feel like I'm more powerful and I can obtain everything from life."
+
+## Coder B (Brendan) — trip-level (6 distinct excerpts)
+
+- **b01** @4532 sc=100
+  - items: Own body distortion
+  - excerpt: 'I like that so much that I decided to merge with them'
+- **b02** @8187 sc=100
+  - items: Insight | Existential
+  - excerpt: 'I understand gypsy life as a possible way of living'
+- **b03** @8855 sc=100
+  - items: Insight | Metaphysical
+  - excerpt: 'The union of these rings can give me complete comprehension of everything, the absolute conscience'
+- **b04** @9673 sc=100
+  - items: Insight | Existential
+  - excerpt: 'I understand that also in ordinary life I can shape my reality with a strong will.'
+- **b05** @9971 sc=100
+  - items: Sense of reality | Lucid
+  - excerpt: "I'm aware that I'm under a drug effect"
+- **b06** @10011 sc=100
+  - items: Emotion | Positive emotion
+  - excerpt: "I'm full of joy for the discovery of this chance, and I would like to communicate it to others. I develop a sensation of pure love towards my dearest. I see love as the only chance for human development."

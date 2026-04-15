@@ -1,0 +1,249 @@
+trip_id: Brugmansia_12
+substance: brugmansia
+block: "11-20"
+coder_A: Alessandra
+coder_B: Alessio
+dose_raw: "390ml of tea brewed from 2 flowers in 750ml water"
+word_count: 1003
+
+# Note: Alessandra has a strong habit of splitting excerpts by OBJECT TYPE —
+# she records single-word excerpts like "star", "pen", "girlfriend", "pizza",
+# "newspaper" under each relevant object-leaf (artefact/other, human/acquaintance,
+# etc.), in addition to the scene-level excerpt. These are the same scene, not
+# separate scenes. I merge them here.
+
+scenes:
+  - scene_id: Brugmansia_12_S01
+    status: both
+    canonical_desc: "Girlfriend appears sitting on end of bed; disappears when touched"
+    canonical_span_start: 1221
+    canonical_span_end: 1380
+    rater_A:
+      worksheet_refs: [A04, A05]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_relatives_acquaintances
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B01]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_relatives_acquaintances
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rationale: "Same girlfriend-on-bed scene. Both agree incrusted + acquaintance. Disagreement on modal status: A=impossible, B=possible-and-probable."
+
+  - scene_id: Brugmansia_12_S02
+    status: both
+    canonical_desc: "During sleep cycles, sees different people in room (girlfriend's mom, friend) who turn out to be a chair and a pile of blanket respectively"
+    canonical_span_start: 1519
+    canonical_span_end: 1950
+    rater_A:
+      worksheet_refs: [A06, A07]
+      items:
+        - visual_hallucination_human_relatives_acquaintances
+    rater_B:
+      worksheet_refs: [B02, B03, B04, B05]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_relatives_acquaintances
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rationale: "Same sleep-cycle scene. Both agree acquaintance visual. B adds incrusted + modal. Arguably this is an ILLUSION (mistaking a chair for a person) rather than an incrusted hallucination (adding a person); neither rater captured that distinction."
+
+  - scene_id: Brugmansia_12_S03
+    status: both
+    canonical_desc: "Eating cheese pizza in bed; tastes it; pizza slides down gap and is gone"
+    canonical_span_start: 2097
+    canonical_span_end: 2280
+    rater_A:
+      worksheet_refs: [A08, A09, A10]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_artefact_other
+        - gustatory_hallucination
+        - tactile_hallucination_artefact
+        - modal_status_of_the_hallucination_impossible_event
+        - dynamics_of_the_hallucination_no_object_constancy
+        - sense_of_reality_delusional
+    rater_B:
+      worksheet_refs: [B06, B07]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - gustatory_hallucination
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rationale: "Same cheese-pizza scene. Both agree gustatory. Major disagreement on type-of-alteration: A=incrusted, B=full-blown-immersive. A captures more modalities (tactile, visual artefact) and dynamics (no constancy) that B omits."
+
+  - scene_id: Brugmansia_12_S04
+    status: both
+    canonical_desc: "Doing crosswords in newspaper; newspaper slides down gap, pen lost after"
+    canonical_span_start: 2287
+    canonical_span_end: 2460
+    rater_A:
+      worksheet_refs: [A11, A12, A13]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_artefact_other
+        - tactile_hallucination_artefact
+        - modal_status_of_the_hallucination_impossible_event
+        - dynamics_of_the_hallucination_no_object_constancy
+        - sense_of_reality_delusional
+    rater_B:
+      worksheet_refs: [B08]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rationale: "Same newspaper-sliding scene. Disagreement on type-of-alteration (incrusted vs full-blown immersive). A codes many more attributes."
+
+  - scene_id: Brugmansia_12_S05
+    status: both
+    canonical_desc: "Facing tv smoking a cigarette; puts it under blanket; realises no cigarette exists"
+    canonical_span_start: 2454
+    canonical_span_end: 2700
+    rater_A:
+      worksheet_refs: [A14, A15, A16]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_artefact_tool_cloth
+        - tactile_hallucination_artefact
+        - modal_status_of_the_hallucination_impossible_event
+        - dynamics_of_the_hallucination_no_object_constancy
+    rater_B:
+      worksheet_refs: [B09]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rationale: "Same phantom-cigarette scene. Same pattern as S03/S04: disagreement on alteration type."
+
+  - scene_id: Brugmansia_12_S06
+    status: both
+    canonical_desc: "Preacher woman on TV; believes she is talking to HIM personally, eyes follow him, threatens hell"
+    canonical_span_start: 3094
+    canonical_span_end: 3700
+    rater_A:
+      worksheet_refs: [A17]
+      items:
+        - auditory_hallucination_human_unknown_persons
+    rater_B:
+      worksheet_refs: [B10, B11]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_unknown_persons
+        - auditory_hallucination_human_unknown_persons
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rationale: "Same preacher-on-TV scene. Both agree auditory hallucination of an unknown person. B additionally codes the visual component (the preacher appearing to look at him) + modal. The preacher is a real TV image — the hallucinatory element is that she is talking to him; B's coding is broader but arguably over-captures since the visual part isn't strictly hallucinated. A codes it at trip-level as psychological projection (a06) which is the most accurate framing."
+
+  - scene_id: Brugmansia_12_S07
+    status: only_B
+    canonical_desc: "Woke up thinking he was at his girlfriend's house"
+    canonical_span_start: 3732
+    canonical_span_end: 3830
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B12]
+      items:
+        - type_of_visual_alteration_illusion
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rationale: "B codes the spatial-disorientation as an illusion; A codes only at trip-level (a05 Delusional)."
+
+  - scene_id: Brugmansia_12_S08_AB_LUMPA
+    status: both
+    lump_split_type: A_lumped_B_split
+    canonical_desc: "Two star-incidents lumped together in A's individuation: (i) star at end of pen whirls out window, (ii) star shoots out of stereo display. A treated these as one scene; B split them into two separate scenes. This parent record covers A's lumped scope."
+    canonical_span_start: 4498
+    canonical_span_end: 4870
+    rater_A:
+      worksheet_refs: [A18]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B13, B14]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_inorganic_entity_other
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Parent lump: A quoted both star incidents together in one excerpt; B quoted them in two separate excerpts that together cover the same narrative span."
+
+  - scene_id: Brugmansia_12_S08.1_AB_SPLITB
+    status: both
+    parent_scene_id: Brugmansia_12_S08_AB_LUMPA
+    lump_split_type: A_lumped_B_split
+    is_child: true
+    canonical_desc: "Child 1 of S08 lump: star appears at end of pen, whirls, shoots out window"
+    canonical_span_start: 4498
+    canonical_span_end: 4680
+    rater_A:
+      worksheet_refs: [A18]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B13]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_inorganic_entity_other
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "B's first split; A's lump covers this via A18."
+
+  - scene_id: Brugmansia_12_S08.2_AB_SPLITB
+    status: both
+    parent_scene_id: Brugmansia_12_S08_AB_LUMPA
+    lump_split_type: A_lumped_B_split
+    is_child: true
+    canonical_desc: "Child 2 of S08 lump: star shoots out of stereo display in the dark; moves wherever he isn't looking"
+    canonical_span_start: 4706
+    canonical_span_end: 4870
+    rater_A:
+      worksheet_refs: [A18]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B14]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_inorganic_entity_other
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "B's second split; A's lump covers this via A18."
+
+trip_level_codes:
+  rater_A:
+    - item: arousal_abnormally_low
+      excerpt_refs: [a01, a04]
+      excerpt: "bendy spring legs; kept falling asleep"
+    - item: dynamics_of_the_hallucination_no_object_constancy
+      excerpt_refs: [a02, a07]
+      excerpt: "disappearing figures; star moving wherever not looking"
+    - item: sense_of_reality_delusional
+      excerpt_refs: [a03, a05]
+      excerpt: "believing girlfriend on bed is real; never actually realised I was tripping"
+    - item: domain_specific_violation_psychological_projection
+      excerpt_refs: [a06]
+      excerpt: "preacher woman talking to ME"
+  rater_B:
+    - item: dynamics_of_the_hallucination_no_object_constancy
+      excerpt_refs: [b01, b09]
+      excerpt: "disappeared when touched; moved wherever not looking"
+    - item: sense_of_surprise_and_unexpectedness
+      excerpt_refs: [b02]
+      excerpt: "'Weird' I thought to myself"
+    - item: sense_of_reality_lucid
+      excerpt_refs: [b03, b10]
+      excerpt: "they were actually things from my room; I knew I was seeing things"
+    - item: sense_of_reality_delusional
+      excerpt_refs: [b04, b05, b06, b07]
+      excerpt: "dropped the non-existent smoke; never realised I was tripping; preacher talking to me; wondered why different"
+    - item: emotion_positive_emotion
+      excerpt_refs: [b08]
+      excerpt: "felt quite refreshed that day"
+
+summary:
+  total_canonical_scenes: 9
+  both: 7
+  only_A: 0
+  only_B: 2
+  scene_individuation_jaccard: 0.778
+  classification_notes:
+    - "Strong scene-level individuation (7/9 shared + 2 only_B)."
+    - "Systematic classification disagreement on type-of-visual-alteration for scenes involving objects in dream-like sequences (S03 pizza, S04 newspaper, S05 smoke): A says 'incrusted object', B says 'full-blown immersive'. This is a genuine taxonomic disagreement — the narrator reports these as dream-sequences which supports 'full-blown immersive', but the individual objects are discrete which supports 'incrusted'. Both defensible."
+    - "Alessandra records per-object single-word excerpts ('star', 'pen', 'girlfriend', 'pizza', 'newspaper', 'smoke') as separate rows — a coding-style quirk, not additional scenes."
+    - "S09 split-vs-lump discrepancy: A lumped both star incidents into one scene, B split them. I chose B's split based on narrative evidence of temporal separation."

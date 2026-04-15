@@ -1,0 +1,243 @@
+trip_id: Brugmansia_13
+substance: brugmansia
+block: "11-20"
+coder_A: Alessandra
+coder_B: Alessio
+dose_raw: null
+word_count: 1274
+
+# Dominant pattern: Alessandra fragments each scene into per-object single-word
+# excerpts (e.g. "steering wheel", "dash", "brake lights" all under the same
+# phantom-car scene) whereas Alessio codes one scene-level excerpt per scene.
+# The 31 vs 15 excerpt count ratio is explained by this indexing-style difference,
+# not by disagreement about what happened.
+
+scenes:
+  - scene_id: Brugmansia_13_S01
+    status: both
+    canonical_desc: "Mirror reflection of himself is shirtless after he has put his shirt on"
+    canonical_span_start: 1025
+    canonical_span_end: 1170
+    rater_A:
+      worksheet_refs: [A02]
+      items:
+        - type_of_visual_alteration_illusion
+    rater_B:
+      worksheet_refs: [B01]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_unknown_persons
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Same shirtless-mirror-self scene. Disagreement on alteration: A=illusion (reflection misperceived), B=incrusted + unknown person (a new entity in the mirror). Either reading is defensible. B adds modal status."
+
+  - scene_id: Brugmansia_13_S02
+    status: only_A
+    canonical_desc: "Believes a pen in his hand is the sandals he was looking for"
+    canonical_span_start: 1594
+    canonical_span_end: 1870
+    rater_A:
+      worksheet_refs: [A03, A04]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+        - dynamics_of_the_hallucination_object_constancy
+    rater_B: null
+    rationale: "A codes this pen/sandals misidentification at scene-level + trip-level delusional. B codes only at trip-level (b01 delusional) — a missed scene individuation."
+
+  - scene_id: Brugmansia_13_S03
+    status: both
+    canonical_desc: "In the bathroom (locked) sees two friends: one watching him piss, another washing hands; has a conversation; friends vanish"
+    canonical_span_start: 2100
+    canonical_span_end: 2420
+    rater_A:
+      worksheet_refs: [A05, A06]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_relatives_acquaintances
+        - auditory_hallucination_human_relatives_acquaintances
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+        - dynamics_of_the_hallucination_no_object_constancy
+    rater_B:
+      worksheet_refs: [B02, B03, B04]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_relatives_acquaintances
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rationale: "Same bathroom-friends scene. Both agree incrusted + acquaintance. A correctly adds auditory (conversation) + no-object-constancy (he was gone after). Modal-status disagreement (improbable vs probable)."
+
+  - scene_id: Brugmansia_13_S04
+    status: only_B
+    canonical_desc: "In music store, friends at CD racks keep disappearing when he looks for them"
+    canonical_span_start: 3083
+    canonical_span_end: 3270
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B05]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_relatives_acquaintances
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rationale: "B individuates the friends-disappearing-in-store scene; A does not code at scene-level (but codes related disappearance dynamics at trip-level)."
+
+  - scene_id: Brugmansia_13_S05
+    status: both
+    canonical_desc: "Believes he is driving his own car with friends in the back; reaches for brake pedal, steering wheel, instrument panel, sees brake lights of other cars"
+    canonical_span_start: 3518
+    canonical_span_end: 3900
+    rater_A:
+      worksheet_refs: [A07, A08, A09, A10, A11, A12, A13, A14, A15, A16]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_relatives_acquaintances
+        - visual_hallucination_artefact_vehicle
+        - visual_hallucination_artefact_tool_cloth
+        - tactile_hallucination_artefact
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rater_B:
+      worksheet_refs: [B06]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rationale: "Same phantom-car scene. Disagreement on alteration type: A=incrusted (many small objects: wheel, dash, brake lights), B=full-blown immersive (he was fully convinced he was driving — an alternate reality). Both defensible. A captures tactile modality (reaching for controls) that B omits."
+
+  - scene_id: Brugmansia_13_S06
+    status: both
+    canonical_desc: "Throughout the night, pulls (non-existent) cigarettes from empty pack, lights them, smokes them; hand shaped around cigarette"
+    canonical_span_start: 4252
+    canonical_span_end: 4560
+    rater_A:
+      worksheet_refs: [A17, A18, A19, A20]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_artefact_other
+        - tactile_hallucination_other
+        - modal_status_of_the_hallucination_possible_and_probable_event
+        - sense_of_reality_delusional
+    rater_B:
+      worksheet_refs: [B07, B08]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - tactile_hallucination_artefact
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rationale: "Same phantom-cigarette scene. Both agree tactile. Alteration disagreement (incrusted vs full-blown immersive). Same pattern as S05."
+
+  - scene_id: Brugmansia_13_S07
+    status: both
+    canonical_desc: "Believes he went to bed stripped to boxers; wakes up sitting in desk chair fully clothed, smoking imaginary cigarette; repeats 3x"
+    canonical_span_start: 4568
+    canonical_span_end: 4750
+    rater_A:
+      worksheet_refs: [A21, A22, A23, A24]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_artefact_tool_cloth
+        - visual_hallucination_artefact_city_building_furniture
+        - dynamics_of_the_hallucination_object_constancy
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rater_B:
+      worksheet_refs: [B09]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rationale: "Same bed-vs-desk-chair scene. Same pattern: A=incrusted with object leaves, B=full-blown immersive."
+
+  - scene_id: Brugmansia_13_S08
+    status: both
+    canonical_desc: "Shadow humanoid figures leap across ceiling; shadow head peeks from bedroom corners"
+    canonical_span_start: 4856
+    canonical_span_end: 5150
+    rater_A:
+      worksheet_refs: [A25, A26, A27]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_extraordinary_entity_other
+    rater_B:
+      worksheet_refs: [B10, B11]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_others
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rationale: "Same shadow-figures scene. Disagreement on alteration type (detached vs incrusted) AND on object class: A=extraordinary entity (shadow beings), B=human-others (human figures). The narrator calls them 'shadows of human figures' — both readings defensible."
+
+  - scene_id: Brugmansia_13_S09
+    status: both
+    canonical_desc: "Cat pouncing on stomach and digging under covers; grabs cat to put her out, only to find hand empty (cat was already out)"
+    canonical_span_start: 5154
+    canonical_span_end: 5400
+    rater_A:
+      worksheet_refs: [A28, A29, A30]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_animal_mammal
+        - modal_status_of_the_hallucination_possible_and_probable_event
+        - sense_of_reality_delusional
+        - amnesia
+    rater_B:
+      worksheet_refs: [B12, B13]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_animal_mammal
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rationale: "Same phantom-cat scene. Both agree mammal. Alteration disagreement (incrusted vs full-blown immersive). A adds amnesia (reasonable — he'd forgotten locking the cat out) and delusional."
+
+  - scene_id: Brugmansia_13_S10
+    status: both
+    canonical_desc: "Girlfriend appears twice on other side of bed; touches her hair once; second time yells at her for hogging bed; she was not there"
+    canonical_span_start: 5526
+    canonical_span_end: 5700
+    rater_A:
+      worksheet_refs: [A31]
+      items:
+        - visual_hallucination_human_relatives_acquaintances
+    rater_B:
+      worksheet_refs: [B14, B15]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_relatives_acquaintances
+        - tactile_hallucination_human
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rationale: "Same phantom-girlfriend-in-bed scene. Both agree acquaintance visual. B correctly adds tactile (touched her hair) which A missed. B also adds incrusted + modal."
+
+trip_level_codes:
+  rater_A:
+    - item: arousal_abnormally_low
+      excerpt_refs: [a01]
+      excerpt: "dizzy and drunk, stumbling around"
+    - item: domain_specific_violation_psychological_projection
+      excerpt_refs: [a02]
+      excerpt: "talking to mirror reflection, asking 'who are you'"
+    - item: sense_of_reality_delusional
+      excerpt_refs: [a03, a05, a07, a12, a16]
+      excerpt: "multiple: pen=sandals; friends in locked bathroom; driving own car; phantom cigarette in chair; believing it didn't work"
+    - item: emotion_negative_emotion
+      excerpt_refs: [a04, a08, a09, a14, a15]
+      excerpt: "got mad; brakes panic; freaked out; pissed at cat; mad at girlfriend hogging bed"
+    - item: emotion_positive_emotion
+      excerpt_refs: [a13]
+      excerpt: "thought it was beautiful, like they were dancing"
+    - item: dynamics_of_the_hallucination_object_constancy
+      excerpt_refs: [a06, a11]
+      excerpt: "steering-wheel / dash persistence; cigarette-shape of hand"
+    - item: amnesia
+      excerpt_refs: [a10]
+      excerpt: "I smoked all of my cigarettes before we ever left"
+  rater_B:
+    - item: sense_of_reality_delusional
+      excerpt_refs: [b01, b02, b05, b07]
+      excerpt: "high but didn't know it; thought 100% real; desk chair awakening; hand was empty"
+    - item: dynamics_of_the_hallucination_no_object_constancy
+      excerpt_refs: [b03, b04, b06, b08]
+      excerpt: "looked up and he was gone; turn around and they weren't there; shadows leapt; blinked and she was gone"
+
+summary:
+  total_canonical_scenes: 10
+  both: 8
+  only_A: 1
+  only_B: 1
+  scene_individuation_jaccard: 0.8
+  classification_notes:
+    - "Excellent scene-level agreement (8/10) on a rich trip with 10+ distinct hallucinatory episodes."
+    - "DOMINANT classification disagreement: across 5 shared scenes (S05, S06, S07, S09), A codes 'incrusted object' while B codes 'full-blown immersive'. This is a consistent semantic disagreement: scenes where the narrator is fully convinced of an alternate reality (driving his own car, sleeping in bed when awake in chair, cat on bed when cat is outside) can be coded either way. Important to flag for reconciliation."
+    - "A much more thoroughly catalogs object-classes within each scene (e.g. steering wheel, dash, brake lights, cars in the phantom-car scene); B codes scenes holistically."
+    - "S10: B correctly captured the tactile modality ('touched her hair') which A missed."
+    - "S08: genuine disagreement on object class (extraordinary entity vs human others) on the shadow figures."

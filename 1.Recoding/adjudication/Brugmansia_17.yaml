@@ -1,0 +1,52 @@
+trip_id: Brugmansia_17
+substance: brugmansia
+block: "11-20"
+coder_A: Alessandra
+coder_B: Alessio
+dose_raw: "2 flowers boiled in 1 mug of water"
+word_count: 1116
+
+scenes:
+  - scene_id: Brugmansia_17_S01
+    status: only_A
+    canonical_desc: "Mistook canola cooking oil bottle for a drink and drank it (twice attempted)"
+    canonical_span_start: 2590
+    canonical_span_end: 3050
+    rater_A:
+      worksheet_refs: [A01, A02]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_artefact_other
+    rater_B: null
+    rationale: "A individuated this as a scene; B did not."
+
+trip_level_codes:
+  rater_A:
+    - item: arousal_abnormally_low
+      excerpt_refs: [a01]
+      excerpt: "uncontrollable urge to lay down and close my eyes"
+    - item: emotion_negative_emotion
+      excerpt_refs: [a02]
+      excerpt: "throwing up over the balcony in presence of father"
+    - item: amnesia
+      excerpt_refs: [a03, a04]
+      excerpt: "same mistake twice in 5 min; next few hours blurry, memory very poor"
+  rater_B:
+    - item: arousal_abnormally_low
+      excerpt_refs: [b01]
+      excerpt: "eyelids weighing too much; uncontrollable urge to lay down"
+    - item: amnesia
+      excerpt_refs: [b02]
+      excerpt: "my memory is very poor"
+    - item: sensory_delight_erotic
+      excerpt_refs: [b03]
+      excerpt: "couldn't take my eyes off the porn and was very much enjoying it"
+
+summary:
+  total_canonical_scenes: 1
+  both: 0
+  only_A: 1
+  only_B: 0
+  scene_individuation_jaccard: 0.0
+  individuation_notes:
+    - "A individuated 1 scene; B individuated 0 scenes. Zero overlap at scene level."

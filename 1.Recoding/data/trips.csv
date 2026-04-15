@@ -1,0 +1,41 @@
+trip_id,substance,block,coder_A,coder_B,dose_raw,word_count
+Brugmansia_01,brugmansia,01-10,Brendan,Noah,,2164
+Brugmansia_02,brugmansia,01-10,Brendan,Noah,,948
+Brugmansia_03,brugmansia,01-10,Brendan,Noah,,603
+Brugmansia_04,brugmansia,01-10,Brendan,Noah,approximately 0.75 cups tea,1653
+Brugmansia_05,brugmansia,01-10,Brendan,Noah,1 mug brugmansia tea (~175ml),1540
+Brugmansia_06,brugmansia,01-10,Brendan,Noah,20 seeds,759
+Brugmansia_07,brugmansia,01-10,Brendan,Noah,25 seeds,294
+Brugmansia_08,brugmansia,01-10,Brendan,Noah,~475ml (2 cups) of brew,681
+Brugmansia_09,brugmansia,01-10,Brendan,Noah,2 flowers brewed as tea,713
+Brugmansia_10,brugmansia,01-10,Brendan,Noah,,762
+Brugmansia_11,brugmansia,11-20,Alessandra,Alessio,1.5 cups of concentrated decoction,779
+Brugmansia_12,brugmansia,11-20,Alessandra,Alessio,390ml of tea brewed from 2 flowers in 750ml water,1003
+Brugmansia_13,brugmansia,11-20,Alessandra,Alessio,,1274
+Brugmansia_14,brugmansia,11-20,Alessandra,Alessio,1 flower tea,348
+Brugmansia_15,brugmansia,11-20,Alessandra,Alessio,4 flowers boiled in 1L water; drank ~500ml,389
+Brugmansia_16,brugmansia,11-20,Alessandra,Alessio,4 raw flowers,353
+Brugmansia_17,brugmansia,11-20,Alessandra,Alessio,2 flowers boiled in 1 mug of water,1116
+Brugmansia_18,brugmansia,11-20,Alessandra,Alessio,,1081
+Brugmansia_19,brugmansia,11-20,Alessandra,Alessio,,488
+Brugmansia_20,brugmansia,11-20,Alessandra,Alessio,3 pink flowers as tea,967
+Psilocybe_01,psilocybin,01-10,Alessandra,Brendan,6 g,1847
+Psilocybe_02,psilocybin,01-10,Alessandra,Brendan,,2344
+Psilocybe_03,psilocybin,01-10,Alessandra,Brendan,"3,5 g",1327
+Psilocybe_04,psilocybin,01-10,Alessandra,Brendan,4 g,706
+Psilocybe_05,psilocybin,01-10,Alessandra,Brendan,3 g,2066
+Psilocybe_06,psilocybin,01-10,Alessandra,Brendan,5 g (split across day),2355
+Psilocybe_07,psilocybin,01-10,Alessandra,Brendan,6 g (cyanescens),1373
+Psilocybe_08,psilocybin,01-10,Alessandra,Brendan,3.1 g (Psilocybe cubensis as drink),1580
+Psilocybe_09,psilocybin,01-10,Alessandra,Brendan,"2,5 g",1203
+Psilocybe_10,psilocybin,01-10,Alessandra,Brendan,,3027
+Psilocybe_11,psilocybin,11-20,Francesco,Susana,4 g (lemon tek),2382
+Psilocybe_12,psilocybin,11-20,Francesco,Susana,"3,5 g (as tea)",2695
+Psilocybe_13,psilocybin,11-20,Francesco,Susana,3 g (Golden Teacher),1597
+Psilocybe_14,psilocybin,11-20,Francesco,Susana,"1 g (Psilocybe mexicana, tea)",1476
+Psilocybe_15,psilocybin,11-20,Francesco,Susana,"3,5 g",1953
+Psilocybe_16,psilocybin,11-20,Francesco,Susana,2 g,2683
+Psilocybe_17,psilocybin,11-20,Francesco,Susana,4 g,2372
+Psilocybe_18,psilocybin,11-20,Francesco,Susana,2 g,5531
+Psilocybe_19,psilocybin,11-20,Francesco,Susana,4 g (tea),2210
+Psilocybe_20,psilocybin,11-20,Francesco,Susana,2 g (half-eighth),3093

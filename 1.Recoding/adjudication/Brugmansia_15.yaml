@@ -1,0 +1,65 @@
+trip_id: Brugmansia_15
+substance: brugmansia
+block: "11-20"
+coder_A: Alessandra
+coder_B: Alessio
+dose_raw: "4 flowers boiled in 1L water; drank ~500ml"
+word_count: 389
+
+scenes:
+  - scene_id: Brugmansia_15_S01
+    status: only_A
+    canonical_desc: "Own mirror reflection perceived as one of his friends; has conversation with it until hand-gesture mirroring reveals it is himself"
+    canonical_span_start: 1304
+    canonical_span_end: 1550
+    rater_A:
+      worksheet_refs: [A01, A02, A03]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_relatives_acquaintances
+    rater_B: null
+    rationale: "A individuated this as a scene; B did not."
+
+  - scene_id: Brugmansia_15_S02
+    status: both
+    canonical_desc: "Two-hour conversation in bed with two imaginary friends on the floor"
+    canonical_span_start: 1563
+    canonical_span_end: 1760
+    rater_A:
+      worksheet_refs: [A04]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - dynamics_of_the_hallucination_no_object_constancy
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rater_B:
+      worksheet_refs: [B01, B02]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_relatives_acquaintances
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rationale: "Same imaginary-friends scene. B captures acquaintance object-class. Modal-status disagreement (probable vs improbable) — rater subjectivity."
+
+trip_level_codes:
+  rater_A:
+    - item: arousal_abnormally_low
+      excerpt_refs: [a01]
+      excerpt: "balance got much worse; would lean one way and not realise; fell to ground ~5 times"
+    - item: amnesia
+      excerpt_refs: [a02]
+      excerpt: "short attention span, horrible memory; forget what song playing"
+    - item: sense_of_reality_delusional
+      excerpt_refs: [a03]
+      excerpt: "hadn't had any friends over; lost touch with reality"
+  rater_B:
+    - item: sense_of_reality_delusional
+      excerpt_refs: [b01]
+      excerpt: "hadn't had any friends over; was just talking to myself"
+
+summary:
+  total_canonical_scenes: 2
+  both: 1
+  only_A: 1
+  only_B: 0
+  scene_individuation_jaccard: 0.5
+  individuation_notes:
+    - "A individuated 2 scenes; B individuated 1 scene. S02 is shared, S01 is only in A."

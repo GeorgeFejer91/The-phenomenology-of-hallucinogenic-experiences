@@ -1,0 +1,161 @@
+trip_id: Psilocybe_16
+substance: psilocybin
+block: "11-20"
+coder_A: Francesco
+coder_B: Susana
+dose_raw: "2 g"
+word_count: 2683
+
+scenes:
+  - scene_id: Psilocybe_16_S01
+    status: both
+    canonical_desc: "Bricks on wall take on carpet-like texture as he stares"
+    canonical_span_start: 807
+    canonical_span_end: 930
+    rater_A:
+      worksheet_refs: [A01]
+      items: [type_of_visual_alteration_illusion]
+    rater_B:
+      worksheet_refs: [B01]
+      items: [type_of_visual_alteration_illusion]
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_16_S02
+    status: both
+    canonical_desc: "Sees outlines of numbers, a strange face, and moving patterns on wall"
+    canonical_span_start: 930
+    canonical_span_end: 1080
+    rater_A:
+      worksheet_refs: [A02]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_geometrical_pattern
+        - visual_hallucination_human_unknown_persons
+        - dynamics_of_the_hallucination_no_object_constancy
+    rater_B:
+      worksheet_refs: [B02, B03, B04, B05]
+      items:
+        - visual_hallucination_artefact_other
+        - visual_hallucination_human_others
+        - visual_hallucination_geometrical_pattern
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_16_S03
+    status: only_A
+    canonical_desc: "Trees outside loomed at him vibrant and alive"
+    canonical_span_start: 1082
+    canonical_span_end: 1180
+    rater_A:
+      worksheet_refs: [A03]
+      items: [type_of_visual_alteration_illusion]
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_16_S04
+    status: both
+    canonical_desc: "Hidden patterns on floor including etheric forms of two figures embracing each other"
+    canonical_span_start: 1208
+    canonical_span_end: 1480
+    rater_A:
+      worksheet_refs: [A04]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_human_unknown_persons
+        - dynamics_of_the_hallucination_no_object_constancy
+    rater_B:
+      worksheet_refs: [B06, B07, B08]
+      items:
+        - visual_hallucination_geometrical_pattern
+        - visual_hallucination_human_others
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_16_S05
+    status: only_B
+    canonical_desc: "Alex Grey's website: couldn't tell if pictures were actually moving animations or not"
+    canonical_span_start: 1489
+    canonical_span_end: 1700
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B09]
+      items:
+        - type_of_visual_alteration_illusion
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rationale: "B individuated; A did not."
+
+  - scene_id: Psilocybe_16_S06
+    status: both
+    canonical_desc: "Tiny spiders crawling across vision"
+    canonical_span_start: 3004
+    canonical_span_end: 3100
+    rater_A:
+      worksheet_refs: [A05]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_animal_insect
+        - dynamics_of_the_hallucination_object_constancy
+    rater_B: null
+    rationale: "(Actually only_A — B did not code tiny spiders at scene level.)"
+
+  - scene_id: Psilocybe_16_S07
+    status: both
+    canonical_desc: "Closed-eye imaginative imagery: anything he thinks of appears behind eyelids, vivid and psychedelic; 'carnival of the strange' atmosphere"
+    canonical_span_start: 3332
+    canonical_span_end: 3550
+    rater_A:
+      worksheet_refs: [A06]
+      items: [type_of_visual_alteration_hallucination_of_a_detached_object]
+    rater_B:
+      worksheet_refs: [B10, B11, B12]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_others
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_16_S08
+    status: only_B
+    canonical_desc: "Pressing fingers into desk: resistance perceived as non-spatial pure sensation (dimensionless)"
+    canonical_span_start: 4812
+    canonical_span_end: 5180
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B13, B14, B15]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - tactile_hallucination_other
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "B individuated; A did not."
+
+  - scene_id: Psilocybe_16_S09
+    status: only_B
+    canonical_desc: "Language devolves into glossolalia soup; bringing up random images (blackboard, chalk, dog barking)"
+    canonical_span_start: 7786
+    canonical_span_end: 8000
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B16, B17, B18, B19, B20]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_artefact_other
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rationale: "B individuated; A did not."
+
+trip_level_codes:
+  rater_A:
+    - item: emotion_positive_emotion
+      excerpt: "amazed and excited; pure awesome; overjoyed"
+    - item: emotion_negative_emotion
+      excerpt: "shame, stupidity, depression, dread"
+    - item: ego_dissolution_core_self
+      excerpt: "I must be God; didn't know own name, gender, species; lost everything"
+    - item: sense_of_reality_delusional
+      excerpt: "I was God; I was in mental asylum"
+    - item: amnesia
+      excerpt: "fog in head; lost memory of name, nature of reality"
+  rater_B:
+    - item: ego_dissolution_core_self
+      excerpt: "I must be one with everything, therefore God; lost everything"
+    - item: emotion_negative_emotion
+      excerpt: "shame, depression, derealisation"

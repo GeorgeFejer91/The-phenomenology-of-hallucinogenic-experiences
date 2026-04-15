@@ -1,0 +1,262 @@
+trip_id: Psilocybe_15
+substance: psilocybin
+block: "11-20"
+coder_A: Francesco
+coder_B: Susana
+dose_raw: "3,5 g"
+word_count: 1953
+
+scenes:
+  - scene_id: Psilocybe_15_S01
+    status: only_A
+    canonical_desc: "Looking into tree, limbs seem to pull away from him and each other"
+    canonical_span_start: 855
+    canonical_span_end: 960
+    rater_A:
+      worksheet_refs: [A01]
+      items: [type_of_visual_alteration_illusion]
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_15_S02
+    status: only_A
+    canonical_desc: "Sun has awesome presence: warm, powerful, God-like"
+    canonical_span_start: 1098
+    canonical_span_end: 1200
+    rater_A:
+      worksheet_refs: [A02]
+      items: [nonsensory_hallucination_inorganic_entity]
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_15_S03
+    status: only_B
+    canonical_desc: "Scenery changed, nothing sits in space normally, nothing stationary"
+    canonical_span_start: 1513
+    canonical_span_end: 1630
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B01]
+      items:
+        - type_of_visual_alteration_illusion
+        - dynamics_of_the_hallucination_no_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "B individuated; A did not."
+
+  - scene_id: Psilocybe_15_S04
+    status: both
+    canonical_desc: "Rush of geometric flowing orange/yellow/red patterns behind eyelids"
+    canonical_span_start: 1630
+    canonical_span_end: 1810
+    rater_A:
+      worksheet_refs: [A03]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_geometrical_pattern
+        - dynamics_of_the_hallucination_no_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B02]
+      items: [visual_hallucination_geometrical_pattern]
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_15_S05
+    status: both
+    canonical_desc: "Sees images of Buddha, Jesus and other unidentified figures"
+    canonical_span_start: 1807
+    canonical_span_end: 2000
+    rater_A:
+      worksheet_refs: [A04]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_extraordinary_entity_other
+        - dynamics_of_the_hallucination_no_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B03]
+      items: [visual_hallucination_extraordinary_entity_god]
+    rationale: "Both individuated. Entity-leaf disagreement (other vs god)."
+
+  - scene_id: Psilocybe_15_S06
+    status: only_A
+    canonical_desc: "Friends' yells reverberate and he felt them all around him"
+    canonical_span_start: 2523
+    canonical_span_end: 2640
+    rater_A:
+      worksheet_refs: [A05]
+      items: [nonsensory_hallucination_human]
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_15_S07
+    status: both
+    canonical_desc: "Sees reflections of himself on either side; bush and tree multiply infinitely"
+    canonical_span_start: 2642
+    canonical_span_end: 3000
+    rater_A:
+      worksheet_refs: [A06]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_human_others
+        - visual_hallucination_plant_tree_shrub
+        - dynamics_of_the_hallucination_no_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+        - sensory_delight_visual_nature
+    rater_B:
+      worksheet_refs: [B04, B05]
+      items:
+        - type_of_visual_alteration_illusion
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_15_S08
+    status: both
+    canonical_desc: "Asks 'Who am I?' and hears inner voices answering 'Gregg Dix' through to 'no one'"
+    canonical_span_start: 3047
+    canonical_span_end: 3260
+    rater_A:
+      worksheet_refs: [A07]
+      items:
+        - auditory_hallucination_human_others
+        - ego_dissolution_social_self
+    rater_B:
+      worksheet_refs: [B06]
+      items:
+        - auditory_hallucination_human_others
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_15_S09
+    status: only_B
+    canonical_desc: "Enters strange world in head filled with language, numbers, confusion"
+    canonical_span_start: 5125
+    canonical_span_end: 5240
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B07, B08]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_artefact_other
+    rationale: "B individuated; A did not."
+
+  - scene_id: Psilocybe_15_S10
+    status: only_B
+    canonical_desc: "Everything in life was elaborate lie; was primitive mind; became one with something else"
+    canonical_span_start: 5238
+    canonical_span_end: 5500
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B09, B10]
+      items:
+        - nonsensory_hallucination_human
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "B individuated; A codes at trip-level as ego dissolution."
+
+  - scene_id: Psilocybe_15_S11
+    status: both
+    canonical_desc: "Yelps of coyotes and reverberating auditory hallucinations during sunset"
+    canonical_span_start: 5784
+    canonical_span_end: 5900
+    rater_A:
+      worksheet_refs: [A08]
+      items: [auditory_hallucination_animal_mammal]
+    rater_B:
+      worksheet_refs: [B11]
+      items: [auditory_hallucination_animal_other]
+    rationale: "Both individuated. Animal leaf disagreement (mammal vs other)."
+
+  - scene_id: Psilocybe_15_S12
+    status: both
+    canonical_desc: "Runs thinking Jeff is make-believe; everything around bends and melts"
+    canonical_span_start: 5968
+    canonical_span_end: 6100
+    rater_A:
+      worksheet_refs: [A09]
+      items: [type_of_visual_alteration_illusion]
+    rater_B:
+      worksheet_refs: [B12, B13]
+      items:
+        - type_of_visual_alteration_illusion
+        - nonsensory_hallucination_human
+        - sense_of_surprise_and_unexpectedness
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_15_S13
+    status: both
+    canonical_desc: "Walking up hill, trees melted and bent around him; Jeff and the light the only stationary things"
+    canonical_span_start: 6757
+    canonical_span_end: 6900
+    rater_A:
+      worksheet_refs: [A10]
+      items: [type_of_visual_alteration_illusion]
+    rater_B:
+      worksheet_refs: [B14]
+      items: [modal_status_of_the_hallucination_impossible_event]
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_15_S14
+    status: both
+    canonical_desc: "Strange reality: street lights bent, cars flew through houses, stars fell"
+    canonical_span_start: 7381
+    canonical_span_end: 7500
+    rater_A:
+      worksheet_refs: [A11]
+      items: [type_of_visual_alteration_illusion]
+    rater_B:
+      worksheet_refs: [B15]
+      items:
+        - dynamics_of_the_hallucination_no_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_15_S15
+    status: only_A
+    canonical_desc: "Poked head from blanket: strange orange dawn-like place, no longer night"
+    canonical_span_start: 7971
+    canonical_span_end: 8100
+    rater_A:
+      worksheet_refs: [A12]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_15_S16
+    status: both
+    canonical_desc: "Friends return: figures stretching from normal height to ten feet tall"
+    canonical_span_start: 8377
+    canonical_span_end: 8500
+    rater_A:
+      worksheet_refs: [A13]
+      items: [type_of_visual_alteration_illusion]
+    rater_B:
+      worksheet_refs: [B16]
+      items:
+        - modal_status_of_the_hallucination_impossible_event
+        - sense_of_surprise_and_unexpectedness
+    rationale: "Both individuated."
+
+trip_level_codes:
+  rater_A:
+    - item: emotion_positive_emotion
+      excerpt_refs: [a01, a02, a03, a05]
+      excerpt: "excited; smiles and laughs; awe struck; enjoyed thoroughly"
+    - item: emotion_negative_emotion
+      excerpt_refs: [a01]
+      excerpt: "nervous/anxious"
+    - item: sensory_delight_visual_other
+      excerpt_refs: [a03]
+      excerpt: "amazingly beautiful"
+    - item: sensory_delight_auditory_nature
+      excerpt_refs: [a04]
+      excerpt: "hawk scream gorgeous and primitive"
+    - item: amnesia
+      excerpt_refs: [a06]
+      excerpt: "began to forget who I was"
+    - item: ego_dissolution_social_self
+      excerpt: "forgot who I was; ended up with no one"
+  rater_B:
+    - item: ego_dissolution_social_self
+      excerpt: "I was not Gregg Dix; primitive mind; forget everything, became one with something else"

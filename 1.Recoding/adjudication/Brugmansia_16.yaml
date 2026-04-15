@@ -1,0 +1,56 @@
+trip_id: Brugmansia_16
+substance: brugmansia
+block: "11-20"
+coder_A: Alessandra
+coder_B: Alessio
+dose_raw: "4 raw flowers"
+word_count: 353
+
+scenes:
+  - scene_id: Brugmansia_16_S01
+    status: both
+    canonical_desc: "Hallucinations of friends (who were in different cities) conversing and making plans; gone when looked back at"
+    canonical_span_start: 1194
+    canonical_span_end: 1370
+    rater_A:
+      worksheet_refs: [A01, A02]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_relatives_acquaintances
+        - auditory_hallucination_human_relatives_acquaintances
+        - dynamics_of_the_hallucination_no_object_constancy
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rater_B:
+      worksheet_refs: [B01, B02, B03]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_relatives_acquaintances
+        - auditory_hallucination_human_relatives_acquaintances
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+        - sense_of_reality_delusional
+    rationale: "Both raters individuated this as a single scene. Attribute differences left as-is."
+
+trip_level_codes:
+  rater_A:
+    - item: emotion_negative_emotion
+      excerpt_refs: [a01, a03]
+      excerpt: "deranged; extreme paranoid feeling"
+    - item: enhanced_mental_imagery
+      excerpt_refs: [a02]
+      excerpt: "extremely intense hallucinations and mental derangement"
+  rater_B:
+    - item: emotion_negative_emotion
+      excerpt_refs: [b01, b03]
+      excerpt: "deranged; extreme paranoid feeling"
+    - item: dynamics_of_the_hallucination_no_object_constancy
+      excerpt_refs: [b02]
+      excerpt: "when I would look back to talk to them, they were gone"
+
+summary:
+  total_canonical_scenes: 1
+  both: 1
+  only_A: 0
+  only_B: 0
+  scene_individuation_jaccard: 1.0
+  individuation_notes:
+    - "Both raters individuated the same single scene. Full agreement on scene individuation."

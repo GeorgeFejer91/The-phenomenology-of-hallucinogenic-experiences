@@ -1,0 +1,107 @@
+trip_id: Brugmansia_09
+substance: brugmansia
+block: "01-10"
+coder_A: Brendan
+coder_B: Noah
+dose_raw: "2 flowers brewed as tea"
+word_count: 713
+
+scenes:
+  - scene_id: Brugmansia_09_S01
+    status: both
+    canonical_desc: "No depth perception; everything looks blurry / with fuzz growing on it"
+    canonical_span_start: 934
+    canonical_span_end: 1050
+    rater_A:
+      worksheet_refs: [A01]
+      items:
+        - type_of_visual_alteration_illusion
+    rater_B:
+      worksheet_refs: [B01]
+      items:
+        - type_of_visual_alteration_illusion
+    rationale: "Same passage. Full agreement on illusion."
+
+  - scene_id: Brugmansia_09_S02
+    status: both
+    canonical_desc: "Sees own reflection in mirror as a Cheshire-cat-like feline; tries to pet it"
+    canonical_span_start: 1217
+    canonical_span_end: 1380
+    rater_A:
+      worksheet_refs: [A02]
+      items:
+        - type_of_visual_alteration_illusion
+        - amnesia
+    rater_B:
+      worksheet_refs: [B02]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_animal_mammal
+    rationale: "Same Cheshire-cat-in-mirror scene. Disagreement on alteration type (illusion vs incrusted) and object class (B explicitly codes mammal; A does not). A's 'amnesia' code here is misplaced — the passage is about the moment of misrecognition, not memory loss. B's classification is arguably more accurate (the cat is a new object in place of his face)."
+
+  - scene_id: Brugmansia_09_S03
+    status: only_A
+    canonical_desc: "CD player disappears when looked at again"
+    canonical_span_start: 1383
+    canonical_span_end: 1560
+    rater_A:
+      worksheet_refs: [A03]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_artefact_technological_device
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rater_B: null
+    rationale: "A codes the vanishing CD player; B does not individuate."
+
+  - scene_id: Brugmansia_09_S04
+    status: both
+    canonical_desc: "Apparitions of parents walking into and out of room through a door that never opens"
+    canonical_span_start: 1756
+    canonical_span_end: 1940
+    rater_A:
+      worksheet_refs: [A04]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_relatives_acquaintances
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rater_B:
+      worksheet_refs: [B03]
+      items:
+        - visual_hallucination_human_relatives_acquaintances
+    rationale: "Same parents-apparitions scene. Both agree acquaintance. A adds incrusted + modal status."
+
+  - scene_id: Brugmansia_09_S05
+    status: both
+    canonical_desc: "Eating food that isn't there; bread turns into a marker and disappears"
+    canonical_span_start: 1933
+    canonical_span_end: 2170
+    rater_A:
+      worksheet_refs: [A05]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_artefact_other
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rater_B:
+      worksheet_refs: [B04]
+      items:
+        - visual_hallucination_inorganic_entity_other
+    rationale: "Same imaginary-food scene. Disagreement on object class: A says artefact-other (food/markers as man-made objects), B says inorganic-entity-other. Both are reasonable, but artefact fits bread/marker better. A adds incrusted + modal."
+
+trip_level_codes:
+  rater_A: []
+  rater_B:
+    - item: sense_of_reality_delusional
+      excerpt_refs: [b01]
+      excerpt: "when I talked to people they said they had no idea what I was talking about"
+
+summary:
+  total_canonical_scenes: 5
+  both: 4
+  only_A: 1
+  only_B: 0
+  scene_individuation_jaccard: 0.8
+  classification_notes:
+    - "High scene-level agreement (4/5)."
+    - "S02 shows substantive semantic disagreement (illusion vs incrusted+mammal) worth flagging for final reconciliation."
+    - "S05 shows object-class disagreement (artefact vs inorganic-entity) — minor."
+    - "A continues to use modal-status and incrusted-object tags more liberally than B; classifications often differ by the presence of these tags rather than the core modality."

@@ -1,0 +1,162 @@
+trip_id: Psilocybe_18
+substance: psilocybin
+block: "11-20"
+coder_A: Francesco
+coder_B: Susana
+dose_raw: "2 g"
+word_count: 5531
+
+scenes:
+  - scene_id: Psilocybe_18_S01
+    status: both
+    canonical_desc: "Starry night sky expands and contracts in rhythm with breathing"
+    canonical_span_start: 1780
+    canonical_span_end: 1920
+    rater_A:
+      worksheet_refs: [A01]
+      items: [type_of_visual_alteration_illusion]
+    rater_B:
+      worksheet_refs: [B01, B02]
+      items:
+        - type_of_visual_alteration_illusion
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_18_S02
+    status: both
+    canonical_desc: "Grass arranges itself in geometric patterns while walking; patterns become more organized and permanent"
+    canonical_span_start: 2119
+    canonical_span_end: 2800
+    rater_A:
+      worksheet_refs: [A02, A03]
+      items: [type_of_visual_alteration_illusion]
+    rater_B:
+      worksheet_refs: [B03, B04]
+      items:
+        - type_of_visual_alteration_illusion
+        - visual_hallucination_geometrical_pattern
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_18_S03
+    status: both
+    canonical_desc: "Fuzzy edge of scarf appears as large white spider ambling along to his left"
+    canonical_span_start: 2789
+    canonical_span_end: 3000
+    rater_A:
+      worksheet_refs: [A04]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_animal_insect
+        - dynamics_of_the_hallucination_object_constancy
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rater_B:
+      worksheet_refs: [B05, B06, B07]
+      items:
+        - type_of_visual_alteration_illusion
+        - visual_hallucination_animal_insect
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rationale: "Both individuated. Type-of-alteration disagreement (detached vs illusion)."
+
+  - scene_id: Psilocybe_18_S04
+    status: both
+    canonical_desc: "Bright blue galaxy with yellow Mario stars transposed over night sky between two palm trees"
+    canonical_span_start: 5351
+    canonical_span_end: 5500
+    rater_A:
+      worksheet_refs: [A05]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_inorganic_entity_other
+        - dynamics_of_the_hallucination_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B08, B09, B10]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_inorganic_entity_other
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated with matching type-of-alteration."
+
+  - scene_id: Psilocybe_18_S05
+    status: both
+    canonical_desc: "Jaguar's eyes staring back at him from horizon on city skyline"
+    canonical_span_start: 9144
+    canonical_span_end: 9280
+    rater_A:
+      worksheet_refs: [A06]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_animal_mammal
+        - dynamics_of_the_hallucination_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B11, B12]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_animal_mammal
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_18_S06
+    status: only_A
+    canonical_desc: "Outlines of spiders on both peaks of Squaw Peak"
+    canonical_span_start: 10193
+    canonical_span_end: 10320
+    rater_A:
+      worksheet_refs: [A07]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_animal_insect
+        - dynamics_of_the_hallucination_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_18_S07
+    status: both
+    canonical_desc: "Green light of smoke detector makes a peace sign"
+    canonical_span_start: 26752
+    canonical_span_end: 26900
+    rater_A:
+      worksheet_refs: [A08]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_geometrical_pattern
+        - dynamics_of_the_hallucination_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B13, B14]
+      items:
+        - type_of_visual_alteration_illusion
+        - visual_hallucination_human_others
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+        - domain_specific_violation_psychological_projection
+    rationale: "Both individuated. Object-class disagreement (geometrical-pattern vs human-others)."
+
+  - scene_id: Psilocybe_18_S08
+    status: only_A
+    canonical_desc: "Words moving across computer screen making them hard to read"
+    canonical_span_start: 28692
+    canonical_span_end: 28800
+    rater_A:
+      worksheet_refs: [A09]
+      items: [type_of_visual_alteration_illusion]
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+trip_level_codes:
+  rater_A:
+    - item: sense_of_strangeness_and_enigma
+      excerpt: "everything took on an otherworldly glow"
+    - item: emotion_negative_emotion
+      excerpt: "painful cold; nausea; shame; disgust at self"
+    - item: emotion_positive_emotion
+      excerpt: "exuberant Michael moments; sexual aggressive dancing"
+    - item: insight_existential
+      excerpt: "pain is my validation; I need to leave my parents; I am much more than my body"
+  rater_B:
+    - item: emotion_negative_emotion
+      excerpt: "nausea, painful cold, shame"
+    - item: insight_existential
+      excerpt: "self-acceptance; need to leave parents"

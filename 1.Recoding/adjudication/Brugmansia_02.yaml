@@ -1,0 +1,107 @@
+trip_id: Brugmansia_02
+substance: brugmansia
+block: "01-10"
+coder_A: Brendan
+coder_B: Noah
+dose_raw: null
+word_count: 948
+
+scenes:
+  - scene_id: Brugmansia_02_S01
+    status: only_B
+    canonical_desc: "Smoked Brugmansia leaves make him see strange colors briefly"
+    canonical_span_start: 490
+    canonical_span_end: 560
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B01]
+      items:
+        - type_of_visual_alteration_illusion
+    rationale: "B codes the brief colour-seeing as an illusion; A did not individuate."
+
+  - scene_id: Brugmansia_02_S02
+    status: only_B
+    canonical_desc: "Feeling of being in the wrong place / dislocation"
+    canonical_span_start: 829
+    canonical_span_end: 920
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B02]
+      items:
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "B codes this feeling of dislocation as an impossible-event modal-status entry; A codes the same sentence at trip-level (sense of strangeness) — see trip-level section."
+
+  - scene_id: Brugmansia_02_S03
+    status: only_A
+    canonical_desc: "Another friend talking who wasn't really there"
+    canonical_span_start: 2392
+    canonical_span_end: 2460
+    rater_A:
+      worksheet_refs: [A01]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_relatives_acquaintances
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rater_B: null
+    rationale: "A codes this as an incrusted hallucination of an acquaintance; B did not."
+
+  - scene_id: Brugmansia_02_S04
+    status: only_A
+    canonical_desc: "Fake inmate friend in the police car who later vanishes"
+    canonical_span_start: 2669
+    canonical_span_end: 2980
+    rater_A:
+      worksheet_refs: [A02]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_unknown_persons
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rater_B: null
+    rationale: "A codes this vividly hallucinated inmate; B did not individuate, though the narrative is explicit ('never there in the first place')."
+
+  - scene_id: Brugmansia_02_S05
+    status: only_A
+    canonical_desc: "People visiting his jail cell who weren't there"
+    canonical_span_start: 4587
+    canonical_span_end: 4680
+    rater_A:
+      worksheet_refs: [A03]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_others
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rater_B: null
+    rationale: "A codes the jail-cell visitors hallucination; B did not."
+
+  - scene_id: Brugmansia_02_S06
+    status: only_B
+    canonical_desc: "Post-trip inability to parse letters into words"
+    canonical_span_start: 4817
+    canonical_span_end: 5050
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B03]
+      items:
+        - type_of_visual_alteration_illusion
+    rationale: "B codes the reading impairment as a visual illusion; A did not. Whether this is really a hallucinatory scene is debatable — it is a perceptual deficit rather than added content."
+
+trip_level_codes:
+  rater_A:
+    - item: sense_of_strangeness_and_enigma
+      excerpt_refs: [a01]
+      excerpt: "Suddenly, I felt strange. Like everything was supposed to be normal, but I was somehow in the wrong place"
+  rater_B:
+    - item: sense_of_reality_delusional
+      excerpt_refs: [b01]
+      excerpt: "eating a long blade of grass...smoking a cigarette that wasn't there"
+
+summary:
+  total_canonical_scenes: 6
+  both: 0
+  only_A: 3
+  only_B: 3
+  scene_individuation_jaccard: 0.0
+  classification_notes:
+    - "Zero scene overlap — the two raters individuated entirely different scenes from the same narrative. The richest hallucinations in the text (fake inmate, absent visitors) were only picked up by A."
+    - "B coded physiological/perceptual events (colour flashes, reading deficit) as scenes that A did not treat as individuated hallucinations."
+    - "The earlier-audit pairwise Jaccard of 0.00 for this trip is not a coding dispute over classification — it is a disagreement on what even counts as a hallucinatory scene."

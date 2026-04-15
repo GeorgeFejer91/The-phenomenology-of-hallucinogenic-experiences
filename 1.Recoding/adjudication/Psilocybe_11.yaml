@@ -1,0 +1,159 @@
+trip_id: Psilocybe_11
+substance: psilocybin
+block: "11-20"
+coder_A: Francesco
+coder_B: Susana
+dose_raw: "4 g (lemon tek)"
+word_count: 2382
+
+scenes:
+  - scene_id: Psilocybe_11_S01
+    status: both
+    canonical_desc: "Becomes aware of a loving, intelligent, ancient, alien presence not in room or head"
+    canonical_span_start: 5629
+    canonical_span_end: 5980
+    rater_A:
+      worksheet_refs: [A01]
+      items:
+        - nonsensory_hallucination_extraordinary_entity
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B01, B02, B03]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - nonsensory_hallucination_extraordinary_entity
+        - dynamics_of_the_hallucination_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated. B additionally codes visual alteration + object constancy."
+
+  - scene_id: Psilocybe_11_S02
+    status: both
+    canonical_desc: "Patterns as geometric fractals with distinctly organic feel"
+    canonical_span_start: 5982
+    canonical_span_end: 6200
+    rater_A:
+      worksheet_refs: [A02]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_geometrical_pattern
+        - dynamics_of_the_hallucination_no_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B04]
+      items: [visual_hallucination_geometrical_pattern]
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_11_S03
+    status: both
+    canonical_desc: "Hears presence respond 'I am you and you are me'"
+    canonical_span_start: 6423
+    canonical_span_end: 6600
+    rater_A:
+      worksheet_refs: [A03]
+      items:
+        - auditory_hallucination_extraordinary_entity_other
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B05]
+      items: [auditory_hallucination_extraordinary_entity_alien]
+    rationale: "Both individuated. Disagreement on extraordinary-entity leaf (other vs alien)."
+
+  - scene_id: Psilocybe_11_S04
+    status: both
+    canonical_desc: "Blue tie-dye-like pattern with vibrant blues; gradient begins to ripple like a veil; rotation and spiral geometry"
+    canonical_span_start: 7273
+    canonical_span_end: 8310
+    rater_A:
+      worksheet_refs: [A04, A05, A06, A07]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_geometrical_pattern
+        - dynamics_of_the_hallucination_no_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B06, B07]
+      items:
+        - visual_hallucination_geometrical_pattern
+        - dynamics_of_the_hallucination_no_object_constancy
+    rationale: "Both individuated this extended geometric pattern scene."
+
+  - scene_id: Psilocybe_11_S05
+    status: both
+    canonical_desc: "Pine trees, sunflower carvings, birds, woodland creatures, rotating 3D crystals, 9 men on bicycles riding over mountains from web-strands"
+    canonical_span_start: 8773
+    canonical_span_end: 9050
+    rater_A:
+      worksheet_refs: [A08, A09, A10, A11, A12]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_plant_tree_shrub
+        - visual_hallucination_plant_flower_grass
+        - visual_hallucination_animal_bird
+        - visual_hallucination_animal_other
+        - visual_hallucination_geometrical_pattern
+        - visual_hallucination_artefact_vehicle
+        - visual_hallucination_human_unknown_persons
+        - visual_hallucination_inorganic_entity_earth_river_sky_cloud
+        - modal_status_of_the_hallucination_possible_and_probable_event
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B09, B10, B11, B12, B13, B14, B15, B16]
+      items:
+        - visual_hallucination_plant_tree_shrub
+        - visual_hallucination_inorganic_entity_other
+        - visual_hallucination_animal_bird
+        - visual_hallucination_animal_other
+        - visual_hallucination_geometrical_pattern
+        - visual_hallucination_artefact_vehicle
+        - visual_hallucination_human_unknown_persons
+        - visual_hallucination_inorganic_entity_earth_river_sky_cloud
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rationale: "Both individuated this dense composite scene with many sub-objects. High object-class agreement."
+
+  - scene_id: Psilocybe_11_S06
+    status: only_B
+    canonical_desc: "With the pulsing came recognizable images from our own world; completely let go"
+    canonical_span_start: 8471
+    canonical_span_end: 8620
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B08]
+      items: [type_of_visual_alteration_full-blown_immersive_hallucination]
+    rationale: "B individuated as transition scene; A absorbs this under S05."
+
+  - scene_id: Psilocybe_11_S07
+    status: only_B
+    canonical_desc: "Entity takes his arms, pokes his face/chest while repeating 'you are the universe'"
+    canonical_span_start: 9560
+    canonical_span_end: 9900
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B17]
+      items: [auditory_hallucination_extraordinary_entity_alien]
+    rationale: "B individuated the possession/poking scene; A codes related insight at trip-level."
+
+  - scene_id: Psilocybe_11_S08
+    status: both
+    canonical_desc: "Entity revealed with cuttlefish/octopus eyes, roundish head, golden/orange radiance like alive sun looking back"
+    canonical_span_start: 10971
+    canonical_span_end: 11500
+    rater_A:
+      worksheet_refs: [A13]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_extraordinary_entity_other
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B18]
+      items: [visual_hallucination_extraordinary_entity_alien]
+    rationale: "Both individuated. Extraordinary-entity leaf disagreement (other vs alien)."
+
+trip_level_codes:
+  rater_A:
+    - item: emotion_negative_emotion
+      excerpt: "nausea; angry at community; stuck in pit of anger"
+    - item: insight_metaphysical
+      excerpt: "I am the universe; everything is alive, connected, one"
+  rater_B:
+    - item: insight_metaphysical
+      excerpt: "you are the universe; everything emanates from everything"

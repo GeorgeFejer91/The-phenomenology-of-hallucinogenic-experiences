@@ -1,0 +1,187 @@
+trip_id: Psilocybe_19
+substance: psilocybin
+block: "11-20"
+coder_A: Francesco
+coder_B: Susana
+dose_raw: "4 g (tea)"
+word_count: 2210
+
+scenes:
+  - scene_id: Psilocybe_19_S01
+    status: only_A
+    canonical_desc: "Circle of light on roof is turning clockwise, then counter-clockwise"
+    canonical_span_start: 1024
+    canonical_span_end: 1250
+    rater_A:
+      worksheet_refs: [A01]
+      items: [type_of_visual_alteration_illusion]
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_19_S02
+    status: only_A
+    canonical_desc: "Portraits on wall seem pleased with his efforts to entertain the stern one"
+    canonical_span_start: 2248
+    canonical_span_end: 2380
+    rater_A:
+      worksheet_refs: [A02]
+      items:
+        - type_of_visual_alteration_illusion
+        - domain_specific_violation_psychological_projection
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_19_S03
+    status: only_A
+    canonical_desc: "Tendrils of light above ripple with his exhale breath"
+    canonical_span_start: 2703
+    canonical_span_end: 2850
+    rater_A:
+      worksheet_refs: [A03]
+      items: [type_of_visual_alteration_illusion]
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_19_S04
+    status: only_B
+    canonical_desc: "Sensory perception off scale: running stairs up feels light, down feels heavy, sinking into bed continues; pushes skin like putty"
+    canonical_span_start: 4132
+    canonical_span_end: 4780
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B01, B02, B03]
+      items:
+        - type_of_visual_alteration_illusion
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - own_body_distortion
+        - tactile_hallucination_other
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rationale: "B individuated; A codes at trip-level as own-body-distortion."
+
+  - scene_id: Psilocybe_19_S05
+    status: only_B
+    canonical_desc: "If stops moving, de-animates into stone"
+    canonical_span_start: 5117
+    canonical_span_end: 5200
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B04, B05]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - tactile_hallucination_other
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rationale: "B individuated; A did not."
+
+  - scene_id: Psilocybe_19_S06
+    status: both
+    canonical_desc: "Body feels split into two like shedding a cocoon"
+    canonical_span_start: 5600
+    canonical_span_end: 5730
+    rater_A:
+      worksheet_refs: [A04]
+      items:
+        - own_body_distortion
+        - tactile_hallucination_human
+        - sensory_delight_haptic
+        - dynamics_of_the_hallucination_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B06]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - own_body_distortion
+        - tactile_hallucination_other
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_19_S07
+    status: only_B
+    canonical_desc: "Tells self he is a feather; becomes very light and blown across room; then becomes tree, mushroom, French Informant, paratrooper, shadow"
+    canonical_span_start: 5810
+    canonical_span_end: 6080
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B07, B08, B09, B10]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - own_body_distortion
+        - tactile_hallucination_other
+        - ego_dissolution_bodily_self
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "B individuated; A did not."
+
+  - scene_id: Psilocybe_19_S08
+    status: only_B
+    canonical_desc: "Outside feels like afterlife: still, void of life, worn down, no leaves"
+    canonical_span_start: 6301
+    canonical_span_end: 6460
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B11, B12]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - nonsensory_hallucination_inorganic_entity
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rationale: "B individuated; A did not."
+
+  - scene_id: Psilocybe_19_S09
+    status: only_B
+    canonical_desc: "Shadow on railing is ball-shaped, mistakes own body for ball-shaped: I am now Humpty Dumpty"
+    canonical_span_start: 6663
+    canonical_span_end: 6800
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B13]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - own_body_distortion
+        - tactile_hallucination_other
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "B individuated; A did not."
+
+  - scene_id: Psilocybe_19_S10
+    status: only_B
+    canonical_desc: "Every word he says to friend on phone influences his own reality; asking to slow down slows him down"
+    canonical_span_start: 7970
+    canonical_span_end: 8100
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B14, B15]
+      items:
+        - type_of_visual_alteration_illusion
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rationale: "B individuated; A did not."
+
+  - scene_id: Psilocybe_19_S11
+    status: only_B
+    canonical_desc: "Water from faucet splashes then freezes within seconds; coincides with song slowdown; time stops until track restarts"
+    canonical_span_start: 8912
+    canonical_span_end: 9060
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B16]
+      items:
+        - type_of_visual_alteration_illusion
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rationale: "B individuated; A did not."
+
+trip_level_codes:
+  rater_A:
+    - item: emotion_positive_emotion
+      excerpt: "excitement; dancing feels good; wonderful idea"
+    - item: own_body_distortion
+      excerpt_refs: [a01, a04, a05]
+      excerpt: "shifted upwards; another shift upwards; hand close to heart"
+    - item: sensory_delight_haptic
+      excerpt_refs: [a06]
+      excerpt: "movement enjoyable, touch most influenced sense"
+    - item: sense_of_reality_lucid
+      excerpt_refs: [a07]
+      excerpt: "distinctly aware she is not part of trip"
+    - item: domain_specific_violation_psychological_projection
+      excerpt: "portrait lady paying attention, being entertained"
+  rater_B:
+    - item: ego_dissolution_bodily_self
+      excerpt: "feather blown across room; I can be anything"
+    - item: own_body_distortion
+      excerpt: "various bodily transformations"

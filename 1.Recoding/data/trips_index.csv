@@ -1,0 +1,41 @@
+trip_id,substance,dose_raw,word_count,source_docx
+Psilocybe_01,psilocybin,6 g,1847,Psilocybin_source_coding/Psilocybe_01-10.docx
+Psilocybe_02,psilocybin,,2344,Psilocybin_source_coding/Psilocybe_01-10.docx
+Psilocybe_03,psilocybin,"3,5 g",1327,Psilocybin_source_coding/Psilocybe_01-10.docx
+Psilocybe_04,psilocybin,4 g,706,Psilocybin_source_coding/Psilocybe_01-10.docx
+Psilocybe_05,psilocybin,3 g,2066,Psilocybin_source_coding/Psilocybe_01-10.docx
+Psilocybe_06,psilocybin,5 g,2355,Psilocybin_source_coding/Psilocybe_01-10.docx
+Psilocybe_07,psilocybin,6 g,1373,Psilocybin_source_coding/Psilocybe_01-10.docx
+Psilocybe_08,psilocybin,3 g,1580,Psilocybin_source_coding/Psilocybe_01-10.docx
+Psilocybe_09,psilocybin,"2,5 g",1203,Psilocybin_source_coding/Psilocybe_01-10.docx
+Psilocybe_10,psilocybin,,3027,Psilocybin_source_coding/Psilocybe_01-10.docx
+Psilocybe_11,psilocybin,4 g,2382,Psilocybin_source_coding/Psilocybe_11-20.docx
+Psilocybe_12,psilocybin,"3,5 g",2695,Psilocybin_source_coding/Psilocybe_11-20.docx
+Psilocybe_13,psilocybin,3 g,1597,Psilocybin_source_coding/Psilocybe_11-20.docx
+Psilocybe_14,psilocybin,1 g,1476,Psilocybin_source_coding/Psilocybe_11-20.docx
+Psilocybe_15,psilocybin,"3,5 g",1953,Psilocybin_source_coding/Psilocybe_11-20.docx
+Psilocybe_16,psilocybin,2 g,2683,Psilocybin_source_coding/Psilocybe_11-20.docx
+Psilocybe_17,psilocybin,4 g,2372,Psilocybin_source_coding/Psilocybe_11-20.docx
+Psilocybe_18,psilocybin,2 g,5531,Psilocybin_source_coding/Psilocybe_11-20.docx
+Psilocybe_19,psilocybin,4 g,2210,Psilocybin_source_coding/Psilocybe_11-20.docx
+Psilocybe_20,psilocybin,2 g,3093,Psilocybin_source_coding/Psilocybe_11-20.docx
+Brugmansia_01,brugmansia,,2164,Brugmansia_source_coding/Brugmansia_01-10.docx
+Brugmansia_02,brugmansia,,948,Brugmansia_source_coding/Brugmansia_01-10.docx
+Brugmansia_03,brugmansia,,603,Brugmansia_source_coding/Brugmansia_01-10.docx
+Brugmansia_04,brugmansia,,1653,Brugmansia_source_coding/Brugmansia_01-10.docx
+Brugmansia_05,brugmansia,,1540,Brugmansia_source_coding/Brugmansia_01-10.docx
+Brugmansia_06,brugmansia,,759,Brugmansia_source_coding/Brugmansia_01-10.docx
+Brugmansia_07,brugmansia,,294,Brugmansia_source_coding/Brugmansia_01-10.docx
+Brugmansia_08,brugmansia,,681,Brugmansia_source_coding/Brugmansia_01-10.docx
+Brugmansia_09,brugmansia,,713,Brugmansia_source_coding/Brugmansia_01-10.docx
+Brugmansia_10,brugmansia,,762,Brugmansia_source_coding/Brugmansia_01-10.docx
+Brugmansia_11,brugmansia,,779,Brugmansia_source_coding/Brugmansia_11-20.docx
+Brugmansia_12,brugmansia,,1003,Brugmansia_source_coding/Brugmansia_11-20.docx
+Brugmansia_13,brugmansia,,1274,Brugmansia_source_coding/Brugmansia_11-20.docx
+Brugmansia_14,brugmansia,,348,Brugmansia_source_coding/Brugmansia_11-20.docx
+Brugmansia_15,brugmansia,,389,Brugmansia_source_coding/Brugmansia_11-20.docx
+Brugmansia_16,brugmansia,,353,Brugmansia_source_coding/Brugmansia_11-20.docx
+Brugmansia_17,brugmansia,,1116,Brugmansia_source_coding/Brugmansia_11-20.docx
+Brugmansia_18,brugmansia,,1081,Brugmansia_source_coding/Brugmansia_11-20.docx
+Brugmansia_19,brugmansia,,488,Brugmansia_source_coding/Brugmansia_11-20.docx
+Brugmansia_20,brugmansia,,967,Brugmansia_source_coding/Brugmansia_11-20.docx

@@ -1,0 +1,136 @@
+trip_id: Psilocybe_06
+substance: psilocybin
+block: "01-10"
+coder_A: Alessandra
+coder_B: Brendan
+dose_raw: "5 g (split across day)"
+word_count: 2355
+
+scenes:
+  - scene_id: Psilocybe_06_S01
+    status: both
+    canonical_desc: "Street / patterned surfaces begin to roll and stretch like a calm sea"
+    canonical_span_start: 1911
+    canonical_span_end: 2020
+    rater_A:
+      worksheet_refs: [A01]
+      items: [type_of_visual_alteration_illusion]
+    rater_B:
+      worksheet_refs: [B01]
+      items: [type_of_visual_alteration_illusion]
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_06_S02
+    status: only_A
+    canonical_desc: "Speaking and hearing spoken words feels somewhat alien"
+    canonical_span_start: 2027
+    canonical_span_end: 2120
+    rater_A:
+      worksheet_refs: [A02]
+      items: [auditory_hallucination_extraordinary_entity_alien]
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_06_S03
+    status: only_A
+    canonical_desc: "Entering dark bathroom from bright sun: can't make out colors/shapes, black-brown haze"
+    canonical_span_start: 2500
+    canonical_span_end: 2600
+    rater_A:
+      worksheet_refs: [A03]
+      items: [type_of_visual_alteration_illusion]
+    rater_B: null
+    rationale: "A individuated; B did not (possibly because this is a real light-adaptation effect, not a hallucination)."
+
+  - scene_id: Psilocybe_06_S04
+    status: both
+    canonical_desc: "Stall walls bending and rolling like sheet metal; wood-grain lines stretching and shrinking"
+    canonical_span_start: 2680
+    canonical_span_end: 2980
+    rater_A:
+      worksheet_refs: [A04, A05]
+      items: [type_of_visual_alteration_illusion]
+    rater_B:
+      worksheet_refs: [B02]
+      items: [type_of_visual_alteration_illusion]
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_06_S05
+    status: only_A
+    canonical_desc: "Everything looks kind of glassy"
+    canonical_span_start: 5250
+    canonical_span_end: 5290
+    rater_A:
+      worksheet_refs: [A06]
+      items: [type_of_visual_alteration_illusion]
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_06_S06
+    status: both
+    canonical_desc: "Hallway shifts and starts to rock; lights shimmer and fade"
+    canonical_span_start: 6226
+    canonical_span_end: 6400
+    rater_A:
+      worksheet_refs: [A07, A08]
+      items:
+        - tactile_hallucination_artefact
+        - type_of_visual_alteration_illusion
+    rater_B:
+      worksheet_refs: [B03]
+      items: [type_of_visual_alteration_illusion]
+    rationale: "Both individuated. A additionally captures the tactile (rocking) modality."
+
+  - scene_id: Psilocybe_06_S07
+    status: only_A
+    canonical_desc: "Period-rush: for seconds feels he's really in prehistoric earth in front of T-rex"
+    canonical_span_start: 7057
+    canonical_span_end: 7200
+    rater_A:
+      worksheet_refs: [A09]
+      items: [nonsensory_hallucination_other]
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_06_S08
+    status: only_A
+    canonical_desc: "Sounds of people talking cease to be words and become pure sounds flowing around him"
+    canonical_span_start: 9343
+    canonical_span_end: 9470
+    rater_A:
+      worksheet_refs: [A10]
+      items: [auditory_hallucination_human_unknown_persons]
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_06_S09
+    status: only_A
+    canonical_desc: "Running fingers across face leaves tactile tracers (feels fingers pressing after pulling away)"
+    canonical_span_start: 10185
+    canonical_span_end: 10380
+    rater_A:
+      worksheet_refs: [A11]
+      items: [tactile_hallucination_human]
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+trip_level_codes:
+  rater_A:
+    - item: emotion_negative_emotion
+      excerpt_refs: [a01, a08, a09, a11]
+      excerpt: "nervous, trembling, claustrophobic; bummed/frustrated; paranoid; scared"
+    - item: emotion_positive_emotion
+      excerpt_refs: [a02, a03, a04, a05, a10, a12]
+      excerpt: "dreamy happy energetic; upbeat; amused; tranquil; super calm; neat"
+    - item: arousal_abnormally_high
+      excerpt_refs: [a06]
+      excerpt: "not drained, heavy drinking"
+    - item: arousal_abnormally_low
+      excerpt_refs: [a07]
+      excerpt: "dazed, out of it"
+    - item: enhanced_mental_imagery
+      excerpt_refs: [a13, a14]
+      excerpt: "profound thoughts; fish as part of ecological system"
+  rater_B:
+    - item: emotion_positive_emotion
+      excerpt: "upbeat and happy"

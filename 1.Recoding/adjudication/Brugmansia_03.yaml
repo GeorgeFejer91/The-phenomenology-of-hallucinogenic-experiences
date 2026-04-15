@@ -1,0 +1,84 @@
+trip_id: Brugmansia_03
+substance: brugmansia
+block: "01-10"
+coder_A: Brendan
+coder_B: Noah
+dose_raw: null
+word_count: 603
+
+scenes:
+  - scene_id: Brugmansia_03_S01
+    status: both
+    canonical_desc: "On the drive home, sees snakes everywhere on the road"
+    canonical_span_start: 749
+    canonical_span_end: 900
+    rater_A:
+      worksheet_refs: [A01]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_animal_other
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rater_B:
+      worksheet_refs: [B01]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+    rationale: "Same snakes-on-road passage. Agreement on incrusted-object; A additionally codes animal-other + modal status."
+
+  - scene_id: Brugmansia_03_S02
+    status: both
+    canonical_desc: "Believes he is wearing a shirt and scrapes his chest pulling at skin as if it were fabric"
+    canonical_span_start: 967
+    canonical_span_end: 1250
+    rater_A:
+      worksheet_refs: [A02]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_artefact_tool_cloth
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rater_B:
+      worksheet_refs: [B02]
+      items:
+        - type_of_visual_alteration_illusion
+    rationale: "Same shirt passage. A codes as incrusted-object hallucination of a shirt (and clothes leaf); B codes as illusion (a misperception of the existing body). Classification disagreement on type-of-alteration."
+
+  - scene_id: Brugmansia_03_S03
+    status: both
+    canonical_desc: "Fighting someone imagined in his room; asks roommate for help"
+    canonical_span_start: 1408
+    canonical_span_end: 1500
+    rater_A:
+      worksheet_refs: [A03]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_unknown_persons
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rater_B:
+      worksheet_refs: [B03]
+      items:
+        - visual_hallucination_human_unknown_persons
+    rationale: "Same fighting-someone passage. Both code unknown-person; A adds incrusted + modal status."
+
+trip_level_codes:
+  rater_A:
+    - item: amnesia
+      excerpt_refs: [a01, a02]
+      excerpt: "amnesia started to slip up on me; I would forget where I had just come from"
+  rater_B:
+    - item: amnesia
+      excerpt_refs: [b01]
+      excerpt: "every 15-20 min to go to the bathroom; would forget where I had just come from"
+    - item: sense_of_reality_delusional
+      excerpt_refs: [b02]
+      excerpt: "took a silver cake mix bowl, stuffed an Alcopolco blanket in it, started to eat it with fork and knife"
+
+summary:
+  total_canonical_scenes: 3
+  both: 3
+  only_A: 0
+  only_B: 0
+  scene_individuation_jaccard: 1.0
+  classification_notes:
+    - "Perfect scene-level agreement on this trip. All disagreement is at classification-level."
+    - "A systematically adds 'modal status' and 'incrusted object' codes that B omits — a stylistic / rule-usage difference."
+    - "S02 has genuine semantic disagreement: A says the shirt is a hallucinated object (incrusted), B says it is an illusory property of his own body."
+    - "B codes the blanket-eating as trip-level delusional; A does not (and does not treat it as a scene either — arguably a miss)."

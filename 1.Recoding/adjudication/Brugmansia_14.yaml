@@ -1,0 +1,159 @@
+trip_id: Brugmansia_14
+substance: brugmansia
+block: "11-20"
+coder_A: Alessandra
+coder_B: Alessio
+dose_raw: "1 flower tea"
+word_count: 348
+
+# Per guidelines: the unit is the hallucinatory SCENE. Attribute disagreements
+# (illusion vs incrusted vs detached vs immersive, object class choices, etc.)
+# are left as-is — they reflect each rater's subjective judgement. This
+# adjudication records WHAT EACH RATER CALLED A SCENE and which scenes they
+# both / neither / only-one individuated.
+
+scenes:
+  - scene_id: Brugmansia_14_S01
+    status: only_A
+    canonical_desc: "Billiard ball perceived as an apple, almost bitten"
+    canonical_span_start: 693
+    canonical_span_end: 780
+    rater_A:
+      worksheet_refs: [A01, A02]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_plant_other
+        - dynamics_of_the_hallucination_object_constancy
+        - modal_status_of_the_hallucination_possible_and_probable_event
+        - sense_of_reality_delusional
+    rater_B: null
+    rationale: "A individuates the billiard-ball-as-apple as a scene; B does not."
+
+  - scene_id: Brugmansia_14_S02
+    status: both
+    canonical_desc: "Sees friend's dad and greets him; friend says no one is there"
+    canonical_span_start: 896
+    canonical_span_end: 990
+    rater_A:
+      worksheet_refs: [A03, A04]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_relatives_acquaintances
+        - dynamics_of_the_hallucination_object_constancy
+        - modal_status_of_the_hallucination_possible_and_probable_event
+        - sense_of_reality_delusional
+    rater_B:
+      worksheet_refs: [B01, B02]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_relatives_acquaintances
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rationale: "Same scene. Both see acquaintance + incrusted."
+
+  - scene_id: Brugmansia_14_S03
+    status: both
+    canonical_desc: "Believes he is playing guitar really well; realises his hands are in his pockets"
+    canonical_span_start: 988
+    canonical_span_end: 1120
+    rater_A:
+      worksheet_refs: [A05, A06, A07]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_artefact_tool_cloth
+        - tactile_hallucination_artefact
+        - dynamics_of_the_hallucination_object_constancy
+        - modal_status_of_the_hallucination_possible_and_probable_event
+        - sense_of_reality_delusional
+    rater_B:
+      worksheet_refs: [B03]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_artefact_technological_device
+        - tactile_hallucination_artefact
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rationale: "Same scene. Both capture tactile modality."
+
+  - scene_id: Brugmansia_14_S04
+    status: both
+    canonical_desc: "Friend walks him home for 15 min, disappears into thin air just before his house"
+    canonical_span_start: 1122
+    canonical_span_end: 1350
+    rater_A:
+      worksheet_refs: [A08]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - dynamics_of_the_hallucination_no_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+        - sense_of_reality_delusional
+    rater_B:
+      worksheet_refs: [B04]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_relatives_acquaintances
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rationale: "Same phantom-friend-walks-home scene; A focuses on the disappearance, B on the walk. Same scene different aspects emphasised."
+
+  - scene_id: Brugmansia_14_S05
+    status: both
+    canonical_desc: "At night, talks to imaginary people"
+    canonical_span_start: 1353
+    canonical_span_end: 1420
+    rater_A:
+      worksheet_refs: [A09, A10]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_extraordinary_entity_other
+    rater_B:
+      worksheet_refs: [B05, B06]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - visual_hallucination_human_unknown_persons
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rationale: "Same imaginary-people scene. Attribute disagreements (detached vs incrusted; extraordinary-entity vs human-unknown) are left as rater subjectivity."
+
+  - scene_id: Brugmansia_14_S06
+    status: both
+    canonical_desc: "Smoking an imaginary cigarette (he is a non-smoker)"
+    canonical_span_start: 1416
+    canonical_span_end: 1510
+    rater_A:
+      worksheet_refs: [A11]
+      items:
+        - visual_hallucination_artefact_other
+        - tactile_hallucination_other
+    rater_B:
+      worksheet_refs: [B07]
+      items:
+        - type_of_visual_alteration_hallucination_of_an_incrusted_object
+        - tactile_hallucination_artefact
+        - modal_status_of_the_hallucination_possible_and_probable_event
+    rationale: "Same imaginary-cigarette scene. Both capture tactile."
+
+trip_level_codes:
+  rater_A:
+    - item: arousal_abnormally_low
+      excerpt_refs: [a01]
+      excerpt: "legs got shake just as if I was drunk"
+    - item: domain_specific_violation_biological_projection
+      excerpt_refs: [a02]
+      excerpt: "talking to the toilet"
+    - item: domain_specific_violation_psychological_projection
+      excerpt_refs: [a02]
+      excerpt: "talking to the toilet"
+  rater_B:
+    - item: sense_of_reality_delusional
+      excerpt_refs: [b01, b02]
+      excerpt: "friend's dad hallucination; playing guitar that wasn't there"
+    - item: dynamics_of_the_hallucination_no_object_constancy
+      excerpt_refs: [b03]
+      excerpt: "friend turned around and disappeared into thin air"
+
+summary:
+  total_canonical_scenes: 6
+  both: 5
+  only_A: 1
+  only_B: 0
+  scene_individuation_jaccard: 0.833
+  individuation_notes:
+    - "Strong scene-level individuation agreement: 5 of 6 scenes seen by both raters."
+    - "Only disagreement: A individuates the billiard-ball-apple moment as a scene; B does not. This is a plausible split because it's a brief beat embedded in a paragraph dominated by the toilet-talking line, which neither rater codes as a scene."

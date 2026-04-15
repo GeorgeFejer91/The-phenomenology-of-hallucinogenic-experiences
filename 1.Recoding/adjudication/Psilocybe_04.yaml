@@ -1,0 +1,90 @@
+trip_id: Psilocybe_04
+substance: psilocybin
+block: "01-10"
+coder_A: Alessandra
+coder_B: Brendan
+dose_raw: "4 g"
+word_count: 706
+
+scenes:
+  - scene_id: Psilocybe_04_S01
+    status: only_B
+    canonical_desc: "Sees himself on a high bridge pirouetting like a Cirque du Soleil acrobat"
+    canonical_span_start: 746
+    canonical_span_end: 1090
+    rater_A: null
+    rater_B:
+      worksheet_refs: [B01]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_human_relatives_acquaintances
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "B individuated; A did not."
+
+  - scene_id: Psilocybe_04_S02
+    status: both
+    canonical_desc: "Hallmark shapes of the medicine spirit: fractal shapes, alternating zones of bright complementary colors"
+    canonical_span_start: 1094
+    canonical_span_end: 1320
+    rater_A:
+      worksheet_refs: [A01, A02, A03]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_geometrical_pattern
+        - visual_hallucination_inorganic_entity_other
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B02]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_extraordinary_entity_spirit
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_04_S03
+    status: both
+    canonical_desc: "Sees spirits and a pesky demon; feels he and wife had been 'here before'"
+    canonical_span_start: 3120
+    canonical_span_end: 3250
+    rater_A:
+      worksheet_refs: [A04, A05, A06]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_extraordinary_entity_spirit
+        - visual_hallucination_extraordinary_entity_other
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B03]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_extraordinary_entity_spirit
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated."
+
+trip_level_codes:
+  rater_A:
+    - item: arousal_abnormally_low
+      excerpt_refs: [a01]
+      excerpt: "slight impairment of balance, lie down"
+    - item: emotion_negative_emotion
+      excerpt_refs: [a02, a04, a05]
+      excerpt: "fear intensifies; body saturated with sadness; howl of anger"
+    - item: emotion_positive_emotion
+      excerpt_refs: [a06]
+      excerpt: "beautiful journey, laughter"
+    - item: insight_existential
+      excerpt_refs: [a03, a09]
+      excerpt: "boundaries violated as child; what has gone wrong, comfortably numb"
+    - item: domain_specific_violation_psychological_projection
+      excerpt_refs: [a07, a08]
+      excerpt: "pesky demon bothering me for decades; tranquil love-filled"
+  rater_B:
+    - item: insight_existential
+      excerpt_refs: [b01]
+      excerpt: "boundaries violated as child; fear and self-loathing"
+    - item: emotion_negative_emotion
+      excerpt_refs: [b02]
+      excerpt: "body saturated with sadness; sobbing"
+    - item: emotion_positive_emotion
+      excerpt_refs: [b03, b04]
+      excerpt: "beautiful sorrow and joy; tranquil love-filled"

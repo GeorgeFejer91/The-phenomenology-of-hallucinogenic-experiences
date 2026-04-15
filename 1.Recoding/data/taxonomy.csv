@@ -1,0 +1,148 @@
+item_id,parent_id,depth,level_1,level_2,level_3,path,is_leaf,has_children,is_scene_level,is_trip_level
+type_of_visual_alteration,,0,Type of visual alteration,,,Type of visual alteration,False,True,True,False
+type_of_visual_alteration_illusion,type_of_visual_alteration,1,Type of visual alteration,Illusion,,Type of visual alteration | Illusion,True,False,True,False
+type_of_visual_alteration_hallucination_of_an_incrusted_object,type_of_visual_alteration,1,Type of visual alteration,Hallucination of an incrusted object,,Type of visual alteration | Hallucination of an incrusted object,True,False,True,False
+type_of_visual_alteration_hallucination_of_a_detached_object,type_of_visual_alteration,1,Type of visual alteration,Hallucination of a detached object,,Type of visual alteration | Hallucination of a detached object,True,False,True,False
+type_of_visual_alteration_full-blown_immersive_hallucination,type_of_visual_alteration,1,Type of visual alteration,Full-blown immersive hallucination,,Type of visual alteration | Full-blown immersive hallucination,True,False,True,False
+visual_hallucination,,0,Visual hallucination,,,Visual hallucination,False,True,True,False
+visual_hallucination_geometrical_pattern,visual_hallucination,1,Visual hallucination,Geometrical pattern,,Visual hallucination | Geometrical pattern,True,False,True,False
+visual_hallucination_human,visual_hallucination,1,Visual hallucination,Human,,Visual hallucination | Human,False,True,True,False
+visual_hallucination_human_historical_figures,visual_hallucination_human,2,Visual hallucination,Human,Historical figure(s),Visual hallucination | Human | Historical figure(s),True,False,True,False
+visual_hallucination_human_celebrityies,visual_hallucination_human,2,Visual hallucination,Human,Celebrity(ies),Visual hallucination | Human | Celebrity(ies),True,False,True,False
+visual_hallucination_human_relatives_acquaintances,visual_hallucination_human,2,Visual hallucination,Human,"Relative(s), acquaintance(s)","Visual hallucination | Human | Relative(s), acquaintance(s)",True,False,True,False
+visual_hallucination_human_unknown_persons,visual_hallucination_human,2,Visual hallucination,Human,Unknown person(s),Visual hallucination | Human | Unknown person(s),True,False,True,False
+visual_hallucination_human_shamans_priests_witches,visual_hallucination_human,2,Visual hallucination,Human,"Shaman(s), priest(s), witch(es)","Visual hallucination | Human | Shaman(s), priest(s), witch(es)",True,False,True,False
+visual_hallucination_human_others,visual_hallucination_human,2,Visual hallucination,Human,Other(s),Visual hallucination | Human | Other(s),True,False,True,False
+visual_hallucination_artefact,visual_hallucination,1,Visual hallucination,Artefact,,Visual hallucination | Artefact,False,True,True,False
+visual_hallucination_artefact_vehicle,visual_hallucination_artefact,2,Visual hallucination,Artefact,Vehicle,Visual hallucination | Artefact | Vehicle,True,False,True,False
+visual_hallucination_artefact_city_building_furniture,visual_hallucination_artefact,2,Visual hallucination,Artefact,"City, building, furniture","Visual hallucination | Artefact | City, building, furniture",True,False,True,False
+visual_hallucination_artefact_technological_device,visual_hallucination_artefact,2,Visual hallucination,Artefact,Technological device,Visual hallucination | Artefact | Technological device,True,False,True,False
+visual_hallucination_artefact_tool_cloth,visual_hallucination_artefact,2,Visual hallucination,Artefact,"Tool, cloth","Visual hallucination | Artefact | Tool, cloth",True,False,True,False
+visual_hallucination_artefact_other,visual_hallucination_artefact,2,Visual hallucination,Artefact,Other,Visual hallucination | Artefact | Other,True,False,True,False
+visual_hallucination_animal,visual_hallucination,1,Visual hallucination,Animal,,Visual hallucination | Animal,False,True,True,False
+visual_hallucination_animal_mammal,visual_hallucination_animal,2,Visual hallucination,Animal,Mammal,Visual hallucination | Animal | Mammal,True,False,True,False
+visual_hallucination_animal_aquatic_animal,visual_hallucination_animal,2,Visual hallucination,Animal,Aquatic animal,Visual hallucination | Animal | Aquatic animal,True,False,True,False
+visual_hallucination_animal_bird,visual_hallucination_animal,2,Visual hallucination,Animal,Bird,Visual hallucination | Animal | Bird,True,False,True,False
+visual_hallucination_animal_insect,visual_hallucination_animal,2,Visual hallucination,Animal,Insect,Visual hallucination | Animal | Insect,True,False,True,False
+visual_hallucination_animal_other,visual_hallucination_animal,2,Visual hallucination,Animal,Other,Visual hallucination | Animal | Other,True,False,True,False
+visual_hallucination_plant,visual_hallucination,1,Visual hallucination,Plant,,Visual hallucination | Plant,False,True,True,False
+visual_hallucination_plant_tree_shrub,visual_hallucination_plant,2,Visual hallucination,Plant,"Tree, shrub","Visual hallucination | Plant | Tree, shrub",True,False,True,False
+visual_hallucination_plant_flower_grass,visual_hallucination_plant,2,Visual hallucination,Plant,"Flower, grass","Visual hallucination | Plant | Flower, grass",True,False,True,False
+visual_hallucination_plant_mushroom_fungus,visual_hallucination_plant,2,Visual hallucination,Plant,"Mushroom, fungus","Visual hallucination | Plant | Mushroom, fungus",True,False,True,False
+visual_hallucination_plant_other,visual_hallucination_plant,2,Visual hallucination,Plant,Other,Visual hallucination | Plant | Other,True,False,True,False
+visual_hallucination_inorganic_entity,visual_hallucination,1,Visual hallucination,Inorganic entity,,Visual hallucination | Inorganic entity,False,True,True,False
+visual_hallucination_inorganic_entity_stone_rock,visual_hallucination_inorganic_entity,2,Visual hallucination,Inorganic entity,"Stone, rock","Visual hallucination | Inorganic entity | Stone, rock",True,False,True,False
+visual_hallucination_inorganic_entity_earth_river_sky_cloud,visual_hallucination_inorganic_entity,2,Visual hallucination,Inorganic entity,"Earth, river, sky, cloud","Visual hallucination | Inorganic entity | Earth, river, sky, cloud",True,False,True,False
+visual_hallucination_inorganic_entity_other,visual_hallucination_inorganic_entity,2,Visual hallucination,Inorganic entity,Other,Visual hallucination | Inorganic entity | Other,True,False,True,False
+visual_hallucination_extraordinary_entity,visual_hallucination,1,Visual hallucination,Extraordinary entity,,Visual hallucination | Extraordinary entity,False,True,True,False
+visual_hallucination_extraordinary_entity_god,visual_hallucination_extraordinary_entity,2,Visual hallucination,Extraordinary entity,God,Visual hallucination | Extraordinary entity | God,True,False,True,False
+visual_hallucination_extraordinary_entity_spirit,visual_hallucination_extraordinary_entity,2,Visual hallucination,Extraordinary entity,Spirit,Visual hallucination | Extraordinary entity | Spirit,True,False,True,False
+visual_hallucination_extraordinary_entity_chimera,visual_hallucination_extraordinary_entity,2,Visual hallucination,Extraordinary entity,Chimera,Visual hallucination | Extraordinary entity | Chimera,True,False,True,False
+visual_hallucination_extraordinary_entity_alien,visual_hallucination_extraordinary_entity,2,Visual hallucination,Extraordinary entity,Alien,Visual hallucination | Extraordinary entity | Alien,True,False,True,False
+visual_hallucination_extraordinary_entity_other,visual_hallucination_extraordinary_entity,2,Visual hallucination,Extraordinary entity,Other,Visual hallucination | Extraordinary entity | Other,True,False,True,False
+auditory_hallucination,,0,Auditory hallucination,,,Auditory hallucination,False,True,True,False
+auditory_hallucination_human,auditory_hallucination,1,Auditory hallucination,Human,,Auditory hallucination | Human,False,True,True,False
+auditory_hallucination_human_historical_figures,auditory_hallucination_human,2,Auditory hallucination,Human,Historical figure(s),Auditory hallucination | Human | Historical figure(s),True,False,True,False
+auditory_hallucination_human_celebrityies,auditory_hallucination_human,2,Auditory hallucination,Human,Celebrity(ies),Auditory hallucination | Human | Celebrity(ies),True,False,True,False
+auditory_hallucination_human_relatives_acquaintances,auditory_hallucination_human,2,Auditory hallucination,Human,"Relative(s), acquaintance(s)","Auditory hallucination | Human | Relative(s), acquaintance(s)",True,False,True,False
+auditory_hallucination_human_unknown_persons,auditory_hallucination_human,2,Auditory hallucination,Human,Unknown person(s),Auditory hallucination | Human | Unknown person(s),True,False,True,False
+auditory_hallucination_human_shamans_priests_witches,auditory_hallucination_human,2,Auditory hallucination,Human,"Shaman(s), priest(s), witch(es)","Auditory hallucination | Human | Shaman(s), priest(s), witch(es)",True,False,True,False
+auditory_hallucination_human_others,auditory_hallucination_human,2,Auditory hallucination,Human,Other(s),Auditory hallucination | Human | Other(s),True,False,True,False
+auditory_hallucination_artefact,auditory_hallucination,1,Auditory hallucination,Artefact,,Auditory hallucination | Artefact,False,True,True,False
+auditory_hallucination_artefact_vehicle,auditory_hallucination_artefact,2,Auditory hallucination,Artefact,Vehicle,Auditory hallucination | Artefact | Vehicle,True,False,True,False
+auditory_hallucination_artefact_city_building_furniture,auditory_hallucination_artefact,2,Auditory hallucination,Artefact,"City, building, furniture","Auditory hallucination | Artefact | City, building, furniture",True,False,True,False
+auditory_hallucination_artefact_technological_device,auditory_hallucination_artefact,2,Auditory hallucination,Artefact,Technological device,Auditory hallucination | Artefact | Technological device,True,False,True,False
+auditory_hallucination_artefact_tool_cloth,auditory_hallucination_artefact,2,Auditory hallucination,Artefact,"Tool, cloth","Auditory hallucination | Artefact | Tool, cloth",True,False,True,False
+auditory_hallucination_artefact_other,auditory_hallucination_artefact,2,Auditory hallucination,Artefact,Other,Auditory hallucination | Artefact | Other,True,False,True,False
+auditory_hallucination_animal,auditory_hallucination,1,Auditory hallucination,Animal,,Auditory hallucination | Animal,False,True,True,False
+auditory_hallucination_animal_mammal,auditory_hallucination_animal,2,Auditory hallucination,Animal,Mammal,Auditory hallucination | Animal | Mammal,True,False,True,False
+auditory_hallucination_animal_aquatic_animal,auditory_hallucination_animal,2,Auditory hallucination,Animal,Aquatic animal,Auditory hallucination | Animal | Aquatic animal,True,False,True,False
+auditory_hallucination_animal_bird,auditory_hallucination_animal,2,Auditory hallucination,Animal,Bird,Auditory hallucination | Animal | Bird,True,False,True,False
+auditory_hallucination_animal_insect,auditory_hallucination_animal,2,Auditory hallucination,Animal,Insect,Auditory hallucination | Animal | Insect,True,False,True,False
+auditory_hallucination_animal_other,auditory_hallucination_animal,2,Auditory hallucination,Animal,Other,Auditory hallucination | Animal | Other,True,False,True,False
+auditory_hallucination_plant,auditory_hallucination,1,Auditory hallucination,Plant,,Auditory hallucination | Plant,False,True,True,False
+auditory_hallucination_plant_tree_shrub,auditory_hallucination_plant,2,Auditory hallucination,Plant,"Tree, shrub","Auditory hallucination | Plant | Tree, shrub",True,False,True,False
+auditory_hallucination_plant_flower_grass,auditory_hallucination_plant,2,Auditory hallucination,Plant,"Flower, grass","Auditory hallucination | Plant | Flower, grass",True,False,True,False
+auditory_hallucination_plant_mushroom_fungus,auditory_hallucination_plant,2,Auditory hallucination,Plant,"Mushroom, fungus","Auditory hallucination | Plant | Mushroom, fungus",True,False,True,False
+auditory_hallucination_plant_other,auditory_hallucination_plant,2,Auditory hallucination,Plant,Other,Auditory hallucination | Plant | Other,True,False,True,False
+auditory_hallucination_inorganic_entity,auditory_hallucination,1,Auditory hallucination,Inorganic entity,,Auditory hallucination | Inorganic entity,False,True,True,False
+auditory_hallucination_inorganic_entity_stone_rock,auditory_hallucination_inorganic_entity,2,Auditory hallucination,Inorganic entity,"Stone, rock","Auditory hallucination | Inorganic entity | Stone, rock",True,False,True,False
+auditory_hallucination_inorganic_entity_earth_river_sky_cloud,auditory_hallucination_inorganic_entity,2,Auditory hallucination,Inorganic entity,"Earth, river, sky, cloud","Auditory hallucination | Inorganic entity | Earth, river, sky, cloud",True,False,True,False
+auditory_hallucination_inorganic_entity_other,auditory_hallucination_inorganic_entity,2,Auditory hallucination,Inorganic entity,Other,Auditory hallucination | Inorganic entity | Other,True,False,True,False
+auditory_hallucination_extraordinary_entity,auditory_hallucination,1,Auditory hallucination,Extraordinary entity,,Auditory hallucination | Extraordinary entity,False,True,True,False
+auditory_hallucination_extraordinary_entity_god,auditory_hallucination_extraordinary_entity,2,Auditory hallucination,Extraordinary entity,God,Auditory hallucination | Extraordinary entity | God,True,False,True,False
+auditory_hallucination_extraordinary_entity_spirit,auditory_hallucination_extraordinary_entity,2,Auditory hallucination,Extraordinary entity,Spirit,Auditory hallucination | Extraordinary entity | Spirit,True,False,True,False
+auditory_hallucination_extraordinary_entity_chimera,auditory_hallucination_extraordinary_entity,2,Auditory hallucination,Extraordinary entity,Chimera,Auditory hallucination | Extraordinary entity | Chimera,True,False,True,False
+auditory_hallucination_extraordinary_entity_alien,auditory_hallucination_extraordinary_entity,2,Auditory hallucination,Extraordinary entity,Alien,Auditory hallucination | Extraordinary entity | Alien,True,False,True,False
+auditory_hallucination_extraordinary_entity_other,auditory_hallucination_extraordinary_entity,2,Auditory hallucination,Extraordinary entity,Other,Auditory hallucination | Extraordinary entity | Other,True,False,True,False
+tactile_hallucination,,0,Tactile hallucination,,,Tactile hallucination,False,True,True,False
+tactile_hallucination_human,tactile_hallucination,1,Tactile hallucination,Human,,Tactile hallucination | Human,True,False,True,False
+tactile_hallucination_artefact,tactile_hallucination,1,Tactile hallucination,Artefact,,Tactile hallucination | Artefact,True,False,True,False
+tactile_hallucination_animal,tactile_hallucination,1,Tactile hallucination,Animal,,Tactile hallucination | Animal,True,False,True,False
+tactile_hallucination_plant,tactile_hallucination,1,Tactile hallucination,Plant,,Tactile hallucination | Plant,True,False,True,False
+tactile_hallucination_inorganic_entity,tactile_hallucination,1,Tactile hallucination,Inorganic entity,,Tactile hallucination | Inorganic entity,True,False,True,False
+tactile_hallucination_extraordinary_entity,tactile_hallucination,1,Tactile hallucination,Extraordinary entity,,Tactile hallucination | Extraordinary entity,True,False,True,False
+tactile_hallucination_other,tactile_hallucination,1,Tactile hallucination,Other,,Tactile hallucination | Other,True,False,True,False
+olfactory_hallucination,,0,Olfactory hallucination,,,Olfactory hallucination,False,True,True,False
+olfactory_hallucination_human,olfactory_hallucination,1,Olfactory hallucination,Human,,Olfactory hallucination | Human,True,False,True,False
+olfactory_hallucination_artefact,olfactory_hallucination,1,Olfactory hallucination,Artefact,,Olfactory hallucination | Artefact,True,False,True,False
+olfactory_hallucination_animal,olfactory_hallucination,1,Olfactory hallucination,Animal,,Olfactory hallucination | Animal,True,False,True,False
+olfactory_hallucination_plant,olfactory_hallucination,1,Olfactory hallucination,Plant,,Olfactory hallucination | Plant,True,False,True,False
+olfactory_hallucination_inorganic_entity,olfactory_hallucination,1,Olfactory hallucination,Inorganic entity,,Olfactory hallucination | Inorganic entity,True,False,True,False
+olfactory_hallucination_extraordinary_entity,olfactory_hallucination,1,Olfactory hallucination,Extraordinary entity,,Olfactory hallucination | Extraordinary entity,True,False,True,False
+olfactory_hallucination_other,olfactory_hallucination,1,Olfactory hallucination,Other,,Olfactory hallucination | Other,True,False,True,False
+gustatory_hallucination,,0,Gustatory hallucination,,,Gustatory hallucination,True,False,True,False
+nonsensory_hallucination,,0,Nonsensory hallucination,,,Nonsensory hallucination,False,True,True,False
+nonsensory_hallucination_human,nonsensory_hallucination,1,Nonsensory hallucination,Human,,Nonsensory hallucination | Human,True,False,True,False
+nonsensory_hallucination_artefact,nonsensory_hallucination,1,Nonsensory hallucination,Artefact,,Nonsensory hallucination | Artefact,True,False,True,False
+nonsensory_hallucination_animal,nonsensory_hallucination,1,Nonsensory hallucination,Animal,,Nonsensory hallucination | Animal,True,False,True,False
+nonsensory_hallucination_plant,nonsensory_hallucination,1,Nonsensory hallucination,Plant,,Nonsensory hallucination | Plant,True,False,True,False
+nonsensory_hallucination_inorganic_entity,nonsensory_hallucination,1,Nonsensory hallucination,Inorganic entity,,Nonsensory hallucination | Inorganic entity,True,False,True,False
+nonsensory_hallucination_extraordinary_entity,nonsensory_hallucination,1,Nonsensory hallucination,Extraordinary entity,,Nonsensory hallucination | Extraordinary entity,True,False,True,False
+nonsensory_hallucination_other,nonsensory_hallucination,1,Nonsensory hallucination,Other,,Nonsensory hallucination | Other,True,False,True,False
+modal_status_of_the_hallucination,,0,Modal status of the hallucination,,,Modal status of the hallucination,False,True,True,False
+modal_status_of_the_hallucination_possible_and_probable_event,modal_status_of_the_hallucination,1,Modal status of the hallucination,Possible and probable event,,Modal status of the hallucination | Possible and probable event,True,False,True,False
+modal_status_of_the_hallucination_possible_but_improbable_event,modal_status_of_the_hallucination,1,Modal status of the hallucination,Possible but improbable event,,Modal status of the hallucination | Possible but improbable event,True,False,True,False
+modal_status_of_the_hallucination_impossible_event,modal_status_of_the_hallucination,1,Modal status of the hallucination,Impossible event,,Modal status of the hallucination | Impossible event,True,False,True,False
+dynamics_of_the_hallucination,,0,Dynamics of the hallucination,,,Dynamics of the hallucination,False,True,False,True
+dynamics_of_the_hallucination_object_constancy,dynamics_of_the_hallucination,1,Dynamics of the hallucination,Object constancy,,Dynamics of the hallucination | Object constancy,True,False,False,True
+dynamics_of_the_hallucination_no_object_constancy,dynamics_of_the_hallucination,1,Dynamics of the hallucination,No object constancy,,Dynamics of the hallucination | No object constancy,True,False,False,True
+sensory_delight,,0,Sensory delight,,,Sensory delight,False,True,False,True
+sensory_delight_visual,sensory_delight,1,Sensory delight,Visual,,Sensory delight | Visual,False,True,False,True
+sensory_delight_visual_nature,sensory_delight_visual,2,Sensory delight,Visual,Nature,Sensory delight | Visual | Nature,True,False,False,True
+sensory_delight_visual_artefact,sensory_delight_visual,2,Sensory delight,Visual,Artefact,Sensory delight | Visual | Artefact,True,False,False,True
+sensory_delight_visual_other,sensory_delight_visual,2,Sensory delight,Visual,Other,Sensory delight | Visual | Other,True,False,False,True
+sensory_delight_auditory,sensory_delight,1,Sensory delight,Auditory,,Sensory delight | Auditory,False,True,False,True
+sensory_delight_auditory_nature,sensory_delight_auditory,2,Sensory delight,Auditory,Nature,Sensory delight | Auditory | Nature,True,False,False,True
+sensory_delight_auditory_music,sensory_delight_auditory,2,Sensory delight,Auditory,Music,Sensory delight | Auditory | Music,True,False,False,True
+sensory_delight_auditory_other,sensory_delight_auditory,2,Sensory delight,Auditory,Other,Sensory delight | Auditory | Other,True,False,False,True
+sensory_delight_haptic,sensory_delight,1,Sensory delight,Haptic,,Sensory delight | Haptic,True,False,False,True
+sensory_delight_erotic,sensory_delight,1,Sensory delight,Erotic,,Sensory delight | Erotic,True,False,False,True
+synesthesia,,0,Synesthesia,,,Synesthesia,True,False,False,True
+enhanced_mental_imagery,,0,Enhanced mental imagery,,,Enhanced mental imagery,True,False,False,True
+sense_of_reality,,0,Sense of reality,,,Sense of reality,False,True,False,True
+sense_of_reality_lucid,sense_of_reality,1,Sense of reality,Lucid,,Sense of reality | Lucid,True,False,False,True
+sense_of_reality_delusional,sense_of_reality,1,Sense of reality,Delusional,,Sense of reality | Delusional,True,False,False,True
+amnesia,,0,Amnesia,,,Amnesia,True,False,False,True
+domain-specific_violation,,0,Domain-specific violation,,,Domain-specific violation,False,True,False,True
+domain-specific_violation_biological_projection,domain-specific_violation,1,Domain-specific violation,Biological projection,,Domain-specific violation | Biological projection,True,False,False,True
+domain-specific_violation_psychological_projection,domain-specific_violation,1,Domain-specific violation,Psychological projection,,Domain-specific violation | Psychological projection,True,False,False,True
+emotion,,0,Emotion,,,Emotion,False,True,False,True
+emotion_positive_emotion,emotion,1,Emotion,Positive emotion,,Emotion | Positive emotion,True,False,False,True
+emotion_negative_emotion,emotion,1,Emotion,Negative emotion,,Emotion | Negative emotion,True,False,False,True
+arousal,,0,Arousal,,,Arousal,False,True,False,True
+arousal_abnormally_high,arousal,1,Arousal,Abnormally high,,Arousal | Abnormally high,True,False,False,True
+arousal_abnormally_low,arousal,1,Arousal,Abnormally low,,Arousal | Abnormally low,True,False,False,True
+out-of-body-experience,,0,Out-of-body-experience,,,Out-of-body-experience,True,False,False,True
+own_body_distortion,,0,Own body distortion,,,Own body distortion,True,False,False,True
+insight,,0,Insight,,,Insight,False,True,False,True
+insight_metaphysical,insight,1,Insight,Metaphysical,,Insight | Metaphysical,True,False,False,True
+insight_religious,insight,1,Insight,Religious,,Insight | Religious,True,False,False,True
+insight_practical,insight,1,Insight,Practical,,Insight | Practical,True,False,False,True
+insight_existential,insight,1,Insight,Existential,,Insight | Existential,True,False,False,True
+ego_dissolution,,0,Ego dissolution,,,Ego dissolution,False,True,False,True
+ego_dissolution_social_self,ego_dissolution,1,Ego dissolution,Social self,,Ego dissolution | Social self,True,False,False,True
+ego_dissolution_bodily_self,ego_dissolution,1,Ego dissolution,Bodily self,,Ego dissolution | Bodily self,True,False,False,True
+ego_dissolution_core_self,ego_dissolution,1,Ego dissolution,Core self,,Ego dissolution | Core self,True,False,False,True
+sense_of_surprise_and_unexpectedness,,0,Sense of surprise and unexpectedness,,,Sense of surprise and unexpectedness,True,False,False,True
+sense_of_strangeness_and_enigma,,0,Sense of strangeness and enigma,,,Sense of strangeness and enigma,True,False,False,True

@@ -1,0 +1,219 @@
+trip_id: Psilocybe_20
+substance: psilocybin
+block: "11-20"
+coder_A: Francesco
+coder_B: Susana
+dose_raw: "2 g (half-eighth)"
+word_count: 3093
+
+scenes:
+  - scene_id: Psilocybe_20_S01
+    status: only_A
+    canonical_desc: "Vision a bit distorted; colors more defined; porch lights brighter"
+    canonical_span_start: 359
+    canonical_span_end: 500
+    rater_A:
+      worksheet_refs: [A01]
+      items: [type_of_visual_alteration_illusion]
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_20_S02
+    status: only_A
+    canonical_desc: "Pronounced tracers from D's rave lights"
+    canonical_span_start: 1193
+    canonical_span_end: 1300
+    rater_A:
+      worksheet_refs: [A02]
+      items: [type_of_visual_alteration_illusion]
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_20_S03
+    status: only_A
+    canonical_desc: "Finger lights stay in his vision for many seconds after he stops moving them"
+    canonical_span_start: 1594
+    canonical_span_end: 1700
+    rater_A:
+      worksheet_refs: [A03]
+      items: [type_of_visual_alteration_illusion]
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_20_S04
+    status: both
+    canonical_desc: "Ground feels like it bends under his weight and pushes him back up while hopping"
+    canonical_span_start: 2133
+    canonical_span_end: 2280
+    rater_A:
+      worksheet_refs: [A04]
+      items: [tactile_hallucination_artefact]
+    rater_B:
+      worksheet_refs: [B01, B02]
+      items:
+        - type_of_visual_alteration_illusion
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_20_S05
+    status: only_A
+    canonical_desc: "World seems to fly by as they run; legs don't exist for moments, floating"
+    canonical_span_start: 2499
+    canonical_span_end: 2650
+    rater_A:
+      worksheet_refs: [A05, A06]
+      items:
+        - type_of_visual_alteration_illusion
+        - own_body_distortion
+        - tactile_hallucination_other
+    rater_B: null
+    rationale: "A individuated; B codes at trip-level."
+
+  - scene_id: Psilocybe_20_S06
+    status: only_A
+    canonical_desc: "Empty parking lot appears unusually large"
+    canonical_span_start: 3603
+    canonical_span_end: 3700
+    rater_A:
+      worksheet_refs: [A07]
+      items:
+        - type_of_visual_alteration_illusion
+        - sense_of_surprise_and_unexpectedness
+        - sensory_delight_visual_other
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_20_S07
+    status: both
+    canonical_desc: "Stars appear spacey purple, twinkling like never before"
+    canonical_span_start: 3666
+    canonical_span_end: 3780
+    rater_A:
+      worksheet_refs: [A08]
+      items:
+        - type_of_visual_alteration_illusion
+        - sensory_delight_visual_nature
+    rater_B:
+      worksheet_refs: [B03]
+      items:
+        - type_of_visual_alteration_illusion
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_20_S08
+    status: only_A
+    canonical_desc: "Electric jolt in mouth whenever mushroom taste felt strongest"
+    canonical_span_start: 4375
+    canonical_span_end: 4500
+    rater_A:
+      worksheet_refs: [A09]
+      items: [tactile_hallucination_inorganic_entity]
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_20_S09
+    status: both
+    canonical_desc: "Two trees ~50 feet away moving a lot despite still air; look like two people making out"
+    canonical_span_start: 5008
+    canonical_span_end: 5200
+    rater_A:
+      worksheet_refs: [A10]
+      items: [type_of_visual_alteration_illusion]
+    rater_B:
+      worksheet_refs: [B04]
+      items:
+        - type_of_visual_alteration_illusion
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_20_S10
+    status: only_A
+    canonical_desc: "Believed he pissed and shat all over his pants; later found perfectly clean"
+    canonical_span_start: 9634
+    canonical_span_end: 9850
+    rater_A:
+      worksheet_refs: [A11]
+      items:
+        - type_of_visual_alteration_illusion
+        - sense_of_reality_lucid
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_20_S11
+    status: both
+    canonical_desc: "Houses they pass grow, shrink, melt, morph"
+    canonical_span_start: 12002
+    canonical_span_end: 12200
+    rater_A:
+      worksheet_refs: [A12]
+      items: [type_of_visual_alteration_illusion]
+    rater_B:
+      worksheet_refs: [B05]
+      items:
+        - type_of_visual_alteration_illusion
+        - dynamics_of_the_hallucination_no_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_20_S12
+    status: both
+    canonical_desc: "Guitar bending and twisting; fingers growing and shrinking; plays accurately anyway"
+    canonical_span_start: 13574
+    canonical_span_end: 13800
+    rater_A:
+      worksheet_refs: [A13]
+      items: [type_of_visual_alteration_illusion]
+    rater_B:
+      worksheet_refs: [B06]
+      items:
+        - type_of_visual_alteration_illusion
+        - dynamics_of_the_hallucination_no_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_20_S13
+    status: both
+    canonical_desc: "Looking in mirror: pupils growing/shrinking freely; nose end grows longer, swells inflated, returns normal"
+    canonical_span_start: 14395
+    canonical_span_end: 14700
+    rater_A:
+      worksheet_refs: [A14, A15]
+      items: [type_of_visual_alteration_illusion]
+    rater_B:
+      worksheet_refs: [B07]
+      items:
+        - type_of_visual_alteration_illusion
+        - dynamics_of_the_hallucination_no_object_constancy
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_20_S14
+    status: only_A
+    canonical_desc: "Lights fade in/out slowly with 1-minute delay after switch is flipped"
+    canonical_span_start: 14942
+    canonical_span_end: 15100
+    rater_A:
+      worksheet_refs: [A16]
+      items: [type_of_visual_alteration_illusion]
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+trip_level_codes:
+  rater_A:
+    - item: emotion_positive_emotion
+      excerpt: "hopping exhilarating; running exciting; all felt happy"
+    - item: emotion_negative_emotion
+      excerpt: "paranoia from wet foot; shit panic"
+    - item: sense_of_reality_lucid
+      excerpt: "must have hallucinated that part"
+    - item: insight_metaphysical
+      excerpt: "Unimind; connected to all things in existence"
+  rater_B:
+    - item: emotion_positive_emotion
+      excerpt: "happiness, laughter throughout"
+
+# ========================================================================
+# END OF PSILOCYBE 11-20 BLOCK (Francesco vs Susana) — 10 trips adjudicated
+# ========================================================================
+# ALL 40 TRIPS COMPLETE
+# ========================================================================

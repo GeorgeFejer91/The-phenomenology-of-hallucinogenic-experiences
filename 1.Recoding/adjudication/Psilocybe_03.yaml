@@ -1,0 +1,71 @@
+trip_id: Psilocybe_03
+substance: psilocybin
+block: "01-10"
+coder_A: Alessandra
+coder_B: Brendan
+dose_raw: "3,5 g"
+word_count: 1327
+
+scenes:
+  - scene_id: Psilocybe_03_S01
+    status: both
+    canonical_desc: "Stands before a board of spirits (unseen, audible); spirits discourse on interdimensional race, recalibration, mission"
+    canonical_span_start: 5387
+    canonical_span_end: 7050
+    rater_A:
+      worksheet_refs: [A01]
+      items:
+        - auditory_hallucination_extraordinary_entity_spirit
+    rater_B:
+      worksheet_refs: [B01, B02]
+      items:
+        - auditory_hallucination_extraordinary_entity_spirit
+        - nonsensory_hallucination_extraordinary_entity
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated this extended spirit-council scene."
+
+trip_level_codes:
+  rater_A:
+    - item: emotion_negative_emotion
+      excerpt_refs: [a01, a05, a07, a09, a15]
+      excerpt: "slight discomfort and angst; comfort level began to slide; whirlpool; panic; uncomfortable about returning"
+    - item: emotion_positive_emotion
+      excerpt_refs: [a02, a03, a17]
+      excerpt: "excitement; music welcoming; full circle, euphoric, highly energized"
+    - item: sensory_delight_auditory_music
+      excerpt_refs: [a04]
+      excerpt: "welcoming waves of music"
+    - item: arousal_abnormally_low
+      excerpt_refs: [a06, a08, a13, a14]
+      excerpt: "losing mental balance; emergency mode cradling head; body gave way; extremely weak"
+    - item: sense_of_reality_lucid
+      excerpt_refs: [a06, a16, a21]
+      excerpt: "aware of losing mental balance; well aware of scene I made; aware others didn't know what to think"
+    - item: ego_dissolution_social_self
+      excerpt_refs: [a10]
+      excerpt: "whirlpool of confusion; memory reset; entities ripped from grasp"
+    - item: amnesia
+      excerpt_refs: [a11, a12]
+      excerpt: "goldfish-memory resets; lost ability to use mind entirely"
+    - item: domain_specific_violation_psychological_projection
+      excerpt_refs: [a18]
+      excerpt: "spirits existed in another dimension"
+    - item: insight_religious
+      excerpt_refs: [a19, a20]
+      excerpt: "interdimensional race evolved by psychedelics; I was chosen as representative"
+  rater_B:
+    - item: emotion_negative_emotion
+      excerpt_refs: [b01]
+      excerpt: "panic, emergency mode, fate sealed"
+    - item: amnesia
+      excerpt_refs: [b02, b03]
+      excerpt: "memory resets; rely on anecdotes of friends"
+    - item: emotion_positive_emotion
+      excerpt_refs: [b04]
+      excerpt: "comfortable, euphoric, highly energized"
+    - item: arousal_abnormally_high
+      excerpt_refs: [b04]
+      excerpt: "highly energized state of mind"
+    - item: insight_metaphysical
+      excerpt_refs: [b05]
+      excerpt: "interdimensional race evolved by psychedelics; evolutionary advances not genetic"

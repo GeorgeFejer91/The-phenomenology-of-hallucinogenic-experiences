@@ -1,0 +1,192 @@
+trip_id: Psilocybe_07
+substance: psilocybin
+block: "01-10"
+coder_A: Alessandra
+coder_B: Brendan
+dose_raw: "6 g (cyanescens)"
+word_count: 1373
+
+scenes:
+  - scene_id: Psilocybe_07_S01
+    status: both
+    canonical_desc: "Waves of psychedelic energy manifest as 'wind' flowing through body"
+    canonical_span_start: 260
+    canonical_span_end: 400
+    rater_A:
+      worksheet_refs: [A01]
+      items: [tactile_hallucination_inorganic_entity]
+    rater_B:
+      worksheet_refs: [B01]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_extraordinary_entity_other
+    rationale: "Both individuated. Rater A tags tactile modality; rater B tags visual. Genuine modality disagreement on same scene."
+
+  - scene_id: Psilocybe_07_S02
+    status: only_A
+    canonical_desc: "Visions plentiful but in black and white; feels ego being physically crushed like a can"
+    canonical_span_start: 1094
+    canonical_span_end: 1470
+    rater_A:
+      worksheet_refs: [A02, A03, A04, A05]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_inorganic_entity_other
+        - tactile_hallucination_other
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B: null
+    rationale: "A individuated; B did not."
+
+  - scene_id: Psilocybe_07_S03
+    status: both
+    canonical_desc: "Entity arrives; does rhythmic dance involving horrifying probes of his form; turns out to be a giant praying mantis with cartoon details"
+    canonical_span_start: 1545
+    canonical_span_end: 2600
+    rater_A:
+      worksheet_refs: [A06, A07, A08, A09, A10]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_extraordinary_entity_other
+        - visual_hallucination_animal_insect
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B02, B03]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_extraordinary_entity_other
+        - visual_hallucination_animal_insect
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated the mantis-entity scene."
+
+  - scene_id: Psilocybe_07_S04
+    status: both
+    canonical_desc: "Drifts through outer space; sees stars, celestial bodies, molecules; charts the cosmos by rearranging stars, different arrangements produce different mental states"
+    canonical_span_start: 2895
+    canonical_span_end: 3900
+    rater_A:
+      worksheet_refs: [A11, A12, A13, A14, A15, A16]
+      items:
+        - type_of_visual_alteration_hallucination_of_a_detached_object
+        - visual_hallucination_inorganic_entity_earth_river_sky_cloud
+        - visual_hallucination_inorganic_entity_other
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B04]
+      items: [visual_hallucination_inorganic_entity_other]
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_07_S05
+    status: both
+    canonical_desc: "Round room; perimeter has Mayan-cartoon-dog creatures with dragging tongues and backward eyes; middle has indescribable entities; one is a Huichol-garbed Mexican man vomiting"
+    canonical_span_start: 3961
+    canonical_span_end: 4900
+    rater_A:
+      worksheet_refs: [A17, A18, A19, A20, A21, A22, A23, A24, A25]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_artefact_city_building_furniture
+        - visual_hallucination_extraordinary_entity_other
+        - visual_hallucination_human_unknown_persons
+        - visual_hallucination_artefact_tool_cloth
+        - modal_status_of_the_hallucination_impossible_event
+        - modal_status_of_the_hallucination_possible_but_improbable_event
+    rater_B:
+      worksheet_refs: [B05, B06, B07, B08]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_artefact_city_building_furniture
+        - visual_hallucination_extraordinary_entity_other
+        - visual_hallucination_human_unknown_persons
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated this composite round-room scene."
+
+  - scene_id: Psilocybe_07_S06
+    status: both
+    canonical_desc: "Opium-poppy-like flowers surround him; DMT machine-elves arrive, sing in high-pitched collective voice about his DNA"
+    canonical_span_start: 5240
+    canonical_span_end: 5700
+    rater_A:
+      worksheet_refs: [A26, A27, A28, A29]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_plant_flower_grass
+        - visual_hallucination_extraordinary_entity_other
+        - auditory_hallucination_extraordinary_entity_other
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B09, B10]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_plant_flower_grass
+        - visual_hallucination_extraordinary_entity_other
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated."
+
+  - scene_id: Psilocybe_07_S07
+    status: both
+    canonical_desc: "Metallic cicada-like buzzing sound locked on to his hum; he feels as a bug making the sound; intuitive understanding of metamorphosis"
+    canonical_span_start: 6459
+    canonical_span_end: 6700
+    rater_A:
+      worksheet_refs: [A30]
+      items: [auditory_hallucination_animal_insect]
+    rater_B:
+      worksheet_refs: [B11]
+      items:
+        - auditory_hallucination_extraordinary_entity_other
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated. Object-class disagreement: A=animal/insect, B=extraordinary entity."
+
+  - scene_id: Psilocybe_07_S08
+    status: both
+    canonical_desc: "Sculpts 3D objects of pure light and revolving spheres, towers of emerald surrounded by throbbing orbs of sound and love"
+    canonical_span_start: 7203
+    canonical_span_end: 7500
+    rater_A:
+      worksheet_refs: [A31, A32, A33, A34, A35, A36]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_inorganic_entity_other
+        - visual_hallucination_geometrical_pattern
+        - visual_hallucination_artefact_city_building_furniture
+        - visual_hallucination_extraordinary_entity_other
+        - modal_status_of_the_hallucination_impossible_event
+    rater_B:
+      worksheet_refs: [B12]
+      items:
+        - type_of_visual_alteration_full-blown_immersive_hallucination
+        - visual_hallucination_extraordinary_entity_other
+        - modal_status_of_the_hallucination_impossible_event
+    rationale: "Both individuated."
+
+trip_level_codes:
+  rater_A:
+    - item: arousal_abnormally_low
+      excerpt_refs: [a01]
+      excerpt: "retreated to bedroom to lie down"
+    - item: emotion_negative_emotion
+      excerpt_refs: [a02, a06, a10]
+      excerpt: "vomited, teeth vibrating; suffering terrifying state; horrifying probes, paralyzed"
+    - item: emotion_positive_emotion
+      excerpt_refs: [a08]
+      excerpt: "relieved to see another creature"
+    - item: amnesia
+      excerpt_refs: [a03]
+      excerpt: "could not remember what I had taken"
+    - item: sense_of_reality_delusional
+      excerpt_refs: [a04]
+      excerpt: "thought I was dead, in galactic prison"
+    - item: enhanced_mental_imagery
+      excerpt_refs: [a05]
+      excerpt: "visions plentiful"
+    - item: domain_specific_violation_psychological_projection
+      excerpt_refs: [a07]
+      excerpt: "entity delivered personal attention"
+    - item: sensory_delight_visual_other
+      excerpt_refs: [a09]
+      excerpt: "captivated by fluid motions"
+  rater_B:
+    - item: emotion_negative_emotion
+      excerpt: "fear and terror at various points"
+    - item: emotion_positive_emotion
+      excerpt: "relief and awe"
