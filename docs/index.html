@@ -125,10 +125,17 @@
       padding: 1.6rem 1.8rem;
       margin-bottom: 2rem;
       scroll-margin-top: 1.5rem;
-      /* Pretext-style: browser skips layout/paint of off-screen trips.
-         contain-intrinsic-size gives the browser a cached height estimate
-         so scrollbar geometry is stable. Same performance shape as
-         pretext virtualization, zero JS. */
+      /* Pretext-style virtualization:
+         content-visibility: auto — browser skips layout/paint for
+           off-screen trips (like pretext's "know-height-without-DOM" gain,
+           via the browser's own rendering pipeline).
+         contain-intrinsic-size: auto <per-trip px> is set INLINE per
+           <article> from a Python-side arithmetic layout pass (see
+           estimate_trip_height_px). This is the HTML-layer analogue of
+           pretext's prepare()/layout() split — one-shot measurement at
+           build, the browser just applies it.
+         The fallback here covers any trip that somehow lacks the inline
+         style, and also covers other virtualized blocks we might add. */
       content-visibility: auto;
       contain-intrinsic-size: auto 1400px;
     }
@@ -513,7 +520,7 @@
 <span class="chip chip-verdict v-AMBIGUITY-2b">AMB-2b: 25</span>
 </div>
 </header>
-<article class="trip" id="Brugmansia_01">
+<article class="trip" id="Brugmansia_01" style="contain-intrinsic-size: auto 4210px;">
 <h2>Brugmansia_01</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> brugmansia</span>
@@ -572,7 +579,7 @@ I feel shielded by this universe because I know now that there is more than one 
 <li class="scene-entry" id="scene-Brugmansia_01_S08_AB" data-verdict="CONVERGENT"><span class="chip chip-verdict v-CONVERGENT">CONVERGENT</span> <code>Brugmansia_01_S08_AB</code><div class="index-desc">Mini-trips of giant shiny spiders seen only in reflected light</div></li>
 </ul></details>
 </article>
-<article class="trip" id="Brugmansia_02">
+<article class="trip" id="Brugmansia_02" style="contain-intrinsic-size: auto 2026px;">
 <h2>Brugmansia_02</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> brugmansia</span>
@@ -609,7 +616,7 @@ One thing I had not read about when it came to this drug was the power. It was l
 <li class="scene-entry" id="scene-Brugmansia_02_S06_B_RCL" data-verdict="AMBIGUITY-2b"><span class="chip chip-verdict v-AMBIGUITY-2b">AMB-2b</span> <code>Brugmansia_02_S06_B_RCL</code><div class="index-desc">Post-trip inability to parse letters into words</div><div class="index-rationale"><em>Post-trip reading impairment (letters visible but not forming words). Cognitive / residual-effects state, not a hallucinatory scene. Not a perceptual hallucination under any reasonable reading.</em></div></li>
 </ul></details>
 </article>
-<article class="trip" id="Brugmansia_03">
+<article class="trip" id="Brugmansia_03" style="contain-intrinsic-size: auto 1553px;">
 <h2>Brugmansia_03</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> brugmansia</span>
@@ -646,7 +653,7 @@ My friend and I both agree that it was a bad choice and it was not a pleasent ex
 <li class="scene-entry" id="scene-Brugmansia_03_S03_AB" data-verdict="CONVERGENT"><span class="chip chip-verdict v-CONVERGENT">CONVERGENT</span> <code>Brugmansia_03_S03_AB</code><div class="index-desc">Fighting someone imagined in his room; asks roommate for help</div></li>
 </ul></details>
 </article>
-<article class="trip" id="Brugmansia_04">
+<article class="trip" id="Brugmansia_04" style="contain-intrinsic-size: auto 4154px;">
 <h2>Brugmansia_04</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> brugmansia</span>
@@ -731,7 +738,7 @@ I am going to go ahead and post this. The trip</span> is still going steady; tho
 <li class="scene-entry" id="scene-Brugmansia_04_S15_AB" data-verdict="CONVERGENT"><span class="chip chip-verdict v-CONVERGENT">CONVERGENT</span> <code>Brugmansia_04_S15_AB</code><div class="index-desc">Walls appear projected on a moving backdrop; assume pink-red colour</div></li>
 </ul></details>
 </article>
-<article class="trip" id="Brugmansia_05">
+<article class="trip" id="Brugmansia_05" style="contain-intrinsic-size: auto 3734px;">
 <h2>Brugmansia_05</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> brugmansia</span>
@@ -793,7 +800,7 @@ Based on the fact that I had absolutely no control over what I did, and that the
 <li class="scene-entry" id="scene-Brugmansia_05_S01_A_RCL" data-verdict="MISS"><span class="chip chip-verdict v-MISS">MISS</span> <code>Brugmansia_05_S01_A_RCL</code><div class="index-desc">Hears a loud crash near his bed (no apparent source)</div><div class="index-rationale"><em>&quot;Loud crash near my bed&quot; (no apparent source). Concrete auditory hallucination. Pair&#x27;s criterion consistently includes auditory hallucinations (music, voices) elsewhere.</em></div></li>
 </ul></details>
 </article>
-<article class="trip" id="Brugmansia_06">
+<article class="trip" id="Brugmansia_06" style="contain-intrinsic-size: auto 1809px;">
 <h2>Brugmansia_06</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> brugmansia</span>
@@ -837,7 +844,7 @@ T+05:00 onward: When I get home, my parents quickly notice my condition, send me
 <li class="scene-entry" id="scene-Brugmansia_06_S07_B_RCL" data-verdict="AMBIGUITY-2b"><span class="chip chip-verdict v-AMBIGUITY-2b">AMB-2b</span> <code>Brugmansia_06_S07_B_RCL</code><div class="index-desc">Post-trip inability to read rest of the night</div><div class="index-rationale"><em>Post-trip reading impairment (&quot;cannot read the rest of the night&quot;). Cognitive residual-effects state, not a hallucinatory scene. Same pattern as Brugmansia_02_S06.</em></div></li>
 </ul></details>
 </article>
-<article class="trip" id="Brugmansia_07">
+<article class="trip" id="Brugmansia_07" style="contain-intrinsic-size: auto 1664px;">
 <h2>Brugmansia_07</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> brugmansia</span>
@@ -894,7 +901,7 @@ I&#x27;m pretty sure next time, i&#x27;m either going to buy a larger amount of 
 <li class="scene-entry" id="scene-Brugmansia_07_S03_AB" data-verdict="CONVERGENT"><span class="chip chip-verdict v-CONVERGENT">CONVERGENT</span> <code>Brugmansia_07_S03_AB</code><div class="index-desc">Giant spider running in circles in living room; hisses when approached</div></li>
 </ul></details>
 </article>
-<article class="trip" id="Brugmansia_08">
+<article class="trip" id="Brugmansia_08" style="contain-intrinsic-size: auto 1562px;">
 <h2>Brugmansia_08</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> brugmansia</span>
@@ -933,7 +940,7 @@ I really don&#x27;t remember most of the night. I thought I was sleeping but the
 <li class="scene-entry" id="scene-Brugmansia_08_S08_AB" data-verdict="CONVERGENT"><span class="chip chip-verdict v-CONVERGENT">CONVERGENT</span> <code>Brugmansia_08_S08_AB</code><div class="index-desc">In the morning: two people come into tent and have sex in front of him; imaginary person sits next to him</div></li>
 </ul></details>
 </article>
-<article class="trip" id="Brugmansia_09">
+<article class="trip" id="Brugmansia_09" style="contain-intrinsic-size: auto 1517px;">
 <h2>Brugmansia_09</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> brugmansia</span>
@@ -965,7 +972,7 @@ When I went to the gym to work out I nearly had a heart attack or at least that�
 <li class="scene-entry" id="scene-Brugmansia_09_S05_AB" data-verdict="CONVERGENT"><span class="chip chip-verdict v-CONVERGENT">CONVERGENT</span> <code>Brugmansia_09_S05_AB</code><div class="index-desc">Eating food that isn&#x27;t there; bread turns into a marker and disappears</div></li>
 </ul></details>
 </article>
-<article class="trip" id="Brugmansia_10">
+<article class="trip" id="Brugmansia_10" style="contain-intrinsic-size: auto 1756px;">
 <h2>Brugmansia_10</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> brugmansia</span>
@@ -1002,7 +1009,7 @@ The only other hallucination I had that day, was around 6ish or so I was loungin
 <li class="scene-entry" id="scene-Brugmansia_10_S04_AB" data-verdict="CONVERGENT"><span class="chip chip-verdict v-CONVERGENT">CONVERGENT</span> <code>Brugmansia_10_S04_AB</code><div class="index-desc">5-6 friends walk in and hang out like at a small party for ~20 minutes</div></li>
 </ul></details>
 </article>
-<article class="trip" id="Brugmansia_11">
+<article class="trip" id="Brugmansia_11" style="contain-intrinsic-size: auto 1724px;">
 <h2>Brugmansia_11</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> brugmansia</span>
@@ -1034,7 +1041,7 @@ When this wind force hit me, words can only barely describe the feelings that I 
 <li class="scene-entry" id="scene-Brugmansia_11_S04_AB" data-verdict="CONVERGENT"><span class="chip chip-verdict v-CONVERGENT">CONVERGENT</span> <code>Brugmansia_11_S04_AB</code><div class="index-desc">Great wind-force approaches with sound, arrives, hits him, sent back to consciousness</div></li>
 </ul></details>
 </article>
-<article class="trip" id="Brugmansia_12">
+<article class="trip" id="Brugmansia_12" style="contain-intrinsic-size: auto 2053px;">
 <h2>Brugmansia_12</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> brugmansia</span>
@@ -1077,7 +1084,7 @@ Mum woke me up at 7 in the morning to get ready for school. I got my clothes and
 <li class="scene-entry" id="scene-Brugmansia_12_S08.2_AB_SPLITB" data-verdict="CONVERGENT"><span class="chip chip-verdict v-CONVERGENT">CONVERGENT</span> <code>Brugmansia_12_S08.2_AB_SPLITB</code> <span class="index-parent">→ pooled under <a href="#scene-Brugmansia_12_S08_AB_LUMPA"><code>Brugmansia_12_S08_AB_LUMPA</code></a></span><div class="index-desc">Child 2 of S08 lump: star shoots out of stereo display in the dark; moves wherever he isn&#x27;t looking</div></li>
 </ul></details>
 </article>
-<article class="trip" id="Brugmansia_13">
+<article class="trip" id="Brugmansia_13" style="contain-intrinsic-size: auto 2514px;">
 <h2>Brugmansia_13</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> brugmansia</span>
@@ -1120,7 +1127,7 @@ Like I said before, the most amazing part of this kind of trip is that you don&#
 <li class="scene-entry" id="scene-Brugmansia_13_S10_AB" data-verdict="CONVERGENT"><span class="chip chip-verdict v-CONVERGENT">CONVERGENT</span> <code>Brugmansia_13_S10_AB</code><div class="index-desc">Girlfriend appears twice on other side of bed; touches her hair once; second time yells at her for hogging bed; she was not there</div></li>
 </ul></details>
 </article>
-<article class="trip" id="Brugmansia_14">
+<article class="trip" id="Brugmansia_14" style="contain-intrinsic-size: auto 1076px;">
 <h2>Brugmansia_14</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> brugmansia</span>
@@ -1157,7 +1164,7 @@ The next morning my vision was blury until the afternoon. Besides that and the d
 <li class="scene-entry" id="scene-Brugmansia_14_S06_AB" data-verdict="CONVERGENT"><span class="chip chip-verdict v-CONVERGENT">CONVERGENT</span> <code>Brugmansia_14_S06_AB</code><div class="index-desc">Smoking an imaginary cigarette (he is a non-smoker)</div></li>
 </ul></details>
 </article>
-<article class="trip" id="Brugmansia_15">
+<article class="trip" id="Brugmansia_15" style="contain-intrinsic-size: auto 843px;">
 <h2>Brugmansia_15</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> brugmansia</span>
@@ -1180,7 +1187,7 @@ I had bought a Brugmansia plant a few months earlier but had always been a littl
 <li class="scene-entry" id="scene-Brugmansia_15_S02_AB" data-verdict="CONVERGENT"><span class="chip chip-verdict v-CONVERGENT">CONVERGENT</span> <code>Brugmansia_15_S02_AB</code><div class="index-desc">Two-hour conversation in bed with two imaginary friends on the floor</div></li>
 </ul></details>
 </article>
-<article class="trip" id="Brugmansia_16">
+<article class="trip" id="Brugmansia_16" style="contain-intrinsic-size: auto 959px;">
 <h2>Brugmansia_16</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> brugmansia</span>
@@ -1205,7 +1212,7 @@ When we got back home is when the effects REALLY started taking effect. The warm
 <li class="scene-entry" id="scene-Brugmansia_16_S01_AB" data-verdict="CONVERGENT"><span class="chip chip-verdict v-CONVERGENT">CONVERGENT</span> <code>Brugmansia_16_S01_AB</code><div class="index-desc">Hallucinations of friends (who were in different cities) conversing and making plans; gone when looked back at</div></li>
 </ul></details>
 </article>
-<article class="trip" id="Brugmansia_17">
+<article class="trip" id="Brugmansia_17" style="contain-intrinsic-size: auto 2234px;">
 <h2>Brugmansia_17</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> brugmansia</span>
@@ -1238,7 +1245,7 @@ I woke up at around 2pm sunday and got out of bed feeling full of energy and sti
 <li class="scene-entry" id="scene-Brugmansia_17_S01_A_RCL" data-verdict="AMBIGUITY-2b"><span class="chip chip-verdict v-AMBIGUITY-2b">AMB-2b</span> <code>Brugmansia_17_S01_A_RCL</code><div class="index-desc">Mistook canola cooking oil bottle for a drink and drank it (twice attempted)</div><div class="index-rationale"><em>Mistook canola cooking oil for a drink and drank it. Cognitive-judgement / perceptual-confusion error driven by impaired state, but not a discrete hallucinatory scene (no specific hallucinated content was perceived in the oil bottle). Pair&#x27;s criterion in neighbouring trips is concrete perceptual hallucinations; this sits outside that category.</em></div></li>
 </ul></details>
 </article>
-<article class="trip" id="Brugmansia_18">
+<article class="trip" id="Brugmansia_18" style="contain-intrinsic-size: auto 2307px;">
 <h2>Brugmansia_18</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> brugmansia</span>
@@ -1282,7 +1289,7 @@ Now I will tell you about the experience of the side affects (which weren&#x27;t
 <li class="scene-entry" id="scene-Brugmansia_18_S06_B_RCL" data-verdict="MISS"><span class="chip chip-verdict v-MISS">MISS</span> <code>Brugmansia_18_S06_B_RCL</code><div class="index-desc">Two female mental patients at home (a pillow-headed one and a clock-headed one)</div><div class="index-rationale"><em>Two specific female mental patients at home (pillow-headed and clock-headed). Concrete, specific visual hallucinations with distinctive morphology. Matches criterion clearly; A missed.</em></div></li>
 </ul></details>
 </article>
-<article class="trip" id="Brugmansia_19">
+<article class="trip" id="Brugmansia_19" style="contain-intrinsic-size: auto 1346px;">
 <h2>Brugmansia_19</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> brugmansia</span>
@@ -1316,7 +1323,7 @@ Sometime later i went to bed with my girlfriend but still did not acknowledge th
 <li class="scene-entry" id="scene-Brugmansia_19_S02_AB" data-verdict="CONVERGENT"><span class="chip chip-verdict v-CONVERGENT">CONVERGENT</span> <code>Brugmansia_19_S02_AB</code><div class="index-desc">Naked blonde woman standing in the shower; repeated conversations</div></li>
 </ul></details>
 </article>
-<article class="trip" id="Brugmansia_20">
+<article class="trip" id="Brugmansia_20" style="contain-intrinsic-size: auto 2397px;">
 <h2>Brugmansia_20</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> brugmansia</span>
@@ -1377,7 +1384,7 @@ I have tried angel trumpets a few times but every time I didn’t get anything 
 <li class="scene-entry" id="scene-Brugmansia_20_S10_A_RCL" data-verdict="AMBIGUITY-2a"><span class="chip chip-verdict v-AMBIGUITY-2a">AMB-2a</span> <code>Brugmansia_20_S10_A_RCL</code><div class="index-desc">Morning arrives in discrete lighting-brightness waves rather than continuously</div><div class="index-rationale"><em>Morning light arriving in discrete brightness-waves rather than continuously. Temporal/perceptual alteration without discrete object. Guidelines unclear on whether experientially-discrete light changes constitute hallucinations vs subjective time-perception artefacts.</em></div></li>
 </ul></details>
 </article>
-<article class="trip" id="Psilocybe_01">
+<article class="trip" id="Psilocybe_01" style="contain-intrinsic-size: auto 4119px;">
 <h2>Psilocybe_01</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> psilocybin</span>
@@ -1442,7 +1449,7 @@ Eventually, the final and beautiful image I was left with was that <span class="
 <li class="scene-entry" id="scene-Psilocybe_01_S09_A_RCL" data-verdict="AMBIGUITY-2b"><span class="chip chip-verdict v-AMBIGUITY-2b">AMB-2b</span> <code>Psilocybe_01_S09_A_RCL</code><div class="index-desc">Visualises mycelium branching in disturbed earth connecting all beings</div><div class="index-rationale"><em>&quot;Visualises mycelium branching in disturbed earth connecting all beings&quot; — inner visualisation/metaphor accompanying an insight, not an external perceptual hallucination. Would fit an &quot;insight content&quot; or &quot;visualised metaphor&quot; category outside the hallucinatory-scene framework.</em></div></li>
 </ul></details>
 </article>
-<article class="trip" id="Psilocybe_02">
+<article class="trip" id="Psilocybe_02" style="contain-intrinsic-size: auto 4596px;">
 <h2>Psilocybe_02</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> psilocybin</span>
@@ -1516,7 +1523,7 @@ The room is messed up, everything upside down. I want to take a shower but I&#x2
 <li class="scene-entry" id="scene-Psilocybe_02_S26_A_RCL" data-verdict="MISS"><span class="chip chip-verdict v-MISS">MISS</span> <code>Psilocybe_02_S26_A_RCL</code><div class="index-desc">Palm lines change colour, rectangle of iridescent soft pulsing lines, hand as planet surface, dead hand</div><div class="index-rationale"><em>&quot;Palm lines change colour, iridescent pulsing lines, hand as planet surface, dead hand&quot; — concrete visual hallucination of own body with specific content. Matches body-alteration criterion; equal detail to AB scenes.</em></div></li>
 </ul></details>
 </article>
-<article class="trip" id="Psilocybe_03">
+<article class="trip" id="Psilocybe_03" style="contain-intrinsic-size: auto 2906px;">
 <h2>Psilocybe_03</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> psilocybin</span>
@@ -1555,7 +1562,7 @@ The conversation between the spirits and myself ended when the music fell silent
 <li class="scene-entry" id="scene-Psilocybe_03_S01_AB" data-verdict="CONVERGENT"><span class="chip chip-verdict v-CONVERGENT">CONVERGENT</span> <code>Psilocybe_03_S01_AB</code><div class="index-desc">Stands before a board of spirits (unseen, audible); spirits discourse on interdimensional race, recalibration, mission</div></li>
 </ul></details>
 </article>
-<article class="trip" id="Psilocybe_04">
+<article class="trip" id="Psilocybe_04" style="contain-intrinsic-size: auto 1652px;">
 <h2>Psilocybe_04</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> psilocybin</span>
@@ -1589,7 +1596,7 @@ Coming down is a very tranquil, love-filled experience. We have so much love in 
 <li class="scene-entry" id="scene-Psilocybe_04_S03_AB" data-verdict="CONVERGENT"><span class="chip chip-verdict v-CONVERGENT">CONVERGENT</span> <code>Psilocybe_04_S03_AB</code><div class="index-desc">Sees spirits and a pesky demon; feels he and wife had been &#x27;here before&#x27;</div></li>
 </ul></details>
 </article>
-<article class="trip" id="Psilocybe_05">
+<article class="trip" id="Psilocybe_05" style="contain-intrinsic-size: auto 4462px;">
 <h2>Psilocybe_05</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> psilocybin</span>
@@ -1651,7 +1658,7 @@ The reason why mushrooms tend to act as such an effective catalyst for panic att
 <li class="scene-entry" id="scene-Psilocybe_05_S11_A_RCL" data-verdict="AMBIGUITY-2b"><span class="chip chip-verdict v-AMBIGUITY-2b">AMB-2b</span> <code>Psilocybe_05_S11_A_RCL</code><div class="index-desc">Feels he stumbled upon a cosmic isle free of earthly properties</div><div class="index-rationale"><em>&quot;Felt as though I had stumbled upon some cosmic isle free of earthly properties&quot; — subjective feeling of being elsewhere, no concrete perceptual content. Classic trip-level atmospheric phenomenon.</em></div></li>
 </ul></details>
 </article>
-<article class="trip" id="Psilocybe_06">
+<article class="trip" id="Psilocybe_06" style="contain-intrinsic-size: auto 4913px;">
 <h2>Psilocybe_06</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> psilocybin</span>
@@ -1719,7 +1726,7 @@ Back to normal, I left the museum and wandered around a bit until I found myself
 <li class="scene-entry" id="scene-Psilocybe_06_S09_A_AMP" data-verdict="AMBIGUITY-2a"><span class="chip chip-verdict v-AMBIGUITY-2a">AMB-2a</span> <code>Psilocybe_06_S09_A_AMP</code><div class="index-desc">Running fingers across face leaves tactile tracers (feels fingers pressing after pulling away)</div><div class="index-rationale"><em>Ambient perceptual amplification without a discrete hallucinatory object — the Guidelines do not rule cleanly on whether brightness/colour/shimmer changes alone constitute a scene.</em></div></li>
 </ul></details>
 </article>
-<article class="trip" id="Psilocybe_07">
+<article class="trip" id="Psilocybe_07" style="contain-intrinsic-size: auto 2930px;">
 <h2>Psilocybe_07</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> psilocybin</span>
@@ -1762,7 +1769,7 @@ The laughing at one point &#x27;locked on&#x27; to a particular vocal frequency,
 <li class="scene-entry" id="scene-Psilocybe_07_S08_AB" data-verdict="CONVERGENT"><span class="chip chip-verdict v-CONVERGENT">CONVERGENT</span> <code>Psilocybe_07_S08_AB</code><div class="index-desc">Sculpts 3D objects of pure light and revolving spheres, towers of emerald surrounded by throbbing orbs of sound and love</div></li>
 </ul></details>
 </article>
-<article class="trip" id="Psilocybe_08">
+<article class="trip" id="Psilocybe_08" style="contain-intrinsic-size: auto 4000px;">
 <h2>Psilocybe_08</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> psilocybin</span>
@@ -1840,7 +1847,7 @@ P.S. I was not a frog, but we had a dragon dance party, which was fun.&quot;
 <li class="scene-entry" id="scene-Psilocybe_08_S12_A_RCL" data-verdict="AMBIGUITY-2a"><span class="chip chip-verdict v-AMBIGUITY-2a">AMB-2a</span> <code>Psilocybe_08_S12_A_RCL</code><div class="index-desc">Sees normal human waking life as a small dark loop in the pattern</div><div class="index-rationale"><em>&quot;Normal human waking life as one small dark loop in the pattern&quot; — concrete imagery attached to an insight about human life. Edge-case between hallucinated imagery and metaphorical vision; Guidelines unclear on where to draw the line.</em></div></li>
 </ul></details>
 </article>
-<article class="trip" id="Psilocybe_09">
+<article class="trip" id="Psilocybe_09" style="contain-intrinsic-size: auto 2838px;">
 <h2>Psilocybe_09</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> psilocybin</span>
@@ -1892,7 +1899,7 @@ Finally after a hundred hours it was 3, 3:30 am and we moved on to our post-trip
 <li class="scene-entry" id="scene-Psilocybe_09_S05_A_RCL" data-verdict="MISS"><span class="chip chip-verdict v-MISS">MISS</span> <code>Psilocybe_09_S05_A_RCL</code><div class="index-desc">When he turned his gaze, darkness followed behind but what he looked at was illuminated</div><div class="index-rationale"><em>&quot;When I turned my gaze, darkness followed behind, but what I looked at was illuminated&quot; — concrete visual-field alteration (anomalous light/dark distribution relative to gaze). Matches AB S03 (&quot;lights dancing; poster is a 3D mosaic undulating&quot;): ambient-visual alteration category.</em></div></li>
 </ul></details>
 </article>
-<article class="trip" id="Psilocybe_10">
+<article class="trip" id="Psilocybe_10" style="contain-intrinsic-size: auto 5814px;">
 <h2>Psilocybe_10</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> psilocybin</span>
@@ -1955,7 +1962,7 @@ So there it was, I had found it; something magical, mystical, and terrifying. I 
 <li class="scene-entry" id="scene-Psilocybe_10_S07_A_RCL" data-verdict="MISS"><span class="chip chip-verdict v-MISS">MISS</span> <code>Psilocybe_10_S07_A_RCL</code><div class="index-desc">Still-distorting houses and telephone poles seen from ambulance</div><div class="index-rationale"><em>&quot;Still-distorting houses and telephone poles seen from ambulance&quot; — concrete visual distortion continuing at a new location. Direct continuation of AB S02 (&quot;outlines wavy/melting&quot;) and S05 (&quot;everything in visual field was breathing&quot;).</em></div></li>
 </ul></details>
 </article>
-<article class="trip" id="Psilocybe_11">
+<article class="trip" id="Psilocybe_11" style="contain-intrinsic-size: auto 5225px;">
 <h2>Psilocybe_11</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> psilocybin</span>
@@ -2026,7 +2033,7 @@ It was at this time that I remember feeling certain I was back to baseline. My f
 <li class="scene-entry" id="scene-Psilocybe_11_S08_AB" data-verdict="CONVERGENT"><span class="chip chip-verdict v-CONVERGENT">CONVERGENT</span> <code>Psilocybe_11_S08_AB</code><div class="index-desc">Entity revealed with cuttlefish/octopus eyes, roundish head, golden/orange radiance like alive sun looking back</div></li>
 </ul></details>
 </article>
-<article class="trip" id="Psilocybe_12">
+<article class="trip" id="Psilocybe_12" style="contain-intrinsic-size: auto 5774px;">
 <h2>Psilocybe_12</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> psilocybin</span>
@@ -2111,7 +2118,7 @@ Fortunately everyone had finally lightened up and were actually enjoying things.
 <li class="scene-entry" id="scene-Psilocybe_12_S10_A_RCL" data-verdict="MISS"><span class="chip chip-verdict v-MISS">MISS</span> <code>Psilocybe_12_S10_A_RCL</code><div class="index-desc">Watercolor of red apples on emerald green geometric background boils and moves in hypnotic chaotic madness</div><div class="index-rationale"><em>&quot;Watercolor of red apples on emerald green background boiled and moved in hypnotic chaotic madness&quot; — concrete visual hallucination of a painting transforming. Matches AB S02/S07 (full kaleidoscope, swimming through geometric objects) — pair&#x27;s criterion strongly covers surface-motion.</em></div></li>
 </ul></details>
 </article>
-<article class="trip" id="Psilocybe_13">
+<article class="trip" id="Psilocybe_13" style="contain-intrinsic-size: auto 3023px;">
 <h2>Psilocybe_13</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> psilocybin</span>
@@ -2160,7 +2167,7 @@ Once back inside I was able to enjoy an evening of delightful colors and pattern
 <li class="scene-entry" id="scene-Psilocybe_13_S13_A_RCL" data-verdict="AMBIGUITY-2b"><span class="chip chip-verdict v-AMBIGUITY-2b">AMB-2b</span> <code>Psilocybe_13_S13_A_RCL</code><div class="index-desc">Feels electricity in the back of his head during storm</div><div class="index-rationale"><em>&quot;Feel electricity in the back of my head and my neck hair was standing up&quot; during a storm — somatic sensation, possibly real (storm-related static / arousal) rather than hallucinatory. Edge-case for the hallucinatory-scene category.</em></div></li>
 </ul></details>
 </article>
-<article class="trip" id="Psilocybe_14">
+<article class="trip" id="Psilocybe_14" style="contain-intrinsic-size: auto 3338px;">
 <h2>Psilocybe_14</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> psilocybin</span>
@@ -2212,7 +2219,7 @@ It has become all-too-clear to me that for my entire adult life I have been runn
 <li class="scene-entry" id="scene-Psilocybe_14_S06_AB" data-verdict="CONVERGENT"><span class="chip chip-verdict v-CONVERGENT">CONVERGENT</span> <code>Psilocybe_14_S06_AB</code><div class="index-desc">Ink appears to touch paper before pen hits, letters spill in slow motion, page looks made of radiant liquid light</div></li>
 </ul></details>
 </article>
-<article class="trip" id="Psilocybe_15">
+<article class="trip" id="Psilocybe_15" style="contain-intrinsic-size: auto 3879px;">
 <h2>Psilocybe_15</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> psilocybin</span>
@@ -2277,7 +2284,7 @@ This had to be one of the most profound life changing events to ever happen to m
 <li class="scene-entry" id="scene-Psilocybe_15_S16_AB" data-verdict="CONVERGENT"><span class="chip chip-verdict v-CONVERGENT">CONVERGENT</span> <code>Psilocybe_15_S16_AB</code><div class="index-desc">Friends return: figures stretching from normal height to ten feet tall</div></li>
 </ul></details>
 </article>
-<article class="trip" id="Psilocybe_16">
+<article class="trip" id="Psilocybe_16" style="contain-intrinsic-size: auto 6913px;">
 <h2>Psilocybe_16</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> psilocybin</span>
@@ -2395,7 +2402,7 @@ My conclusions and advice: Watch this shit. People often recommend starting with
 <li class="scene-entry" id="scene-Psilocybe_16_S09_B_RCL" data-verdict="AMBIGUITY-2b"><span class="chip chip-verdict v-AMBIGUITY-2b">AMB-2b</span> <code>Psilocybe_16_S09_B_RCL</code><div class="index-desc">Language devolves into glossolalia soup; bringing up random images (blackboard, chalk, dog barking)</div><div class="index-rationale"><em>&quot;Language went too, devolving into glossolalia soup&quot; + random-image conjuring — language dysfunction + internally-generated imagery. Language dysfunction is cognitive; the imagery is voluntary/conjured, not spontaneous hallucination.</em></div></li>
 </ul></details>
 </article>
-<article class="trip" id="Psilocybe_17">
+<article class="trip" id="Psilocybe_17" style="contain-intrinsic-size: auto 5627px;">
 <h2>Psilocybe_17</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> psilocybin</span>
@@ -2481,7 +2488,7 @@ I did not, I repeat, did NOT have a bad trip. It was only the intensity of the t
 <li class="scene-entry" id="scene-Psilocybe_17_S07_AB" data-verdict="CONVERGENT"><span class="chip chip-verdict v-CONVERGENT">CONVERGENT</span> <code>Psilocybe_17_S07_AB</code><div class="index-desc">Journeys out of Earth into other planets to see other terrestrial life</div></li>
 </ul></details>
 </article>
-<article class="trip" id="Psilocybe_18">
+<article class="trip" id="Psilocybe_18" style="contain-intrinsic-size: auto 10361px;">
 <h2>Psilocybe_18</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> psilocybin</span>
@@ -2568,7 +2575,7 @@ So I struggled back to my bed, worried that my parents would see my leaning agai
 <li class="scene-entry" id="scene-Psilocybe_18_S08_A_RCL" data-verdict="MISS"><span class="chip chip-verdict v-MISS">MISS</span> <code>Psilocybe_18_S08_A_RCL</code><div class="index-desc">Words moving across computer screen making them hard to read</div><div class="index-rationale"><em>&quot;Words were moving across the screen&quot; — concrete visual alteration of text. Pair&#x27;s criterion includes many surface-motion alterations throughout the trip.</em></div></li>
 </ul></details>
 </article>
-<article class="trip" id="Psilocybe_19">
+<article class="trip" id="Psilocybe_19" style="contain-intrinsic-size: auto 4938px;">
 <h2>Psilocybe_19</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> psilocybin</span>
@@ -2649,7 +2656,7 @@ My will to enjoy life is ever present.
 <li class="scene-entry" id="scene-Psilocybe_19_S11_B_RCL" data-verdict="MISS"><span class="chip chip-verdict v-MISS">MISS</span> <code>Psilocybe_19_S11_B_RCL</code><div class="index-desc">Water from faucet splashes then freezes within seconds; coincides with song slowdown; time stops until track restarts</div><div class="index-rationale"><em>&quot;Water from faucet splashes then seemed to freeze within seconds; time stops until track restarts&quot; — concrete visual+temporal hallucination with specific content. Matches the only AB scene (body split) in having concrete anomalous perceptual content, and matches pair&#x27;s criterion in neighbouring trips.</em></div></li>
 </ul></details>
 </article>
-<article class="trip" id="Psilocybe_20">
+<article class="trip" id="Psilocybe_20" style="contain-intrinsic-size: auto 6178px;">
 <h2>Psilocybe_20</h2>
 <div class="trip-meta">
 <span><strong>substance:</strong> psilocybin</span>

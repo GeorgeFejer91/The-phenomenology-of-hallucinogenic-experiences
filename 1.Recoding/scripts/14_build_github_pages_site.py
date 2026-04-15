@@ -108,6 +108,41 @@ def parse_int(s):
         return None
 
 
+# ---------------------------------------------------------------------
+# Pretext-style precompute: estimate each trip's rendered height at
+# build time from the narrative length, bake it into each article's
+# contain-intrinsic-size so content-visibility has an accurate fallback
+# for off-screen trips. Removes scrollbar jumps and matches pretext's
+# "compute once, let the browser apply" philosophy at the HTML layer.
+# ---------------------------------------------------------------------
+# Layout constants (must match CSS below):
+NARRATIVE_INNER_WIDTH_PX = 776   # main 900 max-width - 2.5rem padding*2 - 1.4rem*2 inner
+NARRATIVE_CHAR_PX        = 8.0   # avg Palatino/Iowan char width at 16px
+NARRATIVE_LINE_HEIGHT_PX = 28    # 16px * 1.75
+NARRATIVE_CHARS_PER_WORD = 5.5   # English avg incl. spaces & punctuation
+TRIP_FIXED_OVERHEAD_PX   = 260   # h2 + trip-meta + verdict-strip + summary + padding
+
+def estimate_trip_height_px(narrative_text, n_scenes):
+    """Pretext-style height precompute: one-shot arithmetic, no DOM.
+    Models the narrative wrapping at a fixed container width and
+    adds fixed overhead for the article chrome. Returns pixel int.
+    """
+    # Replace the whole narrative character count with char-width, divided by
+    # container width → lines. The `prepare/layout` split in pretext does the
+    # same thing at a finer grain; for a static build with one font/size this
+    # coarse estimate is within a few percent on typical trips.
+    char_count = len(narrative_text)
+    chars_per_line = max(1.0, NARRATIVE_INNER_WIDTH_PX / NARRATIVE_CHAR_PX)
+    # Account for hard line breaks in the narrative (each forces a new line)
+    hard_breaks = narrative_text.count("\n")
+    wrapped_lines = (char_count / chars_per_line) + hard_breaks
+    narrative_h = wrapped_lines * NARRATIVE_LINE_HEIGHT_PX
+    # Each scene-index entry adds ~60px (collapsed <details> only shows summary
+    # by default, so we under-count rather than over-count)
+    scene_index_h = 30  # collapsed summary
+    return int(narrative_h + TRIP_FIXED_OVERHEAD_PX + scene_index_h)
+
+
 def verdict_for_scene(scene, verdicts_by_scene):
     """Return the verdict class string for a scene: one of
     CONVERGENT / MISS / GRANULARITY / AMBIGUITY-2a / AMBIGUITY-2b.
@@ -424,7 +459,12 @@ def main():
         for s in trip_scenes:
             v_counts[verdict_for_scene(s, verdicts_by_scene)] += 1
 
-        main.append(f'<article class="trip" id="{trip_id}">')
+        # Per-trip intrinsic-size hint (pretext-style precompute)
+        trip_h = estimate_trip_height_px(narrative, len(trip_scenes))
+        main.append(
+            f'<article class="trip" id="{trip_id}" '
+            f'style="contain-intrinsic-size: auto {trip_h}px;">'
+        )
         main.append(f'<h2>{trip_id}</h2>')
         main.append('<div class="trip-meta">')
         main.append(f'<span><strong>substance:</strong> {t["substance"]}</span>')
@@ -581,10 +621,17 @@ def main():
       padding: 1.6rem 1.8rem;
       margin-bottom: 2rem;
       scroll-margin-top: 1.5rem;
-      /* Pretext-style: browser skips layout/paint of off-screen trips.
-         contain-intrinsic-size gives the browser a cached height estimate
-         so scrollbar geometry is stable. Same performance shape as
-         pretext virtualization, zero JS. */
+      /* Pretext-style virtualization:
+         content-visibility: auto — browser skips layout/paint for
+           off-screen trips (like pretext's "know-height-without-DOM" gain,
+           via the browser's own rendering pipeline).
+         contain-intrinsic-size: auto <per-trip px> is set INLINE per
+           <article> from a Python-side arithmetic layout pass (see
+           estimate_trip_height_px). This is the HTML-layer analogue of
+           pretext's prepare()/layout() split — one-shot measurement at
+           build, the browser just applies it.
+         The fallback here covers any trip that somehow lacks the inline
+         style, and also covers other virtualized blocks we might add. */
       content-visibility: auto;
       contain-intrinsic-size: auto 1400px;
     }
