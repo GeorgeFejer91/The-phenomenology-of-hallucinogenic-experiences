@@ -1,6 +1,6 @@
 {
   "pipeline_stage": "stage_1_scene_individuation",
-  "version": "1.2",
+  "version": "1.3",
   "description": "Formal scope definition for the current pipeline stage. Loaded by analysis scripts to ensure downstream work does not conflate scene-individuation consistency with attribute-classification consistency.",
 
   "directive_reminder": "See AI_DIRECTIVE.md at the repo root. This is Stage 1: scene individuation only. Do NOT resolve attribute-level (illusion vs incrusted, object-class, etc.) disagreements — those are deferred to a future Stage 2. The rater's subjective judgement about what is a hallucinatory scene is the primary data.",
@@ -17,11 +17,19 @@
   },
 
   "core_analytical_question": {
-    "question": "For every narrative passage individuated by only ONE of the two raters, determine whether the discrepancy is driven by a MISS, an AMBIGUITY-2a, or an AMBIGUITY-2b.",
+    "question": "For every narrative passage individuated by only ONE of the two raters, classify the discrepancy into one of THREE distinct classes: MISS, GRANULARITY, or AMBIGUITY (subdivided 2a / 2b).",
     "verdicts": {
-      "MISS": "By this rater's OBSERVED criterion (established from the _AB scenes of the same trip and coder pair), they should have individuated this passage too — they simply overlooked it. Rater-compliance gap; resolvable by rater reconciliation per Project description §7.",
-      "AMBIGUITY_2a": "The PDF Guidelines under-specify the edge case. Both individuation and omission are defensible readings. The Guidelines need a clarifying rule that decides, one way or the other, whether passages of this type are hallucinatory scenes. Instruction-design gap; resolvable only by rewriting the Guidelines.",
-      "AMBIGUITY_2b": "The passage is phenomenologically real but may not be a hallucinatory scene under any reasonable reading. It is a different phenomenon (sensation, mood shift, autobiographical memory without imagery, somatic intensification, etc.) the current taxonomy has no home for. The taxonomy needs a new non-hallucinatory-scene category. Instruction-design gap of a different kind."
+      "MISS": "By this rater's OBSERVED criterion (established from the _AB scenes of the same trip and coder pair), they should have individuated this passage too — they simply overlooked it. Rater-compliance gap; resolvable by rater reconciliation per Project description §7. No instrument change needed.",
+      "GRANULARITY": "Raters agree something happened in this narrative region but split it differently: one rater individuated a holistic scene; the other individuated its component sub-scenes (or vice versa). NOT an ambiguity — resolved at the data layer by the granularity coding rule below. The larger-scope (more conservative) individuation becomes the canonical parent; the fragment's parent_scene_id points to it. Downstream analysis may collapse fragments into the parent and pool the attributes of both raters.",
+      "AMBIGUITY_2a": "The PDF Guidelines under-specify the edge case. Both individuation and omission are defensible readings. The Guidelines need a clarifying rule that decides, one way or the other, whether passages of this type are hallucinatory scenes. Instruction-design gap; resolvable only by rewriting the Guidelines. Deferred.",
+      "AMBIGUITY_2b": "The passage is phenomenologically real but not a hallucinatory scene under any reasonable reading. It is a different phenomenon (sensation, mood shift, dissociative state, inner imagery/visualised insight, ego-dissolution metaphor, existential belief, altered somatosensory phenomenology, post-trip cognitive residue). The taxonomy needs a new non-hallucinatory-scene category. Instruction-design gap of a different kind. Deferred."
+    },
+    "granularity_coding_rule": {
+      "trigger": "Solo scene's canonical span overlaps an _AB scene or an opposite-rater solo scene in the same trip, OR the driver was auto-classified as _FRAG.",
+      "default_resolution": "The larger-scope individuation is the parent. Usually the _AB shared scene is the parent because both raters agreed at that level of scope; the fragment is the minority split. The fragment scene keeps its scene_id but sets parent_scene_id to the parent's scene_id. Driver suffix _FRAG marks these structurally.",
+      "when_in_doubt": "Prefer the conservative (larger-scope) reading. The encompassing scene takes precedence.",
+      "preserves_rater_judgement": "This is a decision rule for downstream aggregation, not adjudication of rater judgement. The fragment rater's individuation is preserved — scene_id, rater_status, canonical_desc, and spans remain untouched. Only the canonical scope for analysis aggregation is committed.",
+      "downstream_options": ["collapse fragments into parent and pool both raters' attributes onto the parent scene", "retain fragments as annotated sub-units of the parent scene"]
     },
     "how_to_judge_miss_vs_ambiguity": {
       "principle": "The 'truth' against which a solo scene is judged is NOT the PDF Guidelines read in isolation and applied from scratch. It is each rater's DEMONSTRATED application of the PDF Guidelines on the scenes both raters individuated. The shared (_AB) scenes reveal each rater's OPERATIONAL criterion — 'scene' as the two raters actually used the term in this coding effort.",

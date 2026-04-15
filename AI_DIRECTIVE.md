@@ -27,18 +27,35 @@ Individuation is therefore the **more objective** of the two coding steps:
 
 Individuation is not perfectly objective — two raters may draw the "scene vs not-scene" line differently — but the disagreement is of a **different kind** than classification disagreement. The subjective residue in individuation is exactly what Stage 1 measures; classification subjectivity is preserved in the data untouched and deferred to Stage 2.
 
-## Core analytical question
+## Core analytical question — THREE verdict classes
 
-For every passage individuated by only ONE of the two raters (not both), determine whether the discrepancy is driven by:
+For every passage individuated by only ONE of the two raters (not both), determine which of the following three classes the discrepancy belongs to. The classes are distinct in kind and in remediation:
 
-1. **A MISS** — the other rater overlooked a passage that, by their own demonstrated criterion (see next section), they should have individuated. This is a rater-compliance gap, resolvable by reconciliation.
-2. **AN AMBIGUITY** — the PDF rules do not cleanly cover this edge case, so both the individuation and the omission are defensible readings. This is an instruction-design gap, resolvable only by rewriting the Guidelines. AMBIGUITY splits into two flavours worth distinguishing in the write-up:
-   - **2a. Edge case under-specified** — the Guidelines need a clarifying rule that decides, one way or the other, whether passages of this type are hallucinatory scenes.
-   - **2b. Phenomenon outside the current category** — the passage may not belong under "hallucinatory scene" at all under any reasonable reading, but it is phenomenologically relevant (a sensation, a mood shift, an autobiographical memory without imagery, a somatic intensification, etc.) and the taxonomy would need an additional non-hallucinatory-scene category to handle it properly.
+1. **MISS** — the other rater overlooked a passage that, by their own demonstrated criterion (see next section), they should have individuated. Rater-compliance gap. **Fix:** rater reconciliation. No instrument change needed.
 
-Generalising from what both raters agreed on gives the consistent core of the dataset. Classifying the drivers of disagreement as MISS vs AMBIGUITY tells us whether the remaining inconsistency is a rater-compliance problem (fixable by reconciliation) or an instruction-design problem (fixable only by clarifying or extending the Guidelines).
+2. **GRANULARITY** — one rater individuated a large holistic scene while the other individuated its component sub-scenes (or vice versa). The raters agree something happened in this narrative region; they disagree only on lumping vs splitting. **Fix: a data-coding strategy, not reconciliation.** Default to the *more conservative* (larger-scope) rater's individuation — the encompassing scene takes precedence, and the fragments are coded as sub-scenes of that parent via `parent_scene_id`. Fragment `scene_id`s get a shared-parent tag so downstream analysis can treat them as one scene with shared attributes, OR keep them as annotated sub-units of the parent. Granularity is therefore **resolved at the data layer, immediately**, not deferred.
+
+3. **AMBIGUITY** — the PDF Guidelines do not cleanly cover this edge case, so both the individuation and the omission are defensible readings. Instruction-design gap, resolvable only by rewriting or extending the Guidelines. AMBIGUITY splits into:
+   - **2a. Edge case under-specified** — the Guidelines need a clarifying rule that decides, one way or the other, whether passages of this type are hallucinatory scenes. (Examples: ambient perceptual amplification without a discrete object; brief onset flashes; persistent post-trip perceptual residues; co-occurring-with-real-stimulus sensations; summary-statements vs discrete scenes.)
+   - **2b. Phenomenon outside the current category** — the passage is phenomenologically real but does not belong under "hallucinatory scene" under any reasonable reading. The taxonomy needs a new non-hallucinatory-scene category (dissociative / altered-time-perception; inner imagery / visualised insight; ego-dissolution metaphor; existential belief; altered somatosensory phenomenology; post-trip cognitive residue).
+
+   AMBIGUITY is **flagged now, resolved later**. Attempting to assign content-category reliability before the instrument is fixed manufactures spurious disagreement on Stage 2.
+
+Generalising from what both raters agreed on gives the consistent core of the dataset. Classifying the drivers of disagreement as MISS / GRANULARITY / AMBIGUITY tells us how much of the remaining inconsistency is a rater-compliance problem (fixable by reconciliation), a scope-granularity problem (fixable by a data-layer merge under the conservative parent scene), and an instrument-design problem (fixable only by clarifying or extending the Guidelines).
 
 This is the **ultimate and only** overarching question of the current pipeline stage. All infrastructure (scene-ID taxonomy, driver suffixes, annotated trip-report pages, visualizations) exists in service of it.
+
+## Granularity coding strategy (default rule)
+
+When a solo scene's canonical span overlaps an `_AB` scene or an opposite-rater solo scene in the same trip, the verdict is **GRANULARITY**. Apply this default:
+
+- The larger-scope individuation is the parent. Usually the `_AB` shared scene is the parent because both raters agreed at that level of scope; the fragment is the minority split.
+- The fragment scene keeps its `scene_id` but sets `parent_scene_id` to the parent's `scene_id`.
+- The driver suffix `_FRAG` marks these structurally (already present in the pipeline).
+- Downstream analyses may either (a) collapse fragments into the parent and pool the attributes of both raters onto the parent scene, or (b) retain fragments as annotated sub-units. Both views are supported.
+- **Default when in doubt:** prefer the conservative (larger-scope) reading. If only one rater fragmented the scene, the other rater's holistic individuation is the canonical scope.
+
+This is a decision rule, not adjudication. It does not override the rater's subjective individuation (which is preserved in the scene_id and status), but it commits the project to a consistent data-layer interpretation of granularity disagreements.
 
 ## How to judge MISS vs AMBIGUITY — use the shared scenes as the reference
 
