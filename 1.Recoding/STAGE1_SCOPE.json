@@ -1,0 +1,53 @@
+{
+  "pipeline_stage": "stage_1_scene_individuation",
+  "version": "1.0",
+  "description": "Formal scope definition for the current pipeline stage. Loaded by analysis scripts to ensure downstream work does not conflate scene-individuation consistency with attribute-classification consistency.",
+
+  "primary_question": "Did both raters individuate the same narrative passage as a hallucinatory scene?",
+
+  "in_scope": [
+    "Whether rater A individuated a narrative passage as a hallucinatory scene",
+    "Whether rater B individuated the same passage as a hallucinatory scene",
+    "Whether both raters' individuations refer to the same narrative passage (canonical_span overlap)",
+    "Classifying the *reason* a passage was individuated by only one rater (the driver taxonomy: FRAG / AMP / AMB / SOMA / RCL)"
+  ],
+
+  "explicitly_out_of_scope": [
+    "Whether a scene is classified as 'Illusion' vs 'Hallucination of an incrusted object' vs 'Hallucination of a detached object' vs 'Full-blown immersive hallucination' (the four leaves under 'Type of visual alteration')",
+    "Which object-class tags (Human / Artefact / Animal / Plant / Inorganic entity / Extraordinary entity and their sub-leaves) each rater attached to a scene",
+    "Which modality tags (Visual / Auditory / Tactile / Olfactory / Gustatory / Nonsensory) each rater attached",
+    "Which 'Modal status' leaf was selected (Possible and probable / Possible but improbable / Impossible)",
+    "Which 'Dynamics' tag was applied (Object constancy vs No object constancy)",
+    "Whether an observation was placed at scene-level vs trip-level — Stage 1 treats the rater's placement as their honest reading; a scene is a scene if the rater individuated it, regardless of the taxonomic fit of the attributes they chose"
+  ],
+
+  "rationale": "The Guidelines for individuating hallucinations in trip reports.pdf defines the atomic coding unit as the hallucinatory scene: 'every hallucinatory scene should be coded as a hallucination'. Inter-rater reliability at this atomic unit — do both raters see the same narrative passage as a scene — is logically prior to any comparison of what they tagged within or about that scene. Stage 1 therefore measures only scene individuation. Attribute-classification decisions made by each rater (illusion vs incrusted etc.) are recorded alongside each scene for transparency but are understood to reflect subjective rater judgement and are not resolved, adjudicated, or corrected at this stage.",
+
+  "driver_taxonomy": {
+    "purpose": "Classify WHY only one rater individuated a given narrative passage as a scene. The driver suffix on scene_id is a diagnostic, not a resolution. A scene flagged _AMP / _AMB / _SOMA / _FRAG / _RCL remains fully in the dataset; the rater's individuation decision is preserved as-is.",
+    "suffixes": {
+      "_AB":    {"scope": "both raters individuated", "action": "chronological shared scene_id"},
+      "_FRAG":  {"scope": "one rater's sub-scene of the other's holistic scene", "action": "linked to parent_scene_id; both raters agreed something happened in this narrative region"},
+      "_AMP":   {"scope": "ambient perceptual amplification without a discrete object", "action": "flagged; Case-2 borderline; one rater expansively individuated, the other conservatively omitted"},
+      "_AMB":   {"scope": "thought / memory / metaphor content without explicit hallucinatory object", "action": "flagged; likely trip-level phenomenon per PDF but one rater individuated at scene-level"},
+      "_SOMA":  {"scope": "self-transformation / interoceptive content", "action": "flagged; body-schema / ego-dissolution content that one rater individuated as a scene"},
+      "_RCL":   {"scope": "no automatic match to other drivers — likely genuine miss by the other rater", "action": "flagged for human reconciliation per Project description.pdf §7"}
+    },
+    "note": "Driver categories relate to *whether a passage should have been individuated at all*, not to how its attributes were classified. A scene rated _AB (both raters individuated) may still carry widely different attribute tags from rater A vs rater B; those attribute disagreements are recorded in data/agreement_flags.csv and are not resolved by Stage 1."
+  },
+
+  "stage2_scope_note": "A future Stage 2 analysis would address attribute-classification consistency on shared (_AB) scenes — for example, quantifying how often both raters agree on 'Type of visual alteration' given they agreed a scene exists. That work is OUT OF SCOPE for the current pipeline. The data-structure framework already supports it: agreement_flags.csv gives per-(scene, item) agreement flags for every attribute on every shared scene.",
+
+  "authoritative_sources": {
+    "coding_instructions": "../Coding Instructions/Guidelines for individuating hallucinations in trip reports.pdf",
+    "taxonomy_source": "../Coding Instructions/Description of items to be coded.pdf",
+    "procedure": "../Coding Instructions/Guidelines.pdf",
+    "project_motivation": "../Coding Instructions/The phenomenology of hallucinogenic experiences - Project description.pdf"
+  },
+
+  "references": {
+    "data_schema": "RULES.md",
+    "pipeline_report": "FINAL_REPORT.md",
+    "discrepancy_audit": "AUDIT_AND_MITIGATIONS.md"
+  }
+}

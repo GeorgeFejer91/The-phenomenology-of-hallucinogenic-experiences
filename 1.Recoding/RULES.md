@@ -7,6 +7,15 @@ These rules are iterative — new patterns get added here as they are spotted
 during adjudication, and the consolidator script applies them across the
 full dataset.
 
+**Scope note.** The current pipeline stage addresses **scene individuation
+consistency only** — did both raters treat the same narrative passage as a
+hallucinatory scene? Attribute-classification consistency (did they tag the
+same scene as illusion vs incrusted, same object-class, same modal status,
+etc.) is deliberately **out of scope** and is left as recorded rater
+judgement. See [STAGE1_SCOPE.md](STAGE1_SCOPE.md) for the full scope
+definition and [STAGE1_SCOPE.json](STAGE1_SCOPE.json) for the
+machine-readable version.
+
 ---
 
 ## 1. Scene ID convention
