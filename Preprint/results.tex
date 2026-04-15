@@ -7,12 +7,58 @@
 \subsection{Corpus and coding overview}
 % Summary table: per substance, n trips, total word count, n coders, n scenes individuated, n shared.
 
-\subsection{Inter-rater consistency}
+\subsection{Inter-rater consistency: scene individuation}
 % - Scene-individuation agreement per coder pair (Table).
-% - Conditional classification agreement at taxonomy depths 0, 1, 2.
-% - Key finding: 81% of disagreement is attribute-level (classification), 19% individuation.
-% - Binning view: confirms adjudication already captured span-overlap cases.
-% - Rater-style asymmetries: per-coder tag-usage counts.
+% - Key finding: 59\% of 305 canonical scenes were individuated by both raters;
+%   41\% (125) were seen by only one rater.
+% - Per-pair: Brugmansia 11--20 highest (73\% shared), Psilocybin 01--10 lowest
+%   (53\%), with a 20.5x individuation asymmetry in that pair (Alessandra 41
+%   solo scenes vs Brendan 2).
+
+\subsection{Inter-rater consistency: attribute classification}
+% - Of shared scenes, attribute AGREE rate is 30.4\% overall across 754
+%   agreement-flag rows.
+% - By taxonomy section: Dynamics 5\%, Sense of reality 0\%, Modal status 31\%,
+%   Type of visual alteration 35\%, Visual hallucination 38\%.
+% - 81\% of all 650 disagreement events are attribute-level (classification)
+%   versus 19\% individuation-level.
+
+\subsection{Sources of rater discrepancy}
+\label{sec:discrepancy-sources}
+
+A systematic audit of the 40-trip recoded dataset (\texttt{1.Recoding/AUDIT\_AND\_MITIGATIONS.md}) identifies eight distinct sources of inter-rater discrepancy, ranked here by their contribution to the total 650 disagreement events in the dataset. Sources D1 and D3 jointly account for the majority of the signal; D2 is the principal residual source that cannot be resolved by dataset-level filtering alone.
+
+\paragraph{D1. Individuation-threshold mismatch.}
+The single dominant driver of individuation-level disagreement. Raters apply systematically different thresholds to the question of whether a narrative passage constitutes a discrete hallucinatory scene. Solo-scene counts by coder range from 6 (Alessio) to 49 (Alessandra), a 8$\times$ spread. The asymmetry is concentrated in the Psilocybin 01--10 pair, where Alessandra individuated 41 scenes her partner Brendan did not (a 20.5$\times$ within-pair asymmetry). Content systematically included only by the permissive raters --- brief perceptual amplifications (``everything glassy'', ``voices feel alien''), per-object fragments within already-shared scenes, metaphorical visionary content, and ambient colour changes --- falls into the Case-2 category of the project guidelines (\texttt{Guidelines.pdf \S5}), which the permissive raters treated as codable and the conservative raters did not.
+
+\paragraph{D2. Taxonomy ambiguity in ``Type of visual alteration''.}
+The principal driver of attribute-level disagreement and the stubbornest source overall. The four leaves in this section (illusion, hallucination of an incrusted object, hallucination of a detached object, full-blown immersive hallucination) are defined cleanly in the abstract but their boundaries are not disambiguated for realistic edge cases: amplified colour on a real object, breathing walls, closed-eye visionary worlds, and gradual morphing of real objects into hallucinated ones can reasonably carry two or more tags. On shared scenes, 65\% of taxonomy rows under this section are flagged \texttt{A\_ONLY} or \texttt{B\_ONLY} rather than \texttt{AGREE}.
+
+\paragraph{D3. Stylistic tag over-use and under-use.}
+Per-rater base-rate variation on specific taxonomy items drives many false-positive disagreement flags. Per-trip \texttt{Modal status} usage ranges from 0.1 per trip (Noah) to 5.9 per trip (Francesco), approximately 50$\times$. Similar but smaller asymmetries appear for the \texttt{Hallucination of an incrusted object} leaf. These are not semantic disagreements about content but procedural-discipline differences about which tags to reflexively attach.
+
+\paragraph{D4. Scope-layer mismatch (scene-level vs trip-level).}
+The same passage is coded scene-level by one rater and trip-level by the other. Recurring instances: delusional beliefs (``laws of physics had changed''), ego-dissolution experiences with imagery (``cosmic winds blew through the centre of where I had been''), anthropomorphised objects (``the play structure flipped me off''), and insight-imagery (``the universe as a mycelium''). The PDF taxonomy places \texttt{Sense of reality}, \texttt{Insight}, \texttt{Ego dissolution}, \texttt{Own body distortion} and \texttt{Domain-specific violation} at trip-level, but the instructions do not explicitly direct raters how to handle passages that also have a scene-level perceptual component.
+
+\paragraph{D5. Per-object excerpt fragmentation style.}
+Alessandra's coding practice included listing each distinct object class within a scene as a separate scene-level row (e.g.\ ``tree'', ``pine needles'', ``blue veins'' as three excerpts within one scene). This produced 66 scene-level excerpts for \texttt{Psilocybe\_02} alone versus 12 from Brendan covering the same content. This is a row-inflation style rather than a semantic disagreement; the PDF allows counting each object-class once per scene but does not prescribe a single-excerpt-per-item row structure.
+
+\paragraph{D6. Lump-versus-split of evolving scenes.}
+When a hallucinatory experience morphs over time (phase transitions within an NDE, repeated similar incidents, gradual evolution of a visionary world), some raters record one scene while others split the episode into phases. The PDF explicitly favours lumping --- ``a scene can change a little and still remains the same scene'' --- making splitting a minor rule deviation. In the current dataset only one case exhibited a clean lump--split pattern (\texttt{Brugmansia\_12\_S08}, retrofitted with the \texttt{LUMPA/SPLITB} convention); more latent cases likely exist but do not dominate the error budget.
+
+\paragraph{D7. Somatic / interoceptive sensations coded as scenes.}
+The PDF taxonomy places embodied phenomena (own-body distortion, arousal, ego-dissolution/bodily self) at trip-level. Susana systematically codes such passages (``de-animating into stone'', ``becoming a feather'', ``heartbeat irregularity'') as scene-level hallucinations, while her pair partner Francesco keeps them at trip-level. The PDF does not provide a scene-level equivalent for embodied content, so this is partly a taxonomy gap rather than a rater error.
+
+\paragraph{D8. Cognitive insights and revelations coded as scenes.}
+\texttt{Insight} is an explicit trip-level taxonomy item, but when an insight arrives accompanied by imagery (``the connection I visualised was a growing mycelium''), raters split on whether to code the passage at scene-level as a visual hallucination or at trip-level as existential insight. This overlaps with D4 but is specifically about insight-content with imagistic delivery.
+
+\subsection{Mitigation: outcome of the conservative consensus filter}
+% - After M6 scope-layer normalisation + M1 conservative consensus filter:
+%   - 180 of 305 scenes retained (59\%)
+%   - 229 of 754 attribute rows retained (30\%)
+% - Table comparing headline distributions of each major taxonomy section
+%   in the pre-filter vs post-filter datasets, to show what content the
+%   consensus view preserves and what it drops.
 
 \subsection{Phenomenological profile of psilocybin}
 % Consensus-filtered scene and attribute frequencies.
