@@ -185,7 +185,8 @@ def main():
     # Build sidebar
     sidebar = ['<aside class="sidebar"><div class="sidebar-inner">']
     sidebar.append('<div class="sidebar-header"><h1>Trip reports</h1>'
-                   '<p class="subtle">40 trip reports, annotated with rater-agreement drivers</p></div>')
+                   '<p class="subtle">40 trip reports, annotated with rater-agreement drivers</p>'
+                   '<p class="nav-links"><a href="visualizations.html">→ Dynamic visualizations</a></p></div>')
     for sub in ("brugmansia", "psilocybin"):
         if not groups[sub]:
             continue
@@ -305,7 +306,18 @@ def main():
     }
     .sidebar-inner { padding: 1.2rem 0.9rem; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     .sidebar-header h1 { font-size: 1.05rem; margin: 0 0 0.3rem; }
-    .sidebar-header .subtle { font-size: 0.75rem; color: #999; margin: 0 0 1rem; }
+    .sidebar-header .subtle { font-size: 0.75rem; color: #999; margin: 0 0 0.5rem; }
+    .sidebar-header .nav-links a {
+      display: inline-block;
+      color: #ffd79a;
+      text-decoration: none;
+      font-size: 0.82rem;
+      padding: 0.25rem 0.5rem;
+      border: 1px solid #5a4e36;
+      border-radius: 3px;
+      margin-top: 0.2rem;
+    }
+    .sidebar-header .nav-links a:hover { background: #3a3a3a; }
     .sidebar-group {
       font-size: 0.7rem;
       text-transform: uppercase;
