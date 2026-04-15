@@ -98,6 +98,18 @@
     .bg-AMB  { background-color: #d5c6e0; }
     .bg-SOMA { background-color: #f7c1d9; }
     .bg-RCL  { background-color: #f4b4b4; }
+    .directive {
+      background: #fff9e6;
+      border-left: 4px solid #c9a227;
+      padding: 0.8rem 1rem;
+      margin: 0 0 1.2rem;
+      font-size: 0.82rem;
+      line-height: 1.5;
+      color: #3b3426;
+      border-radius: 3px;
+    }
+    .directive strong { color: #6b4e00; }
+    .directive code { background: #f0e4b8; padding: 1px 4px; border-radius: 2px; font-size: 0.9em; }
     </style>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 </head>
@@ -114,6 +126,7 @@
 </span>
 </header>
 <main>
+<div class="directive"><strong>Stage 1 scope — scene individuation only.</strong> These charts visualise whether both raters individuated the same narrative passages as hallucinatory scenes, and (for solo scenes) the driver category of the discrepancy. For every only-one-rater scene the analytical question is MISS (rater-compliance gap) vs AMBIGUITY (instruction-design gap). Rater subjective judgement is the PRIMARY DATA; attribute-level disagreement (illusion vs incrusted, object class, etc.) is Stage 2, deferred. See <code>AI_DIRECTIVE.md</code> and <code>1.Recoding/STAGE1_SCOPE.json</code> in the repo.</div>
 <section class="card" id="drivers">
 <h2>Scene counts by driver category</h2>
 <p class="desc">Distribution of Stage-1 driver categories. Group by substance / block / coder pair; toggle between absolute counts and proportions.</p>

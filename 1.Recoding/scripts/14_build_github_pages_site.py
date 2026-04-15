@@ -12,6 +12,22 @@ All 40 trip reports on one scrollable page with:
 Output: docs/index.html  (plus minimal assets inline so GitHub Pages serves
 it with no dependencies)
 """
+# ======================================================================
+# AI DIRECTIVE — read AI_DIRECTIVE.md at repo root
+# Stage 1 of this project measures INTER-RATER CONSISTENCY ON SCENE
+# INDIVIDUATION ONLY.  The atomic question is:
+#   For every narrative passage, did BOTH raters individuate it as a
+#   hallucinatory scene?
+# Core analytical question for every only-one-rater scene:
+#   MISS       - the other rater overlooked a clearly hallucinatory passage
+#                they should have coded (rater-compliance gap), OR
+#   AMBIGUITY  - the PDF Guidelines do not cleanly cover this edge case,
+#                so both decisions are defensible (instruction-design gap).
+# The rater's subjective judgement about what is a hallucinatory scene is
+# the PRIMARY DATA.  Preserve it.  Do NOT resolve attribute-level
+# disagreement (illusion vs incrusted, object-class, etc.) — that is
+# Stage 2, deferred.  See also 1.Recoding/STAGE1_SCOPE.json
+# ======================================================================
 import os, csv, html
 from collections import defaultdict
 
@@ -221,6 +237,16 @@ def main():
     main = ['<main class="main">']
     main.append('<header class="main-header">')
     main.append('<h1>Annotated trip reports</h1>')
+    main.append('<div class="directive">'
+                '<strong>Stage 1 scope — scene individuation only.</strong> '
+                'This site measures whether <em>both</em> raters individuated the same narrative '
+                'passages as hallucinatory scenes. For every only-one-rater scene the analytical '
+                'question is MISS (the other rater overlooked it — rater-compliance gap) vs '
+                'AMBIGUITY (PDF Guidelines do not cleanly cover the edge case — instruction-design gap). '
+                'Rater subjective judgement on what counts as a hallucinatory scene is the PRIMARY DATA; '
+                'attribute-level disagreement (illusion vs incrusted, object class, etc.) is Stage 2, deferred. '
+                'See <code>AI_DIRECTIVE.md</code> and <code>1.Recoding/STAGE1_SCOPE.json</code> in the repo.'
+                '</div>')
     main.append('<p class="subtle">Every individuated hallucinatory scene is highlighted on the narrative. '
                 'Solo scenes (individuated by only one rater) carry an inline chip showing which rater '
                 '(A/B) and the discrepancy driver (AMP / AMB / SOMA / FRAG / RCL). '
@@ -375,6 +401,18 @@ def main():
       font-size: 0.85rem;
       line-height: 2;
     }
+    .directive {
+      background: #fff9e6;
+      border-left: 4px solid #c9a227;
+      padding: 0.8rem 1rem;
+      margin: 0.8rem 0 1rem;
+      font-size: 0.82rem;
+      line-height: 1.5;
+      color: #3b3426;
+      border-radius: 3px;
+    }
+    .directive strong { color: #6b4e00; }
+    .directive code { background: #f0e4b8; padding: 1px 4px; border-radius: 2px; font-size: 0.9em; }
     .legend-item { display: inline-block; margin-right: 1.5rem; }
     .chip {
       display: inline-block;

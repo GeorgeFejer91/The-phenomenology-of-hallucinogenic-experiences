@@ -94,6 +94,18 @@
       font-size: 0.85rem;
       line-height: 2;
     }
+    .directive {
+      background: #fff9e6;
+      border-left: 4px solid #c9a227;
+      padding: 0.8rem 1rem;
+      margin: 0.8rem 0 1rem;
+      font-size: 0.82rem;
+      line-height: 1.5;
+      color: #3b3426;
+      border-radius: 3px;
+    }
+    .directive strong { color: #6b4e00; }
+    .directive code { background: #f0e4b8; padding: 1px 4px; border-radius: 2px; font-size: 0.9em; }
     .legend-item { display: inline-block; margin-right: 1.5rem; }
     .chip {
       display: inline-block;
@@ -243,6 +255,7 @@
 <main class="main">
 <header class="main-header">
 <h1>Annotated trip reports</h1>
+<div class="directive"><strong>Stage 1 scope — scene individuation only.</strong> This site measures whether <em>both</em> raters individuated the same narrative passages as hallucinatory scenes. For every only-one-rater scene the analytical question is MISS (the other rater overlooked it — rater-compliance gap) vs AMBIGUITY (PDF Guidelines do not cleanly cover the edge case — instruction-design gap). Rater subjective judgement on what counts as a hallucinatory scene is the PRIMARY DATA; attribute-level disagreement (illusion vs incrusted, object class, etc.) is Stage 2, deferred. See <code>AI_DIRECTIVE.md</code> and <code>1.Recoding/STAGE1_SCOPE.json</code> in the repo.</div>
 <p class="subtle">Every individuated hallucinatory scene is highlighted on the narrative. Solo scenes (individuated by only one rater) carry an inline chip showing which rater (A/B) and the discrepancy driver (AMP / AMB / SOMA / FRAG / RCL). Hover a highlight for the scene ID.</p>
 <div class="legend">
 <strong>Driver colours:</strong><br>

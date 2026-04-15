@@ -1,5 +1,13 @@
 # Stage 1 scope — scene individuation only
 
+> **Directive reminder (read [AI_DIRECTIVE.md](../AI_DIRECTIVE.md) first).**
+> Stage 1 of this project addresses scene-individuation consistency **only**.
+> Do **not** resolve or adjudicate attribute-level disagreements on shared
+> scenes (illusion vs incrusted, object-class choices, modal status,
+> dynamics). Those reflect rater subjective judgement and are preserved
+> in the data unresolved. Attribute-classification consistency is Stage 2,
+> deferred.
+
 This document makes explicit what the current pipeline stage is and is **not** measuring.
 
 ## The single question Stage 1 answers
@@ -7,6 +15,19 @@ This document makes explicit what the current pipeline stage is and is **not** m
 > **For every narrative passage in a trip report, did both raters individuate it as a hallucinatory scene?**
 
 That is the only question. The machine-readable version of this scope lives at [STAGE1_SCOPE.json](STAGE1_SCOPE.json) and is loaded by analysis scripts.
+
+## Core analytical question — MISS vs AMBIGUITY
+
+For every narrative passage **individuated by only one** of the two raters, the pipeline must classify whether the discrepancy is driven by:
+
+| Verdict | Meaning | Implication |
+|---|---|---|
+| **MISS** | The other rater overlooked a clearly hallucinatory passage they *should* have coded per the PDF Guidelines. | Rater-compliance gap. Resolvable by rater reconciliation (per Project description §7). |
+| **AMBIGUITY** | The PDF Guidelines do not cleanly cover this edge case, so both the individuation and the omission are defensible readings. | Instruction-design gap. Resolvable only by rewriting the Guidelines with explicit edge-case rules. |
+
+Classifying every only-one-rater scene as MISS or AMBIGUITY is the primary analytical output of Stage 1. Generalising from the consistent core (scenes both raters individuated) tells us what the phenomenology *robustly* looks like; classifying the discrepancies tells us which parts of the instrument need tightening and which parts of the coding were simply missed.
+
+**This is the ONE question the project exists to answer at this stage.** All infrastructure — scene-ID driver suffixes, annotated trip-report pages, visualizations, pretext renderer, the Chart.js dashboards — exists in service of it.
 
 ## Why this matters
 

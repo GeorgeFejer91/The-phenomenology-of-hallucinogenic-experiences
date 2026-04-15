@@ -10,6 +10,22 @@ Charts included:
   4. Rater-style comparison (codes/scene, tag-specific usage)
   5. Trip-level driver heatmap
 """
+# ======================================================================
+# AI DIRECTIVE — read AI_DIRECTIVE.md at repo root
+# Stage 1 of this project measures INTER-RATER CONSISTENCY ON SCENE
+# INDIVIDUATION ONLY.  The atomic question is:
+#   For every narrative passage, did BOTH raters individuate it as a
+#   hallucinatory scene?
+# Core analytical question for every only-one-rater scene:
+#   MISS       - the other rater overlooked a clearly hallucinatory passage
+#                they should have coded (rater-compliance gap), OR
+#   AMBIGUITY  - the PDF Guidelines do not cleanly cover this edge case,
+#                so both decisions are defensible (instruction-design gap).
+# The rater's subjective judgement about what is a hallucinatory scene is
+# the PRIMARY DATA.  Preserve it.  Do NOT resolve attribute-level
+# disagreement (illusion vs incrusted, object-class, etc.) — that is
+# Stage 2, deferred.  See also 1.Recoding/STAGE1_SCOPE.json
+# ======================================================================
 import os, csv, json
 
 DATA = "../data"
@@ -204,6 +220,18 @@ def main():
     .bg-AMB  { background-color: #d5c6e0; }
     .bg-SOMA { background-color: #f7c1d9; }
     .bg-RCL  { background-color: #f4b4b4; }
+    .directive {
+      background: #fff9e6;
+      border-left: 4px solid #c9a227;
+      padding: 0.8rem 1rem;
+      margin: 0 0 1.2rem;
+      font-size: 0.82rem;
+      line-height: 1.5;
+      color: #3b3426;
+      border-radius: 3px;
+    }
+    .directive strong { color: #6b4e00; }
+    .directive code { background: #f0e4b8; padding: 1px 4px; border-radius: 2px; font-size: 0.9em; }
     """
 
     js = """
@@ -545,6 +573,15 @@ def main():
         '</span>',
         '</header>',
         '<main>',
+        '<div class="directive">'
+        '<strong>Stage 1 scope — scene individuation only.</strong> '
+        'These charts visualise whether both raters individuated the same narrative passages as '
+        'hallucinatory scenes, and (for solo scenes) the driver category of the discrepancy. '
+        'For every only-one-rater scene the analytical question is MISS (rater-compliance gap) '
+        'vs AMBIGUITY (instruction-design gap). Rater subjective judgement is the PRIMARY DATA; '
+        'attribute-level disagreement (illusion vs incrusted, object class, etc.) is Stage 2, deferred. '
+        'See <code>AI_DIRECTIVE.md</code> and <code>1.Recoding/STAGE1_SCOPE.json</code> in the repo.'
+        '</div>',
 
         # --- Chart 1: driver distribution ---
         '<section class="card" id="drivers">',

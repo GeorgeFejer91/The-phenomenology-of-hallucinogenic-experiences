@@ -19,6 +19,22 @@ A consumer can:
   - query only leaves via is_leaf=True
   - compute agreement at any depth by grouping codes on the ancestor at that depth
 """
+# ======================================================================
+# AI DIRECTIVE — read AI_DIRECTIVE.md at repo root
+# Stage 1 of this project measures INTER-RATER CONSISTENCY ON SCENE
+# INDIVIDUATION ONLY.  The atomic question is:
+#   For every narrative passage, did BOTH raters individuate it as a
+#   hallucinatory scene?
+# Core analytical question for every only-one-rater scene:
+#   MISS       - the other rater overlooked a clearly hallucinatory passage
+#                they should have coded (rater-compliance gap), OR
+#   AMBIGUITY  - the PDF Guidelines do not cleanly cover this edge case,
+#                so both decisions are defensible (instruction-design gap).
+# The rater's subjective judgement about what is a hallucinatory scene is
+# the PRIMARY DATA.  Preserve it.  Do NOT resolve attribute-level
+# disagreement (illusion vs incrusted, object-class, etc.) — that is
+# Stage 2, deferred.  See also 1.Recoding/STAGE1_SCOPE.json
+# ======================================================================
 import os, csv, re, warnings
 os.environ["OPENBLAS_NUM_THREADS"] = "1"
 warnings.filterwarnings("ignore")

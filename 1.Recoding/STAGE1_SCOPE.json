@@ -1,9 +1,23 @@
 {
   "pipeline_stage": "stage_1_scene_individuation",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Formal scope definition for the current pipeline stage. Loaded by analysis scripts to ensure downstream work does not conflate scene-individuation consistency with attribute-classification consistency.",
 
+  "directive_reminder": "See AI_DIRECTIVE.md at the repo root. This is Stage 1: scene individuation only. Do NOT resolve attribute-level (illusion vs incrusted, object-class, etc.) disagreements — those are deferred to a future Stage 2. The rater's subjective judgement about what is a hallucinatory scene is the primary data.",
+
   "primary_question": "Did both raters individuate the same narrative passage as a hallucinatory scene?",
+
+  "core_analytical_question": {
+    "question": "For every narrative passage individuated by only ONE of the two raters, determine whether the discrepancy is driven by a MISS or an AMBIGUITY.",
+    "verdicts": {
+      "MISS": "The other rater overlooked a clearly hallucinatory passage that per the PDF Guidelines they should have coded. Diagnostic of a rater-compliance gap; resolvable by rater reconciliation.",
+      "AMBIGUITY": "The PDF Guidelines do not cleanly cover this edge case, so both the individuation and the omission are defensible readings. Diagnostic of an instruction-design gap; resolvable only by a rewrite of the Guidelines."
+    },
+    "what_this_tells_us": "Generalising from what both raters agreed on gives the consistent core of the dataset. Classifying the drivers of disagreement between MISS and AMBIGUITY tells us whether the remaining inter-rater inconsistency is a rater-compliance problem (solvable by reconciliation) or an instruction-design problem (solvable only by rewriting the coding instructions). This is the ONE question the project exists to answer at this stage.",
+    "why_stated_explicitly": "Any AI agent working on this project must keep this analytical question central. All infrastructure (scene-ID taxonomy, driver suffixes, annotated trip-report pages, visualizations, pretext renderer, etc.) exists in service of answering it. If an action under consideration does not help answer it, re-read this section."
+  },
+
+  "rater_subjective_judgement_is_primary_data": "The rater's subjective judgement about what counts as a hallucinatory scene is the primary data. Any analysis of agreement must be anchored in what the raters actually individuated, not in what we think they should have individuated. Do not silently drop, merge, or override rater individuations. Classify the discrepancy driver instead.",
 
   "in_scope": [
     "Whether rater A individuated a narrative passage as a hallucinatory scene",
