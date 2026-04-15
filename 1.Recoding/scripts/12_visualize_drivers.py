@@ -34,6 +34,11 @@ DRIVER_COLOURS = {
     "SOMA": "#e91e63",
     "RCL":  "#f44336",
 }
+# Substance palette — used wherever brugmansia and psilocybin are directly compared.
+SUBSTANCE_COLOURS = {
+    "brugmansia": "#1b4332",  # forest dark green
+    "psilocybin": "#9b111e",  # ruby red
+}
 
 
 def load(path):
@@ -69,7 +74,7 @@ def main():
     for i, sub in enumerate(substances):
         vals = [counts_by_sub[sub][d] for d in DRIVERS_ORDER]
         bars = ax.bar(x + (i - (len(substances)-1)/2) * width, vals, width,
-                      label=sub.title(), color=["#7e57c2", "#ff7043"][i])
+                      label=sub.title(), color=SUBSTANCE_COLOURS[sub])
         for b, v in zip(bars, vals):
             if v:
                 ax.text(b.get_x() + b.get_width()/2, v + 1, str(v), ha="center", fontsize=8)

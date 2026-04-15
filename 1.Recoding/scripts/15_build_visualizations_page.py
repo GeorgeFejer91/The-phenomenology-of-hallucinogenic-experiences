@@ -390,8 +390,8 @@ def main():
         data: {
           labels: combined.map(r => r.key),
           datasets: [
-            { label: 'brugmansia', data: brugVals, backgroundColor: '#7e57c2' },
-            { label: 'psilocybin', data: psilVals, backgroundColor: '#ff7043' },
+            { label: 'brugmansia', data: brugVals, backgroundColor: '#1b4332' },
+            { label: 'psilocybin', data: psilVals, backgroundColor: '#9b111e' },
           ],
         },
         options: {
