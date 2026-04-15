@@ -49,13 +49,18 @@ OUT = "stage1_verdicts.csv"
 
 COLS = [
     "scene_id", "trip_id", "rater_status", "stage1_driver",
-    "verdict", "verdict_flavour", "verdict_source", "rationale",
+    "verdict", "verdict_flavour", "parent_scene_id", "verdict_source", "rationale",
 ]
 
+# Verdicts: MISS | GRANULARITY | AMBIGUITY (flavour 2a/2b)
+# Structural driver → default verdict mapping.  _FRAG maps to GRANULARITY
+# (the fragment is a sub-scene of a larger encompassing scene; the parent
+# is already recorded in scenes.csv.parent_scene_id).
 AUTO_RULES = {
-    "FRAG": ("AMBIGUITY", "2a",
-             "Fragment/sub-scene of a holistic scene coded by the other rater — the "
-             "Guidelines do not specify lump-vs-split granularity for overlapping spans."),
+    "FRAG": ("GRANULARITY", "",
+             "Fragment/sub-scene of a holistic scene coded by the other rater. Parent recorded "
+             "in scenes.csv. Resolved by the data-coding rule: the encompassing scene is the "
+             "canonical parent; the fragment pools under it for downstream attribute analysis."),
     "AMP":  ("AMBIGUITY", "2a",
              "Ambient perceptual amplification without a discrete hallucinatory object — the "
              "Guidelines do not rule cleanly on whether brightness/colour/shimmer changes alone "
@@ -108,6 +113,7 @@ def main():
                 "stage1_driver": drv,
                 "verdict": m["verdict"],
                 "verdict_flavour": m.get("flavour", ""),
+                "parent_scene_id": m.get("parent_scene_id", "") or s.get("parent_scene_id", ""),
                 "verdict_source": "manual",
                 "rationale": m.get("rationale", ""),
             })
@@ -115,6 +121,8 @@ def main():
 
         if drv in AUTO_RULES:
             verdict, flavour, rationale = AUTO_RULES[drv]
+            # For FRAG, carry parent_scene_id through from scenes.csv
+            parent = s.get("parent_scene_id", "") if drv == "FRAG" else ""
             rows.append({
                 "scene_id": sid,
                 "trip_id": s["trip_id"],
@@ -122,6 +130,7 @@ def main():
                 "stage1_driver": drv,
                 "verdict": verdict,
                 "verdict_flavour": flavour,
+                "parent_scene_id": parent,
                 "verdict_source": "auto",
                 "rationale": rationale,
             })
@@ -133,6 +142,7 @@ def main():
                 "stage1_driver": drv,
                 "verdict": "NEEDS_ADJUDICATION",
                 "verdict_flavour": "",
+                "parent_scene_id": "",
                 "verdict_source": "pending",
                 "rationale": "",
             })
