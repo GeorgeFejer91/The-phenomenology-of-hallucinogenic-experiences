@@ -134,13 +134,13 @@
 <div class="chart-holder tall"><canvas id="chart-shared"></canvas></div>
 </section>
 <section class="card" id="items">
-<h2>Top 20 taxonomy items</h2>
-<p class="desc">Most-coded taxonomy items. Choose depth (section / category / leaf), restrict to scene-level only, and toggle the consensus filter (only items both raters attached).</p>
+<h2>Top 20 taxonomy items — brugmansia vs psilocybin</h2>
+<p class="desc">The 20 most-coded taxonomy items, always shown side-by-side for the two substances (this is the primary comparison the paper is about). Choose depth (L1 section / L2 category / L3 leaf); restrict to scene-level only; toggle the consensus filter (keep only items both raters attached); or normalise counts per trip so the substances (20 trips each) are directly comparable.</p>
 <div class="filters">
-<label>Depth <select id="d3-depth"><option value="1">L1 section</option><option value="2">L2 category</option><option value="3">L3 leaf</option></select></label>
-<label>Substance <select id="d3-substance"><option value="all">all</option><option value="brugmansia">brugmansia</option><option value="psilocybin">psilocybin</option></select></label>
+<label>Depth <select id="d3-depth"><option value="1">L1 section</option><option value="2" selected>L2 category</option><option value="3">L3 leaf</option></select></label>
 <label><input type="checkbox" id="d3-onlyscene"> scene-level only</label>
 <label><input type="checkbox" id="d3-consensus" checked> consensus only (both raters)</label>
+<label><input type="checkbox" id="d3-normalise"> normalise per trip</label>
 </div>
 <div class="chart-holder tall"><canvas id="chart-items"></canvas></div>
 </section>
@@ -284,24 +284,22 @@
       });
     }
 
-    // Chart 3: top taxonomy items
+    // Chart 3: top taxonomy items — always brugmansia vs psilocybin side-by-side
     function renderTopItems() {
       const depth = document.getElementById('d3-depth').value; // 1 | 2 | 3
-      const substance = document.getElementById('d3-substance').value;
       const consensus = document.getElementById('d3-consensus').checked;
       const onlyScene = document.getElementById('d3-onlyscene').checked;
+      const normalise = document.getElementById('d3-normalise').checked;
 
       let items = DATA.codes;
-      if (substance !== 'all') items = items.filter(c => c.substance === substance);
       if (onlyScene) items = items.filter(c => c.is_scene_level);
 
-      // If consensus, keep only items that pass AGREE on some shared scene, OR trip-level
-      // where both raters attached the same item
+      // Consensus filter: keep only items where both raters attached the same
+      // (scene, item) on a shared scene, OR both attached the same item at
+      // trip-level within the same trip.
       if (consensus) {
-        // Build AGREE pairs
         const agreePairs = new Set();
         DATA.flags.forEach(f => { if (f.agreement === 'AGREE') agreePairs.add(f.scene_id + '|' + f.item_id); });
-        // Trip-level consensus: both raters attached at trip-level
         const tripPairs = new Map();
         DATA.codes.forEach(c => {
           if (!c.is_scene_level) {
@@ -321,19 +319,48 @@
       const keyFn = depth === '1' ? (c => c.level_1)
                   : depth === '2' ? (c => c.level_1 + ' | ' + (c.level_2 || ''))
                                   : (c => c.level_1 + ' | ' + (c.level_2 || '') + ' | ' + (c.level_3 || ''));
-      const counts = groupCount(items, keyFn);
-      const top = [...counts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 20);
+
+      // Split by substance, count, merge, rank by combined
+      const brug = groupCount(items.filter(c => c.substance === 'brugmansia'), keyFn);
+      const psil = groupCount(items.filter(c => c.substance === 'psilocybin'), keyFn);
+      const allKeys = new Set([...brug.keys(), ...psil.keys()]);
+      const combined = [...allKeys].map(k => ({
+        key: k,
+        brug: brug.get(k) || 0,
+        psil: psil.get(k) || 0,
+        total: (brug.get(k) || 0) + (psil.get(k) || 0),
+      })).sort((a, b) => b.total - a.total).slice(0, 20);
+
+      let brugVals = combined.map(r => r.brug);
+      let psilVals = combined.map(r => r.psil);
+      let xLabel = 'count';
+      if (normalise) {
+        const n_brug = DATA.trips.filter(t => t.substance === 'brugmansia').length || 1;
+        const n_psil = DATA.trips.filter(t => t.substance === 'psilocybin').length || 1;
+        brugVals = brugVals.map(v => v / n_brug);
+        psilVals = psilVals.map(v => v / n_psil);
+        xLabel = 'count per trip (normalised by n trips per substance)';
+      }
+
       render('chart-items', {
         type: 'bar',
         data: {
-          labels: top.map(t => t[0]),
-          datasets: [{ label: 'count', data: top.map(t => t[1]), backgroundColor: '#607d8b' }],
+          labels: combined.map(r => r.key),
+          datasets: [
+            { label: 'brugmansia', data: brugVals, backgroundColor: '#7e57c2' },
+            { label: 'psilocybin', data: psilVals, backgroundColor: '#ff7043' },
+          ],
         },
         options: {
           indexAxis: 'y',
           responsive: true, maintainAspectRatio: false,
-          plugins: { legend: { display: false } },
-          scales: { x: { beginAtZero: true } },
+          plugins: {
+            legend: { position: 'top' },
+            tooltip: { mode: 'index', intersect: false },
+          },
+          scales: {
+            x: { beginAtZero: true, title: { display: true, text: xLabel } },
+          },
         },
       });
     }
@@ -432,11 +459,11 @@
       // Populate pair dropdowns
       const pairs = allPairs();
       // all filter selects
-      ['d1-substance','d2-substance','d3-substance','d4-substance','d5-substance'].forEach(id => {
+      ['d1-substance','d2-substance','d4-substance','d5-substance'].forEach(id => {
         const el = document.getElementById(id);
         el.addEventListener('change', rerender);
       });
-      ['d1-groupby','d1-showmode','d3-depth','d3-consensus','d3-onlyscene','d4-metric']
+      ['d1-groupby','d1-showmode','d3-depth','d3-consensus','d3-onlyscene','d3-normalise','d4-metric']
         .forEach(id => document.getElementById(id).addEventListener('change', rerender));
       rerender();
     }
