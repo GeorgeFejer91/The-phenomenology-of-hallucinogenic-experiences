@@ -581,6 +581,12 @@ def main():
       padding: 1.6rem 1.8rem;
       margin-bottom: 2rem;
       scroll-margin-top: 1.5rem;
+      /* Pretext-style: browser skips layout/paint of off-screen trips.
+         contain-intrinsic-size gives the browser a cached height estimate
+         so scrollbar geometry is stable. Same performance shape as
+         pretext virtualization, zero JS. */
+      content-visibility: auto;
+      contain-intrinsic-size: auto 1400px;
     }
     .trip h2 {
       margin: 0 0 0.3rem;
@@ -738,14 +744,32 @@ def main():
     }
     .filter-btn:hover { background: #f0f0f0; }
 
-    /* When a verdict class is filtered off, its highlight goes plain-text */
-    .hl.filtered-off {
+    /* ---- CSS-native filter toggle ----
+       Pretext-style philosophy: compute once, query many. Instead of
+       iterating all 1000+ verdict elements on every toggle, we flip a
+       body-level class and let the browser's precomputed selector index
+       hide everything in one pass. No JS measurement, no DOM reads.
+       The body.hide-verdict-X class hides highlight tint, chip, and
+       scene-entry for class X simultaneously. */
+    body.hide-verdict-CONVERGENT   .hl.v-CONVERGENT,
+    body.hide-verdict-MISS         .hl.v-MISS,
+    body.hide-verdict-GRANULARITY  .hl.v-GRANULARITY,
+    body.hide-verdict-AMBIGUITY-2a .hl.v-AMBIGUITY-2a,
+    body.hide-verdict-AMBIGUITY-2b .hl.v-AMBIGUITY-2b {
       background-color: transparent !important;
       border-bottom: none !important;
       padding: 0 !important;
     }
-    .chip-verdict.filtered-off { display: none; }
-    .scene-entry.filtered-off { display: none; }
+    body.hide-verdict-CONVERGENT   .chip-verdict.v-CONVERGENT,
+    body.hide-verdict-MISS         .chip-verdict.v-MISS,
+    body.hide-verdict-GRANULARITY  .chip-verdict.v-GRANULARITY,
+    body.hide-verdict-AMBIGUITY-2a .chip-verdict.v-AMBIGUITY-2a,
+    body.hide-verdict-AMBIGUITY-2b .chip-verdict.v-AMBIGUITY-2b { display: none; }
+    body.hide-verdict-CONVERGENT   .scene-entry[data-verdict="CONVERGENT"],
+    body.hide-verdict-MISS         .scene-entry[data-verdict="MISS"],
+    body.hide-verdict-GRANULARITY  .scene-entry[data-verdict="GRANULARITY"],
+    body.hide-verdict-AMBIGUITY-2a .scene-entry[data-verdict="AMBIGUITY-2a"],
+    body.hide-verdict-AMBIGUITY-2b .scene-entry[data-verdict="AMBIGUITY-2b"] { display: none; }
 
     /* Iteration navigator */
     .iter-separator {
@@ -888,27 +912,14 @@ def main():
       // -------- VERDICT FILTER --------
       const VERDICT_CLASSES = ['CONVERGENT','MISS','GRANULARITY','AMBIGUITY-2a','AMBIGUITY-2b'];
       const filterBoxes = document.querySelectorAll('.filter-bar input[data-filter]');
+      // Pretext-style: one body-class flip per class instead of N element writes.
+      // The CSS selectors do the matching work in the browser's precomputed
+      // index — O(1) rather than O(elements).
       function applyFilters() {
-        const active = new Set();
-        filterBoxes.forEach(b => { if (b.checked) active.add(b.dataset.filter); });
-        // Highlights in narrative: span.hl has a v-X class — hide the tint/border when not active
-        document.querySelectorAll('.hl').forEach(el => {
-          // Determine primary verdict class
-          const vc = VERDICT_CLASSES.find(v => el.classList.contains('v-' + v));
-          if (vc && !active.has(vc)) el.classList.add('filtered-off');
-          else el.classList.remove('filtered-off');
-        });
-        // Inline verdict chips
-        document.querySelectorAll('.chip-verdict').forEach(el => {
-          const vc = VERDICT_CLASSES.find(v => el.classList.contains('v-' + v));
-          if (vc && !active.has(vc)) el.classList.add('filtered-off');
-          else el.classList.remove('filtered-off');
-        });
-        // Scene index entries
-        document.querySelectorAll('.scene-entry').forEach(el => {
-          const vc = el.dataset.verdict;
-          if (vc && !active.has(vc)) el.classList.add('filtered-off');
-          else el.classList.remove('filtered-off');
+        VERDICT_CLASSES.forEach(vc => {
+          const box = document.querySelector('.filter-bar input[data-filter="' + vc + '"]');
+          const hide = box && !box.checked;
+          document.body.classList.toggle('hide-verdict-' + vc, hide);
         });
       }
       filterBoxes.forEach(b => b.addEventListener('change', applyFilters));
