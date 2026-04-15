@@ -1,0 +1,112 @@
+{
+  "trip_id": "Brugmansia_20",
+  "substance": "brugmansia",
+  "block": "11-20",
+  "coder_A": "Alessandra",
+  "coder_B": "Alessio",
+  "dose_raw": "3 pink flowers as tea",
+  "word_count": 967,
+  "narrative": "I have tried angel trumpets a few times but every time I didn’t get anything more than a dizzy effect. But this time I for sure got an effect. I’m going to tell you the most interesting parts of my trip (like most posts you would be reading for days if not).\n\n8:30 pm    Me and my friend took 3 pink angel trumpets and boiled them for 5 minutes. Made them into tea and made a cup for each of us.\n\n9:00 pm    Both me and my friend start feeling the dizzy effect. We are playing halo 3. Trying to keep our minds clear so we don’t have a bad trip if we trip at all.\n\n10:30 pm    We still only feel the dizzy effect and aren’t happy. We decide to just go to bed and forget about it. He lays down on the floor and falls asleep. Same goes for me.\n\n1:00 am    I woke up to see and feel someone’s legs across my chest as if someone came in my room and went to sleep in my bed. I didn’t really care. I got up out of bed. Couldn’t see all to well because it was almost pitch black. As I stood up I looked down to make sure my friend was fine but instead of seeing my friend I see some kid down the street along with 3 other people sleeping. (I still don’t really care But I did think it was all real)\n\n1:30 am    I walked out of my room onto the couch where my mom was still awake. I laid down on the couch next to the one she was on. She asked me what I was doing. I told her Someone was sleeping in my bed so i decided to sleep out on the couch. She didn’t believe me and went into my room and assured me that no one was in my bed\n\n2:00 am    I went back into my room and still see the person in the bed. As I looked again he was gone. So I sat down on my bed. Then I took a glance over at my computer only to see my friend sitting in the computer chair instead of sleeping. I called out his name a few times and no response. I looked on the floor where he went to sleep and saw him there. He wasn’t in the chair anymore.\n\n3:00 am    Still sitting in bed I saw my friend again in my computer chair. I kinda laughed to myself and asked him to teach me how he was able to disappear and shit. He still doesn’t answer me. I realized if he doesn’t answer me it must be part of the trip. So I would just check my floor to see him sleeping. (This happened about 2 more times)\n\n3:30 am    I looked at the blinds of my window and I see a roach. I immediately got up and rushed out of my room for the roach killer. My mom still awake asked me why am I still up. I told her there was a roach in my room so I needed the roach killer. I told her I could handle it but she took the spray and went into my room not listening to me. I followed her in to show her where it was. She told me if you turn the lights on they go away. I said I didn’t want them to go away I wanted to kill it. (I went out there looking for the spray 3 times after this)\n\n4:00 am    I’m tripping bad and don’t realize it. I can’t remember why but I went back out onto the couch to try and sleep but my mom yelled at me and told me to go back into my room. (from that point to what I’m going to tell you I lost complete memory) I’m laying on the couch and 2 people come out of my sisters room. They asked me if I had anything to smoke. I said no. They went back in the room.\n\n4:15am  I then remembered my friend had rolled a joint so I went into my room to find it. Using my cell phone as a light I looked through all my doors. But I was looking in my desk door (where I usually keep my shit) for the joint.\n\n4:30am  Still Looking for the joint in the same door one of my friends appear to my right I tell him that I lost a crip joint and I needed him to help me find it. Again no response. (This is a different friend) He disappeared and appeared on me twice.\n\n5:00am  After realizing that I’m not going to find it till my friend wakes up I hopped back into bed. As I look at my blinds I see wasps flying around that area of the room. 5 Minutes later A frog is on the string that you pull to open the blinds. (don’t know what to call that) And I saw him eat a wasp.\n\n5:30 am  As I’m staring at this frog I notice the blinds getting brighter (Night is turning into day...) But it doesn’t get lighter in a constant pace. It gets lighter in waves. In about 4 waves it was morning. (sorry There is no other way I can explain that)\n\n6:00 am  My friend wakes up and as soon as he woke up I told him there was a frog in my room and pointed at it (still in the same place as I told you) He said where and I repeated myself. He said there was no frog and he walked over to where I told him it was and slapped the string. The frog disappeared.",
+  "scenes": [
+    {
+      "scene_id": "Brugmansia_20_S01_B_RCL",
+      "rater_status": "only_B",
+      "driver": "RCL",
+      "parent_scene_id": "",
+      "canonical_desc": "Feels someone's legs across his chest as if a person came in and slept in his bed",
+      "canonical_span_start": 774,
+      "canonical_span_end": 900,
+      "stage1_rationale": "No automatic classification; likely genuine miss by other rater"
+    },
+    {
+      "scene_id": "Brugmansia_20_S02_A_RCL",
+      "rater_status": "only_A",
+      "driver": "RCL",
+      "parent_scene_id": "",
+      "canonical_desc": "Pitch black room impaired vision (darkness coded as illusion)",
+      "canonical_span_start": 912,
+      "canonical_span_end": 975,
+      "stage1_rationale": "No automatic classification; likely genuine miss by other rater"
+    },
+    {
+      "scene_id": "Brugmansia_20_S03_AB",
+      "rater_status": "both",
+      "driver": "AB",
+      "parent_scene_id": "",
+      "canonical_desc": "Instead of seeing his friend on the floor, sees a kid from down the street + 3 other sleeping people",
+      "canonical_span_start": 1036,
+      "canonical_span_end": 1200,
+      "stage1_rationale": ""
+    },
+    {
+      "scene_id": "Brugmansia_20_S04_B_RCL",
+      "rater_status": "only_B",
+      "driver": "RCL",
+      "parent_scene_id": "",
+      "canonical_desc": "Returning to room still sees the person in the bed; then gone",
+      "canonical_span_start": 1564,
+      "canonical_span_end": 1650,
+      "stage1_rationale": "No automatic classification; likely genuine miss by other rater"
+    },
+    {
+      "scene_id": "Brugmansia_20_S05_AB",
+      "rater_status": "both",
+      "driver": "AB",
+      "parent_scene_id": "",
+      "canonical_desc": "Friend appearing in computer chair (repeatedly, while actually asleep on floor)",
+      "canonical_span_start": 1658,
+      "canonical_span_end": 2270,
+      "stage1_rationale": ""
+    },
+    {
+      "scene_id": "Brugmansia_20_S06_A_RCL",
+      "rater_status": "only_A",
+      "driver": "RCL",
+      "parent_scene_id": "",
+      "canonical_desc": "Roach on the window blinds",
+      "canonical_span_start": 2273,
+      "canonical_span_end": 2330,
+      "stage1_rationale": "No automatic classification; likely genuine miss by other rater"
+    },
+    {
+      "scene_id": "Brugmansia_20_S07_AB",
+      "rater_status": "both",
+      "driver": "AB",
+      "parent_scene_id": "",
+      "canonical_desc": "Two unknown people come out of sister's room asking for smoking materials",
+      "canonical_span_start": 3079,
+      "canonical_span_end": 3230,
+      "stage1_rationale": ""
+    },
+    {
+      "scene_id": "Brugmansia_20_S08_AB",
+      "rater_status": "both",
+      "driver": "AB",
+      "parent_scene_id": "",
+      "canonical_desc": "A different friend appears beside him; asks for help finding joint; friend disappears/reappears",
+      "canonical_span_start": 3513,
+      "canonical_span_end": 3700,
+      "stage1_rationale": ""
+    },
+    {
+      "scene_id": "Brugmansia_20_S09_AB",
+      "rater_status": "both",
+      "driver": "AB",
+      "parent_scene_id": "",
+      "canonical_desc": "Wasps flying in room; a frog on the blind-string eats a wasp",
+      "canonical_span_start": 3812,
+      "canonical_span_end": 4020,
+      "stage1_rationale": ""
+    },
+    {
+      "scene_id": "Brugmansia_20_S10_A_RCL",
+      "rater_status": "only_A",
+      "driver": "RCL",
+      "parent_scene_id": "",
+      "canonical_desc": "Morning arrives in discrete lighting-brightness waves rather than continuously",
+      "canonical_span_start": 4028,
+      "canonical_span_end": 4220,
+      "stage1_rationale": "No automatic classification; likely genuine miss by other rater"
+    }
+  ]
+}

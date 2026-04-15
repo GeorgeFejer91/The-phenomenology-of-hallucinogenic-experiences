@@ -1,0 +1,242 @@
+[
+  {
+    "trip_id": "Brugmansia_01",
+    "substance": "brugmansia",
+    "coder_A": "Brendan",
+    "coder_B": "Noah"
+  },
+  {
+    "trip_id": "Brugmansia_02",
+    "substance": "brugmansia",
+    "coder_A": "Brendan",
+    "coder_B": "Noah"
+  },
+  {
+    "trip_id": "Brugmansia_03",
+    "substance": "brugmansia",
+    "coder_A": "Brendan",
+    "coder_B": "Noah"
+  },
+  {
+    "trip_id": "Brugmansia_04",
+    "substance": "brugmansia",
+    "coder_A": "Brendan",
+    "coder_B": "Noah"
+  },
+  {
+    "trip_id": "Brugmansia_05",
+    "substance": "brugmansia",
+    "coder_A": "Brendan",
+    "coder_B": "Noah"
+  },
+  {
+    "trip_id": "Brugmansia_06",
+    "substance": "brugmansia",
+    "coder_A": "Brendan",
+    "coder_B": "Noah"
+  },
+  {
+    "trip_id": "Brugmansia_07",
+    "substance": "brugmansia",
+    "coder_A": "Brendan",
+    "coder_B": "Noah"
+  },
+  {
+    "trip_id": "Brugmansia_08",
+    "substance": "brugmansia",
+    "coder_A": "Brendan",
+    "coder_B": "Noah"
+  },
+  {
+    "trip_id": "Brugmansia_09",
+    "substance": "brugmansia",
+    "coder_A": "Brendan",
+    "coder_B": "Noah"
+  },
+  {
+    "trip_id": "Brugmansia_10",
+    "substance": "brugmansia",
+    "coder_A": "Brendan",
+    "coder_B": "Noah"
+  },
+  {
+    "trip_id": "Brugmansia_11",
+    "substance": "brugmansia",
+    "coder_A": "Alessandra",
+    "coder_B": "Alessio"
+  },
+  {
+    "trip_id": "Brugmansia_12",
+    "substance": "brugmansia",
+    "coder_A": "Alessandra",
+    "coder_B": "Alessio"
+  },
+  {
+    "trip_id": "Brugmansia_13",
+    "substance": "brugmansia",
+    "coder_A": "Alessandra",
+    "coder_B": "Alessio"
+  },
+  {
+    "trip_id": "Brugmansia_14",
+    "substance": "brugmansia",
+    "coder_A": "Alessandra",
+    "coder_B": "Alessio"
+  },
+  {
+    "trip_id": "Brugmansia_15",
+    "substance": "brugmansia",
+    "coder_A": "Alessandra",
+    "coder_B": "Alessio"
+  },
+  {
+    "trip_id": "Brugmansia_16",
+    "substance": "brugmansia",
+    "coder_A": "Alessandra",
+    "coder_B": "Alessio"
+  },
+  {
+    "trip_id": "Brugmansia_17",
+    "substance": "brugmansia",
+    "coder_A": "Alessandra",
+    "coder_B": "Alessio"
+  },
+  {
+    "trip_id": "Brugmansia_18",
+    "substance": "brugmansia",
+    "coder_A": "Alessandra",
+    "coder_B": "Alessio"
+  },
+  {
+    "trip_id": "Brugmansia_19",
+    "substance": "brugmansia",
+    "coder_A": "Alessandra",
+    "coder_B": "Alessio"
+  },
+  {
+    "trip_id": "Brugmansia_20",
+    "substance": "brugmansia",
+    "coder_A": "Alessandra",
+    "coder_B": "Alessio"
+  },
+  {
+    "trip_id": "Psilocybe_01",
+    "substance": "psilocybin",
+    "coder_A": "Alessandra",
+    "coder_B": "Brendan"
+  },
+  {
+    "trip_id": "Psilocybe_02",
+    "substance": "psilocybin",
+    "coder_A": "Alessandra",
+    "coder_B": "Brendan"
+  },
+  {
+    "trip_id": "Psilocybe_03",
+    "substance": "psilocybin",
+    "coder_A": "Alessandra",
+    "coder_B": "Brendan"
+  },
+  {
+    "trip_id": "Psilocybe_04",
+    "substance": "psilocybin",
+    "coder_A": "Alessandra",
+    "coder_B": "Brendan"
+  },
+  {
+    "trip_id": "Psilocybe_05",
+    "substance": "psilocybin",
+    "coder_A": "Alessandra",
+    "coder_B": "Brendan"
+  },
+  {
+    "trip_id": "Psilocybe_06",
+    "substance": "psilocybin",
+    "coder_A": "Alessandra",
+    "coder_B": "Brendan"
+  },
+  {
+    "trip_id": "Psilocybe_07",
+    "substance": "psilocybin",
+    "coder_A": "Alessandra",
+    "coder_B": "Brendan"
+  },
+  {
+    "trip_id": "Psilocybe_08",
+    "substance": "psilocybin",
+    "coder_A": "Alessandra",
+    "coder_B": "Brendan"
+  },
+  {
+    "trip_id": "Psilocybe_09",
+    "substance": "psilocybin",
+    "coder_A": "Alessandra",
+    "coder_B": "Brendan"
+  },
+  {
+    "trip_id": "Psilocybe_10",
+    "substance": "psilocybin",
+    "coder_A": "Alessandra",
+    "coder_B": "Brendan"
+  },
+  {
+    "trip_id": "Psilocybe_11",
+    "substance": "psilocybin",
+    "coder_A": "Francesco",
+    "coder_B": "Susana"
+  },
+  {
+    "trip_id": "Psilocybe_12",
+    "substance": "psilocybin",
+    "coder_A": "Francesco",
+    "coder_B": "Susana"
+  },
+  {
+    "trip_id": "Psilocybe_13",
+    "substance": "psilocybin",
+    "coder_A": "Francesco",
+    "coder_B": "Susana"
+  },
+  {
+    "trip_id": "Psilocybe_14",
+    "substance": "psilocybin",
+    "coder_A": "Francesco",
+    "coder_B": "Susana"
+  },
+  {
+    "trip_id": "Psilocybe_15",
+    "substance": "psilocybin",
+    "coder_A": "Francesco",
+    "coder_B": "Susana"
+  },
+  {
+    "trip_id": "Psilocybe_16",
+    "substance": "psilocybin",
+    "coder_A": "Francesco",
+    "coder_B": "Susana"
+  },
+  {
+    "trip_id": "Psilocybe_17",
+    "substance": "psilocybin",
+    "coder_A": "Francesco",
+    "coder_B": "Susana"
+  },
+  {
+    "trip_id": "Psilocybe_18",
+    "substance": "psilocybin",
+    "coder_A": "Francesco",
+    "coder_B": "Susana"
+  },
+  {
+    "trip_id": "Psilocybe_19",
+    "substance": "psilocybin",
+    "coder_A": "Francesco",
+    "coder_B": "Susana"
+  },
+  {
+    "trip_id": "Psilocybe_20",
+    "substance": "psilocybin",
+    "coder_A": "Francesco",
+    "coder_B": "Susana"
+  }
+]

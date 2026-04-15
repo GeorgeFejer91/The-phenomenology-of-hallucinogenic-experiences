@@ -1,0 +1,22 @@
+{
+  "trip_id": "Brugmansia_16",
+  "substance": "brugmansia",
+  "block": "11-20",
+  "coder_A": "Alessandra",
+  "coder_B": "Alessio",
+  "dose_raw": "4 raw flowers",
+  "word_count": 353,
+  "narrative": "We returned to my friends house, and upon suggestion of my friend's girl friend, we mistakingly ingested the flower raw. She ate 3 whole flowers, my friend ate 4, and I also ate 4. She had to go home, so we began driving her which is when the effects first started taking place (aprox. 45mins later) which first felt like a warm budlike high. \n\nWhen we got back home is when the effects REALLY started taking effect. The warm high strongly(!) increased and I began feeling a bit deranged, and I have a feeling my friend did, too! This was strongly evident while embarking on a short quarter mile walk to 711 for some cigarettes and drink. While (attempting) to walk to the 711 my friend repeatly zoned out on random objects and was seemingly oblivious to my attempts to converse with him or communicate in any matter as he was standing in middle of the street aimlessly, etc. It was about 12:30 at night now, and we all agreed (? lol) to go to bed, or at least attempt to. About 2 hours later. I couldn't sleep, due to extremely intense hallucinations and mental derangement and stayed up until dawn when i went for a walk. While embarking on this walk, it started getting reallllllllly weird. I frequently had hallucinations of friends (who were in totally different cities than me) conversing and making plans, and when I would look back to talk to them, they were gone. I also had an extreme paranoid feeling. \n\n Later that week, I researched the drug better and found out we took over 6 times the recomended dosage, and could have died. I would be extremely cautious if you decide to take this drug. Some of the side effects included extreme dry mouth, irritated eyes, a verrrry bad taste, and my vision was so horrible I couldn't read a phone number I had written in my wallet. So again, if you play on taking brugmansia, DO NOT take too much. Thats pretty much all to my story, so have fun if you decide to experiment with it.",
+  "scenes": [
+    {
+      "scene_id": "Brugmansia_16_S01_AB",
+      "rater_status": "both",
+      "driver": "AB",
+      "parent_scene_id": "",
+      "canonical_desc": "Hallucinations of friends (who were in different cities) conversing and making plans; gone when looked back at",
+      "canonical_span_start": 1194,
+      "canonical_span_end": 1370,
+      "stage1_rationale": ""
+    }
+  ]
+}

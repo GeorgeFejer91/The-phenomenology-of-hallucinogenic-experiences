@@ -48,8 +48,12 @@ def norm(s):
 
 
 def slug(s):
+    # Normalise to a stable, underscore-only item_id. Hyphens in the source
+    # label ("Domain-specific violation", "Out-of-body-experience") are
+    # converted to underscores for a consistent join key.
     s = re.sub(r"[^\w\s-]", "", s).strip().lower()
     s = re.sub(r"\s+", "_", s)
+    s = s.replace("-", "_")
     return s
 
 

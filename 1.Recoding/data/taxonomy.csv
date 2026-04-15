@@ -3,7 +3,7 @@ type_of_visual_alteration,,0,Type of visual alteration,,,Type of visual alterati
 type_of_visual_alteration_illusion,type_of_visual_alteration,1,Type of visual alteration,Illusion,,Type of visual alteration | Illusion,True,False,True,False
 type_of_visual_alteration_hallucination_of_an_incrusted_object,type_of_visual_alteration,1,Type of visual alteration,Hallucination of an incrusted object,,Type of visual alteration | Hallucination of an incrusted object,True,False,True,False
 type_of_visual_alteration_hallucination_of_a_detached_object,type_of_visual_alteration,1,Type of visual alteration,Hallucination of a detached object,,Type of visual alteration | Hallucination of a detached object,True,False,True,False
-type_of_visual_alteration_full-blown_immersive_hallucination,type_of_visual_alteration,1,Type of visual alteration,Full-blown immersive hallucination,,Type of visual alteration | Full-blown immersive hallucination,True,False,True,False
+type_of_visual_alteration_full_blown_immersive_hallucination,type_of_visual_alteration,1,Type of visual alteration,Full-blown immersive hallucination,,Type of visual alteration | Full-blown immersive hallucination,True,False,True,False
 visual_hallucination,,0,Visual hallucination,,,Visual hallucination,False,True,True,False
 visual_hallucination_geometrical_pattern,visual_hallucination,1,Visual hallucination,Geometrical pattern,,Visual hallucination | Geometrical pattern,True,False,True,False
 visual_hallucination_human,visual_hallucination,1,Visual hallucination,Human,,Visual hallucination | Human,False,True,True,False
@@ -124,16 +124,16 @@ sense_of_reality,,0,Sense of reality,,,Sense of reality,False,True,False,True
 sense_of_reality_lucid,sense_of_reality,1,Sense of reality,Lucid,,Sense of reality | Lucid,True,False,False,True
 sense_of_reality_delusional,sense_of_reality,1,Sense of reality,Delusional,,Sense of reality | Delusional,True,False,False,True
 amnesia,,0,Amnesia,,,Amnesia,True,False,False,True
-domain-specific_violation,,0,Domain-specific violation,,,Domain-specific violation,False,True,False,True
-domain-specific_violation_biological_projection,domain-specific_violation,1,Domain-specific violation,Biological projection,,Domain-specific violation | Biological projection,True,False,False,True
-domain-specific_violation_psychological_projection,domain-specific_violation,1,Domain-specific violation,Psychological projection,,Domain-specific violation | Psychological projection,True,False,False,True
+domain_specific_violation,,0,Domain-specific violation,,,Domain-specific violation,False,True,False,True
+domain_specific_violation_biological_projection,domain_specific_violation,1,Domain-specific violation,Biological projection,,Domain-specific violation | Biological projection,True,False,False,True
+domain_specific_violation_psychological_projection,domain_specific_violation,1,Domain-specific violation,Psychological projection,,Domain-specific violation | Psychological projection,True,False,False,True
 emotion,,0,Emotion,,,Emotion,False,True,False,True
 emotion_positive_emotion,emotion,1,Emotion,Positive emotion,,Emotion | Positive emotion,True,False,False,True
 emotion_negative_emotion,emotion,1,Emotion,Negative emotion,,Emotion | Negative emotion,True,False,False,True
 arousal,,0,Arousal,,,Arousal,False,True,False,True
 arousal_abnormally_high,arousal,1,Arousal,Abnormally high,,Arousal | Abnormally high,True,False,False,True
 arousal_abnormally_low,arousal,1,Arousal,Abnormally low,,Arousal | Abnormally low,True,False,False,True
-out-of-body-experience,,0,Out-of-body-experience,,,Out-of-body-experience,True,False,False,True
+out_of_body_experience,,0,Out-of-body-experience,,,Out-of-body-experience,True,False,False,True
 own_body_distortion,,0,Own body distortion,,,Own body distortion,True,False,False,True
 insight,,0,Insight,,,Insight,False,True,False,True
 insight_metaphysical,insight,1,Insight,Metaphysical,,Insight | Metaphysical,True,False,False,True

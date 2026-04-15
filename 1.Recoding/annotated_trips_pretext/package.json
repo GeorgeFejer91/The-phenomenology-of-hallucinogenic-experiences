@@ -1,0 +1,11 @@
+{
+  "name": "annotated-trip-viewer",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Pretext-based dynamic renderer for colour-highlighted trip reports. Imports pretext layout engine from the sibling pretext_website repo via relative paths.",
+  "scripts": {
+    "start": "bun run --hot index.html",
+    "build": "bun build index.html --outdir=dist --minify"
+  },
+  "dependencies": {}
+}

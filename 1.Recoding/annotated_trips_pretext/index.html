@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Annotated trip reports — pretext-based renderer</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+      margin: 0;
+      background: #fafafa;
+      color: #1a1a1a;
+    }
+    header {
+      padding: 1rem 2rem;
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    header h1 {
+      font-size: 1.1rem;
+      margin: 0;
+      font-weight: 600;
+    }
+    header select {
+      font-size: 1rem;
+      padding: 0.3rem 0.5rem;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    .meta {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+    }
+    .meta-row { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+    .meta-item { }
+    .meta-item strong { color: #555; }
+    .legend {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      padding: 0.8rem 1rem;
+      margin-bottom: 1rem;
+      font-size: 0.85rem;
+      line-height: 1.8;
+    }
+    .legend-chip {
+      display: inline-block;
+      padding: 2px 8px;
+      margin: 0 6px 0 0;
+      border-radius: 3px;
+      font-weight: 600;
+      font-family: monospace;
+    }
+    .narr-container {
+      position: relative;
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      padding: 2rem;
+    }
+    .narr-canvas {
+      display: block;
+      max-width: 100%;
+    }
+    .scene-list {
+      margin-top: 2rem;
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      padding: 1rem;
+      font-size: 0.85rem;
+    }
+    .scene-list h2 { margin-top: 0; font-size: 1rem; }
+    .scene-list ul { padding-left: 1.2rem; margin: 0; }
+    .scene-list li { margin: 6px 0; line-height: 1.4; }
+    .scene-list code { background: #f5f5f5; padding: 1px 4px; border-radius: 2px; font-size: 0.85em; }
+
+    .bg-AB   { background-color: #b7e4c7; }
+    .bg-FRAG { background-color: #ffd79a; }
+    .bg-AMP  { background-color: #fff3a3; }
+    .bg-AMB  { background-color: #d5c6e0; }
+    .bg-SOMA { background-color: #f7c1d9; }
+    .bg-RCL  { background-color: #f4b4b4; }
+
+    #tooltip {
+      position: absolute;
+      background: #222;
+      color: #fff;
+      padding: 4px 8px;
+      border-radius: 3px;
+      font-size: 0.75rem;
+      font-family: monospace;
+      pointer-events: none;
+      display: none;
+      z-index: 100;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Annotated trip reports</h1>
+    <label>
+      Trip:
+      <select id="trip-select"></select>
+    </label>
+    <span id="status" style="color:#888;font-size:0.85rem;"></span>
+  </header>
+  <main>
+    <div id="meta" class="meta"></div>
+    <div class="legend">
+      <strong>Driver categories:</strong>
+      <span class="legend-chip bg-AB">AB</span>Shared
+      <span class="legend-chip bg-FRAG">FRAG</span>Fragment
+      <span class="legend-chip bg-AMP">AMP</span>Sensory amplification
+      <span class="legend-chip bg-AMB">AMB</span>Ambiguity
+      <span class="legend-chip bg-SOMA">SOMA</span>Somatic
+      <span class="legend-chip bg-RCL">RCL</span>Reconcile
+    </div>
+    <div class="narr-container">
+      <canvas id="narr-canvas" class="narr-canvas"></canvas>
+      <div id="tooltip"></div>
+    </div>
+    <div class="scene-list">
+      <h2>Scene index</h2>
+      <ul id="scene-index"></ul>
+    </div>
+  </main>
+  <script type="module" src="./trip-annotator.ts"></script>
+</body>
+</html>

@@ -42,6 +42,25 @@ def load_taxonomy(path):
     return out
 
 
+def normalise_item_id(item_id):
+    """Normalise hyphens to underscores so YAML item refs match taxonomy IDs."""
+    if item_id is None:
+        return None
+    return item_id.replace("-", "_")
+
+
+def is_trip_level_item(tax_row):
+    """True if the taxonomy item's section is trip-level (per taxonomy.csv).
+
+    Used to implement the D4 scope-layer normalisation: when a rater attaches
+    a trip-level-taxonomy item to a scene, we move it to trip-level at
+    consolidation time, recording the original scene_id for audit.
+    """
+    if not tax_row:
+        return False
+    return tax_row.get("is_trip_level") == "True"
+
+
 def norm_suffix(status):
     return {"both": "AB", "only_A": "A", "only_B": "B"}[status]
 
@@ -154,42 +173,49 @@ def main():
                 "adjudicator_note": sc.get("rationale"),
             })
 
-            # rater A codes
-            if sc.get("rater_A"):
-                for item in sc["rater_A"].get("items", []):
+            # -- per-scene rater codes (with D4 scope-layer normalisation) --
+            for rater_label, rater_blob, coder_name in (
+                ("A", sc.get("rater_A"), coder_A),
+                ("B", sc.get("rater_B"), coder_B),
+            ):
+                if not rater_blob:
+                    continue
+                # D5 dedup safety: within one (scene, rater) use a set
+                seen_items = set()
+                for raw_item in rater_blob.get("items", []):
+                    item = normalise_item_id(raw_item)
+                    if item in seen_items:
+                        continue
+                    seen_items.add(item)
                     t = tax.get(item)
                     code_id_counter += 1
+                    # D4 normalisation: if the item is trip-level per the taxonomy,
+                    # attach it at trip level (scene_id=NULL) and record the
+                    # originating scene_id for audit transparency.
+                    if is_trip_level_item(t):
+                        final_scene_id = None
+                        original_scene_id = scene_id
+                        is_scene_lvl = False
+                        scope_normalised = True
+                    else:
+                        final_scene_id = scene_id
+                        original_scene_id = ""
+                        is_scene_lvl = True
+                        scope_normalised = False
                     codes.append({
                         "code_id": f"C{code_id_counter:06d}",
-                        "scene_id": scene_id,
+                        "scene_id": final_scene_id,
+                        "original_scene_id": original_scene_id,
                         "trip_id": trip_id,
-                        "rater": "A",
-                        "coder_name": coder_A,
+                        "rater": rater_label,
+                        "coder_name": coder_name,
                         "item_id": item,
                         "item_path": t["path"] if t else item,
                         "level_1": t["level_1"] if t else None,
                         "level_2": t["level_2"] if t else None,
                         "level_3": t["level_3"] if t else None,
-                        "is_scene_level": True,
-                        "excerpt": None,
-                    })
-            # rater B codes
-            if sc.get("rater_B"):
-                for item in sc["rater_B"].get("items", []):
-                    t = tax.get(item)
-                    code_id_counter += 1
-                    codes.append({
-                        "code_id": f"C{code_id_counter:06d}",
-                        "scene_id": scene_id,
-                        "trip_id": trip_id,
-                        "rater": "B",
-                        "coder_name": coder_B,
-                        "item_id": item,
-                        "item_path": t["path"] if t else item,
-                        "level_1": t["level_1"] if t else None,
-                        "level_2": t["level_2"] if t else None,
-                        "level_3": t["level_3"] if t else None,
-                        "is_scene_level": True,
+                        "is_scene_level": is_scene_lvl,
+                        "scope_normalised": scope_normalised,
                         "excerpt": None,
                     })
 
@@ -199,7 +225,7 @@ def main():
             for entry in doc.get("trip_level_codes", {}).get(rater_key, []) or []:
                 if not isinstance(entry, dict):
                     continue
-                item = entry.get("item")
+                item = normalise_item_id(entry.get("item"))
                 if not item:
                     continue
                 t = tax.get(item)
@@ -207,6 +233,7 @@ def main():
                 codes.append({
                     "code_id": f"C{code_id_counter:06d}",
                     "scene_id": None,
+                    "original_scene_id": "",
                     "trip_id": trip_id,
                     "rater": rater_label,
                     "coder_name": coder_name_for_rater,
@@ -216,6 +243,7 @@ def main():
                     "level_2": t["level_2"] if t else None,
                     "level_3": t["level_3"] if t else None,
                     "is_scene_level": False,
+                    "scope_normalised": False,
                     "excerpt": entry.get("excerpt"),
                 })
 
@@ -224,16 +252,55 @@ def main():
     with open(os.path.join(data_dir, "trips.csv"), "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=trips_cols); w.writeheader(); [w.writerow(r) for r in trips]
 
-    scenes_cols = ["scene_id","trip_id","rater_status",
+    # scenes.csv is written below, after substance/block denormalisation
+
+    # D4 post-pass: dedup trip-level rows that arose from multiple scenes
+    # getting normalised to the same (trip_id, rater, item_id) bucket.
+    # We keep one row and remember how many scenes it was normalised from.
+    trip_key_counts = {}
+    for c in codes:
+        if c["is_scene_level"] is False:
+            k = (c["trip_id"], c["rater"], c["item_id"])
+            trip_key_counts[k] = trip_key_counts.get(k, 0) + 1
+    seen = set()
+    deduped = []
+    for c in codes:
+        if c["is_scene_level"] is False:
+            k = (c["trip_id"], c["rater"], c["item_id"])
+            if k in seen:
+                continue
+            seen.add(k)
+            c["trip_level_multiplicity"] = trip_key_counts[k]
+        else:
+            c["trip_level_multiplicity"] = 1
+        deduped.append(c)
+    codes = deduped
+
+    # Denormalise substance / block onto scenes and codes so cross-condition
+    # filters can be expressed without a join. This is a routine analytics
+    # denormalisation — the canonical source is still trips.csv.
+    trip_meta = {t["trip_id"]: t for t in trips}
+    for s in scenes:
+        t = trip_meta.get(s["trip_id"], {})
+        s["substance"] = t.get("substance", "")
+        s["block"] = t.get("block", "")
+    for c in codes:
+        t = trip_meta.get(c["trip_id"], {})
+        c["substance"] = t.get("substance", "")
+        c["block"] = t.get("block", "")
+
+    # Rewrite scenes.csv with denormalised columns
+    scenes_cols = ["scene_id","trip_id","substance","block","rater_status",
                    "parent_scene_id","lump_split_type",
                    "canonical_desc","canonical_span_start","canonical_span_end",
                    "rater_A_refs","rater_B_refs","adjudicator_note"]
     with open(os.path.join(data_dir, "scenes.csv"), "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=scenes_cols); w.writeheader(); [w.writerow(r) for r in scenes]
 
-    codes_cols = ["code_id","scene_id","trip_id","rater","coder_name",
+    codes_cols = ["code_id","scene_id","original_scene_id","trip_id","substance","block",
+                  "rater","coder_name",
                   "item_id","item_path","level_1","level_2","level_3",
-                  "is_scene_level","excerpt"]
+                  "is_scene_level","scope_normalised","trip_level_multiplicity","excerpt"]
     with open(os.path.join(data_dir, "codes.csv"), "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=codes_cols); w.writeheader(); [w.writerow(r) for r in codes]
 
@@ -271,7 +338,13 @@ def main():
                 "B_coded": B,
                 "agreement": "AGREE" if (A and B) else ("A_ONLY" if A else "B_ONLY"),
             })
-    ag_cols = ["scene_id","trip_id","item_id","item_path","level_1","level_2","level_3",
+    # Denormalise substance/block onto agreement_flags
+    for r in agreement_rows:
+        t = trip_meta.get(r["trip_id"], {})
+        r["substance"] = t.get("substance", "")
+        r["block"] = t.get("block", "")
+    ag_cols = ["scene_id","trip_id","substance","block",
+               "item_id","item_path","level_1","level_2","level_3",
                "depth","A_coded","B_coded","agreement"]
     with open(os.path.join(data_dir, "agreement_flags.csv"), "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=ag_cols); w.writeheader(); [w.writerow(r) for r in agreement_rows]

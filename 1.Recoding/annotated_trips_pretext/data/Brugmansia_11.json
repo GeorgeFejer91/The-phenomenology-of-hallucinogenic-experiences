@@ -1,0 +1,52 @@
+{
+  "trip_id": "Brugmansia_11",
+  "substance": "brugmansia",
+  "block": "11-20",
+  "coder_A": "Alessandra",
+  "coder_B": "Alessio",
+  "dose_raw": "1.5 cups of concentrated decoction",
+  "word_count": 779,
+  "narrative": "I had a Near Death Experience after taking angel trumpets. I got a whole bunch of the flowers, stem and leaves and boiled them in a pot of water. I drank one and a half cups of the juice. We boiled the plants for about 20 mins, so as you can imagine, the juice was heavily concentrated with all the poisons from the flowers. I heavily hallucinated for 3 days. I saw and experienced some very terrifying things. I nearly lost my mind. There was enough poison in my body to kill me. \n\nWhen I slipped out of consciousness, I saw my life flash before me and all my friends and relatives waving good-bye, crying and grieving. I was moving down a corridor seeing all this. There was a force that was dragging me down this corridor, which was obviously the force of death. I resisted and tried to stop myself and turn around. I tried with everything in me to stop this force from dragging me. I soon realized that there was nothing I could do to stop and resistance was now pointless. As I moved further down this corridor, I got to a point where I could no longer feel anything and could no longer physically resist. I was like free floating in space. I started to now move a lot faster. I couldn't feel the movement, I only knew that I was moving faster because I could see movement by my surroundings like I would if I were travelling on a train. \n\nIt was at this point that I came to the grim realization that I was dead (as there was nothing I could do physically to resist this dragging force). I instantly turned from a feeling of terror to a strange sense of peace. As I moved towards the end of this corridor, I approached a T-Junction. To the left, it was very dark (totally black). I could sense a very horrible, terrifying feeling that was eminating from the left of this T-Junction. I became aware that this path obviously led to hell as the oppression that came over me was pure evil. To the right of the T-Junction there was light eminating obviously from a very powerful source. I couldn't see the core of this light source as at this stage I had not yet reached the T-Junction. I must have been approximately 30 metres from this T-Junction at this particular point in time and I now realised that the T-Junction in front of me was a tunnel. There was such a strong contrast between the right side and left side of this T-Junction. The senses and feelings that I felt from this right side of the T-Junction were the exact opposite to the left, yet the force that was eminating from the right side was overwhelming everything that was eminating from the left side of the tunnel. Where I could feel a strong sense of terrifying fear, hopelessness, sorrow and despair from looking at the left, I then looked to the right side of the T-Junction and would feel complete peace and joy (euphoria). All the feelings I felt from looking to the left instantly diminished into nothing when I looked to the right side of this tunnel. The right side of the tunnel was overwhelming and suppressing the left. It was so much more powerfull. \n\nI then heard the sound of approaching wind. The sound was coming from the right side of this T-Junction where the light was eminating from. It was approaching with great speed and awesome power and force and with every second the sound became louder and louder. I then saw this great wind force approach me as it moved around the right corner side of the T-Junction. As it approached, I was not afraid. I was completely awe struck by this incredible force. \n\nWhen this wind force hit me, words can only barely describe the feelings that I felt. I was overwhelmed with complete peace, comfort and security unlike anything I had ever experienced. I was also in a state of euphoric joy. I had never felt love as strong as this. The feeling of the love that God had for me was so powerful, it was way beyond my rational comprehension. This wind had not just hit me, it totally consumed every part of my being. This wind force was the only thing in the universe that was able to stop me from the dragging force of death. The wind sent me flying back and as I was taken back, I returned to consciousness. As I woke up my body was cold I was shaking and screaming.",
+  "scenes": [
+    {
+      "scene_id": "Brugmansia_11_S01_AB",
+      "rater_status": "both",
+      "driver": "AB",
+      "parent_scene_id": "",
+      "canonical_desc": "Life flashes before eyes; sees friends and relatives waving goodbye, crying, grieving",
+      "canonical_span_start": 520,
+      "canonical_span_end": 720,
+      "stage1_rationale": ""
+    },
+    {
+      "scene_id": "Brugmansia_11_S02_AB",
+      "rater_status": "both",
+      "driver": "AB",
+      "parent_scene_id": "",
+      "canonical_desc": "Being dragged down a corridor by a force; then free-floating / moving fast",
+      "canonical_span_start": 641,
+      "canonical_span_end": 1300,
+      "stage1_rationale": ""
+    },
+    {
+      "scene_id": "Brugmansia_11_S03_AB",
+      "rater_status": "both",
+      "driver": "AB",
+      "parent_scene_id": "",
+      "canonical_desc": "T-Junction with dark evil left / light divine right; feelings contrast radically between sides",
+      "canonical_span_start": 1559,
+      "canonical_span_end": 2800,
+      "stage1_rationale": ""
+    },
+    {
+      "scene_id": "Brugmansia_11_S04_AB",
+      "rater_status": "both",
+      "driver": "AB",
+      "parent_scene_id": "",
+      "canonical_desc": "Great wind-force approaches with sound, arrives, hits him, sent back to consciousness",
+      "canonical_span_start": 3030,
+      "canonical_span_end": 3900,
+      "stage1_rationale": ""
+    }
+  ]
+}
