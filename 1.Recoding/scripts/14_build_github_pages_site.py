@@ -414,6 +414,84 @@ def main():
     main.append('</div>')
     # Info panel that shows the currently focused scene's details
     main.append('<div class="iter-info" id="iter-info" style="display:none;"></div>')
+
+    # ---- Audit queue: flat list of every AMBIGUITY scene across all trips ----
+    # Each row shows the scene_id, the actual narrative passage, the rationale,
+    # and a rating dropdown so the user can work through them one-by-one.
+    # Ratings persist in localStorage; "Export" produces a CSV.
+    audit_scenes = []
+    for t in trips:
+        trip_id = t["trip_id"]
+        narr_path = os.path.join(here, TRIPS_DIR, f"{trip_id}.txt")
+        if not os.path.exists(narr_path):
+            continue
+        with open(narr_path, encoding="utf-8") as f:
+            narrative_txt = f.read()
+        for s in sorted(scenes_by_trip[trip_id],
+                        key=lambda s: parse_int(s["canonical_span_start"]) or 0):
+            vc = verdict_for_scene(s, verdicts_by_scene)
+            if vc not in ("AMBIGUITY-2a", "AMBIGUITY-2b"):
+                continue
+            a = parse_int(s["canonical_span_start"])
+            b = parse_int(s["canonical_span_end"])
+            passage = ""
+            if a is not None and b is not None and 0 <= a < len(narrative_txt):
+                passage = narrative_txt[a:min(b, len(narrative_txt))]
+                passage = " ".join(passage.split())  # collapse whitespace for list
+            v = verdicts_by_scene.get(s["scene_id"], {})
+            audit_scenes.append({
+                "scene_id": s["scene_id"],
+                "trip_id": trip_id,
+                "substance": t["substance"],
+                "verdict_class": vc,
+                "canonical_desc": s.get("canonical_desc", "") or "",
+                "passage": passage,
+                "rationale": v.get("rationale", "") or "",
+            })
+
+    main.append('<details class="audit-queue" id="audit-queue">')
+    main.append(f'<summary><strong>Audit queue — {len(audit_scenes)} AMBIGUITY scenes</strong> '
+                '<span class="subtle">(click to expand and rate one-by-one)</span></summary>')
+    main.append('<div class="audit-controls">')
+    main.append('<button type="button" id="audit-export" class="filter-btn">Export ratings → CSV</button>')
+    main.append('<button type="button" id="audit-clear" class="filter-btn">Clear all ratings</button>')
+    main.append('<span id="audit-progress" class="audit-progress">0 / ' + str(len(audit_scenes)) + ' rated</span>')
+    main.append('<label class="audit-filter"><input type="checkbox" id="audit-hide-rated"> '
+                'hide already-rated</label>')
+    main.append('</div>')
+    main.append('<ol class="audit-list">')
+    for a in audit_scenes:
+        vc = a["verdict_class"]
+        main.append(
+            f'<li class="audit-entry" data-sid="{html.escape(a["scene_id"])}" data-verdict="{vc}">'
+            f'<div class="audit-head">'
+            f'<span class="chip chip-verdict v-{vc}">{VERDICT_SHORT[vc]}</span> '
+            f'<code class="audit-sid">{html.escape(a["scene_id"])}</code> '
+            f'<span class="audit-trip">{html.escape(a["trip_id"])}</span> '
+            f'<a class="audit-jump" href="#narr-{html.escape(a["scene_id"])}">→ jump to narrative</a>'
+            f'</div>'
+            f'<div class="audit-passage">&ldquo;{html.escape(a["passage"])}&rdquo;</div>'
+            f'<div class="audit-desc"><strong>canonical description:</strong> {html.escape(a["canonical_desc"])}</div>'
+            f'<div class="audit-rationale"><strong>current rationale:</strong> <em>{html.escape(a["rationale"])}</em></div>'
+            f'<div class="audit-rate">'
+            f'<label>Your rating: '
+            f'<select class="audit-rating" data-sid="{html.escape(a["scene_id"])}" '
+            f'data-verdict="{vc}">'
+            f'<option value="">(not reviewed)</option>'
+            f'<option value="confirm">confirm as {VERDICT_SHORT[vc]}</option>'
+            f'<option value="override-MISS">override → MISS</option>'
+            f'<option value="override-GRANULARITY">override → GRANULARITY</option>'
+            f'<option value="override-AMBIGUITY-2a">override → AMBIGUITY 2a</option>'
+            f'<option value="override-AMBIGUITY-2b">override → AMBIGUITY 2b</option>'
+            f'</select>'
+            f'</label>'
+            f'<input type="text" class="audit-note" data-sid="{html.escape(a["scene_id"])}" '
+            f'placeholder="optional note / why" maxlength="400">'
+            f'</div>'
+            f'</li>'
+        )
+    main.append('</ol>')
+    main.append('</details>')
     # Corpus-level summary: totals per verdict class and substance split
     corpus_counts = defaultdict(lambda: defaultdict(int))
     for s in scenes:
@@ -792,21 +870,12 @@ def main():
     .filter-btn:hover { background: #f0f0f0; }
 
     /* ---- CSS-native filter toggle ----
-       Pretext-style philosophy: compute once, query many. Instead of
-       iterating all 1000+ verdict elements on every toggle, we flip a
-       body-level class and let the browser's precomputed selector index
-       hide everything in one pass. No JS measurement, no DOM reads.
-       The body.hide-verdict-X class hides highlight tint, chip, and
-       scene-entry for class X simultaneously. */
-    body.hide-verdict-CONVERGENT   .hl.v-CONVERGENT,
-    body.hide-verdict-MISS         .hl.v-MISS,
-    body.hide-verdict-GRANULARITY  .hl.v-GRANULARITY,
-    body.hide-verdict-AMBIGUITY-2a .hl.v-AMBIGUITY-2a,
-    body.hide-verdict-AMBIGUITY-2b .hl.v-AMBIGUITY-2b {
-      background-color: transparent !important;
-      border-bottom: none !important;
-      padding: 0 !important;
-    }
+       Narrative highlights STAY MARKED regardless of filter state — the
+       marking is primary analytical data and must always be visible.
+       Filters affect only (a) inline divergence chips and (b) scene-index
+       entries; the coloured text tint in the narrative is unaffected.
+       One body-class flip hides everything for that class in a single
+       browser selector-match pass — pretext-style "compute once, apply". */
     body.hide-verdict-CONVERGENT   .chip-verdict.v-CONVERGENT,
     body.hide-verdict-MISS         .chip-verdict.v-MISS,
     body.hide-verdict-GRANULARITY  .chip-verdict.v-GRANULARITY,
@@ -863,6 +932,122 @@ def main():
     }
     .iter-info .iter-head { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.3rem; }
     .iter-info .iter-rationale { color: #444; }
+
+    /* ---- Audit queue panel ---- */
+    .audit-queue {
+      background: #fffdf5;
+      border: 1px solid #e8d5a0;
+      border-radius: 5px;
+      padding: 0.8rem 1.1rem;
+      margin: 1rem 0 1.5rem;
+      font-size: 0.85rem;
+    }
+    .audit-queue summary {
+      cursor: pointer;
+      color: #333;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      padding: 0.2rem 0;
+    }
+    .audit-queue summary strong { color: #6b4e00; }
+    .audit-queue[open] summary { margin-bottom: 0.8rem; border-bottom: 1px solid #eee0b8; padding-bottom: 0.5rem; }
+    .audit-controls {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.6rem 1rem;
+      margin-bottom: 0.8rem;
+      padding: 0.5rem 0.7rem;
+      background: #fff;
+      border-radius: 3px;
+      border: 1px solid #eee0b8;
+    }
+    .audit-progress {
+      font-family: 'SF Mono', Menlo, monospace;
+      font-size: 0.78rem;
+      color: #555;
+    }
+    .audit-filter {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 0.8rem;
+      color: #444;
+      cursor: pointer;
+      user-select: none;
+    }
+    .audit-list {
+      list-style: decimal;
+      padding-left: 2rem;
+      margin: 0;
+    }
+    .audit-entry {
+      background: #fff;
+      border: 1px solid #eee0b8;
+      border-left-width: 3px;
+      padding: 0.6rem 0.8rem;
+      margin-bottom: 0.6rem;
+      border-radius: 3px;
+    }
+    .audit-entry[data-verdict="AMBIGUITY-2a"] { border-left-color: #d97706; }
+    .audit-entry[data-verdict="AMBIGUITY-2b"] { border-left-color: #6b21a8; }
+    .audit-entry.rated { background: #f5fff6; border-color: #bfe7c7; }
+    .audit-entry.rated .audit-rating { background: #e8f5ea; }
+    .audit-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.3rem;
+      font-size: 0.82rem;
+    }
+    .audit-sid { font-weight: 600; }
+    .audit-trip { color: #888; font-size: 0.8em; }
+    .audit-jump { color: #1565c0; text-decoration: none; font-size: 0.8em; }
+    .audit-jump:hover { text-decoration: underline; }
+    .audit-passage {
+      padding: 0.4rem 0.7rem;
+      background: #faf8f4;
+      border-left: 2px solid #ccc;
+      color: #333;
+      font-family: Georgia, serif;
+      font-size: 0.92em;
+      margin: 0.35rem 0;
+      white-space: pre-wrap;
+    }
+    .audit-desc, .audit-rationale {
+      font-size: 0.82em;
+      color: #555;
+      margin-top: 0.25rem;
+    }
+    .audit-rationale em { color: #444; }
+    .audit-rate {
+      margin-top: 0.4rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem;
+      padding-top: 0.4rem;
+      border-top: 1px dashed #eee0b8;
+    }
+    .audit-rate label { font-size: 0.82rem; color: #333; }
+    .audit-rating {
+      font: inherit;
+      padding: 3px 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      background: #fafafa;
+    }
+    .audit-note {
+      font: inherit;
+      flex: 1;
+      min-width: 250px;
+      padding: 3px 6px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      background: #fafafa;
+      font-size: 0.85rem;
+    }
+    body.hide-rated .audit-entry.rated { display: none; }
 
     /* Scene anchor: invisible jump target at the start of each highlight */
     .scene-anchor {
@@ -1069,6 +1254,89 @@ def main():
         if (e.key === 'j' || e.key === 'J' || e.key === 'ArrowRight') { e.preventDefault(); step(+1); }
         else if (e.key === 'k' || e.key === 'K' || e.key === 'ArrowLeft') { e.preventDefault(); step(-1); }
       });
+
+      // -------- AUDIT QUEUE --------
+      // Ratings persist in localStorage keyed by scene_id. One key per scene
+      // for rating ("confirm" | "override-MISS" | ...) and one for a note.
+      const LS_RATING = sid => 'stage1-audit-rating:' + sid;
+      const LS_NOTE   = sid => 'stage1-audit-note:' + sid;
+      function restoreAudit() {
+        document.querySelectorAll('.audit-rating').forEach(sel => {
+          const sid = sel.dataset.sid;
+          const val = localStorage.getItem(LS_RATING(sid));
+          if (val) sel.value = val;
+          sel.closest('.audit-entry')?.classList.toggle('rated', !!sel.value);
+        });
+        document.querySelectorAll('.audit-note').forEach(inp => {
+          const sid = inp.dataset.sid;
+          const val = localStorage.getItem(LS_NOTE(sid));
+          if (val) inp.value = val;
+        });
+        updateAuditProgress();
+      }
+      function updateAuditProgress() {
+        const all = document.querySelectorAll('.audit-rating');
+        const rated = Array.from(all).filter(s => s.value).length;
+        const el = document.getElementById('audit-progress');
+        if (el) el.textContent = rated + ' / ' + all.length + ' rated';
+      }
+      document.querySelectorAll('.audit-rating').forEach(sel => {
+        sel.addEventListener('change', e => {
+          const sid = sel.dataset.sid;
+          if (sel.value) localStorage.setItem(LS_RATING(sid), sel.value);
+          else localStorage.removeItem(LS_RATING(sid));
+          sel.closest('.audit-entry')?.classList.toggle('rated', !!sel.value);
+          updateAuditProgress();
+        });
+      });
+      document.querySelectorAll('.audit-note').forEach(inp => {
+        inp.addEventListener('input', () => {
+          const sid = inp.dataset.sid;
+          if (inp.value) localStorage.setItem(LS_NOTE(sid), inp.value);
+          else localStorage.removeItem(LS_NOTE(sid));
+        });
+      });
+      const btnHideRated = document.getElementById('audit-hide-rated');
+      if (btnHideRated) btnHideRated.addEventListener('change', () => {
+        document.body.classList.toggle('hide-rated', btnHideRated.checked);
+      });
+      const btnClear = document.getElementById('audit-clear');
+      if (btnClear) btnClear.addEventListener('click', () => {
+        if (!confirm('Clear all audit ratings & notes from this browser?')) return;
+        document.querySelectorAll('.audit-rating').forEach(sel => {
+          localStorage.removeItem(LS_RATING(sel.dataset.sid));
+          sel.value = '';
+          sel.closest('.audit-entry')?.classList.remove('rated');
+        });
+        document.querySelectorAll('.audit-note').forEach(inp => {
+          localStorage.removeItem(LS_NOTE(inp.dataset.sid));
+          inp.value = '';
+        });
+        updateAuditProgress();
+      });
+      const btnExport = document.getElementById('audit-export');
+      if (btnExport) btnExport.addEventListener('click', () => {
+        const rows = [['scene_id','original_verdict','user_rating','note']];
+        document.querySelectorAll('.audit-entry').forEach(li => {
+          const sid = li.dataset.sid;
+          const orig = li.dataset.verdict;
+          const rating = localStorage.getItem(LS_RATING(sid)) || '';
+          const note   = (localStorage.getItem(LS_NOTE(sid)) || '').replace(/"/g, '""');
+          rows.push([sid, orig, rating, note]);
+        });
+        const csv = rows.map(r => r.map(c => /[,"\n]/.test(c) ? '"'+c.replace(/"/g,'""')+'"' : c).join(',')).join('\n');
+        const blob = new Blob([csv], { type: 'text/csv;charset=utf-8' });
+        const url  = URL.createObjectURL(blob);
+        const ts   = new Date().toISOString().slice(0,19).replace(/[:T]/g,'-');
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'stage1_audit_ratings_' + ts + '.csv';
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        URL.revokeObjectURL(url);
+      });
+      restoreAudit();
     })();
     """
 
