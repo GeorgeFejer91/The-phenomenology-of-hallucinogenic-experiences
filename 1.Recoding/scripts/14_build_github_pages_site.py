@@ -182,6 +182,12 @@ def build_narrative_html(narrative, scenes, verdicts_by_scene):
                 chipped.add(idx)
                 s = segs[idx]["scene"]
                 verdict = verdict_for_scene(s, verdicts_by_scene)
+                # Anchor for iteration navigator — emitted for EVERY scene
+                # (including CONVERGENT) so J/K can walk any class.
+                chips += (
+                    f'<a class="scene-anchor" id="narr-{html.escape(s["scene_id"])}" '
+                    f'data-verdict="{verdict}" data-sid="{html.escape(s["scene_id"])}"></a>'
+                )
                 # Only chip for solo scenes (CONVERGENT highlights don't need a chip)
                 if verdict != "CONVERGENT":
                     rater_letter = "A" if s["rater_status"] == "only_A" else "B"
@@ -356,7 +362,23 @@ def main():
     main.append('<button type="button" id="filter-only-div" class="filter-btn">'
                 'Hide convergent (show divergences only)</button>')
     main.append('<button type="button" id="filter-all" class="filter-btn">Reset</button>')
+    # Iteration navigator — step through one class across all 40 trips
+    main.append('<span class="iter-separator"></span>')
+    main.append('<strong>Iterate:</strong>')
+    main.append('<select id="iter-class">'
+                '<option value="MISS" selected>MISS</option>'
+                '<option value="GRANULARITY">GRANULARITY</option>'
+                '<option value="AMBIGUITY-2a">AMBIGUITY 2a</option>'
+                '<option value="AMBIGUITY-2b">AMBIGUITY 2b</option>'
+                '<option value="CONVERGENT">CONVERGENT</option>'
+                '</select>')
+    main.append('<button type="button" id="iter-prev" class="filter-btn" title="Previous scene in this class (K)">◀ Prev</button>')
+    main.append('<span id="iter-counter" class="iter-counter">–</span>')
+    main.append('<button type="button" id="iter-next" class="filter-btn" title="Next scene in this class (J)">Next ▶</button>')
+    main.append('<span class="iter-hint">J / K = next / prev</span>')
     main.append('</div>')
+    # Info panel that shows the currently focused scene's details
+    main.append('<div class="iter-info" id="iter-info" style="display:none;"></div>')
     # Corpus-level summary: totals per verdict class and substance split
     corpus_counts = defaultdict(lambda: defaultdict(int))
     for s in scenes:
@@ -725,6 +747,71 @@ def main():
     .chip-verdict.filtered-off { display: none; }
     .scene-entry.filtered-off { display: none; }
 
+    /* Iteration navigator */
+    .iter-separator {
+      display: inline-block;
+      width: 1px;
+      height: 18px;
+      background: #ccc;
+      margin: 0 0.4rem;
+    }
+    #iter-class {
+      font: inherit;
+      padding: 3px 6px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      background: #fafafa;
+    }
+    .iter-counter {
+      font-family: 'SF Mono', Menlo, monospace;
+      font-size: 0.78rem;
+      min-width: 60px;
+      text-align: center;
+      color: #333;
+      padding: 2px 6px;
+      background: #f0f0f0;
+      border-radius: 3px;
+    }
+    .iter-hint {
+      font-size: 0.7rem;
+      color: #888;
+      margin-left: 0.3rem;
+    }
+    .iter-info {
+      position: sticky;
+      top: 3.4rem;
+      z-index: 35;
+      background: #fff;
+      border: 1px solid #e5dfd4;
+      padding: 0.6rem 0.9rem;
+      margin: 0.4rem 0 1rem;
+      border-radius: 4px;
+      font-size: 0.82rem;
+      line-height: 1.45;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .iter-info .iter-head { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.3rem; }
+    .iter-info .iter-rationale { color: #444; }
+
+    /* Scene anchor: invisible jump target at the start of each highlight */
+    .scene-anchor {
+      display: inline-block;
+      width: 0;
+      height: 0;
+      scroll-margin-top: 8rem;  /* leave room for sticky filter bar */
+    }
+    /* Focus ring pulse when J/K lands on a scene */
+    .hl.iter-focused {
+      outline: 3px solid #facc15;
+      outline-offset: 2px;
+      box-shadow: 0 0 0 3px rgba(250, 204, 21, 0.25);
+      animation: iter-pulse 1.2s ease-out 1;
+    }
+    @keyframes iter-pulse {
+      0%   { outline-color: #facc15; box-shadow: 0 0 0 10px rgba(250,204,21,0.55); }
+      100% { outline-color: #facc15; box-shadow: 0 0 0 3px rgba(250,204,21,0.25); }
+    }
+
     /* Corpus summary */
     .corpus-summary {
       background: #f8f6f2;
@@ -839,9 +926,91 @@ def main():
       });
       applyFilters();
 
-      // -------- SCENE-ID DEEP LINK --------
-      // If an .index-parent link is clicked we jump to that scene's anchor;
-      // this is already supported by the #anchors in the index.
+      // -------- ITERATION NAVIGATOR --------
+      // Build an index of every scene anchor in document order, keyed by
+      // verdict class. The anchors are emitted by build_narrative_html so
+      // they span every trip in the single-page document.
+      const anchors = Array.from(document.querySelectorAll('.scene-anchor'));
+      const byClass = {};
+      VERDICT_CLASSES.forEach(vc => { byClass[vc] = []; });
+      anchors.forEach(a => {
+        const vc = a.dataset.verdict;
+        if (byClass[vc]) byClass[vc].push(a);
+      });
+      const iterSelect = document.getElementById('iter-class');
+      const iterPrev   = document.getElementById('iter-prev');
+      const iterNext   = document.getElementById('iter-next');
+      const iterCount  = document.getElementById('iter-counter');
+      const iterInfo   = document.getElementById('iter-info');
+      let iterIdx = -1;
+      function curList() { return byClass[iterSelect.value] || []; }
+      function updateCounter() {
+        const list = curList();
+        if (!list.length) { iterCount.textContent = '0/0'; return; }
+        iterCount.textContent = (iterIdx >= 0 ? (iterIdx + 1) : '–') + '/' + list.length;
+      }
+      function renderInfoPanel(anchor) {
+        if (!anchor) { iterInfo.style.display = 'none'; return; }
+        const sid = anchor.dataset.sid;
+        const vc  = anchor.dataset.verdict;
+        // Look up the matching scene-entry in the index for rationale + parent
+        const entry = document.getElementById('scene-' + sid);
+        let desc = '', rat = '', parent = '';
+        if (entry) {
+          const descEl = entry.querySelector('.index-desc');
+          const ratEl  = entry.querySelector('.index-rationale em');
+          const parEl  = entry.querySelector('.index-parent code');
+          if (descEl) desc = descEl.textContent.trim();
+          if (ratEl)  rat  = ratEl.textContent.trim();
+          if (parEl)  parent = parEl.textContent.trim();
+        }
+        iterInfo.className = 'iter-info v-' + vc;
+        iterInfo.innerHTML =
+          '<div class="iter-head">' +
+            '<span><span class="chip chip-verdict v-' + vc + '">' + vc + '</span> ' +
+              '<code>' + sid + '</code>' +
+              (parent ? ' <span class="index-parent">→ pooled under <code>' + parent + '</code></span>' : '') +
+            '</span>' +
+            '<span style="color:#888;font-size:0.78em;">' + (iterIdx + 1) + ' / ' + curList().length + '</span>' +
+          '</div>' +
+          (desc ? '<div>' + desc + '</div>' : '') +
+          (rat  ? '<div class="iter-rationale"><em>' + rat + '</em></div>' : '');
+        iterInfo.style.display = 'block';
+      }
+      function focusAnchor(anchor) {
+        if (!anchor) return;
+        // Find the .hl span that wraps (or follows) this anchor
+        const hl = anchor.closest('.hl') || anchor.nextElementSibling?.closest?.('.hl') || anchor.parentElement.querySelector('.hl');
+        // Scroll anchor into view
+        anchor.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        // Remove focus from any previously focused hl
+        document.querySelectorAll('.hl.iter-focused').forEach(e => e.classList.remove('iter-focused'));
+        if (hl) {
+          // Re-trigger animation
+          hl.classList.remove('iter-focused');
+          void hl.offsetWidth;
+          hl.classList.add('iter-focused');
+        }
+        renderInfoPanel(anchor);
+      }
+      function step(delta) {
+        const list = curList();
+        if (!list.length) return;
+        iterIdx = (iterIdx < 0 ? (delta > 0 ? 0 : list.length - 1)
+                               : (iterIdx + delta + list.length) % list.length);
+        focusAnchor(list[iterIdx]);
+        updateCounter();
+      }
+      iterNext.addEventListener('click', () => step(+1));
+      iterPrev.addEventListener('click', () => step(-1));
+      iterSelect.addEventListener('change', () => { iterIdx = -1; updateCounter(); iterInfo.style.display = 'none'; });
+      updateCounter();
+      // Keyboard shortcuts — J / K (and arrow keys) to step
+      document.addEventListener('keydown', e => {
+        if (e.target.matches('input, textarea, select')) return;
+        if (e.key === 'j' || e.key === 'J' || e.key === 'ArrowRight') { e.preventDefault(); step(+1); }
+        else if (e.key === 'k' || e.key === 'K' || e.key === 'ArrowLeft') { e.preventDefault(); step(-1); }
+      });
     })();
     """
 

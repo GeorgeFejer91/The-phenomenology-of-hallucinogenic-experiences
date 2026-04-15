@@ -2,26 +2,34 @@
 
 LaTeX manuscript for the psilocybin-vs-brugmansia mixed-methods paper.
 
-## Structure
+## Build
+
+From the repository root:
+
+```
+build_preprint.bat
+```
+
+The compiled PDF is written to `Preprint/build/main.pdf` and copied to `Preprint/main.pdf` for easy access. Build artifacts (`.aux`, `.log`, `.bbl`, `.fls`, `.fdb_latexmk`, `.synctex.gz`) live in `Preprint/build/` and are gitignored.
+
+`build_preprint.bat` uses `latexmk` if available, otherwise falls back to a `pdflatex` / `bibtex` / `pdflatex` / `pdflatex` sequence.
+
+## Layer structure
 
 ```
 Preprint/
 ├── main.tex              Master document (preamble + section inputs)
-├── introduction.tex      Introduction (skeleton)
-├── methods.tex           Methods (complete)
-├── results.tex           Results (skeleton)
-├── discussion.tex        Discussion (partial — inter-rater audit section complete)
-└── references.bib        BibTeX
+├── references.bib        BibTeX entries
+├── sections/
+│   ├── introduction.tex  Introduction (skeleton)
+│   ├── methods.tex       Methods (complete)
+│   ├── results.tex       Results (skeleton)
+│   └── discussion.tex    Discussion (partial)
+├── figures/              Manuscript figures (currently empty placeholder)
+└── build/                Compile outputs (gitignored)
 ```
 
-## Build
-
-```
-pdflatex main
-bibtex main
-pdflatex main
-pdflatex main
-```
+A writer can locate any prose file two clicks under `Preprint/`. Editing one section means opening one file in `sections/` without touching the master document or the preamble.
 
 ## Status
 
