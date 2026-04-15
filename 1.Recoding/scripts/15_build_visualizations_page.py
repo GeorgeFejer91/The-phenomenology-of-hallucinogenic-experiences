@@ -57,6 +57,11 @@ def main():
     scenes = load("scenes.csv")
     codes = load("codes.csv")
     flags = load("agreement_flags.csv")
+    # Verdicts (optional — present once script 16 has been run)
+    try:
+        verdicts = load("stage1_verdicts.csv")
+    except FileNotFoundError:
+        verdicts = []
 
     # Trip metadata by id
     trip_by_id = {t["trip_id"]: t for t in trips}
@@ -116,11 +121,29 @@ def main():
         "dose_raw": t.get("dose_raw", "") or "",
     } for t in trips]
 
+    # Verdicts (sparse — only solo scenes have verdicts)
+    verdicts_js = []
+    sub_by_scene = {s["scene_id"]: s["trip_id"] for s in scenes}
+    trip_to_sub = {t["trip_id"]: t["substance"] for t in trips}
+    for v in verdicts:
+        tid = sub_by_scene.get(v["scene_id"], "")
+        verdicts_js.append({
+            "scene_id": v["scene_id"],
+            "trip_id": v["trip_id"],
+            "substance": trip_to_sub.get(v["trip_id"], ""),
+            "rater_status": v["rater_status"],
+            "driver": v["stage1_driver"],
+            "verdict": v["verdict"],
+            "flavour": v["verdict_flavour"],
+            "source": v["verdict_source"],
+        })
+
     payload = {
         "trips": trips_js,
         "scenes": scenes_js,
         "codes": codes_js,
         "flags": flags_js,
+        "verdicts": verdicts_js,
     }
     payload_json = json.dumps(payload, separators=(",", ":"), ensure_ascii=False)
 
@@ -525,6 +548,62 @@ def main():
       });
     }
 
+    // Chart 6: Stage-1 MISS vs AMBIGUITY verdicts — the primary analytical output
+    function renderVerdicts() {
+      const verdicts = DATA.verdicts || [];
+      if (!verdicts.length) return;
+      const groupBy = document.getElementById('d6-groupby').value; // substance | driver | pair
+      const showMode = document.getElementById('d6-showmode').value; // absolute | proportion
+
+      const VERDICT_KEYS = ['MISS', 'AMBIGUITY-2a', 'AMBIGUITY-2b'];
+      const VERDICT_COLOURS = {
+        'MISS':         '#b91c1c',  // red — rater-compliance gap
+        'AMBIGUITY-2a': '#d97706',  // amber — clarify existing rule
+        'AMBIGUITY-2b': '#6b21a8',  // purple — new category needed
+      };
+      const VERDICT_LABEL = {
+        'MISS':         'MISS — rater overlooked by own criterion',
+        'AMBIGUITY-2a': 'AMBIGUITY 2a — clarify existing rule',
+        'AMBIGUITY-2b': 'AMBIGUITY 2b — new non-scene category needed',
+      };
+      const keyOf = v => v.verdict + (v.flavour ? '-' + v.flavour : '');
+
+      let bucketFn;
+      if (groupBy === 'substance') bucketFn = v => v.substance;
+      else if (groupBy === 'driver') bucketFn = v => v.driver || 'RCL';
+      else bucketFn = v => v.substance + ' ' + (v.trip_id || '').split('_')[1];  // pair-ish
+
+      const buckets = [...new Set(verdicts.map(bucketFn))].sort();
+      const datasets = VERDICT_KEYS.map(vk => {
+        const vals = buckets.map(b => verdicts.filter(v => bucketFn(v) === b && keyOf(v) === vk).length);
+        return { label: VERDICT_LABEL[vk], data: vals, backgroundColor: VERDICT_COLOURS[vk] };
+      });
+
+      if (showMode === 'proportion') {
+        const totals = buckets.map(b => verdicts.filter(v => bucketFn(v) === b).length || 1);
+        datasets.forEach(ds => ds.data = ds.data.map((v, i) => v / totals[i]));
+      }
+
+      render('chart-verdicts', {
+        type: 'bar',
+        data: { labels: buckets, datasets },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          plugins: {
+            tooltip: { mode: 'index', intersect: false },
+            legend: { position: 'top' },
+          },
+          scales: {
+            x: { stacked: true },
+            y: {
+              stacked: true, beginAtZero: true,
+              ticks: { callback: v => (showMode === 'proportion' ? Math.round(v*100)+'%' : v) },
+            },
+          },
+        },
+      });
+    }
+
     // ---------------- init ----------------
     function init() {
       // Populate pair dropdowns
@@ -534,8 +613,9 @@ def main():
         const el = document.getElementById(id);
         el.addEventListener('change', rerender);
       });
-      ['d1-groupby','d1-showmode','d3-depth','d3-consensus','d3-onlyscene','d3-normalise','d4-metric']
-        .forEach(id => document.getElementById(id).addEventListener('change', rerender));
+      ['d1-groupby','d1-showmode','d3-depth','d3-consensus','d3-onlyscene','d3-normalise','d4-metric',
+       'd6-groupby','d6-showmode']
+        .forEach(id => { const el = document.getElementById(id); if (el) el.addEventListener('change', rerender); });
       rerender();
     }
     function rerender() {
@@ -544,6 +624,7 @@ def main():
       renderTopItems();
       renderRaterStyle();
       renderTripHeatmap();
+      renderVerdicts();
     }
 
     // Expose under DOMContentLoaded
@@ -570,6 +651,7 @@ def main():
         '<a href="#items">Top items</a>',
         '<a href="#rater">Rater style</a>',
         '<a href="#tripheat">Per-trip heatmap</a>',
+        '<a href="#verdicts">Stage-1 verdicts</a>',
         '</span>',
         '</header>',
         '<main>',
@@ -686,6 +768,35 @@ def main():
         '</select></label>',
         '</div>',
         '<div class="chart-holder tall"><canvas id="chart-trip-heatmap"></canvas></div>',
+        '</section>',
+
+        # --- Chart 6: Stage-1 verdicts (THE primary analytical output) ---
+        '<section class="card" id="verdicts">',
+        '<h2>Stage-1 verdicts — MISS vs AMBIGUITY (the primary analytical output)</h2>',
+        '<p class="desc">For every solo (only-one-rater) scene, the Stage-1 question asks: '
+        'is the discrepancy a <strong>MISS</strong> (the other rater overlooked a passage that, '
+        'by their own observed criterion on shared _AB scenes in the same trip, they should have '
+        'individuated) or an <strong>AMBIGUITY</strong> (the Guidelines do not cleanly cover this '
+        'edge case)? AMBIGUITY splits into <strong>2a</strong> (edge-case under-specified — clarify '
+        'the rule) and <strong>2b</strong> (the passage is phenomenologically real but falls outside '
+        'the hallucinatory-scene category; a new taxonomy category is needed).</p>',
+        '<div class="filters">',
+        '<label>Group by <select id="d6-groupby">'
+        '<option value="substance" selected>substance</option>'
+        '<option value="driver">driver category</option>'
+        '<option value="pair">substance + trip</option>'
+        '</select></label>',
+        '<label>Show <select id="d6-showmode">'
+        '<option value="absolute">absolute count</option>'
+        '<option value="proportion">proportion</option>'
+        '</select></label>',
+        '</div>',
+        '<div class="chart-holder tall"><canvas id="chart-verdicts"></canvas></div>',
+        '<p class="note">Verdicts for structural driver categories (_FRAG, _AMP, _AMB, _SOMA) '
+        'are assigned automatically by the directive: FRAG/AMP → 2a (under-specified granularity / '
+        'amplification rules); AMB/SOMA → 2b (thought-memory-metaphor and somatic content are '
+        'phenomena the hallucinatory-scene category does not cover). _RCL verdicts are hand-adjudicated '
+        'against each trip\'s own _AB reference scenes.</p>',
         '</section>',
 
         '</main>',
