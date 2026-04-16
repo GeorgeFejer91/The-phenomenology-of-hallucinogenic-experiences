@@ -1,0 +1,5 @@
+coder_pair,substance,block,coder_A,coder_B,n_shared_scenes,n_items_active,mean_observed_agreement,weighted_mean_kappa,mean_pabak,kappa_label,n_items_above_0_4,n_items_above_0_6,n_items_below_0_2
+Brug 01-10: Brendan × Noah,brugmansia,01-10,Brendan,Noah,37,26,0.9168,0.174,0.8337,slight,6,4,20
+Brug 11-20: Alessandra × Alessio,brugmansia,11-20,Alessandra,Alessio,38,31,0.9066,0.3063,0.8133,fair,11,9,17
+Psil 01-10: Alessandra × Brendan,psilocybin,01-10,Alessandra,Brendan,48,41,0.9436,0.3357,0.8872,fair,16,13,20
+Psil 11-20: Francesco × Susana,psilocybin,11-20,Francesco,Susana,57,42,0.9424,0.4221,0.8847,moderate,23,17,17

@@ -1,0 +1,5 @@
+coder_pair,substance,block,coder_A,coder_B,n_trips,n_scenes_total,n_both,n_only_A,n_only_B,n_scenes_A,n_scenes_B,jaccard_scenes,asymmetry_ratio,percent_convergent
+Brug 01-10: Brendan × Noah,brugmansia,01-10,Brendan,Noah,10,60,37,15,8,52,45,0.6167,0.1167,61.67
+Brug 11-20: Alessandra × Alessio,brugmansia,11-20,Alessandra,Alessio,10,52,38,8,6,46,44,0.7308,0.0385,73.08
+Psil 01-10: Alessandra × Brendan,psilocybin,01-10,Alessandra,Brendan,10,91,48,41,2,89,50,0.5275,0.4286,52.75
+Psil 11-20: Francesco × Susana,psilocybin,11-20,Francesco,Susana,10,102,57,23,22,80,79,0.5588,0.0098,55.88

@@ -1,0 +1,24 @@
+coder_pair,substance,level_1,n_items_active,n_shared_scenes,mean_observed_agreement,mean_pabak,weighted_mean_kappa,kappa_label,n_items_above_0_4_kappa,n_items_above_0_6_kappa
+Brug 01-10: Brendan × Noah,brugmansia,Auditory hallucination,6,37,0.9685,0.9369,0.162,slight,1,1
+Brug 01-10: Brendan × Noah,brugmansia,Modal status of the hallucination,3,37,0.7658,0.5315,0.0,slight,0,0
+Brug 01-10: Brendan × Noah,brugmansia,Type of visual alteration,4,37,0.7973,0.5946,0.1265,slight,1,0
+Brug 01-10: Brendan × Noah,brugmansia,Visual hallucination,13,37,0.9647,0.9293,0.2343,fair,4,3
+Brug 11-20: Alessandra × Alessio,brugmansia,Auditory hallucination,3,38,0.9737,0.9474,0.7553,substantial,3,2
+Brug 11-20: Alessandra × Alessio,brugmansia,Gustatory hallucination,1,38,1.0,1.0,1.0,almost-perfect,1,1
+Brug 11-20: Alessandra × Alessio,brugmansia,Modal status of the hallucination,3,38,0.7105,0.4211,0.2929,fair,1,0
+Brug 11-20: Alessandra × Alessio,brugmansia,Nonsensory hallucination,1,38,0.9737,0.9474,0.0,slight,0,0
+Brug 11-20: Alessandra × Alessio,brugmansia,Tactile hallucination,5,38,0.9369,0.8737,0.0238,slight,0,0
+Brug 11-20: Alessandra × Alessio,brugmansia,Type of visual alteration,4,38,0.8158,0.6316,0.2545,fair,1,1
+Brug 11-20: Alessandra × Alessio,brugmansia,Visual hallucination,14,38,0.938,0.876,0.3009,fair,5,5
+Psil 01-10: Alessandra × Brendan,psilocybin,Auditory hallucination,8,48,0.9818,0.9635,0.3714,fair,3,3
+Psil 01-10: Alessandra × Brendan,psilocybin,Modal status of the hallucination,3,48,0.8681,0.7361,0.234,fair,1,0
+Psil 01-10: Alessandra × Brendan,psilocybin,Nonsensory hallucination,4,48,0.9635,0.9271,0.0,slight,0,0
+Psil 01-10: Alessandra × Brendan,psilocybin,Tactile hallucination,2,48,0.9792,0.9583,0.0,slight,0,0
+Psil 01-10: Alessandra × Brendan,psilocybin,Type of visual alteration,4,48,0.8229,0.6458,0.4483,moderate,2,2
+Psil 01-10: Alessandra × Brendan,psilocybin,Visual hallucination,20,48,0.9563,0.9125,0.4149,moderate,10,8
+Psil 11-20: Francesco × Susana,psilocybin,Auditory hallucination,6,57,0.9883,0.9766,0.4431,moderate,3,3
+Psil 11-20: Francesco × Susana,psilocybin,Modal status of the hallucination,3,57,0.7895,0.5789,0.2254,fair,1,0
+Psil 11-20: Francesco × Susana,psilocybin,Nonsensory hallucination,3,57,0.9825,0.9649,0.4955,moderate,2,1
+Psil 11-20: Francesco × Susana,psilocybin,Tactile hallucination,5,57,0.9719,0.9438,0.1952,slight,1,1
+Psil 11-20: Francesco × Susana,psilocybin,Type of visual alteration,4,57,0.7895,0.579,0.2432,fair,1,1
+Psil 11-20: Francesco × Susana,psilocybin,Visual hallucination,21,57,0.9674,0.9348,0.5219,moderate,15,11
