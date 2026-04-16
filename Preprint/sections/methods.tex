@@ -122,17 +122,43 @@ The justification is direct: an item coded by only one rater is, by construction
 
 Crucially, the conservative filter is an analysis-time operation. The canonical \texttt{scenes.csv} and \texttt{codes.csv} retain every scene and every code with full provenance, and analyses at more liberal thresholds (e.g.\ treating single-rater codings as exploratory observations) can be re-run against the same dataset without any re-coding.
 
-\subsection{Diagnostic metrics}
+\subsection{Rater-reliability metrics}
 \label{sec:diagnostics}
 
-Inter-rater consistency is reported at two tiers:
+Inter-rater reliability is reported at two conceptually distinct tiers. Tier~1 (\emph{scene individuation}) asks whether both raters identified the same narrative passage as a hallucinatory scene in the first place. Tier~2 (\emph{attribute classification}) asks whether, on scenes both raters individuated, they attached the same taxonomic tags. The two tiers are deliberately not collapsed into a single number: Tier~1 disagreement reflects the atomic coding decision, whereas Tier~2 disagreement can only be measured once both raters have agreed that a scene exists to tag.
 
-\begin{description}[itemsep=2pt]
-\item[Scene-individuation agreement] --- the proportion of canonical scenes whose \texttt{rater\_status} is ``both''.
-\item[Conditional classification agreement] --- given \texttt{rater\_status == \text{``both''}}, the proportion of \texttt{agreement\_flags} rows with \texttt{agreement == \text{AGREE}}, computed separately at taxonomy depth 0 (section), 1 (category), and 2 (leaf).
-\end{description}
+Throughout, we follow the interpretive scale of \citet{landis1977}: $\kappa<0.20$ slight, $0.21$--$0.40$ fair, $0.41$--$0.60$ moderate, $0.61$--$0.80$ substantial, $0.81$--$1.00$ almost perfect.
 
-Rater-style asymmetries are summarised by per-coder tag-usage counts in \texttt{rater\_style.csv}, which flag cases where individual raters systematically over- or under-use particular taxonomic tags across all their trips.
+\subsubsection*{Tier 1: scene-individuation metrics}
+Let $S_A$ and $S_B$ denote the sets of narrative passages rater~A and rater~B individuated as hallucinatory scenes in a given coder-pair's trips. Two raters' individuations are treated as identical if they refer to overlapping canonical spans in the narrative (see Stage~5 of the consistency pipeline); otherwise they are recorded as separate elements of $S_A$ or $S_B$.
+
+We report the following quantities for each coder pair:
+
+\begin{itemize}[itemsep=2pt]
+\item \emph{Scene-set Jaccard}, $J(S_A,S_B) = |S_A \cap S_B| / |S_A \cup S_B|$ \citep{jaccard1912}. Interpretable as the proportion of the pair's union-individuation that was converged upon. $J=1$ means perfect agreement on scene existence; $J=0$ means the two raters shared no scenes at all.
+\item \emph{Percent convergent}, $100\% \times |S_A \cap S_B|/|S_A \cup S_B|$, identical to $100J$. Reported in percent for readability.
+\item \emph{Count asymmetry}, $|\,|S_A \setminus S_B| - |S_B \setminus S_A|\,| / |S_A \cup S_B|$. Zero when each rater contributes equal numbers of solo individuations; large values flag pairs in which one rater was systematically more permissive than the other. High asymmetry and low Jaccard together indicate a threshold-mismatch (one rater consistently seeing more scenes) rather than distributed random disagreement.
+\end{itemize}
+
+\subsubsection*{Tier 2: attribute-classification metrics}
+Restricted to the subset of scenes both raters individuated (``AB scenes''; $n=180$ in the corpus), we compute, for every scene-level taxonomy item~$t$ the pair actually used at least once, the $2\times 2$ agreement table: $a_t$ both raters tagged, $b_t$ rater~A only, $c_t$ rater~B only, $d_t$ neither. From this we derive:
+
+\begin{itemize}[itemsep=2pt]
+\item \emph{Observed agreement}, $p_o = (a_t + d_t)/n$, the raw proportion of AB scenes on which the two raters reached the same tag/not-tag decision.
+\item \emph{Cohen's $\kappa$} \citep{cohen1960}, $\kappa = (p_o - p_e)/(1 - p_e)$, where $p_e$ is the expected agreement under independent rater marginals. $\kappa$ corrects observed agreement for chance agreement attributable to each rater's overall tagging propensity; standard errors follow \citet{fleiss1969}.
+\item \emph{Prevalence-adjusted, bias-adjusted kappa} (PABAK) \citep{byrt1993}, $\mathrm{PABAK} = 2p_o - 1$. PABAK removes the sensitivity of $\kappa$ to the base rate of a tag.
+\end{itemize}
+
+\paragraph{The kappa paradox and the role of PABAK.}
+A widely-documented problem with Cohen's $\kappa$ is that it collapses toward zero when the tag being evaluated is either very rare or very common, even if the two raters' observed agreement is high \citep{feinstein1990,sim2005}. In our coding, many leaves of the 147-item taxonomy are used on only 1--3 of a pair's 37--57 AB scenes; the standard Cohen's $\kappa$ on such items can indicate ``slight'' or even ``worse-than-chance'' agreement while observed agreement is in fact above 90\%. Because most of our leaves are precisely this kind of low-prevalence tag, we report $\kappa$ alongside $p_o$ and PABAK throughout. PABAK is the more faithful headline number for this dataset; $\kappa$ is retained as the field-conventional figure and for readers who want to anchor to the Landis--Koch scale.
+
+\subsubsection*{Per-scene Jaccard on tag sets}
+To visualise classification agreement from the scene's perspective, we also compute, for each AB scene~$s$, the Jaccard of the two raters' full tag sets on that scene: $J_s = |T_A^s \cap T_B^s| / |T_A^s \cup T_B^s|$, where $T_A^s$ and $T_B^s$ are the taxonomy items rater~A and rater~B attached to $s$. Where the item-level view (Cohen's $\kappa$) summarises agreement across all scenes for one tag, the scene-level view summarises agreement across all tags for one scene. The two views are complementary: identical raters would yield $\kappa=1$ on every item \emph{and} $J_s=1$ on every scene, but divergent rater styles can produce low per-item $\kappa$ with some high $J_s$ (``they disagree about the same axis everywhere'') or the reverse (``they agree on common leaves but have idiosyncratic additions'').
+
+\subsubsection*{Aggregation}
+Per-item $\kappa$ is aggregated to the taxonomy-section (L1) level within each coder pair by weighting each item's $\kappa$ by its $n_{\mathrm{shared\ scenes}}$ (items evaluated on more scenes contribute proportionally more). Per-pair overall $\kappa$ is the same weighted mean taken across all items the pair actually used.
+
+Rater-style asymmetries (per-rater tag-usage counts that may drive $\kappa$ artefacts) are summarised separately in \texttt{rater\_style.csv}. Because the classification metrics are restricted to AB scenes, the individuation-threshold mismatch documented in Tier~1 (D1) cannot contaminate the Tier~2 numbers.
 
 \subsection{Reproducibility and open data}
 \label{sec:reproducibility}
